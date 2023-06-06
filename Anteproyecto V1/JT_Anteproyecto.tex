@@ -169,6 +169,8 @@ Los principales equipos de medición estructural cuentan con salidas digitales o
 
 Un sensor inteligente que conste de un sistema de adquisición de datos basado en un microcontrolador que recolecte y procese la información adquirida en conjunto con varios sensores dispuestos en un solo dispositivo permite realizar la medición de variables ambientales y mecánicas de interés en aplicaciones de salud estructural a un bajo costo; además, un sistema de este tipo es flexible en cuanto a las variables a medir puesto que es compatible con distintos tipos de sensores y a los métodos de comunicación a utilizarse, permitiendo crear soluciones canalizadas a proyectos en específico, logrando disminuir costos y contribuir de una forma más eficaz al proceso de toma de decisiones estructurales.
 
+Existe variedad en cuanto al hardware de bajo costo que puede utilizarse para la implementación del sistema, lo que ofrece un alternativa atractiva a los sistemas de adquisición actuales, además de la capacidad de transmisión que ofrecen las redes de larga distancia disponibles, permitiendo que la estación base pueda ubicarse lejos de la estructura crítica.
+
 Para lograr medir todas estas variables en tiempo real es conveniente contar con un microcontrolador capaz de manejar toda esta información sin dejar de lado la fiablidad en la adquisición de estos datos y que su vez sea capaz de emplear las herramientas necesarias para comunicar estos datos de forma inalámbrica.
 
 
@@ -231,9 +233,9 @@ Diseñar un sensor inteligente para la medición de variables ambientales y mec�
 	
 	 \item Desarrollar el módulo de programa encargado de la comunicación de los datos de forma inalámbrica usando la tecnología escogida.
 	 
-	 \item Diseñar un programa capaz de mostrar en la estación base los datos recibidos en tiempo real por el sensor inteligente.
+	 %\item Diseñar un programa capaz de mostrar en la estación base los datos recibidos en tiempo real por el sensor inteligente.
 	 
-	 \item Implementar un prototipo tanto del sensor inteligente como el módulo encargado de la recepción de los datos (estación base).
+	 \item Implementar un prototipo de pruebas tanto del sensor inteligente como del módulo encargado de la recepción de los datos (estación base).
 	
 	 \item Validar el funcionamiento del sistema.
  	
@@ -250,77 +252,104 @@ Diseñar un sensor inteligente para la medición de variables ambientales y mec�
 
 \vspace{1cm}
 
-Con la finalidad de realizar efectivamente cada objetivo del proyecto, se llevarán las siguientes metodologías:
+Con la finalidad de realizar efectivamente cada objetivo del proyecto, se llevará a cabo la siguiente metodología:
 \bigskip
 
 \begin{enumerate}[1.]
 	
 	
 	
-	\item Documentación de los principales métodos de extracción de datos soportados por un medidor de energía, enfocándose en el protocolo Modbus por RS485 y la salida por pulsos
+	\item Documentación de los principales métodos de extracción de datos soportados por los
+	sensores necesarios para la medición de las variables de interés.
 	
 		\begin{enumerate}
 		
-		\item Investigación documental acerca de los principales métodos de extracción soportados por medidores. 
+		\item Investigación documental acerca de los principales métodos de extracción de datos soportados por los sensores de interés. 
 		
-		\item Comparación de los métodos para extracción de datos desde un medidor según las ventajas que ofrecen al ser realizado desde un microcontrolador
+		\item Comparación de los métodos para extracción de datos desde un sensor según las ventajas que ofrecen al usar un microcontrolador.
 		
-		\item Selección del método de extracción de datos a ser utilizado en el sistema.
+		\item Selección del método de extracción de datos a ser utilizado en el sistema con miras a su posterior procesamiento y envío.
 		
 		
 	\end{enumerate}
 	
-	\item  Diseño del módulo del programa para los nodos que componen la red mallada, conformados por microcontroladores ESP32.
+	\item  Selección del hardware adecuado tanto sensores como microcontrolador para la
+	implementación del sistema capaz de cumplir con los requerimientos.
 	
 	
 	\begin{enumerate}
 		
-		\item Programación de la conectividad entre los nodos de la red
+		\item Investigación documental sobre el hardware disponible en el mercado capaz de realizar las actividades previstas.
 		
-		\item Programación del Envío y recepción de mensajes internos en la red.
+		\item Comparación entre sensores para cada una de las variables de interés.
 		
-		\item Programación de la transmisión de los datos hacia el exterior.
+		\item Comparación entre microcontroladores con base en la naturaleza de los sensores, su método de comunicación y su adaptabilidad al sistema
+		
+		\item Selección del hardware a utilizarse en el prototipo.
 		
 		
 		
 	\end{enumerate}
 	
 	
-	\item Adaptación del nodo para su compatibilidad con la salida por pulsos de un medidor de energía y almacenar el valor de la medida para su adquisición mediante la red.
+	\item Documentación del protocolo de comunicación inalámbrica y del hardware adecuado que permita el envío fiable de los datos recolectados por el sensor
+	inteligente.
 	
 	
 	\begin{enumerate}
 		
-		\item Extracción de datos mediante detección de pulsos y almacenamiento en memoria volátil
+		\item Investigación documental sobre los protocolos de comunicación disponibles según el MCU y el hardware de radiofrecuencia a utilizarse.
 		
-		\item Almacenamiento de los datos en la memoria no volátil en caso de fallos en la alimentación.
+		\item Comparación entre las distintas opciones.
 		
-		\item Compatibilidad como nodo de la red, para transmitir los datos captados.
+		\item Selección del método de comunicación inalámbrica y del hardware necesario para el envío y recepción de datos.
 		
 	\end{enumerate}
 	
 	
-	\item Adaptación de un nodo para la adquisición de datos desde un medidor de energía que soporte protocolo Modbus RTU vía RS485. 
+	\item Diseño del módulo de programa encargado de la recolección y almacenamiento
+	de los datos provenientes de los sensores.
 
 	
 	\begin{enumerate}
 				
-		\item Programación para el manejo del hardware externo al ESP32, capaz de recibir y transmitir datos por el bus RS485.
-		
-		\item Compatibilidad como nodo de la red, para transmitir los datos captados.
+		\item Programación para el manejo del hardware externo al MCU, capaz de recibir datos de señales analógicas.
+		\item Adquisición de datos de variables físicas.
+		\item Almacenamiento de los datos en memoria no volátil.
 		
 	\end{enumerate}
 
+	\item Desarrollo del módulo encargado de la comunicación de los datos
+	de forma inalámbrica usando la tecnología escogida.
 
 	
+	\begin{enumerate}
+				
+		\item Programación para el manejo del hardware capaz de enviar los datos recolectados y manejo de la interfaz con el MCU.
+		\item Envío de datos en tiempo real.
+		
+	\end{enumerate}
+
+	
+
+	\item Implementación de prototipo de pruebas tanto del sensor inteligente como del módulo encargado de la recepción de los datos (estación base).
+	
+	
+	\begin{enumerate}
+		
+		\item Montaje de prototipo tomando en cuenta consideraciones de ruido y acondicionamiento de señales.
+		
+	\end{enumerate}
+
 	\item Realización de pruebas para comprobar el funcionamiento del sistema.
 	
 	
 	\begin{enumerate}
 		
-		\item Pruebas para comprobar el funcionamiento de la red mallada, reorganización y enrutamiento de la red en caso de la pérdida de comunicación entre nodos.
+		\item Pruebas para comprobar el funcionamiento del sistema de adquisición.
 		
-		\item Pruebas para comprobar la comunicación hacia el interior y exterior de la red mallada, así como la transmisión de los datos extraídos.
+		\item Pruebas para comprobar la comunicación hacia la estación base.
+		\item Comprobación de la calidad de los datos extraídos.
 		
 	\end{enumerate}
 	
@@ -329,6 +358,8 @@ Con la finalidad de realizar efectivamente cada objetivo del proyecto, se llevar
 	
 	
 \end{enumerate}
+
+
 	
 	
 \newpage
@@ -342,44 +373,33 @@ Con la finalidad de realizar efectivamente cada objetivo del proyecto, se llevar
 	Los desafíos al usar el ADC de un microcontrolador en mediciones estructurales pueden ser varios. Uno de los principales desafíos es la precisión de la medición, ya que el ADC puede presentar errores en la conversión analógico-digital. Además, la resolución del ADC puede limitar la precisión de las mediciones, lo que puede afectar la calidad de los datos obtenidos.
 
 	Otro desafío importante es la velocidad de medición, ya que en aplicaciones estructurales puede ser necesario tomar mediciones en tiempo real para detectar posibles fallas o cambios en el comportamiento de la estructura. En este sentido, es importante que el ADC del microcontrolador tenga una velocidad de muestreo adecuada para las necesidades de la aplicación.
-
-	No obstante, los ADC de los microcontroladores pueden ser adecuados para aplicaciones de medición estructural, siempre y cuando se realice un cuidadoso diseño del sistema de adquisición de datos y se utilicen técnicas de calibración y validación para asegurar la precisión de las mediciones.
 	
-	El sistema de adquisición y transmisión de datos implementado es solo un prototipo, en el que se tendrán las siguientes limitantes:
+	El sistema de adquisición y transmisión de datos a implementar es solo un prototipo, en el que se tendrán las siguientes limitantes:
 		
 	\begin{itemize}
-	
-	\item La red se compondrá de al menos cinco nodos interconectados entre sí mediante el módulo WiFi propio del ESP32.
-	
-	\item Habrá al menos un medidor con extracción de datos por salida de pulsos con carga y conectado a los nodos
-	
-	\item Al menos un nodo de la red es capaz de conectarse al exterior y transmitir los datos. 
-	
-	\item Habrá al menos un medidor con extracción de datos por RS485 conectado a los nodos, este medidor puede no tener carga. 
-	
-	\item Se contará con al menos un nodo como repetidor en la red.
+
+	\item El acceso a las estructuras a monitorear puede ser una limitación importante, especialmente si se trata de estructuras privadas o con restricciones de seguridad. Esto puede limitar la cantidad de datos que se pueden obtener y, por lo tanto, afectar la precisión del monitoreo.
+	\item El sistema se enfocará en aplicaciones de monitoreo a largo plazo, es decir, se dejará un elemento instrumentado durante largos períodos de tiempo.
+	\item La implementación del sistema de adquisición de datos y monitoreo puede requerir una inversión significativa en equipos y materiales, y el presupuesto disponible puede limitar las opciones de tecnología y equipos a utilizar. Esta limitación podría afectar la elección de los componentes y la calidad de los resultados obtenidos. Para superar esta limitación, se buscará financiamiento adicional y se explorarán opciones de tecnología más económicas y de calidad adecuada.
+
+	\item A pesar de estar enfocado en aplicaciones de campo, se plantea el diseño del hardware y software asociado al sistema de adquisición de datos, mas no se toma en cuenta el diseño del molde de protección, esto por la naturaleza no comercial de la investigación a realizarse.
+
+	\item El sistema contará con una fuente de poder cercana para su funcionamiento.
 	
 	\item Los datos transmitidos serán mostrados en un software o terminal de computadora.
-	
-% 	\newcommand{\newfig}[3]{%
-% \begin{figure}[H]%
-% \centering%
-% \includegraphics[width=#1\linewidth]{/imagenes/#2}%
-% \caption{\emph{\small{#3}}}%
-% \end{figure}%
-% }
 
 		
 	\end{itemize}
 
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=0.7\linewidth]{EsquemaTEG.png}
-		\caption{Representación gráfica de la red descrita en el alcance.}
-		\label{fig:esquemateg}
-	\end{figure}
 
-	\newfig{0.7}{imagenes/EsquemaTEG.png}{Representación gráfica de la red descrita en el alcance. PRUEBA}{esquemateg}
+	% \begin{figure}[H]
+	% 	\centering
+	% 	\includegraphics[width=0.7\linewidth]{EsquemaTEG.png}
+	% 	\caption{Representación gráfica de la red descrita en el alcance.}
+	% 	\label{fig:esquemateg}
+	% \end{figure}
+
+	%\newfig{0.7}{imagenes/EsquemaTEG.png}{Representación gráfica de la red descrita en el alcance. PRUEBA}{esquemateg}
 
 	\newpage
 	
@@ -387,7 +407,7 @@ Con la finalidad de realizar efectivamente cada objetivo del proyecto, se llevar
 		\section*{ RECURSOS Y FACTIBILIDAD}	
 	\end{center}
 
-	Para el desarrollo e implementación del sistema se requiere de microcontroladores ESP32/STM32, sensores de aceleración, humedad, inclinación y temperatura, modulos de radiofrecuencia LoRa de 915 Mhz y un computador para la instalación del IDE necesario para el desarrollo de aplicaciones en el microcontrolador.\\
+	Para el desarrollo e implementación del sistema se requiere de microcontroladores ESP32/STM32, sensores de aceleración, humedad, inclinación y temperatura, módulos de radiofrecuencia LoRa de 915 Mhz y un computador para la instalación del IDE necesario para el desarrollo de aplicaciones en el microcontrolador.\\
 	
 	Tanto los microcontroladores ESP32 como los serán suministrados por el tutor, ya se encuentran disponibles . El IDE (Interfaz de desarrollo) a utilizarse será Visual Studio Code en conjunto con el framework de Espressiff y Platformio, necesario para programar el ESP32 (Cambiar al entorno de ARM si se escoge el STM32). El código estará disponible en el manejador de versiones Github y contará con la documentación necesaria, escrita por los desarrolladores, para el correcto funcionamiento del sistema.	\\
 	
@@ -414,7 +434,7 @@ Con la finalidad de realizar efectivamente cada objetivo del proyecto, se llevar
 	today label font=\small\bfseries,
 	title/.style={draw=none, fill=none},
 	title label font=\bfseries\footnotesize,
-	title label node/.append style={below=7pt},
+	title label node/.append style={below=6pt},
 	include title in canvas=false,
 	bar label font=\mdseries\small\color{black!70},
 	bar label node/.append style={left=.3cm},
@@ -432,8 +452,8 @@ Con la finalidad de realizar efectivamente cada objetivo del proyecto, se llevar
 	link label font=\scriptsize\bfseries,
 	link label node/.append style={below left=-2pt and 0pt},
 	]{1}{24}
-	\gantttitle{Diseñar un sistema de adquisición y transmisión de datos orientado a medidores}{24} \\
-	\gantttitle{de energía eléctrica utilizando una red mallada WiFi con microcontroladores ESP32.}{24} \\[grid]
+	\gantttitle{Diseñar un sensor inteligente para la medición de variables ambientales y mecánicas}{24} \\
+	\gantttitle{para aplicaciones de Monitoreo de Salud Estructural}{24} \\[grid]
 	\gantttitle[
 	title label node/.append style={below left=7pt and -3pt}
 	]{Semana:\quad1}{1}
@@ -442,17 +462,23 @@ Con la finalidad de realizar efectivamente cada objetivo del proyecto, se llevar
 	\ganttbar{\textbf{Investigación Documental}}{1}{1} \\
 	\ganttbar{\textbf{Comparación de métodos}}{2}{2} \\
 	\ganttbar{\textbf{Selección de métodos}}{3}{3} \\
-	\ganttgroup{Diseño del módulo para red mallada}{4}{10} \\
+	\ganttgroup{Seleccionar del hardware}{4}{10} \\
 	\ganttbar{\textbf{Conectividad entre nodos}}{4}{6} \\
 	\ganttbar{\textbf{Comunicación interna}}{7}{8} \\
 	\ganttbar{\textbf{Comunicación externa}}{9}{10} \\
-	\ganttgroup{Compatibilidad con salida por pulsos}{11}{15} \\	
+	\ganttgroup{Documentar y seleccionar el protocolo de comunicación}{11}{15} \\	
 	\ganttbar{\textbf{Extracción de datos}}{11}{12} \\
 	\ganttbar{\textbf{Almacenamiento en memoria no volátil}}{13}{14} \\
 	\ganttbar{\textbf{Comunicación interna con la red}}{15}{15} \\
-	\ganttgroup{Compatibilidad con Modbus RTU RS485}{16}{20} \\
+	\ganttgroup{Diseñar el módulo de adquisición y almacenamiento}{16}{20} \\
 	\ganttbar{\textbf{Manejo de bus RS485}}{16}{18} \\
 	\ganttbar{\textbf{Comunicación interna con la red}}{19}{20} \\
+	\ganttgroup{Desarrollar módulo encargado de la comunicación inalámbrica}{21}{24} \\	
+	\ganttbar{\textbf{Pruebas de reorganización y enrutamiento}}{21}{22} \\
+	\ganttbar{\textbf{Comunicación interna y externa de la red}}{23}{24} \\
+	\ganttgroup{Implementar prototipo de pruebas}{21}{24} \\	
+	\ganttbar{\textbf{Pruebas de reorganización y enrutamiento}}{21}{22} \\
+	\ganttbar{\textbf{Comunicación interna y externa de la red}}{23}{24} \\
 	\ganttgroup{Pruebas de funcionamiento}{21}{24} \\	
 	\ganttbar{\textbf{Pruebas de reorganización y enrutamiento}}{21}{22} \\
 	\ganttbar{\textbf{Comunicación interna y externa de la red}}{23}{24} \\
