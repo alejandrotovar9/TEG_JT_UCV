@@ -1,5 +1,16 @@
 \begin{thebibliography}{}
 
+\bibitem[Balageas et~al., 2010]{balageas2010structural}
+Balageas, D., Fritzen, C.-P., and G{\"u}emes, A. (2010).
+\newblock {\em Structural health monitoring}, volume~90.
+\newblock John Wiley \& Sons.
+
+\bibitem[Blanco, 2012]{blanco2012criterios}
+Blanco, M. (2012).
+\newblock Criterios fundamentales para el dise{\~n}o sismorresistente.
+\newblock {\em Revista de la Facultad de Ingenier{\'\i}a Universidad Central de
+  Venezuela}, 27(3):071--084.
+
 \bibitem[Federici et~al., 2014]{federici2014design}
 Federici, F., Alesii, R., Colarieti, A., Faccio, M., Graziosi, F., Gattulli,
   V., and Potenza, F. (2014).
@@ -12,11 +23,31 @@ Komarizadehasl, S. (2022).
 \newblock Development of low-cost sensors for structural health monitoring
   applications.
 
+\bibitem[Miguel and Bolado, 2010]{miguel2010instrumentacion}
+Miguel, M.~G. and Bolado, E.~M. (2010).
+\newblock {\em Instrumentación electrónica: transductores y acondicionadores
+  de señal}, volume~15.
+\newblock Ed. Universidad de Cantabria.
+
 \bibitem[Muttillo et~al., 2019]{muttillo2019structural}
 Muttillo, M., Di~Battista, L., de~Rubeis, T., and Nardi, I. (2019).
 \newblock Structural health continuous monitoring of buildings--a modal
   parameters identification system.
 \newblock In {\em 2019 4th International Conference on Smart and Sustainable
   Technologies (SpliTech)}, pages 1--4. IEEE.
+
+\bibitem[Nagayama and Spencer~Jr, 2007]{nagayama2007structural}
+Nagayama, T. and Spencer~Jr, B.~F. (2007).
+\newblock Structural health monitoring using smart sensors.
+\newblock {\em Newmark Structural Engineering Laboratory Report Series 001}.
+
+\bibitem[Quiñones~Cuenca et~al., 2018]{QCGJ2018}
+Quiñones~Cuenca, M., González~Jaramillo, V., Torres, R., and Jumbo, M.
+  (2018).
+\newblock Sistema de monitoreo de variables medioambientales usando una red de
+  sensores inalámbricos y plataformas de internet de las cosas.
+\newblock
+  http://scielo.senescyt.gob.ec/scielo.php?script=sci\_arttext\&pid=S1390-65422017000100329\&nrm=iso,
+  8:329 -- 343.
 
 \end{thebibliography}
