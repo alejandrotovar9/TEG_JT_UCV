@@ -74,31 +74,30 @@ Brigham, E\BPBI O.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Hvattum%
-\ \BBA {} Glover%
+Nagayama%
+\ \BBA {} Spencer~Jr%
 }{%
-Hvattum%
-\ \BBA {} Glover%
+Nagayama%
+\ \BBA {} Spencer~Jr%
 }{%
-{\protect \APACyear {2009}}%
+{\protect \APACyear {2007}}%
 }]{%
-Hvattum200931}
+nagayama2007structural}
 \APACinsertmetastar {%
-Hvattum200931}%
+nagayama2007structural}%
 \begin{APACrefauthors}%
-Hvattum, L\BPBI M.%
-\BCBT {}\ \BBA {} Glover, F.%
+Nagayama, T.%
+\BCBT {}\ \BBA {} Spencer~Jr, B\BPBI F.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2009}{}{}.
+\APACrefYearMonthDay{2007}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {Finding local optima of high-dimensional functions using
-  direct search methods} {Finding local optima of high-dimensional functions
-  using direct search methods}.{\BBCQ}
+{\BBOQ}\APACrefatitle {Structural health monitoring using smart sensors}
+  {Structural health monitoring using smart sensors}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{European Journal of Operational Research}{195}{1}{31 -
-  45}.
+\APACjournalVolNumPages{Newmark Structural Engineering Laboratory Report Series
+  001}{}{}{}.
 \PrintBackRefs{\CurrentBib}
 
 \end{thebibliography}

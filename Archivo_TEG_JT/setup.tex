@@ -1,0 +1,187 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% LIBRERIAS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+%\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}  %Estilo de fuente times new roman
+
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{latexsym}
+\usepackage[letterpaper]{geometry}
+
+\usepackage{float}
+\usepackage{makeidx}
+\usepackage{color}
+
+\usepackage{tocbibind}
+\usepackage{acronym}
+\usepackage{caption2}
+\usepackage{epsfig}
+\usepackage{graphicx}
+%\usepackage{slashbox}
+\usepackage{setspace}
+\usepackage{multicol}
+\usepackage{longtable}
+%\usepackage{doublespace}
+
+\usepackage{fancyhdr}
+%\usepackage{fancyheadings}
+
+\usepackage{booktabs}
+
+%========= Define el estilo de referencias ===============
+%\usepackage[round,authoryear]{natbib}%\usepackage[square,numbers]{natbib}%
+%\usepackage[comma,authoryear]{natbib} esto está abajo
+
+%========= Define el estilo de referencias APA ===============
+\usepackage[natbibapa]{apacite}%natbibapa
+%\usepackage[apaciteclassic]{apacite}%natbibapa
+\usepackage[compact]{titlesec} %modificar espaciado
+
+\usepackage{url}
+\usepackage{hyperref}
+%\usepackage[dvips,colorlinks=true,urlcolor=red,citecolor=black,anchorcolor=black,linkcolor=black]{hyperref}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%       Definición del Documento PDF, (PDFLaTeX)        %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\hypersetup{pdfauthor=Nombre}
+
+\hypersetup{pdftitle=Título}%
+
+\hypersetup{pdfkeywords=Palabras clave}
+
+\pdfstringdef{\Produce}{Escuela de Ingeniería Eléctrica, Facultad de Ingeniería, UCV}%
+
+\pdfstringdef{\area}{Área del trabajo}
+
+\hypersetup{pdfproducer=\Produce}
+
+\hypersetup{pdfsubject=\area}
+
+\hypersetup{bookmarksnumbered=true}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\setcounter{MaxMatrixCols}{10}
+
+%===================== Re-definición de Ambientes =================
+\newtheorem{theorem}{Teorema}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algoritmo}[theorem]{Algorithm}
+\newtheorem{supuestos}[theorem]{Supuestos}
+\newtheorem{hipotesis}[theorem]{Hipótesis}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusión}
+\newtheorem{condition}{Condición}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{corollary}{Corollary}
+\newtheorem{criterion}{Criterion}
+\newtheorem{definition}{Definición}  %{Definition}
+\newtheorem{example}[theorem]{Ejemplo}%{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}{Problem}
+\newtheorem{property}{Property}
+\newtheorem{proposition}{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}%
+
+\numberwithin{equation}{chapter}%
+\numberwithin{figure}{chapter}%
+\numberwithin{table}{chapter}%
+\numberwithin{definition}{chapter}%
+\numberwithin{lemma}{chapter}%
+\numberwithin{theorem}{chapter}%
+\numberwithin{corollary}{chapter}%
+\numberwithin{condition}{chapter}%
+\numberwithin{criterion}{chapter}%
+ \numberwithin{problem}{chapter}%
+\numberwithin{property}{chapter}%
+\numberwithin{proposition}{chapter}%
+\numberwithin{solution}{chapter}%
+\numberwithin{conjecture}{chapter}%
+
+%==================== Separación en sílabas ========================
+\hyphenpenalty=6800%
+\input{silabear.tex}
+
+%==================== Diseño de Página =============================
+%\pagestyle{headings}
+%\setlength{\headheight}{0.2cm}
+\setlength{\textwidth}{14.52cm}%
+%\pagestyle{fancy}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+%\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+%\rhead[\fancyplain{}{\bfseries\thepage}]{\fancyplain{}{\bfseries\rightmark}}%\thepage
+%\lhead[\fancyplain{}{\bfseries\leftmark}]{\fancyplain{}{\bfseries}} \cfoot{}%
+
+%\fancyhead[R]{}
+
+\rfoot[\fancyplain{}{\textit{E. Brea}}] {\fancyplain{}{}}
+\lfoot[\fancyplain{}{}] {\fancyplain{}{\textit{}}}    %%%%%%%%%%%%%%%%%%% OJO ACA %%%%%%%%%%
+\cfoot[\fancyplain{}{}] {\fancyplain{}{\bfseries\thepage}}
+%\setlength{\footrulewidth}{0.0pt}%
+%\setlength{\headrulewidth}{0.1pt}%
+
+%===================================================================
+
+%================== Diseño de Párrafo y delimitador ================
+\renewcommand{\baselinestretch}{1.5}% Espaciado entre linea
+\geometry{left=4cm,right=3cm,top=3cm,bottom=3cm}
+\frenchspacing %
+%\raggedright % Sólo para justificar el texto a la izquierda
+\renewcommand{\captionlabeldelim}{.}%
+\setlength{\parindent}{0.7cm}% Espacio de la sangría
+\setlength{\parskip}{14pt plus 1pt minus 1pt}% Separación entre párrafos
+
+%\setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}%
+
+%===================================================================
+
+%==========================  Español venezolano =====================
+%%Personalización de caption
+\addto\captionsspanish{%
+  \def\prefacename{Prefacio}%
+  \def\refname{REFERENCIAS}%
+  \def\abstractname{Resumen}%
+  \def\bibname{REFERENCIAS}%{Bibliografía}%
+  \def\chaptername{CAPÍTULO}%
+  \def\appendixname{Apéndice}%{Anexo}
+  \def\contentsname{ÍNDICE GENERAL}
+  \def\listfigurename{LISTA DE FIGURAS}%Índice de Figuras\hspace*{10em}
+  \def\listfigurenameTofC{LISTA DE FIGURAS}%Índice de Figuras
+  \def\listtablename{LISTA DE TABLAS}%Índice de Tablas
+  \def\indexname{Índice alfabético}%
+  \def\figurename{Figura}%
+  \def\tablename{Tabla}%
+  \def\partname{Parte}%
+  \def\enclname{Adjunto}%
+  \def\ccname{Copia a}%
+  \def\headtoname{A}%
+  \def\pagename{Página}%
+  \def\seename{véase}%
+  \def\alsoname{véase también}%
+  \def\proofname{Demostración}%
+  \def\glossaryname{Glosario}
+  }%
+
+%==================================================================
+
+%\setcounter{secnumdepth}{1}
+%\setcounter{page}{4}
+%\addtocounter{page}{4}%
+
+\pagenumbering{roman}
+
+\makeindex
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
