@@ -1,5 +1,8 @@
 \documentclass[letterpaper,titlepage,12pt,oneside,spanish,final]{report_eie}
 
+%PARA QUE APAREZCAN LAS SUBSUBSECTIONS EN EL INDICE
+%\setcounter{tocdepth}{3}
+
 %\documentclass[letterpaper,titlepage,12pt,twoside,openright,spanish,final]{report_eie}
 
 \input{setup.tex}
@@ -114,16 +117,16 @@ xvii, 144 pp.}
 %\markboth{Introducción}{Introducción}%
 
 \pagenumbering{arabic}%
-\input{ch0.tex}%
+\input{cap0_intro.tex}%
 
 %==================================================================
-\chapter{MARCO HISTÓRICO}\label{CAP:hist}
-%\input{marcohistorico.tex}%
+\chapter{MARCO REFERENCIAL}\label{CAP:referencial}
+%\input{cap1_marcoreferencial.tex}%
 
 %==================================================================
 \chapter{MARCO TEÓRICO}\label{CAP:marco_teor}
 %\markboth{Tu Primer Capítulo}{Tu Primer Capítulo}%
-\input{ch1.tex}%
+\input{cap2_marcoteorico.tex}%
 
 %==================================================================
 \chapter{MARCO METODOLÓGICO}\label{CAP:marco_met}
