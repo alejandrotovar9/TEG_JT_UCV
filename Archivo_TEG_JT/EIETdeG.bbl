@@ -36,10 +36,16 @@ R.~C. Hibbeler and G.~Nolan, \emph{Structural analysis}.\hskip 1em plus 0.5em
   minus 0.4em\relax Prentice Hall Upper Saddle River, New Jersey New Jersey,
   1997.
 
-\bibitem{alderliesten2018introduction}
-R.~Alderliesten, \emph{Introduction to aerospace structures and
-  materials}.\hskip 1em plus 0.5em minus 0.4em\relax Delft University of
-  Technology, 2018.
+\bibitem{basset2014analisis}
+L.~Basset~Salom, ``An{\'a}lisis est{\'a}tico de estructuras planas,'' 2014.
+
+\bibitem{hurtado2000}
+J.~E. Hurtado, ``Introducci{\'o}n a la din{\'a}mica de estructuras,''
+  \emph{Universidad Nacional de Colombia SEDE Manizales}, 2000.
+
+\bibitem{irvine2000introduction}
+T.~Irvine, ``An introduction to frequency response functions,'' \emph{Rapport,
+  College of Engineering and Computer Science}, vol. 2000, 2000.
 
 \bibitem{farrar2007introduction}
 C.~R. Farrar and K.~Worden, ``An introduction to structural health
