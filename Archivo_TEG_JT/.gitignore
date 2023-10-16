@@ -3,7 +3,6 @@
 *.fls
 *.log
 *.out
-*.blg
 *.toc
 *.gz
 *.idx
@@ -12,6 +11,5 @@
 *.lof
 *.lot
 *.vscode
-*.bst
 *.cls
 *.sty
