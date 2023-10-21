@@ -51,6 +51,55 @@ Basset~Salom, L.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Blanco%
+}{%
+Blanco%
+}{%
+{\protect \APACyear {2012}}%
+}]{%
+blanco2012criterios}
+\APACinsertmetastar {%
+blanco2012criterios}%
+\begin{APACrefauthors}%
+Blanco, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2012}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Criterios fundamentales para el dise{\~n}o
+  sismorresistente} {Criterios fundamentales para el dise{\~n}o
+  sismorresistente}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Revista de la Facultad de Ingenier{\'\i}a Universidad
+  Central de Venezuela}{27}{3}{071--084}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Chen%
+}{%
+Chen%
+}{%
+{\protect \APACyear {2018}}%
+}]{%
+chen2018}
+\APACinsertmetastar {%
+chen2018}%
+\begin{APACrefauthors}%
+Chen, H\BHBI P.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2018}.
+\newblock
+\APACrefbtitle {Structural Health Monitoring of Large Civil Engineering
+  Structures} {Structural health monitoring of large civil engineering
+  structures}\ (\BVOL~1).
+\newblock
+\APACaddressPublisher{}{John Wiley \& Sons Ltd}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Farrar%
 \ \BBA {} Worden%
 }{%

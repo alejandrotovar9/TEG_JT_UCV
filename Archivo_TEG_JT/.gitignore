@@ -13,3 +13,5 @@
 *.vscode
 *.cls
 *.sty
+*.bst
+*.blg
