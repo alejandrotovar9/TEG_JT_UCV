@@ -40,7 +40,7 @@ La gran mayoría de los sistemas cuentan con una respuesta dinámica y estática
     \begin{figure}[H]
         \centering
         \includegraphics[width = 0.25\textwidth]{imagenes/cap1_marcoteo/modelo_masa_simple.png}
-        \caption{Modelo de masa concentrada de 1 grado de libertad (Fuente: Introducción a la Dinámica Estructural).}
+        \caption{Modelo de masa concentrada de 1 grado de libertad \citet{hurtado2000}.}
         \label{fig:masa_estructural}
     \end{figure}
 
@@ -78,7 +78,7 @@ La gran mayoría de los sistemas cuentan con una respuesta dinámica y estática
                     \begin{figure}[H]
                         \centering
                         \includegraphics[width = 0.7\textwidth]{imagenes/cap1_marcoteo/respuesta_sist_subamorti.png}
-                        \caption{Respuesta ante vibración libre en sistema Subamortiguado (Fuente: Introducción a la Dinámica Estructural).}
+                        \caption{Respuesta ante vibración libre en sistema Subamortiguado \citep{hurtado2000}.}
                         \label{fig:resp_subamorti}
                     \end{figure}
 
@@ -140,24 +140,182 @@ Además, el monitoreo continuo de la estructura permite conocer el estado actual
 
 \section{Salud estructural}
 
-
-
 \subsection{Definición}
+
+
+El proceso de implementar una estrategia de identificación de daño para estructuras civiles, mecánicas o aeroespaciales se conoce como Monitoreo de Salud Estructural (SHM por sus siglas en inglés). Esta estrategia requiere medir las condiciones y el ambiente en el que opera la estructura, además de la respuesta de la misma durante un período de tiempo tomando muestras periódicamente espaciadas, \citep{farrar2007introduction}.
+
+
+La estrategia del SHM requiere de equipos multidisciplinarios de ingeniería, ya que necesita de una red de sensores que midan las variables de interés, el procesamiento y análisis de los datos obtenidos y posteriormente una prognosis del daño para una eventual toma de decisiones. El objetivo del SHM es proveer, en toda la vida útil de la estructura, un diagnóstico del estado de sus materiales constitutivos, de los diferentes elementos que la componen y de la estructura en sí como el conjunto de todas estas partes. Esto para garantizar que la misma se comporte dentro de los parámetros iniciales de diseño, aunque estos cambien por la acción natural del tiempo, el ambiente y accidentes, \citep{balageas2010structural}.
+
+El resultado de este proceso es información actualizada sobre el estado de la estructura y sobre su capacidad actual para seguir desempeñado la función para la cual fue diseñada.
+
+Según \citet{enckell2006structural}, el SHM se ha convertido en una herramienta muy conocida y utilizada en ingeniería estructural en los últimos años en diferentes países.
 
 \subsection{Reseña histórica}
 
+Las técnicas de detección de daño basadas en vibración tienen sus primeras aplicaciones desde hace cientos de años. En la antigüedad, los constructores golpeaban las estructuras para encontrar espacios vacíos o grietas en elementos de arcilla. La utilidad de estas inspecciones tan simples indicaban que la sofisticación de estos métodos podía proveer información muy valiosa sobre el elemento de interés, sin embargo, esto requiere de instrumentos y herramientas matemáticas que se han desarrollado con el pasar de los años. El auge en el uso de SHM en años recientes es consecuencia de la evolución y miniaturización del hardware computacional actual.
+
+
+El uso más exitoso del SHM ha sido el monitoreo de la condición de máquinas rotativas, las cuales actualmente han adoptado un enfoque de indetificación de daño sin basarse en un modelo de forma casi exclusiva, \citep{farrar2007introduction}.
+
+En los años 70 la industria petrolera consideró el uso de técnicas basadas en vibración para identificar daños en plataformas costa-afuera, este enfoque se diferenció de las máquinas rotativas al estudiar un sistema en donde la ubicación del daño es desconocida y difícil de instrumentar.
+
+En esa misma época, la comunidad aeroespacial y la \textit{National Eeronautics Space Agency} (NASA), comenzaron a estudiar esta técnica de identificación de daño en los comienzos de la era de lanzamientos espaciales. Este trabajo continúa hoy en día y el \textit{Shuttle Modal Inspection System} (SMIS) se desarrolló para identificar fatiga en distintos componentes de cohetes espaciales reusables, los cuales representan el futuro de esta industria.
+
+
+Usualmente, los enfoques de estas industrias se basan en comparar modelos analíticos de estructuras sin daño con las mediciones de estructuras con daño, observando principalmente las propiedades modales de las mismas. Se ha observado que cambios en la rigidez en ambos modelos han permitido localizar y cuantificar el daño, \citep{farrar2007introduction}.
+
+Inicialmente, las técnicas no destructivas fueron introducidas en la ingeniería civil a mediados de los años 40, \citep{mohamed2014}. La necesidad principal surgió en determinar propiedades del concreto fresco \textit{in-situ}. Estas técnicas, que buscaban evaluar la homogeneidad y la resistencia del concreto eran en su mayoría pruebas con martillo y pruebas de \textit{pull-out}. A medida que las estructuras envejecieron, los ingenieros necesitaban idear maneras de medir o estimar las propiedades mecánicas de los elementos que consituyen las estructuras, además de detectar daños que no eran fáciles de observar por la envergadura de las estructuras civiles que se han desarrollado en los últimos 150 años. Es ahí, en los años 70, donde surgen nuevas estrategias no destructivas tales como:
+
+    \begin{itemize}
+        \item Emisión acústica.
+        \item Métodos de ultrasonido y radar.
+        \item Termografía.
+        \item Métodos basados en vibración
+    \end{itemize}
+
+La comunidad de ingeniería civil ha estudiado la identificación de daño basada en vibración en puentes y edificios desde comienzos de los años 80. Las propiedades modales han sido estudiadas por diferentes autores y son las principales características que se analizan al identificar daño. El auge del SHM es tal, que algunos países asiáticos han implementado regulaciones en donde las compañías constructoras deben verificar la salud estructural de los puentes periódicamente. Estas regulaciones han provocado que la investigación e inversión en esta área siga aumentando de forma considerable, \citep{chen2018}. 
+
 \subsection{Línea de trabajo del Monitoreo de Salud Estructural}
 
-\subsection{Métodos de identificación de daño}
+Los sistemas de SHM consisten de varios elementos que permiten a los ingenieros tener información sobre el estado de una estructura, entre esos elementos se encuentran:
 
-        \subsubsection{Basado en modelo}
+\begin{itemize}
+    \item Sensores.
+    \item Sistemas de adquisición de datos.
+    \item Sistema de transmisión de datos.
+    \item Sistema de procesamiento de datos.
+    \item Sistema de manejo y almacenamiento de datos.
+    \item Equipo de análisis y toma de decisiones.
+\end{itemize}
 
-        \subsubsection{Basado en respuesta}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = 0.9\textwidth]{imagenes/cap1_marcoteo/Schematics-of-an-on-line-structural-health-monitoring-system-and-technical-challenges.png}
+    \caption{Esquema de un sistema de SHM \citep{lijianfoto2015}.}
+    \label{fig:esquema_gral_SHM}
+\end{figure}
+
+
+Autores como \citet{rytter1993vibration} y \citet{farrar2007introduction} han esquematizado la estrategia del SHM categorizando el daño en una estructura por niveles de la siguiente forma:
+
+\begin{enumerate}
+    \item Nivel I (detección del daño) ¿Presenta daño el sistema? Es una indicación cualitativa de que puede haber daño presente en la estructura.
+    \item Nivel II (localización o ubicación del daño) ¿Dónde está presente el daño? Indica la posible localización del mismo. 
+    \item Nivel III (clasificación del daño) ¿Qué tipo de daño está presente? Da información sobre el tipo de daño.
+    \item Nivel IV (alcance/grado/extensión del daño) ¿Cuál es el alcance del daño? ¿Qué tan grave es? Da un estimado del alcance.
+    \item Nivel V (prognosis del daño) ¿Cuánta vida útil le queda a la estructura? Da un estimado de la seguridad de la estructura.
+\end{enumerate}
+
+En la mayoría de los casos, para alcanzar el nivel final es necesario obtener información sobre los niveles previos. Esto indica que a medida que se sube de nivel se tiene un mayor conocimiento sobre el estado de la estructura.
+
+De acuerdo a \citet{chen2018}, los primeros dos niveles, detección y localización, generalmente pueden alcanzarse usando métodos de detección basados en vibración para obtener mediciones sobre la respuesta dinámica de la estructura.
+
+Por su parte, \citet{chen2018} describe el proceso de SHM en general como:
+
+\begin{enumerate}
+    \item Observación.
+    \item Evaluación.
+    \item Calificación.
+    \item Gestión.
+\end{enumerate}
+
+La estrategia de Monitoreo de Salud Estructural podría resumirse en el siguiente diagrama:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = \textwidth]{imagenes/cap1_marcoteo/Diagrama SHM timeline.png}
+    \caption{Diagrama general del proceso de SHM.}
+    \label{fig:diag_SHM}
+\end{figure}
 
 \subsection{Criterios de evaluación}
 
+Como se definió anteriormente, el daño estructural puede tener distintas causas y formas. Lo que se sabe con certeza es que una estructura, una vez entra en funcionamiento, análogo a los seres humanos al nacer, estará sujeta a envejecimiento natural y a condiciones adversas. Ahora bien, en el caso del SHM, surge la siguiente pregunta ¿Qué se debe medir para poder detectar este daño?. 
+
+Numerosos autores concluyen que uno de los indicativos de daño de una estructura viene dado por los parámetros modales definidos anteriormente, frecuencia y amortiguamiento. Esta relación entre los parámetros modales y el daño viene dada por la premisa de que todo daño presente en la estructura se reflejará en un cambio en las propiedades dinámicas de la misma. \citet{worden2009modal}, comprobó la relación entre el cambio progresivo en todas las frecuencias naturales de 15 vigas estudiadas a las cuales se les introdujo un daño relacionado con un cambio del Módulo de Young, el cual, como fue mencionado anteriormente, provee un indicativo de la rigidez de un elemento.
+
+Anterioremente en la ecuación \ref{eq:vib_lib} se definió un sistema con un grado de libertad (DOF por sus siglas en ingles), sin embargo, en la realidad las estructuras tienen múltiples grados de libertad, por lo que es conveniente modelarlas de estar forma para obtener resultados más precisos. En el caso de los sistemas \textit{n-dregrees of freedom} (DOF por sus siglas en ingles), la ecuacion de movimiento que describe la dinámica del sistema en vibración libre vendrá dada por:
+
+\begin{equation} \label{eq:ecu_movimiento}
+    M\ddot{u} + C\dot{u} + Ku = 0
+\end{equation}
+
+Donde M, C y K representan las matrices de masa, amortiguamiento y rigidez de la estructura, respectivamente.
+
+Si se asume un sistema sin amortiguamiento, a fines de estudiar el efecto que tiene sobre la rigidez un cambio en los parámetros modales,  de la ecuación \ref{eq:ecu_movimiento} se obtiene: 
+
+\begin{equation} \label{eq:ecu_movimiento_sindamp}
+    M\ddot{u} + Ku = 0
+\end{equation}
+
+Si se asume una solución oscilatoria pura, por ser un sistema sin amortiguamiento:
+
+\begin{equation} \label{eq:sol_ecu_motion}
+    u = ve^{jwt}
+\end{equation}
+
+Al derivar, sustituir y despejar en la ecuación \ref{eq:ecu_movimiento_sindamp} se obtiene:
+
+\begin{equation} \label{eq:eig_problem}
+    (K - \lambda M)\phi = 0
+\end{equation}
+
+Esta ecuación \ref{eq:eig_problem} representa claramente un problema de autovalores, donde $\lambda$ representa los autovalores asociados a las frecuencias naturales del sistema y $\phi$ representa el autovector de desplazamiento.
+
+Si se introduce un pequeño cambio $\Delta K$ con perturbaciones similares en los otros parámetros:
+
+\begin{equation}
+    [(K - \Delta K) - (\lambda - \Delta\lambda)(M - \Delta M)](\phi - \Delta\phi) = 0
+\end{equation}
+
+El daño estructural suele venir asociado a un cambio en la rigidez, mas no a cambios en la masa de la estructura, por lo que se asume $\Delta M = 0$, \citep{hearn1991modal}. A su vez, se tiene que $(K - \lambda M)\phi = 0$. \citet{mohamed2014}, \citet{shi1998structural} y \citet{hearn1991modal} desarrollan estas ecuaciones obteniendo la siguiente relación:
+
+\begin{equation} \label{eq:relacion_final}
+    \Delta\lambda = \phi^T \Delta K \phi
+\end{equation}
+
+De la ecuación \ref{eq:relacion_final} se observa que cambios en los autovalores $\lambda$ que representan las frecuencias naturales, y en los autovectores $\phi$ (formas modales) están directamente relacionados con cambios en la matriz de rigidez (K) del sistema. De aquí surge el interés en monitorear los parámetros modales como indicadores de daño estructural. Es importante recalcar que estos cambios son indicativos de daño global, mas no de la localización del mismo, para lo que se necesitan otras técnicas, \citep{mohamed2014}.
+
 \subsection{Variables de interés}
+
+Tomando en cuenta la relación entre los parámetros modales y el daño presente en una estructura, es preciso definir las variables de interés para el monitoreo de la salud estructural de una estructura. Si bien existen distintas varibales que permiten obtener información valiosa sobre la estructura en estudio, algunas de estas no proporcionan información global del daño, como es el caso de las formas modales y la deflección local \citep{rytter1993vibration}. Sin embargo, estas mediciones proveen indicativos de la ubicación del daño, por lo que pueden constituir parte del sistema de monitoreo en una etapa más avanzada, es decir, una vez el daño fue detectado. A continuación se presentan las más relevantes para el daño global:
+
+    \begin{itemize}
+        \item Frecuencias naturales y amortiguamiento: Los parametros modales de la estructura están ligados de forma directa al estado de la misma. El deterioro en una edificiación induce cambios en la rigidez estructural, como se observa claramente en la ecuación \ref{eq:relacion_final}. El daño puede tener efectos distintos en cada modo o cada frecuencia de vibración, por lo que es importante no ubicar los sensores sobre los nodos modales, ya que experimentos han demostrado la ineficacia en las mediciones. Usualmente, el daño se refleja como una disminución en las frecuencias naturales afectadas, aunque se han observado casos de aumento en la frecuencias de vibración en estructuras de concreto pretensado, \citep{rytter1993vibration}.
+        
+        A su vez, el amortiguamiento varía al introducir daño en la estructura, puesto que su capacidad de disipar energía se ve afectada. Usualmente, los investigadores observan un aumento en el amortiguamiento a medida que el daño aumenta, como se ha demostrado experimentalmente por autores como \citet{hearn1991modal} y \citet{rytter1993vibration}.
+
+        \item Temperatura y humedad: En los sistemas de monitoreo, la detección del daño estructural puede tomar períodos de tiempo considerables, durante los cuales las caracterpisticas sujetas a temperatura y humedad, causan cambios en la respuesta estructural.
+        
+        
+        
+        Es evidente que las condiciones climáticas contribuyen con el deterioro de las edificaciones. A pesar de esta conclusión, relacionar las condiciones climáticas con el daño introducido usando mediciones ambientales es difícil. La medición de estas variables de suele tomar en cuenta para poder cuantificar el cambio que producen estas condiciones en los demás indicadores de daño. \citet{rytter1993vibration} observó que la humedad y temperatura afectaban las mediciones de amortiguamiento. Por su parte, \citet{mohamed2014}, observó que las frecuencias naturales de barras y vigas disminuían a medida que aumentaba la temperatura. Cuando hay humedad, los puentes de hormigón absorben una cantidad considerable de humedad, lo que aumenta sus masas y altera sus frecuencias naturales, \citep{sohn2007effects}.
+
+        Es por estas razones, que autores como \citet{farrar2007introduction}, \citet{sohn2007effects} y \citet{mohamed2014} aconsejan tomar en cuenta las condiciones ambientales al monitorear una estructura.
+        
+        \item Inclinación y desplazamiento:
+        
+        
+    \end{itemize}
+    
 
 \subsection{Consideraciones y desafíos}
 
+\section{Sensores}
 
+\subsection{Definición y tipos de sensores}
+
+\subsection{Sensores de interés para el Monitoreo de Salud Estructural}
+
+    \begin{itemize}
+        \item Acelerómetros e Inclinómetros:
+        \item Desplazamiento:
+        \item Temperatura:
+        \item Humedad:
+    \end{itemize}
+
+\subsection{Sensores inteligentes}
+
+\section{Microcontroladores}

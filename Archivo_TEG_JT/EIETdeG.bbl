@@ -1,6 +1,30 @@
 \begin{thebibliography}{}
 
 \bibitem [\protect \citeauthoryear {%
+Abdo%
+}{%
+Abdo%
+}{%
+{\protect \APACyear {2014}}%
+}]{%
+mohamed2014}
+\APACinsertmetastar {%
+mohamed2014}%
+\begin{APACrefauthors}%
+Abdo, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2014}.
+\newblock
+\APACrefbtitle {Structural Health Monitoring, History, Applications and Future.
+  A Review Book} {Structural health monitoring, history, applications and
+  future. a review book}.
+\newblock
+\APACaddressPublisher{}{Open Science Publishers}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Balageas%
 , Fritzen%
 \BCBL {}\ \BBA {} G{\"u}emes%
@@ -46,6 +70,8 @@ Basset~Salom, L.%
 \newblock
 {\BBOQ}\APACrefatitle {An{\'a}lisis est{\'a}tico de estructuras planas}
   {An{\'a}lisis est{\'a}tico de estructuras planas}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Universitat Polit{\`e}cnica de Val{\`e}ncia}{}{}{}.
 \newblock
 \APAChowpublished {\url{oai:riunet.upv.es:10251/38538}}.
 \PrintBackRefs{\CurrentBib}
@@ -100,6 +126,33 @@ Chen, H\BHBI P.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Enckell%
+}{%
+Enckell%
+}{%
+{\protect \APACyear {2006}}%
+}]{%
+enckell2006structural}
+\APACinsertmetastar {%
+enckell2006structural}%
+\begin{APACrefauthors}%
+Enckell, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2006}.
+\unskip\
+\newblock
+\APACrefbtitle {Structural health monitoring using modern sensor technology:
+  long-term monitoring of the New {\AA}rsta Railway Bridge} {Structural health
+  monitoring using modern sensor technology: long-term monitoring of the new
+  {\aa}rsta railway bridge}\ \APACtypeAddressSchool {\BUPhD}{}{}.
+\unskip\
+\newblock
+\APACaddressSchool {}{KTH}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Farrar%
 \ \BBA {} Worden%
 }{%
@@ -124,6 +177,33 @@ Farrar, C\BPBI R.%
 \newblock
 \APACjournalVolNumPages{Philosophical Transactions of the Royal Society A:
   Mathematical, Physical and Engineering Sciences}{365}{1851}{303--315}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Hearn%
+\ \BBA {} Testa%
+}{%
+Hearn%
+\ \BBA {} Testa%
+}{%
+{\protect \APACyear {1991}}%
+}]{%
+hearn1991modal}
+\APACinsertmetastar {%
+hearn1991modal}%
+\begin{APACrefauthors}%
+Hearn, G.%
+\BCBT {}\ \BBA {} Testa, R\BPBI B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1991}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Modal analysis for damage detection in structures}
+  {Modal analysis for damage detection in structures}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of structural
+  engineering}{117}{10}{3042--3063}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -200,6 +280,36 @@ Irvine, T.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Li%
+, Deng%
+\BCBL {}\ \BBA {} Xie%
+}{%
+Li%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2015}}%
+}]{%
+lijianfoto2015}
+\APACinsertmetastar {%
+lijianfoto2015}%
+\begin{APACrefauthors}%
+Li, J.%
+, Deng, J.%
+\BCBL {}\ \BBA {} Xie, W.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{04}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Damage Detection with Streamlined Structural Health
+  Monitoring Data} {Damage detection with streamlined structural health
+  monitoring data}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Sensors}{15}{}{8832-8851}.
+\newblock
+\begin{APACrefDOI} \doi{10.3390/s150408832} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Nagayama%
 }{%
 Nagayama%
@@ -221,6 +331,109 @@ Nagayama, B\BPBI F., Tomonori y Spencer~Jr.%
 \newblock
 \APACjournalVolNumPages{Newmark Structural Engineering Laboratory Report Series
   001}{}{}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Rytter%
+}{%
+Rytter%
+}{%
+{\protect \APACyear {1993}}%
+}]{%
+rytter1993vibration}
+\APACinsertmetastar {%
+rytter1993vibration}%
+\begin{APACrefauthors}%
+Rytter, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1993}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Vibration based inspection of civil engineering
+  structures Ph. D} {Vibration based inspection of civil engineering structures
+  ph. d}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Aalborg University, Aalborg, Denmark}{}{}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Shi%
+, Law%
+\BCBL {}\ \BBA {} Zhang%
+}{%
+Shi%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1998}}%
+}]{%
+shi1998structural}
+\APACinsertmetastar {%
+shi1998structural}%
+\begin{APACrefauthors}%
+Shi, Z.%
+, Law, S.%
+\BCBL {}\ \BBA {} Zhang, L.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1998}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Structural damage localization from modal strain energy
+  change} {Structural damage localization from modal strain energy
+  change}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of sound and vibration}{218}{5}{825--844}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Sohn%
+}{%
+Sohn%
+}{%
+{\protect \APACyear {2007}}%
+}]{%
+sohn2007effects}
+\APACinsertmetastar {%
+sohn2007effects}%
+\begin{APACrefauthors}%
+Sohn, H.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2007}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Effects of environmental and operational variability on
+  structural health monitoring} {Effects of environmental and operational
+  variability on structural health monitoring}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Philosophical Transactions of the Royal Society A:
+  Mathematical, Physical and Engineering Sciences}{365}{1851}{539--560}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Worden%
+\ \BBA {} Friswell%
+}{%
+Worden%
+\ \BBA {} Friswell%
+}{%
+{\protect \APACyear {2009}}%
+}]{%
+worden2009modal}
+\APACinsertmetastar {%
+worden2009modal}%
+\begin{APACrefauthors}%
+Worden, K.%
+\BCBT {}\ \BBA {} Friswell, M\BPBI I.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2009}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Modal--vibration-based damage identification}
+  {Modal--vibration-based damage identification}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Encyclopedia of Structural Health Monitoring}{}{}{}.
 \PrintBackRefs{\CurrentBib}
 
 \end{thebibliography}
