@@ -40,7 +40,7 @@ La gran mayoría de los sistemas cuentan con una respuesta dinámica y estática
     \begin{figure}[H]
         \centering
         \includegraphics[width = 0.25\textwidth]{imagenes/cap1_marcoteo/modelo_masa_simple.png}
-        \caption{Modelo de masa concentrada de 1 grado de libertad \citet{hurtado2000}.}
+        \caption{Modelo de masa concentrada de 1 grado de libertad \citep{hurtado2000}.}
         \label{fig:masa_estructural}
     \end{figure}
 
@@ -133,7 +133,7 @@ Se ha observado que al estudiar el comportamiento de las estructuras luego de un
 
 \subsubsection{Importancia de la instrumentación} La instrumentación estructural permite medir y monitorear las acciones y respuestas estructurales ante distintos eventos. Esto proporciona datos en tiempo real sobre el comportamiento dinámico y estático de la estructura, como deformaciones, aceleraciones y desplazamientos, que son fundamentales para evaluar y verificar si la estructura cumple con los criterios de diseño sismoresistente establecidos en la norma.
 
-La instrumentación estructural ayuda a validar los modelos y suposiciones utilizados en el diseño estructural inicial. Al comparar los datos recopilados por la instrumentación durante un evento sísimco con las predicciones del modelo, es posible verificar si la estructura se comporta de acuerdo con las expectativas y si cumple con los criterios de seguridad establecidos en la normas.
+La instrumentación estructural ayuda a validar los modelos y suposiciones utilizados en el diseño estructural inicial. Al comparar los datos recopilados por la instrumentación durante un evento sísimco con las predicciones del modelo, es posible verificar si la estructura se comporta de acuerdo con las expectativas y si cumple con los criterios de seguridad establecidos en la norma.
 
 Además, el monitoreo continuo de la estructura permite conocer el estado actual de la misma, tema que representa la idea principal del Monitoreo de Salud Estructural, permitiendo a los ingenieros evaluar si se sigue cumpliendo con la norma para luego tomar decisiones y actuar en pro de la seguridad de la edificación.
 
@@ -270,13 +270,13 @@ Si se introduce un pequeño cambio $\Delta K$ con perturbaciones similares en lo
     [(K - \Delta K) - (\lambda - \Delta\lambda)(M - \Delta M)](\phi - \Delta\phi) = 0
 \end{equation}
 
-El daño estructural suele venir asociado a un cambio en la rigidez, mas no a cambios en la masa de la estructura, por lo que se asume $\Delta M = 0$, \citep{hearn1991modal}. A su vez, se tiene que $(K - \lambda M)\phi = 0$. \citet{mohamed2014}, \citet{shi1998structural} y \citet{hearn1991modal} desarrollan estas ecuaciones obteniendo la siguiente relación:
+El daño estructural suele venir asociado a un cambio en la rigidez, más no a cambios en la masa de la estructura, por lo que se asume $\Delta M = 0$, \citep{hearn1991modal}. A su vez, se tiene que $(K - \lambda M)\phi = 0$. \citet{mohamed2014}, \citet{shi1998structural} y \citet{hearn1991modal} desarrollan estas ecuaciones obteniendo la siguiente relación:
 
 \begin{equation} \label{eq:relacion_final}
     \Delta\lambda = \phi^T \Delta K \phi
 \end{equation}
 
-De la ecuación \ref{eq:relacion_final} se observa que cambios en los autovalores $\lambda$ que representan las frecuencias naturales, y en los autovectores $\phi$ (formas modales) están directamente relacionados con cambios en la matriz de rigidez (K) del sistema. De aquí surge el interés en monitorear los parámetros modales como indicadores de daño estructural. Es importante recalcar que estos cambios son indicativos de daño global, mas no de la localización del mismo, para lo que se necesitan otras técnicas, \citep{mohamed2014}.
+De la ecuación \ref{eq:relacion_final} se observa que cambios en los autovalores $\lambda$ que representan las frecuencias naturales, y en los autovectores $\phi$ (formas modales) están directamente relacionados con cambios en la matriz de rigidez (K) del sistema. De aquí surge el interés en monitorear los parámetros modales como indicadores de daño estructural. Es importante recalcar que estos cambios son indicativos de daño global, más no de la localización del mismo, para lo que se necesitan otras técnicas, \citep{mohamed2014}.
 
 \subsection{Variables de interés}
 
@@ -289,26 +289,35 @@ Tomando en cuenta la relación entre los parámetros modales y el daño presente
 
         \item Temperatura y humedad: En los sistemas de monitoreo, la detección del daño estructural puede tomar períodos de tiempo considerables, durante los cuales las caracterpisticas sujetas a temperatura y humedad, sufren cambios que afectan la respuesta estructural.
                 
-        Es evidente que las condiciones climáticas contribuyen con el deterioro de las edificaciones. A pesar de esta conclusión, relacionar las condiciones climáticas con el daño introducido usando mediciones ambientales es difícil. La medición de estas variables suele tomarse en cuenta para poder cuantificar el cambio que producen estas condiciones en los demás indicadores de daño. \citet{rytter1993vibration} observó que la humedad y temperatura afectaban las mediciones de amortiguamiento. Por su parte, \citet{mohamed2014}, observó que las frecuencias naturales de barras y vigas disminuían a medida que aumentaba la temperatura. A su vez, \citet{sohn2007effects} determinó que cuando hay humedad, los puentes de hormigón absorben una cantidad considerable de humedad, lo que aumenta sus masas y altera sus frecuencias naturales.
+        Es evidente que las condiciones climáticas contribuyen con el deterioro de las edificaciones. A pesar de esta conclusión, relacionar las condiciones climáticas con el daño introducido usando mediciones ambientales es difícil. La medición de estas variables suele tomarse en cuenta para poder cuantificar el cambio que producen estas condiciones en los demás indicadores de daño. \citet{rytter1993vibration} observó que la humedad y temperatura afectaban las mediciones de amortiguamiento. Por su parte, \citet{mohamed2014}, observó que las frecuencias naturales de barras y vigas disminuían a medida que aumentaba la temperatura. A su vez, \citet{sohn2007effects} determinó que cuando hay humedad presente en el ambiente, los puentes de hormigón absorben una cantidad considerable de esta, lo que aumenta sus masas y altera sus frecuencias naturales.
         
-        \item Inclinación y desplazamiento: n practical applications of structural monitoring, the most common is the measurement of linear displacements, which reflect in a very good and direct way the behavior of the structural element / structure or a part of the structure.
+        \item Inclinación y desplazamiento: Una de las variables más comunes en Sistemas de Monitoreo de Salud Estructural es el desplazamiento lineal, que refleja de forma directa el comportamiento de un elemento o estructura. Esta podría considerarse una variable de tipo estático, ya que a pesar de variar con el tiempo, es decir, depender de un componente dinámico como el viento o la carga vehicular, su interacción con el medio suele ser quasi-estática, causada por la carga estática de la estructura, efectos térmicos y asentamiento.
         
-        Inclinometers are used to measure inclination (tilt) of structural components due to distress in the system. For example, they are often utilised to assess fixity of bridge girders at supports and to monitor longterm movements of bridge piers, abutments and girders.
+        Los inclinómetros son utilizados en elementos estructurales para medir el desplazamiento lineal de un elemento respecto a una referencia. Suelen ser utilizados para dar una idea de la fijación que presentan los puentes en sus soportes o para monitorear a largo plazo el movimiento de estructuras sobre superficies propensas a deslizamientos.
 
-        Deflection is a very important index for bridge structures, because it not only affects driving comfort, but also reflects the overall response of the bridge. Various factors could contribute to deflection increase during bridge service life, such as concrete creep, steel corrosion, prestress loss, and crack growth. The increase of structural deflection, however, will in turn accelerate the damage accumulation process. Therefore, monitoring bridge deflection is of great significance in the field of structural health monitoring (SHM) to provide early warnings of possible structural changes, damage, or deterioration.
+        La deflección, que puede medirse haciendo uso de inclinómetros los cuales han generado un gran interés en la industria por su sensibilidad y bajo costo, es una variable muy importante a medirse en una estructura. La deflección puede ser consecuencia de la corrosión de los elementos de soporte, pérdida del pretensado o el crecimiento de grietas en el concreto. Es decir, a medida que la deflección aumenta se acelera la acumulación de daño, por tanto, medir esta variable puede proveer alertas tempranoas sobre posibles cambios estructurales o deterioro \citep{zhang2017bridge}.
 
-        In several industries during the last few decades, inclinometer sensors have been employed extensively. In fact, in the civil engineering sector, inclinometers were initially used for geotechnical purposes [80]. Improvements in sensor accuracy over time have made it possible to use inclinometers in other areas of civil engineering, such as monitoring the structural health of bridges [79].
-        
-
+        Autores como \citet{komarizadehasl2022development} destacan la medición de la inclinación en las últimas décadas en el sector de la Ingeniería Estructural, inicialmente con propósitos geotécnicos. Sin embargo, gracias a los avances tecnológicos en los sensores, se comenzó a emplear su uso en otras áres, sobre todo en el monitoreo de salud estructural.
 
     \end{itemize}
     
 
-\subsection{Consideraciones y desafíos}
-
 \section{Sensores}
 
-\subsection{Definición y tipos de sensores}
+\subsection{Definición}
+
+A device that measures a physical quantity and converts it into a signal which can be read by an observer or by an instrument. A sensor is a device, which responds to an input quantity by generating a functionally related output usually in the form of an electrical or optical signal.
+
+A sensor is a device that detects and responds to some type of input from the physical environment. The input can be light, heat, motion, moisture, pressure or any number of other environmental phenomena. The output is generally a signal that is converted to a human-readable display at the sensor location or transmitted electronically over a network for reading or further processing.
+
+\subsection{Características de los sensores}
+
+\begin{itemize}
+    \item Sensibilidad:
+    \item Precisión:
+    \item Resolución:
+    \item Rango:
+\end{itemize}
 
 \subsection{Sensores de interés para el Monitoreo de Salud Estructural}
 

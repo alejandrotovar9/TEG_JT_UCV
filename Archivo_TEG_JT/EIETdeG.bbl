@@ -280,6 +280,30 @@ Irvine, T.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Komarizadehasl%
+}{%
+Komarizadehasl%
+}{%
+{\protect \APACyear {2022}}%
+}]{%
+komarizadehasl2022development}
+\APACinsertmetastar {%
+komarizadehasl2022development}%
+\begin{APACrefauthors}%
+Komarizadehasl, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2022}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Development of low-cost sensors for structural health
+  monitoring applications} {Development of low-cost sensors for structural
+  health monitoring applications}.{\BBCQ}
+\newblock
+\begin{APACrefURL} \url{http://hdl.handle.net/2117/379464} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Li%
 , Deng%
 \BCBL {}\ \BBA {} Xie%
@@ -434,6 +458,34 @@ Worden, K.%
   {Modal--vibration-based damage identification}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Encyclopedia of Structural Health Monitoring}{}{}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Zhang%
+, Sun%
+\BCBL {}\ \BBA {} Sun%
+}{%
+Zhang%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2017}}%
+}]{%
+zhang2017bridge}
+\APACinsertmetastar {%
+zhang2017bridge}%
+\begin{APACrefauthors}%
+Zhang, W.%
+, Sun, L.%
+\BCBL {}\ \BBA {} Sun, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Bridge-deflection estimation through inclinometer data
+  considering structural damages} {Bridge-deflection estimation through
+  inclinometer data considering structural damages}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Bridge Engineering}{22}{2}{04016117}.
 \PrintBackRefs{\CurrentBib}
 
 \end{thebibliography}
