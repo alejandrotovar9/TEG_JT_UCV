@@ -306,28 +306,85 @@ Tomando en cuenta la relación entre los parámetros modales y el daño presente
 
 \subsection{Definición}
 
-A device that measures a physical quantity and converts it into a signal which can be read by an observer or by an instrument. A sensor is a device, which responds to an input quantity by generating a functionally related output usually in the form of an electrical or optical signal.
+Los sensores son dispositivos capaces de detectar un parámetro físico y responder a la entrada de este fenómeno físico con una señal, usualmente eléctrica, que puede ser medida y transmitida. Usualmente se clasifican según la variable a medir, por el tipo de señal que emiten (digital o analógica, en el caso de señales eléctricas) y por su interacción con la variable a medir, siendo los activos los que generan una señal para obtener la medición y los pasivos los que responden a los cambios del medio físico. Son la base principal de todo sistema de instrumentación al representar el vínculo entre los variables físicas que se desean medir y el ser humano, cuyas capacidades sensoriales no están diseñadas para medir ciertas variables y mucho menos tomar valores y registros de las mismas.
 
-A sensor is a device that detects and responds to some type of input from the physical environment. The input can be light, heat, motion, moisture, pressure or any number of other environmental phenomena. The output is generally a signal that is converted to a human-readable display at the sensor location or transmitted electronically over a network for reading or further processing.
 
 \subsection{Características de los sensores}
 
 \begin{itemize}
-    \item Sensibilidad:
-    \item Precisión:
-    \item Resolución:
-    \item Rango:
+    \item Sensibilidad: Razón entre el incremento en la señal de salida del sensor y la variación en la variable medida.
+    \item Resolución: Representa la variación mínima de la variable a medir que puede ser detectada por el sensor.
+    \item Rango: Representa el conjunto de valores comprendidos entre el límite superior e inferior de la capacidad del instrumento de medición. Este espectro suele reprensentarse mediante los valores extremos.
+    \item Temperatura de operación: Rango de temperaturas dentro del cual el comportamiento del sensor es el esperado dentro de un límite de error.
+    \item Frecuencia de respuesta o ancho de banda: Rango de valores en el espectro de frecuencia dentro de los cuales los sensores son capaces de obtener mediciones de la variable de interés. Esta característica es particularmente importante en ensayos de vibración y ensayos dinámicos.
 \end{itemize}
 
 \subsection{Sensores de interés para el Monitoreo de Salud Estructural}
 
+En el campo de la monitorización de salud estructural (SHM), existen varios tipos de sensores que se utilizan comúnmente. Algunos de los sensores más utilizados en SHM son los siguientes:
+
     \begin{itemize}
-        \item Acelerómetros e Inclinómetros:
-        \item Desplazamiento:
-        \item Temperatura:
-        \item Humedad:
+        \item Acelerómetros e Inclinómetros.
+        \item Desplazamiento o deformación.
+        \item Temperatura 
+        \item Humedad.
     \end{itemize}
 
-\subsection{Sensores inteligentes}
+\section{Sensores inteligentes}
 
-\section{Microcontroladores}
+\subsection{Definición:}
+
+Si bien los sensores por sí mismos han permitido un rápido y sostenido desarrollo en todos los ámbitos de la instrumentación en distintas áreas de la industria, el advenimiento de la era digital y la miniaturización de los componentes ha impulsado cambios en la manera en la que se mide hoy en día. Con el poder de cómputo actual, los sensores aumentan sus capacidades cuando son parte de un sistema más grande capaz de procesar la información que estos proveen.
+
+
+
+Un sensor inteligente es un sistema en donde uno o varios sensores y una interfaz electrónica dedicada trabajan en conjunto. La tecnología empleada para llevar a cabo estos sistemas ha avanzado rápidamente en años recientes, lográndose obtener sistemas de un solo chip para medir temperatura o campo magnético \citep{nagayama2007structural}.
+
+
+El término sensor inteligente o \textit{"smart sensor"} surgió a mediados de los años 80. La "inteligencia" de estos dispositivos viene dada por un microcontrolador (MCU), un procesador de señales digitales (DSP) y circuitos de aplicación específica \citep{frank2002understanding}. Posteriormente, en el año 1998, la \textit{IEEE} en su estándar \textit{Networked smart transducer interface standard 1451} definió un \textit{"smart sensor"} como un transductor que provee funciones más allá de las necesarias para generar y representar una cantidad medida.
+
+%COMO CITAR UN ESTANDAR DE LA IEEE???
+
+\subsection{Características:}
+
+Un sensor inteligente suele tener 5 características esenciales, las cuales se resumen a continuación:
+
+\begin{itemize}
+    \item Microprocesador integrado: El microprocesador es lo que diferencia un sensore compun de un sensor inteligente, siendo este el encargado de hacer los cálculos necesarios, guardar los datos de forma local, enviar resultados y coordinar las tareas a ejecutarse. 
+    
+    \item Capacidades de medición: La principal característica de un sensor es su capacidad de convertidar una variable física en algún tipo de señal que pueda ser posteriormente procesada, en este caso por el microprocesador integrado, siendo el sensor el vínculo entre el procesador y los fenómenos físicos de interés. Un sensor inteligente, también llamado nodo, puede constar de varios sensores que miden distintas variables.
+    
+    \item Comunicación inalámbrica: en gran medida, se busca que los sensores inteligentes sean capaces de reemplazar los actuales sistemas de medición cableados, permitiendo esto la expansión del sistema de medición a un bajo costo, además de las capacidades de transmisión que ofrecen alternativas como laser, infrarrojo, o incluso ondas de radio y telefonía.
+    
+    \item Alimentación autónoma: Con frecuencia los sensores inteligentes son alimentados de forma autónoma como baterías, en particular en aplicaciones de difícil acceso, como es el caso de algunas estructuras civiles. Si bien esto representa un desafío, la logística y los requerimientos asociados a conectar todo un sistema mallado de sensores a la red eléctrica atenta en contra de la facilidad de instalación y mantenimiento de un sistema inteligente.
+    
+    \item Bajo costo: Una de las características más importantes que se busca obtener al hacer uso de sistemas basados en sensores inteligentes es reducir los distintos costos generados por un sistema basado en sensores comunes. Tecnologías como MEMS (Micro electro-mechanical systems) han logrado reducir de forma considerable el tamaño y el costo por su producción en masa basada en semiconductores. Esta característca permite que redes densas de sensores sean implementadas en estructuras civiles.
+\end{itemize}
+
+
+
+\section{Microcontroladores (MCU)}
+
+\subsection{Definición y características}
+
+\subsection{Uso en aplicaciones de Monitoreo de Salud Estructural}
+
+\subsection{Placas de desarrollo}
+
+
+
+\section{Monitoreo}
+
+\subsection{Monitoreo cableado}
+
+\subsection{Monitoreo inalámbrico}
+
+
+
+\section{Sistemas de adquisición de datos (DAQ)}
+
+\subsection{Definición y esquema general}
+
+\subsection{Acondicionamiento de señales}
+
+\subsection{DAQ basados en MCU}

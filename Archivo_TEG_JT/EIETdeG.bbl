@@ -180,6 +180,29 @@ Farrar, C\BPBI R.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Frank%
+}{%
+Frank%
+}{%
+{\protect \APACyear {2002}}%
+}]{%
+frank2002understanding}
+\APACinsertmetastar {%
+frank2002understanding}%
+\begin{APACrefauthors}%
+Frank, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2002}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Understanding Smart Sensors 2nd edn} {Understanding
+  smart sensors 2nd edn}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Measurement Science and Technology}{13}{9}{1501--1502}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Hearn%
 \ \BBA {} Testa%
 }{%
@@ -299,6 +322,8 @@ Komarizadehasl, S.%
 {\BBOQ}\APACrefatitle {Development of low-cost sensors for structural health
   monitoring applications} {Development of low-cost sensors for structural
   health monitoring applications}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Sensors}{}{}{}.
 \newblock
 \begin{APACrefURL} \url{http://hdl.handle.net/2117/379464} \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
