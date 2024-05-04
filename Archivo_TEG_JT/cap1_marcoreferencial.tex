@@ -1,12 +1,73 @@
 \section{Planteamiento del problema}
 
+La seguridad en las estructuras es un tema crítico en la ingeniería, especialmente en lo que respecta a estructuras críticas como edificios y puentes. A medida que el tiempo pasa, estas estructuras pueden deteriorarse y presentar fallas que pueden poner en riesgo la vida de las personas que las utilizan. Por lo tanto, es fundamental contar con sistemas de monitoreo que permitan detectar posibles problemas en las estructuras y tomar medidas preventivas.
+
+Sin embargo, la mayoría de los sistemas de monitoreo de estructuras disponibles en el mercado son costosos y no están diseñados específicamente para aplicaciones de salud estructural. Además, muchos de estos sistemas no tienen capacidad para admitir comunicación inalámbrica, lo que limita su aplicación en estructuras de gran tamaño o en áreas de difícil acceso, además de los costos asociados a un sistema de cableado fiable que no perturbe las mediciones.
+
 \section{Justificación}
+
+
+Un sensor inteligente que conste de un sistema de adquisición de datos basado en un microcontrolador que recolecte y procese la información adquirida en conjunto con varios sensores dispuestos en un solo dispositivo permite realizar la medición de variables ambientales y mecánicas de interés en aplicaciones de salud estructural a un bajo costo; además, un sistema de este tipo es flexible en cuanto a las variables a medir, puesto que es compatible con distintos tipos de sensores y métodos de comunicación a utilizarse, permitiendo crear soluciones canalizadas a proyectos en específico, logrando disminuir costos y contribuir de una forma más eficaz al proceso de toma de decisiones estructurales.
+
+Existe variedad en cuanto al hardware de bajo costo que puede utilizarse para la implementación de un prototipo del sistema, lo que ofrece una alternativa atractiva a los sistemas de adquisición actuales, además de la capacidad de transmisión que ofrecen las redes de larga distancia disponibles en conjunto con las capacidades de los microcontroladores, permitiendo que la estación base pueda ubicarse lejos de la estructura.
+
+Para lograr medir todas estas variables en tiempo real es conveniente contar con uno o más microcontroladores capaces de gestionar toda esta información, sin dejar de lado la confiabilidad en la adquisición de estos datos y que a su vez sea capaz de emplear las herramientas necesarias para comunicar estos datos de forma inalámbrica.
+
+Sabiendo esto, existe una necesidad clara de desarrollar un sistema de adquisición de datos y monitoreo inalámbrico de bajo costo para aplicaciones de salud estructural que permita reducir la acción humana, minimizando el error humano y los recursos necesarios, aumentando a su vez la confiabilidad y la seguridad; con este desarrollo se busca verificar que el desempeño de la estructura se encuentra entre los rangos establecidos, y en caso contrario notificarlas con el objetivo de garantizar la seguridad de las personas, mediante la realización de un plan de mantenimiento preventivo y correctivo.
+
 
 \section{Objetivos}
 
 \subsection{Objetivo general}
 
+Diseñar un sensor inteligente para aplicaciones de monitoreo de salud estructural.
+
 \subsection{Objetivos específicos}
 
+\begin{enumerate}
+
+	\item Documentar las principales características y la importancia del monitoreo para aplicaciones de salud estructural.
+
+	\item Documentar los principales métodos de recolección de datos soportados por los sensores necesarios para la medición de las variables de interés.
+
+	\item Evaluar y proponer el protocolo de comunicación que permita el envío fiable de los datos recolectados por el sensor.
+
+	\item Seleccionar el hardware adecuado tanto sensores como microcontroladores para la implementación futura del sistema.
+
+	\item Diseñar el módulo de programa encargado de la recolección y almacenamiento de los datos provenientes de los sensores.
+
+	\item Desarrollar el módulo de programa encargado de la comunicación de los datos usando la plataforma escogida.
+	
+	\item Desarrollar una aplicación para el monitoreo y ajuste del sensor inteligente.
+
+	\item Validar el funcionamiento del sistema haciendo uso de un prototipo de pruebas.
+
+\end{enumerate}
+
 \section{Antecedentes}
+
+La implementación de microcontroladores para sistemas de adquisición de datos es un tema que se ha desarrollado en múltiples aplicaciones. Muchas veces, se logran desarrollar soluciones que permiten disminuir costos sin que eso afecte la calidad de las mediciones. Las soluciones que se tomarán como referencia lograron: Desarrollar sistemas de adquisición de datos basados en microcontroladores para la medición de variables físicas. Además, se han logrado crear redes de sensores inteligentes que permiten facilitar el envío de los datos de forma inalámbrica.
+
+
+El trabajo de \cite{federici2014design} en \textit{"Design of Wireless Sensor Nodes for Structural Health Monitoring applications"} publicado en Procedia Engineering, aborda el diseño de redes de sensores inalámbricos para el monitoreo del estado de estructuras civiles, centrándose específicamente en el diseño de nodos en relación con los requisitos de diferentes clases de aplicaciones de monitoreo estructural.
+Los problemas de diseño se analizan con referencia específica a una configuración experimental a gran escala (el monitoreo estructural a largo plazo de la Basílica S. Maria di Collemaggio, L'Aquila, Italia). Se destacaron las principales limitaciones que surgieron y se esbozan las estrategias de solución adoptadas, tanto en el caso de la plataforma de detección comercial como de las soluciones totalmente personalizadas. Se revisan las opciones para el diseño y despliegue del sistema de monitoreo, tanto en el caso de la selección de plataformas comerciales como en el caso del desarrollo de plataformas a la medida. El análisis de los registros llevó a importantes consideraciones en la integridad estructural y seguridad, y permitió la identificación de los parámetros modales de la estructura.
+
+En cuanto al desarrollo realizado por \cite{komarizadehasl2022development} en \textit{"Development of Low-Cost Sensors for Structural Health Monitoring Applications"}, el ingeniero Komarizadehasl propone cuatro sistemas de monitorización de alta precisión y bajo coste.
+En primer lugar, para medir correctamente las respuestas estructurales, se desarrolla el \textit{Cost Hyper-Efficient Arduino Product} (CHEAP). CHEAP es un sistema compuesto por cinco acelerómetros sincronizados de bajo coste conectados a un microcontrolador Arduino que hace el papel de dispositivo de recogida de datos. Para validar su rendimiento, se efectuaron unos experimentos de laboratorio y sus resultados se compararon con los de dos acelerómetros de alta precisión (PCB393A03 y PCB 356B18). Se concluye que CHEAP puede usarse para Monitoreo de Salud Estructural en estructuras convencionales con frecuencias naturales bajas cuando se cuente con presupuestos de monitoreo escasos. 
+
+En segundo lugar, se presenta un inclinómetro de bajo coste, un \textit{Low-cost Adaptable Reliable Angle-meter} (LARA), que mide la inclinación mediante la fusión de distintos sensores: cinco giroscopios y cinco acelerómetros. LARA combina un microcontrolador basado en la tecnología del Internet de las Cosas (\textit{NODEMCU}), que permite la transmisión inalámbrica de datos, y un software comercial gratuito para la recogida de datos (\textit{SerialPlot}). Para confirmar la precisión y resolución de este dispositivo, se compararon sus mediciones en condiciones de laboratorio con las teóricas y con las de un inclinómetro comercial (\textit{HI-INC}). Los resultados de laboratorio de una prueba de carga en una viga demuestran la notable precisión de LARA. Se concluye que la precisión de LARA es suficiente para su aplicación en la detección de daños en puentes.
+
+En tercer lugar, también se dilucida el efecto de la combinación de sensores de rango similar para investigar el aumento de la precisión y la mitigación de los ruidos ambientales. Para investigar la teoría de la combinación de sensores, el ingeniero Komarizadehasl, propone un equipo de medición compuesto por 75 sensores para la medición de distancias acoplados a dos microcontroladores de Arduino. Los 75 sensores son 25 HC-SR04 (analógicos), 25 VL53L0X (digitales) y 25 VL53L1X (digitales). Los resultados muestran que promediando la salida de varios sensores sin calibrar, la precisión en la estimación de distancia aumenta considerablemente.
+
+El último sistema propuesto por Komarizadehasl presenta un novedoso y versátil sistema de adquisición de datos a distancia que permite el registro del tiempo con una resolución de microsegundos para la sincronización posterior de las lecturas de los sensores inalámbricos situados en diversos puntos de una estructura. Esta funcionalidad es lo que permitiría su aplicación a pruebas de carga estáticas, quasi-estaticas o al análisis modal de las estructuras.
+
+\cite{muttillo2019structural} en su trabajo \textit{"Structural health continuous monitoring of buildings - A modal parameters identification system"} propone en su tesis el diseño de un Sistema de Monitoreo de la Salud Estructural (\textit{Structural Health Monitoring}) para monitorear y comprobar continuamente el comportamiento estructural a lo largo de la vida útil del edificio. El sistema, compuesto por un datalogger personalizado y dispositivos esclavos, permite el monitoreo continuo de la aceleración de la estructura gracias a su facilidad de instalación y bajo coste. El sistema propuesto se basa principalmente en un microcontrolador que: 
+
+\begin{itemize}
+	\item Se comunica con los nodos a través del bus RS485, 
+	\item Sincroniza las muestras de adquisición
+	\item Adquiere los datos medidos por los nodos.
+\end{itemize} 
+
+El sistema fue probado en una estructura de aluminio en voladizo, a través de tres campañas experimentales diferentes y los datos medidos, recogidos en una memoria interna del \textit{datalogger}, fueron post-procesados a través de \textit{Matlab}. Los resultados permitieron evaluar con éxito los parámetros modales (frecuencias, amortiguamiento y formas modales) de la estructura analizada y su estado de salud.
 

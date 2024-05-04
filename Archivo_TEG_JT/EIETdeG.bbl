@@ -25,6 +25,86 @@ Abdo, M.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Alfaifi%
+\ \BBA {} Zaman%
+}{%
+Alfaifi%
+\ \BBA {} Zaman%
+}{%
+{\protect \APACyear {2021}}%
+}]{%
+alfaifi2021mems}
+\APACinsertmetastar {%
+alfaifi2021mems}%
+\begin{APACrefauthors}%
+Alfaifi, A.%
+\BCBT {}\ \BBA {} Zaman, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {MEMS Humidity Sensors} {Mems humidity sensors}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Humidity Sensors-Types and Applications}{}{}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Aloufi%
+, Alhazmi%
+\BCBL {}\ \protect \BOthers {.}}{%
+Aloufi%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2020}}%
+}]{%
+aloufi2020hybrid}
+\APACinsertmetastar {%
+aloufi2020hybrid}%
+\begin{APACrefauthors}%
+Aloufi, K\BPBI S.%
+, Alhazmi, O\BPBI H.%
+\BCBL {}\ \BOthersPeriod {.}\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A hybrid IoT security model of MQTT and UMA} {A hybrid
+  iot security model of mqtt and uma}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Communications and Network}{12}{04}{155}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Andresen%
+, Bäger%
+\BCBL {}\ \BBA {} Hamm%
+}{%
+Andresen%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2019}}%
+}]{%
+potenciamitad2019}
+\APACinsertmetastar {%
+potenciamitad2019}%
+\begin{APACrefauthors}%
+Andresen, S.%
+, Bäger, A.%
+\BCBL {}\ \BBA {} Hamm, C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{10}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Eigenfrequency maximisation by using irregular lattice
+  structures} {Eigenfrequency maximisation by using irregular lattice
+  structures}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Sound and Vibration}{465}{}{115027}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.jsv.2019.115027} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Balageas%
 , Fritzen%
 \BCBL {}\ \BBA {} G{\"u}emes%
@@ -126,6 +206,57 @@ Chen, H\BHBI P.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+{Comisión Nacional de Telecomunicaciones}%
+}{%
+{Comisión Nacional de Telecomunicaciones}%
+}{%
+{\protect \APACyear {2010}}%
+}]{%
+conatel}
+\APACinsertmetastar {%
+conatel}%
+\begin{APACrefauthors}%
+{Comisión Nacional de Telecomunicaciones}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2010}{}{}.
+\newblock
+\APACrefbtitle {{REFORMA DE LAS CONDICIONES PARA LA CALIFICACIÓN DE LOS
+  EQUIPOS DE USO LIBRE}.} {{REFORMA DE LAS CONDICIONES PARA LA CALIFICACIÓN DE
+  LOS EQUIPOS DE USO LIBRE}.}
+\newblock
+\APAChowpublished {Standard}.
+\newblock
+\begin{APACrefURL}
+  \url{http://www.conatel.gob.ve/files/consulta/2011/2_PA_EUL_CP_PROYECTO_WEB.pdf}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Dunn%
+}{%
+Dunn%
+}{%
+{\protect \APACyear {2005}}%
+}]{%
+dunn2005introduction}
+\APACinsertmetastar {%
+dunn2005introduction}%
+\begin{APACrefauthors}%
+Dunn, W.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2005}.
+\newblock
+\APACrefbtitle {Introduction to instrumentation, sensors, and process control}
+  {Introduction to instrumentation, sensors, and process control}.
+\newblock
+\APACaddressPublisher{}{Artech}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Enckell%
 }{%
 Enckell%
@@ -180,6 +311,60 @@ Farrar, C\BPBI R.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Federici%
+}{%
+Federici%
+}{%
+{\protect \APACyear {2014}}%
+}]{%
+federici2014design}
+\APACinsertmetastar {%
+federici2014design}%
+\begin{APACrefauthors}%
+Federici, R., Fabio y~Alesii.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Design of wireless sensor nodes for structural health
+  monitoring applications} {Design of wireless sensor nodes for structural
+  health monitoring applications}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Procedia Engineering}{87}{}{1298--1301}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Francone%
+, Domenicali%
+\BCBL {}\ \BBA {} Di~Benedetto%
+}{%
+Francone%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2006}}%
+}]{%
+windowing2006}
+\APACinsertmetastar {%
+windowing2006}%
+\begin{APACrefauthors}%
+Francone, M.%
+, Domenicali, D.%
+\BCBL {}\ \BBA {} Di~Benedetto, M\BHBI G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2006}{12}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Time-varying interference spectral analysis for
+  Cognitive UWB networks} {Time-varying interference spectral analysis for
+  cognitive uwb networks}.{\BBCQ}
+\newblock
+\BIn{} (\BPG~3205 - 3210).
+\newblock
+\begin{APACrefDOI} \doi{10.1109/IECON.2006.348076} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Frank%
 }{%
 Frank%
@@ -200,6 +385,54 @@ Frank, R.%
   smart sensors 2nd edn}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Measurement Science and Technology}{13}{9}{1501--1502}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Fritzen%
+}{%
+Fritzen%
+}{%
+{\protect \APACyear {2005}}%
+}]{%
+fritzen2005vibration}
+\APACinsertmetastar {%
+fritzen2005vibration}%
+\begin{APACrefauthors}%
+Fritzen, C\BPBI P.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2005}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Vibration-based structural health monitoring--concepts
+  and applications} {Vibration-based structural health monitoring--concepts and
+  applications}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Key Engineering Materials}{293}{}{3--20}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+García-Fernandez%
+}{%
+García-Fernandez%
+}{%
+{\protect \APACyear {2023}}%
+}]{%
+garcia2023review}
+\APACinsertmetastar {%
+garcia2023review}%
+\begin{APACrefauthors}%
+García-Fernandez, M., Natalia y~Aenlle.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2023}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A review on fatigue monitoring of structures} {A review
+  on fatigue monitoring of structures}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{International Journal of Structural
+  Integrity}{14}{2}{133--165}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -303,6 +536,62 @@ Irvine, T.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Jin%
+, Jeong%
+\BCBL {}\ \BBA {} Sim%
+}{%
+Jin%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2021}}%
+}]{%
+peakpicking2021}
+\APACinsertmetastar {%
+peakpicking2021}%
+\begin{APACrefauthors}%
+Jin, S\BHBI S.%
+, Jeong, S.%
+\BCBL {}\ \BBA {} Sim.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{06}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Fully automated peak-picking method for an autonomous
+  stay-cable monitoring system in cable-stayed bridges} {Fully automated
+  peak-picking method for an autonomous stay-cable monitoring system in
+  cable-stayed bridges}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Automation in Construction}{126}{}{103628}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.autcon.2021.103628} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Khorsandi%
+\ \BBA {} Jalalizad%
+}{%
+Khorsandi%
+\ \BBA {} Jalalizad%
+}{%
+{\protect \APACyear {2023}}%
+}]{%
+khorsandi2023performance}
+\APACinsertmetastar {%
+khorsandi2023performance}%
+\begin{APACrefauthors}%
+Khorsandi, K.%
+\BCBT {}\ \BBA {} Jalalizad, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2023}{}{}.
+\newblock
+\APACrefbtitle {Performance Evaluation of LoRa networks for Air-to-Ground
+  Communications.} {Performance evaluation of lora networks for air-to-ground
+  communications.}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Komarizadehasl%
 }{%
 Komarizadehasl%
@@ -359,6 +648,57 @@ Li, J.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Montagny%
+}{%
+Montagny%
+}{%
+{\protect \APACyear {2021}}%
+}]{%
+montagny2021lora}
+\APACinsertmetastar {%
+montagny2021lora}%
+\begin{APACrefauthors}%
+Montagny, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {LoRa--LoRaWAN and Internet of Things} {Lora--lorawan and
+  internet of things}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Universit{\'e} Savoie Mont Blanc. Available on:
+  https://www. univ-smb. fr/lorawan/en/free-book/.(Accessed on 23.03.
+  2022)}{}{}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Muttillo%
+}{%
+Muttillo%
+}{%
+{\protect \APACyear {2019}}%
+}]{%
+muttillo2019structural}
+\APACinsertmetastar {%
+muttillo2019structural}%
+\begin{APACrefauthors}%
+Muttillo, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Structural health continuous monitoring of buildings--A
+  modal parameters identification system} {Structural health continuous
+  monitoring of buildings--a modal parameters identification system}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {2019 4th International Conference on Smart and
+  Sustainable Technologies (SpliTech)} {2019 4th international conference on
+  smart and sustainable technologies (splitech)}\ (\BPGS\ 1--4).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Nagayama%
 }{%
 Nagayama%
@@ -380,6 +720,33 @@ Nagayama, B\BPBI F., Tomonori y Spencer~Jr.%
 \newblock
 \APACjournalVolNumPages{Newmark Structural Engineering Laboratory Report Series
   001}{}{}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Proakis%
+\ \BBA {} Manolaki%
+}{%
+Proakis%
+\ \BBA {} Manolaki%
+}{%
+{\protect \APACyear {1999}}%
+}]{%
+proakisDSP}
+\APACinsertmetastar {%
+proakisDSP}%
+\begin{APACrefauthors}%
+Proakis, J\BPBI G.%
+\BCBT {}\ \BBA {} Manolaki, D\BPBI G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1999}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Digital signal processing. Principles, algorithms, and
+  aplications} {Digital signal processing. principles, algorithms, and
+  aplications}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Computer Science and Technology}{1}{1}{1}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -432,6 +799,33 @@ Shi, Z.%
   change}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Journal of sound and vibration}{218}{5}{825--844}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Siemens%
+}{%
+Siemens%
+}{%
+{\protect \APACyear {2019}}%
+}]{%
+siemens2019}
+\APACinsertmetastar {%
+siemens2019}%
+\begin{APACrefauthors}%
+Siemens.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{}{}.
+\newblock
+\APACrefbtitle {What is the Fourier Transform?} {What is the fourier
+  transform?}
+\newblock
+\begin{APACrefURL}
+  \url{https://community.sw.siemens.com/s/article/what-is-the-fourier-transform}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{Consultado: 04/05/2024}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

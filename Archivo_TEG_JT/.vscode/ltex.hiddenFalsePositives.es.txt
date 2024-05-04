@@ -1,0 +1,17 @@
+{"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\QAlgunos ejemplos importantes son los edificios, los puentes y las torres; y en otras ramas de la ingeniería, son importantes las corazas de barcos y aviones, los sistemas mecánicos y las estructuras que soportan las líneas de transmisión eléctrica \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"Y_E_O_U","sentence":"^\\QDonde \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q representa las cargas dinámicas y \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q la fuerza de restitución propia de un material elástico.\\E$"}
+{"rule":"SPANISH_WORD_REPEAT_BEGINNING_RULE","sentence":"^\\QSistema de manejo y almacenamiento de datos.\\E$"}
+{"rule":"ES_SIMPLE_REPLACE","sentence":"^\\QPosteriormente, en el año 1998, el IEEE en su estándar Networked smart transducer interface standard 1451 definió un \"smart sensor\" como un transductor que provee funciones más allá de las necesarias para generar y representar una cantidad medida.\\E$"}
+{"rule":"INCORRECT_SPACES","sentence":"^\\Q0.9 ! Monitoreo Ventajas Desventajas Cableado Confiabilidad.\\E$"}
+{"rule":"AGREEMENT_PARTICIPLE_NOUN","sentence":"^\\Q0.9 ! Monitoreo Ventajas Desventajas Cableado Confiabilidad.\\E$"}
+{"rule":"Y_E_O_U","sentence":"^\\QConsiste en estudiar el espectro de potencia y ubicar los valores en los cuales la potencia de la señal se reduce a la mitad, en el caso de la figura \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q, estas frecuencias serían \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q y \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q, siendo la diferencia entre ambos \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q y la frecuencia central \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"SUBJUNTIVO_PASADO","sentence":"^\\QAn introduction to frequency response functions\\E$"}
+{"rule":"SUBJUNTIVO_PASADO","sentence":"^\\QA review on fatigue monitoring of structures\\E$"}
+{"rule":"SUBJUNTIVO_PASADO","sentence":"^\\QAn introduction to frequency response functions\\E$"}
+{"rule":"SUBJUNTIVO_PASADO","sentence":"^\\QAn introduction to frequency response functions\\E$"}
+{"rule":"ES_QUESTION_MARK","sentence":"^\\Q\"What is the Fourier Transform?\"\\E$"}
+{"rule":"ES_QUESTION_MARK","sentence":"^\\QWhat is the fast Fourier transform?\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qx[n] = Muestra \"n\" de la señal de entrada.\\E$"}
+{"rule":"ES_SIMPLE_REPLACE","sentence":"^\\QSe basa en el estándar LoRaWAN (LoRa Wide Area Network) y utiliza una modulación de espectro ensanchado para lograr una mayor cobertura y capacidad de penetración en comparación con otras tecnologías inalámbricas.\\E$"}
+{"rule":"ES_SIMPLE_REPLACE","sentence":"^\\QSuelen confundirse los términos LoRa y LoRaWAN (Long Range Wide Area Network).\\E$"}
+{"rule":"ES_UNPAIRED_BRACKETS","sentence":"^\\Qfr/lorawan/en/free-book/.(Accessed on 23.03.\\E$"}
