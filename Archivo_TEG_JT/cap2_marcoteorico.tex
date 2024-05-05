@@ -432,7 +432,14 @@ Entre las características principales de un RTOS se encuentran:
 
 En aplicaciones basadas en microcontroladores rara vez se requiere una implementación completa de un RTOS, por las restricciones de memoria de los mismos. Es por esto que FreeRTOS implementó un sistema enfocado en la sincronización, funcionalidades de comunicación entre tareas y planificación de tareas. Este RTOS incluye además distintas librerías que expanden sus funciones y mejoran la experiencia de uso.
 
+La arquitectura de un sistema basado en FreeRTOs se muestra en la figura \ref{fig:rtos}:
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = 0.7\textwidth]{imagenes/cap1_marcoteo/FreeRTOSArch.png}
+    \caption{Arquitectura de sistema embebido basado en FreeRTOS \citep{rtos}.}
+    \label{fig:rtos}
+\end{figure}
 
 %SENSORES
 \section{Sensores}
@@ -533,6 +540,37 @@ En el campo de la monitorización de salud estructural (SHM), existen varios tip
         \end{itemize}
 
     \end{itemize}
+
+\subsection{Fusión de sensores}
+\label{subsec:sensorfusion}
+
+\subsubsection{Estimación de ángulos}
+
+\begin{itemize}
+    \item Integración de la medición del giróscopo:
+    \item Estimación por trigonometría
+	\item Filtro de Kalman:
+	\item Filtro de Madgwick:
+\end{itemize}
+
+REVISAR
+Los cuaterniones y el filtro de Madgwick son herramientas comúnmente utilizadas en la estimación de la orientación en sistemas de navegación inercial y aplicaciones de realidad virtual y aumentada. A continuación, se explica brevemente el uso de cuaterniones y el filtro de Madgwick:
+
+Cuaterniones:
+Los cuaterniones son una extensión de los números complejos y se utilizan para representar rotaciones en el espacio tridimensional. Un cuaternión se compone de cuatro componentes: una parte escalar (w) y tres partes vectoriales (x, y, z). La representación de un cuaternión se puede escribir como q = w + xi + yj + zk.
+
+La principal ventaja de los cuaterniones en comparación con otras representaciones de rotación, como las matrices de rotación, es su eficiencia computacional y su capacidad para evitar problemas como la gimbal lock (bloqueo de cardanes). Los cuaterniones también facilitan la interpolación y la combinación de rotaciones, lo que los hace especialmente útiles en sistemas de navegación y animaciones 3D.
+
+En el contexto de la estimación de la orientación, los cuaterniones se utilizan para representar la rotación del objeto en un espacio tridimensional. Se pueden combinar y actualizar utilizando operaciones algebraicas como la multiplicación de cuaterniones y la normalización para mantener la unicidad y la unidad del cuaternión.
+
+Filtro de Madgwick:
+El filtro de Madgwick es un algoritmo de fusión de sensores desarrollado por Sebastian Madgwick para estimar la orientación utilizando datos de sensores como giroscopios, acelerómetros y magnetómetros. El filtro de Madgwick es particularmente útil cuando se busca una solución computacionalmente eficiente y de baja latencia.
+
+El filtro de Madgwick se basa en la representación de la orientación mediante cuaterniones y utiliza los datos de los sensores para actualizar y refinar la estimación del cuaternión de orientación. El algoritmo utiliza una combinación de la información proporcionada por los giroscopios (para estimar la velocidad angular) y los acelerómetros y magnetómetros (para estimar la gravedad y el vector magnético terrestre) para calcular la orientación.
+
+El filtro de Madgwick utiliza una serie de ecuaciones y algoritmos basados en principios matemáticos y de física para filtrar y fusionar los datos de los sensores y estimar la orientación del objeto en tiempo real. El resultado es una estimación suave y precisa de la orientación, que se puede utilizar para diversas aplicaciones como la navegación, el seguimiento de movimiento y la realidad virtual.
+
+En resumen, los cuaterniones son una forma eficiente y robusta de representar rotaciones en el espacio tridimensional, mientras que el filtro de Madgwick es un algoritmo de fusión de sensores que utiliza cuaterniones para estimar la orientación utilizando datos de sensores como giroscopios, acelerómetros y magnetómetros. Juntos, los cuaterniones y el filtro de Madgwick proporcionan una solución efectiva y precisa para la estimación de la orientación en diversas aplicaciones.
 
 \section{Sensores inteligentes}
 

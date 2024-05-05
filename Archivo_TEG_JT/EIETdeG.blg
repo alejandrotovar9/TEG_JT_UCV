@@ -16,45 +16,46 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: biblioteca.bib
 apacite.bst [2013/07/21 v6.03 APA bibliography style]
 Warning--`others' not consistent with 6th ed. of the APA Manual
-You've used 35 entries,
+Warning--No journal in IoTCompare
+You've used 40 entries,
             6951 wiz_defined-function locations,
-            1482 strings with 16566 characters,
-and the built_in function-call counts, 61380 in all, are:
-= -- 7611
-> -- 467
-< -- 2919
-+ -- 2787
-- -- 78
-* -- 3842
-:= -- 11335
-add.period$ -- 146
-call.type$ -- 35
-change.case$ -- 606
+            1507 strings with 17411 characters,
+and the built_in function-call counts, 69946 in all, are:
+= -- 8673
+> -- 526
+< -- 3351
++ -- 3201
+- -- 90
+* -- 4358
+:= -- 12944
+add.period$ -- 166
+call.type$ -- 40
+change.case$ -- 693
 chr.to.int$ -- 0
-cite$ -- 70
-duplicate$ -- 1489
-empty$ -- 2525
-format.name$ -- 704
-if$ -- 11827
+cite$ -- 81
+duplicate$ -- 1685
+empty$ -- 2875
+format.name$ -- 792
+if$ -- 13472
 int.to.chr$ -- 0
-int.to.str$ -- 105
+int.to.str$ -- 120
 missing$ -- 0
-newline$ -- 840
-num.names$ -- 280
-pop$ -- 1126
+newline$ -- 962
+num.names$ -- 320
+pop$ -- 1424
 preamble$ -- 1
-purify$ -- 150
+purify$ -- 172
 quote$ -- 0
-skip$ -- 4147
+skip$ -- 4585
 stack$ -- 0
-substring$ -- 3051
-swap$ -- 889
-text.length$ -- 104
+substring$ -- 3499
+swap$ -- 979
+text.length$ -- 117
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 2992
-warning$ -- 1
-while$ -- 259
+type$ -- 3392
+warning$ -- 2
+while$ -- 293
 width$ -- 0
-write$ -- 993
-(There was 1 warning)
+write$ -- 1132
+(There were 2 warnings)

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.6.1)  4 MAY 2024 17:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.6.1)  5 MAY 2024 16:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -668,258 +668,286 @@ CAPÍTULO 2.
 (cap2_marcoteorico.tex [11
 
 ] [12]
-<imagenes/cap1_marcoteo/modelo_masa_simple.png, id=666, 106.14656pt x 155.83218pt>
+<imagenes/cap1_marcoteo/modelo_masa_simple.png, id=710, 106.14656pt x 155.83218pt>
 File: imagenes/cap1_marcoteo/modelo_masa_simple.png Graphic file (type png)
 <use imagenes/cap1_marcoteo/modelo_masa_simple.png>
 Package pdftex.def Info: imagenes/cap1_marcoteo/modelo_masa_simple.png  used on input line 42.
 (pdftex.def)             Requested size: 103.78142pt x 152.36734pt.
  [13] [14 <./imagenes/cap1_marcoteo/modelo_masa_simple.png>]
-<imagenes/cap1_marcoteo/respuesta_sist_subamorti.png, id=695, 463.7325pt x 290.58563pt>
+<imagenes/cap1_marcoteo/respuesta_sist_subamorti.png, id=739, 463.7325pt x 290.58563pt>
 File: imagenes/cap1_marcoteo/respuesta_sist_subamorti.png Graphic file (type png)
 <use imagenes/cap1_marcoteo/respuesta_sist_subamorti.png>
 Package pdftex.def Info: imagenes/cap1_marcoteo/respuesta_sist_subamorti.png  used on input line 80.
 (pdftex.def)             Requested size: 290.58673pt x 182.09pt.
  [15] [16 <./imagenes/cap1_marcoteo/respuesta_sist_subamorti.png>] [17] [18] [19] [20] [21]
-<imagenes/cap1_marcoteo/Schematics-of-an-on-line-structural-health-monitoring-system-and-technical-challenges.png, id=764, 853.1875pt x 295.1025pt>
+<imagenes/cap1_marcoteo/Schematics-of-an-on-line-structural-health-monitoring-system-and-technical-challenges.png, id=808, 853.1875pt x 295.1025pt>
 File: imagenes/cap1_marcoteo/Schematics-of-an-on-line-structural-health-monitoring-system-and-technical-challenges.png Graphic file (type png)
 <use imagenes/cap1_marcoteo/Schematics-of-an-on-line-structural-health-monitoring-system-and-technical-challenges.png>
 Package pdftex.def Info: imagenes/cap1_marcoteo/Schematics-of-an-on-line-structural-health-monitoring-system-and-technical-challenges.png  used on input line 195.
 (pdftex.def)             Requested size: 373.61061pt x 129.22859pt.
  [22] [23 <./imagenes/cap1_marcoteo/Schematics-of-an-on-line-structural-health-monitoring-system-and-technical-challenges.png>]
-<imagenes/cap1_marcoteo/Diagrama SHM timeline.png, id=790, 953.5625pt x 331.2375pt>
+<imagenes/cap1_marcoteo/Diagrama SHM timeline.png, id=834, 953.5625pt x 331.2375pt>
 File: imagenes/cap1_marcoteo/Diagrama SHM timeline.png Graphic file (type png)
 <use imagenes/cap1_marcoteo/Diagrama SHM timeline.png>
 Package pdftex.def Info: imagenes/cap1_marcoteo/Diagrama SHM timeline.png  used on input line 228.
 (pdftex.def)             Requested size: 415.12572pt x 144.20338pt.
  [24 <./imagenes/cap1_marcoteo/Diagrama SHM timeline.png>] [25] [26] [27] [28] [29] [30] [31] [32]
-<imagenes/cap1_marcoteo/ESP32-Block-Diagram.jpg, id=894, 377.15906pt x 317.68687pt>
+<imagenes/cap1_marcoteo/ESP32-Block-Diagram.jpg, id=938, 377.15906pt x 317.68687pt>
 File: imagenes/cap1_marcoteo/ESP32-Block-Diagram.jpg Graphic file (type jpg)
 <use imagenes/cap1_marcoteo/ESP32-Block-Diagram.jpg>
 Package pdftex.def Info: imagenes/cap1_marcoteo/ESP32-Block-Diagram.jpg  used on input line 368.
 (pdftex.def)             Requested size: 415.12572pt x 349.66507pt.
- [33] [34 <./imagenes/cap1_marcoteo/ESP32-Block-Diagram.jpg>] [35] [36] [37] [38] [39]
-<imagenes/cap1_marcoteo/termocupla-con-voltimetro.png, id=925, 426.84468pt x 175.40532pt>
+ [33] [34 <./imagenes/cap1_marcoteo/ESP32-Block-Diagram.jpg>] [35] [36] [37]
+<imagenes/cap1_marcoteo/FreeRTOSArch.png, id=961, 532.99126pt x 316.18124pt>
+File: imagenes/cap1_marcoteo/FreeRTOSArch.png Graphic file (type png)
+<use imagenes/cap1_marcoteo/FreeRTOSArch.png>
+Package pdftex.def Info: imagenes/cap1_marcoteo/FreeRTOSArch.png  used on input line 439.
+(pdftex.def)             Requested size: 290.58673pt x 172.38531pt.
+ [38] [39 <./imagenes/cap1_marcoteo/FreeRTOSArch.png>] [40]
+<imagenes/cap1_marcoteo/termocupla-con-voltimetro.png, id=980, 426.84468pt x 175.40532pt>
 File: imagenes/cap1_marcoteo/termocupla-con-voltimetro.png Graphic file (type png)
 <use imagenes/cap1_marcoteo/termocupla-con-voltimetro.png>
-Package pdftex.def Info: imagenes/cap1_marcoteo/termocupla-con-voltimetro.png  used on input line 466.
+Package pdftex.def Info: imagenes/cap1_marcoteo/termocupla-con-voltimetro.png  used on input line 473.
 (pdftex.def)             Requested size: 290.58673pt x 119.41855pt.
-<imagenes/cap1_marcoteo/TempMEMS.png, id=928, 283.0575pt x 207.77625pt>
+<imagenes/cap1_marcoteo/TempMEMS.png, id=983, 283.0575pt x 207.77625pt>
 File: imagenes/cap1_marcoteo/TempMEMS.png Graphic file (type png)
 <use imagenes/cap1_marcoteo/TempMEMS.png>
-Package pdftex.def Info: imagenes/cap1_marcoteo/TempMEMS.png  used on input line 474.
+Package pdftex.def Info: imagenes/cap1_marcoteo/TempMEMS.png  used on input line 481.
 (pdftex.def)             Requested size: 290.58673pt x 213.32076pt.
- [40 <./imagenes/cap1_marcoteo/termocupla-con-voltimetro.png>]
-<imagenes/cap1_marcoteo/HigrometroCapacitivo.png, id=938, 197.23688pt x 108.405pt>
+ [41 <./imagenes/cap1_marcoteo/termocupla-con-voltimetro.png>]
+<imagenes/cap1_marcoteo/HigrometroCapacitivo.png, id=994, 197.23688pt x 108.405pt>
 File: imagenes/cap1_marcoteo/HigrometroCapacitivo.png Graphic file (type png)
 <use imagenes/cap1_marcoteo/HigrometroCapacitivo.png>
-Package pdftex.def Info: imagenes/cap1_marcoteo/HigrometroCapacitivo.png  used on input line 485.
+Package pdftex.def Info: imagenes/cap1_marcoteo/HigrometroCapacitivo.png  used on input line 492.
 (pdftex.def)             Requested size: 290.58673pt x 159.72559pt.
- [41 <./imagenes/cap1_marcoteo/TempMEMS.png>]
-<imagenes/cap1_marcoteo/HigrometroResistivo.png, id=949, 227.34938pt x 103.88812pt>
+ [42 <./imagenes/cap1_marcoteo/TempMEMS.png>]
+<imagenes/cap1_marcoteo/HigrometroResistivo.png, id=1004, 227.34938pt x 103.88812pt>
 File: imagenes/cap1_marcoteo/HigrometroResistivo.png Graphic file (type png)
 <use imagenes/cap1_marcoteo/HigrometroResistivo.png>
-Package pdftex.def Info: imagenes/cap1_marcoteo/HigrometroResistivo.png  used on input line 492.
+Package pdftex.def Info: imagenes/cap1_marcoteo/HigrometroResistivo.png  used on input line 499.
 (pdftex.def)             Requested size: 290.58673pt x 132.7861pt.
-<imagenes/cap1_marcoteo/HigrometroMEMS.png, id=952, 264.99pt x 98.769pt>
+<imagenes/cap1_marcoteo/HigrometroMEMS.png, id=1009, 264.99pt x 98.769pt>
 File: imagenes/cap1_marcoteo/HigrometroMEMS.png Graphic file (type png)
 <use imagenes/cap1_marcoteo/HigrometroMEMS.png>
-Package pdftex.def Info: imagenes/cap1_marcoteo/HigrometroMEMS.png  used on input line 499.
+Package pdftex.def Info: imagenes/cap1_marcoteo/HigrometroMEMS.png  used on input line 506.
 (pdftex.def)             Requested size: 290.58673pt x 108.31766pt.
- [42 <./imagenes/cap1_marcoteo/HigrometroCapacitivo.png> <./imagenes/cap1_marcoteo/HigrometroResistivo.png>]
-<imagenes/cap1_marcoteo/AccelerometerPiezo.png, id=963, 294.34969pt x 102.3825pt>
+ [43 <./imagenes/cap1_marcoteo/HigrometroCapacitivo.png> <./imagenes/cap1_marcoteo/HigrometroResistivo.png>]
+<imagenes/cap1_marcoteo/AccelerometerPiezo.png, id=1020, 294.34969pt x 102.3825pt>
 File: imagenes/cap1_marcoteo/AccelerometerPiezo.png Graphic file (type png)
 <use imagenes/cap1_marcoteo/AccelerometerPiezo.png>
-Package pdftex.def Info: imagenes/cap1_marcoteo/AccelerometerPiezo.png  used on input line 511.
+Package pdftex.def Info: imagenes/cap1_marcoteo/AccelerometerPiezo.png  used on input line 518.
 (pdftex.def)             Requested size: 290.58673pt x 101.07466pt.
-<imagenes/cap1_marcoteo/AccelerometerMEMS.png, id=966, 296.60812pt x 152.82094pt>
+<imagenes/cap1_marcoteo/AccelerometerMEMS.png, id=1023, 296.60812pt x 152.82094pt>
 File: imagenes/cap1_marcoteo/AccelerometerMEMS.png Graphic file (type png)
 <use imagenes/cap1_marcoteo/AccelerometerMEMS.png>
-Package pdftex.def Info: imagenes/cap1_marcoteo/AccelerometerMEMS.png  used on input line 521.
+Package pdftex.def Info: imagenes/cap1_marcoteo/AccelerometerMEMS.png  used on input line 528.
 (pdftex.def)             Requested size: 186.8053pt x 96.2497pt.
-
-Underfull \hbox (badness 7344) in paragraph at lines 522--522
-[]|\T1/cmr/bx/n/12 Figura 2.12\T1/cmr/m/n/12 . []Esquema ge-ne-ral
- []
-
-
-Underfull \hbox (badness 1168) in paragraph at lines 522--522
-\T1/cmr/m/n/12 de un ace-le-r�-me-tro de tec-no-lo-g�a
- []
-
-<imagenes/cap1_marcoteo/AccelerometerMEMS2.png, id=971, 323.70938pt x 147.55125pt>
+<imagenes/cap1_marcoteo/AccelerometerMEMS2.png, id=1028, 323.70938pt x 147.55125pt>
 File: imagenes/cap1_marcoteo/AccelerometerMEMS2.png Graphic file (type png)
 <use imagenes/cap1_marcoteo/AccelerometerMEMS2.png>
-Package pdftex.def Info: imagenes/cap1_marcoteo/AccelerometerMEMS2.png  used on input line 528.
+Package pdftex.def Info: imagenes/cap1_marcoteo/AccelerometerMEMS2.png  used on input line 535.
 (pdftex.def)             Requested size: 186.8053pt x 85.14975pt.
-[43 <./imagenes/cap1_marcoteo/HigrometroMEMS.png> <./imagenes/cap1_marcoteo/AccelerometerPiezo.png>] [44 <./imagenes/cap1_marcoteo/AccelerometerMEMS.png> <./imagenes/cap1_marcoteo/AccelerometerMEMS2.png>] [45] [46]
-Underfull \hbox (badness 10000) in paragraph at lines 604--604
+ [44 <./imagenes/cap1_marcoteo/HigrometroMEMS.png> <./imagenes/cap1_marcoteo/AccelerometerPiezo.png>] [45 <./imagenes/cap1_marcoteo/AccelerometerMEMS.png> <./imagenes/cap1_marcoteo/AccelerometerMEMS2.png>] [46] [47] [48] [49]
+Underfull \hbox (badness 10000) in paragraph at lines 642--642
 []\T1/cmr/m/n/12 Gran an-cho de
  []
 
 
-Underfull \hbox (badness 3000) in paragraph at lines 604--604
+Underfull \hbox (badness 3000) in paragraph at lines 642--642
 []\T1/cmr/m/n/12 Movilidad li-mi-ta-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 604--604
+Underfull \hbox (badness 10000) in paragraph at lines 642--642
 []\T1/cmr/m/n/12 Instalaci�n
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 604--604
+Underfull \hbox (badness 10000) in paragraph at lines 642--642
 []\T1/cmr/m/n/12 Escalabilidad y
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 604--604
+Underfull \hbox (badness 10000) in paragraph at lines 642--642
 []\T1/cmr/m/n/12 Complejidad
  []
 
 
-Underfull \hbox (badness 2617) in paragraph at lines 604--604
+Underfull \hbox (badness 2617) in paragraph at lines 642--642
 []\T1/cmr/m/n/12 Ancho de ban-da
  []
 
-[47] [48] [49] [50]
-<imagenes/cap1_marcoteo/MQTT-protocol-model.png, id=1017, 853.1875pt x 515.9275pt>
+[50] [51] [52] [53]
+<imagenes/cap1_marcoteo/MQTT-protocol-model.png, id=1084, 853.1875pt x 515.9275pt>
 File: imagenes/cap1_marcoteo/MQTT-protocol-model.png Graphic file (type png)
 <use imagenes/cap1_marcoteo/MQTT-protocol-model.png>
-Package pdftex.def Info: imagenes/cap1_marcoteo/MQTT-protocol-model.png  used on input line 649.
+Package pdftex.def Info: imagenes/cap1_marcoteo/MQTT-protocol-model.png  used on input line 687.
 (pdftex.def)             Requested size: 290.58673pt x 175.72005pt.
- [51 <./imagenes/cap1_marcoteo/MQTT-protocol-model.png>]
-<imagenes/cap1_marcoteo/CommPrtocolsComparison.png, id=1025, 359.09157pt x 202.50656pt>
+ [54 <./imagenes/cap1_marcoteo/MQTT-protocol-model.png>]
+<imagenes/cap1_marcoteo/CommPrtocolsComparison.png, id=1092, 359.09157pt x 202.50656pt>
 File: imagenes/cap1_marcoteo/CommPrtocolsComparison.png Graphic file (type png)
 <use imagenes/cap1_marcoteo/CommPrtocolsComparison.png>
-Package pdftex.def Info: imagenes/cap1_marcoteo/CommPrtocolsComparison.png  used on input line 669.
+Package pdftex.def Info: imagenes/cap1_marcoteo/CommPrtocolsComparison.png  used on input line 707.
 (pdftex.def)             Requested size: 332.10184pt x 187.30016pt.
- [52] [53 <./imagenes/cap1_marcoteo/CommPrtocolsComparison.png>]
-<imagenes/cap1_marcoteo/ChripSignal.png, id=1044, 295.85532pt x 223.58531pt>
+ [55] [56 <./imagenes/cap1_marcoteo/CommPrtocolsComparison.png>]
+<imagenes/cap1_marcoteo/ChripSignal.png, id=1110, 295.85532pt x 223.58531pt>
 File: imagenes/cap1_marcoteo/ChripSignal.png Graphic file (type png)
 <use imagenes/cap1_marcoteo/ChripSignal.png>
-Package pdftex.def Info: imagenes/cap1_marcoteo/ChripSignal.png  used on input line 689.
+Package pdftex.def Info: imagenes/cap1_marcoteo/ChripSignal.png  used on input line 727.
 (pdftex.def)             Requested size: 290.58673pt x 219.61018pt.
-<imagenes/cap1_marcoteo/AnchodeBandaLoRa.png, id=1049, 400.49625pt x 123.46124pt>
+<imagenes/cap1_marcoteo/AnchodeBandaLoRa.png, id=1115, 400.49625pt x 123.46124pt>
 File: imagenes/cap1_marcoteo/AnchodeBandaLoRa.png Graphic file (type png)
 <use imagenes/cap1_marcoteo/AnchodeBandaLoRa.png>
-Package pdftex.def Info: imagenes/cap1_marcoteo/AnchodeBandaLoRa.png  used on input line 698.
+Package pdftex.def Info: imagenes/cap1_marcoteo/AnchodeBandaLoRa.png  used on input line 736.
 (pdftex.def)             Requested size: 332.10184pt x 102.38235pt.
- [54 <./imagenes/cap1_marcoteo/ChripSignal.png>]
-<imagenes/cap1_marcoteo/SpreadingFactor.png, id=1058, 452.4403pt x 234.8775pt>
+ [57 <./imagenes/cap1_marcoteo/ChripSignal.png>]
+<imagenes/cap1_marcoteo/SpreadingFactor.png, id=1124, 452.4403pt x 234.8775pt>
 File: imagenes/cap1_marcoteo/SpreadingFactor.png Graphic file (type png)
 <use imagenes/cap1_marcoteo/SpreadingFactor.png>
-Package pdftex.def Info: imagenes/cap1_marcoteo/SpreadingFactor.png  used on input line 717.
+Package pdftex.def Info: imagenes/cap1_marcoteo/SpreadingFactor.png  used on input line 755.
 (pdftex.def)             Requested size: 332.10184pt x 172.4053pt.
- [55 <./imagenes/cap1_marcoteo/AnchodeBandaLoRa.png>] [56 <./imagenes/cap1_marcoteo/SpreadingFactor.png>]
-<imagenes/cap1_marcoteo/FormatramaLora.png, id=1079, 493.845pt x 140.02313pt>
+ [58 <./imagenes/cap1_marcoteo/AnchodeBandaLoRa.png>] [59 <./imagenes/cap1_marcoteo/SpreadingFactor.png>]
+<imagenes/cap1_marcoteo/FormatramaLora.png, id=1146, 493.845pt x 140.02313pt>
 File: imagenes/cap1_marcoteo/FormatramaLora.png Graphic file (type png)
 <use imagenes/cap1_marcoteo/FormatramaLora.png>
-Package pdftex.def Info: imagenes/cap1_marcoteo/FormatramaLora.png  used on input line 736.
+Package pdftex.def Info: imagenes/cap1_marcoteo/FormatramaLora.png  used on input line 774.
 (pdftex.def)             Requested size: 290.58673pt x 82.39072pt.
- [57 <./imagenes/cap1_marcoteo/FormatramaLora.png>] [58] [59]
-<imagenes/cap1_marcoteo/FourierTRansform.png, id=1105, 596.98032pt x 331.2375pt>
+ [60 <./imagenes/cap1_marcoteo/FormatramaLora.png>] [61] [62]
+<imagenes/cap1_marcoteo/FourierTRansform.png, id=1171, 596.98032pt x 331.2375pt>
 File: imagenes/cap1_marcoteo/FourierTRansform.png Graphic file (type png)
 <use imagenes/cap1_marcoteo/FourierTRansform.png>
-Package pdftex.def Info: imagenes/cap1_marcoteo/FourierTRansform.png  used on input line 784.
+Package pdftex.def Info: imagenes/cap1_marcoteo/FourierTRansform.png  used on input line 822.
 (pdftex.def)             Requested size: 290.58673pt x 161.23123pt.
- [60 <./imagenes/cap1_marcoteo/FourierTRansform.png>] [61]
-<imagenes/cap1_marcoteo/peakpicking.png, id=1125, 642.4pt x 471.7625pt>
+ [63 <./imagenes/cap1_marcoteo/FourierTRansform.png>] [64]
+<imagenes/cap1_marcoteo/peakpicking.png, id=1191, 642.4pt x 471.7625pt>
 File: imagenes/cap1_marcoteo/peakpicking.png Graphic file (type png)
 <use imagenes/cap1_marcoteo/peakpicking.png>
-Package pdftex.def Info: imagenes/cap1_marcoteo/peakpicking.png  used on input line 820.
+Package pdftex.def Info: imagenes/cap1_marcoteo/peakpicking.png  used on input line 858.
 (pdftex.def)             Requested size: 290.58673pt x 213.40692pt.
- [62 <./imagenes/cap1_marcoteo/peakpicking.png>]
-<imagenes/cap1_marcoteo/Half-power-bandwidth-method.png, id=1134, 597.23125pt x 409.53pt>
+ [65 <./imagenes/cap1_marcoteo/peakpicking.png>]
+<imagenes/cap1_marcoteo/Half-power-bandwidth-method.png, id=1201, 597.23125pt x 409.53pt>
 File: imagenes/cap1_marcoteo/Half-power-bandwidth-method.png Graphic file (type png)
 <use imagenes/cap1_marcoteo/Half-power-bandwidth-method.png>
-Package pdftex.def Info: imagenes/cap1_marcoteo/Half-power-bandwidth-method.png  used on input line 833.
+Package pdftex.def Info: imagenes/cap1_marcoteo/Half-power-bandwidth-method.png  used on input line 871.
 (pdftex.def)             Requested size: 290.58673pt x 199.25919pt.
- [63 <./imagenes/cap1_marcoteo/Half-power-bandwidth-method.png>]
-<imagenes/cap1_marcoteo/windows.png, id=1145, 173.64874pt x 137.01187pt>
+ [66 <./imagenes/cap1_marcoteo/Half-power-bandwidth-method.png>]
+<imagenes/cap1_marcoteo/windows.png, id=1212, 173.64874pt x 137.01187pt>
 File: imagenes/cap1_marcoteo/windows.png Graphic file (type png)
 <use imagenes/cap1_marcoteo/windows.png>
-Package pdftex.def Info: imagenes/cap1_marcoteo/windows.png  used on input line 854.
+Package pdftex.def Info: imagenes/cap1_marcoteo/windows.png  used on input line 892.
 (pdftex.def)             Requested size: 249.07796pt x 196.53386pt.
-) [64 <./imagenes/cap1_marcoteo/windows.png>]
+) [67 <./imagenes/cap1_marcoteo/windows.png>]
 CAPÍTULO 3.
-(cap3_marco_meto.tex) [65
+(cap3_marco_meto.tex [68
 
-] [66]
-Overfull \vbox (321.35193pt too high) has occurred while \output is active []
-
- [67]
+] [69] [70] [71] [72] [73] [74]
+<imagenes/cap2_marcometod/ArañaACL.png, id=1274, 414.04688pt x 339.51843pt>
+File: imagenes/cap2_marcometod/ArañaACL.png Graphic file (type png)
+<use imagenes/cap2_marcometod/ArañaACL.png>
+Package pdftex.def Info: imagenes/cap2_marcometod/ArañaACL.png  used on input line 148.
+(pdftex.def)             Requested size: 290.58673pt x 238.28813pt.
+ [75]
+<imagenes/cap2_marcometod/ArañaTempHum.png, id=1281, 505.13719pt x 335.75438pt>
+File: imagenes/cap2_marcometod/ArañaTempHum.png Graphic file (type png)
+<use imagenes/cap2_marcometod/ArañaTempHum.png>
+Package pdftex.def Info: imagenes/cap2_marcometod/ArañaTempHum.png  used on input line 159.
+(pdftex.def)             Requested size: 290.58673pt x 193.14948pt.
+ [76 <./imagenes/cap2_marcometod/ArañaACL.png>]
+<imagenes/cap2_marcometod/ArañaIMU.png, id=1291, 402.75468pt x 325.215pt>
+File: imagenes/cap2_marcometod/ArañaIMU.png Graphic file (type png)
+<use imagenes/cap2_marcometod/ArañaIMU.png>
+Package pdftex.def Info: imagenes/cap2_marcometod/ArañaIMU.png  used on input line 170.
+(pdftex.def)             Requested size: 290.58673pt x 234.64093pt.
+ [77 <./imagenes/cap2_marcometod/ArañaTempHum.png>]
+<imagenes/cap2_marcometod/ArañaTransmisores.png, id=1301, 444.15938pt x 337.26pt>
+File: imagenes/cap2_marcometod/ArañaTransmisores.png Graphic file (type png)
+<use imagenes/cap2_marcometod/ArañaTransmisores.png>
+Package pdftex.def Info: imagenes/cap2_marcometod/ArañaTransmisores.png  used on input line 181.
+(pdftex.def)             Requested size: 290.58673pt x 220.64703pt.
+ [78 <./imagenes/cap2_marcometod/ArañaIMU.png>] [79 <./imagenes/cap2_marcometod/ArañaTransmisores.png>]) [80]
 CAPÍTULO 4.
-[68
+[81
 
 ]
 CAPÍTULO 5.
-[69
+[82
 
 ]
 CAPÍTULO 6.
-[70
-
-]
-CAPÍTULO 7.
-[71
+[83
 
 ]
 Apéndice I.
-[72
+[84
 
 ]
 Apéndice II.
-[73
+[85
 
 ]
 Apéndice III.
-[74
+[86
 
 ] (EIETdeG.bbl
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 156.
  (C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
 File: t1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
-) [75
+)
+Underfull \hbox (badness 4001) in paragraph at lines 170--186
+\T1/cmtt/m/n/12 .com / 20190829 / carriers / lpwa [] -matchup [] -round [] -five$[]   \T1/cmr/m/n/12 (Con-sul-ta-do:
+ []
+
+[87
 
 ]
-Underfull \hbox (badness 1990) in paragraph at lines 299--312
+Underfull \hbox (badness 1990) in paragraph at lines 354--367
 []\T1/cmr/m/n/12 Farrar, C. R., y Wor-den, K.  (2007).  An in-tro-duc-tion to struc-tu-ral
  []
 
-[76]
-Underfull \hbox (badness 3199) in paragraph at lines 815--830
+[88] [89]
+Underfull \hbox (badness 1009) in paragraph at lines 870--886
+[]\T1/cmr/m/n/12 Semtech.  (2015).  \T1/cmr/m/it/12 Sx1276/77/78/79 - 137 mhz to 1020 mhz low po-wer
+ []
+
+
+Underfull \hbox (badness 7468) in paragraph at lines 870--886
+\T1/cmtt/m/n/12 .com / products / wireless [] -rf / lora [] -connect / sx1278$[]   \T1/cmr/m/n/12 (Con-sul-ta-do:
+ []
+
+
+Underfull \hbox (badness 3199) in paragraph at lines 926--941
 []\T1/cmr/m/n/12 Siemens.  (2019).  \T1/cmr/m/it/12 What is the fou-rier trans-form?  \T1/cmr/m/n/12 Des-car-ga-do de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 815--830
+Underfull \hbox (badness 10000) in paragraph at lines 926--941
 []$\T1/cmtt/m/n/12 https :// community [] .sw [] .siemens [] .com / s / article / what [] -is [] -the [] -fourier []
  []
 
-[77]
-Underfull \hbox (badness 1635) in paragraph at lines 869--881
+
+Underfull \hbox (badness 1635) in paragraph at lines 1006--1018
 []\T1/cmr/m/n/12 Worden, K., y Fris-well, M. I.  (2009).  Modal--vibration-based da-ma-ge
  []
 
-) (EIETdeG.ind) [78] (EIETdeG.aux
+) (EIETdeG.ind) [90] (EIETdeG.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 )
 Package rerunfilecheck Info: File `EIETdeG.out' has not changed.
-(rerunfilecheck)             Checksum: FEEBA40BB865EA8D5ECFAB0B7E918A85;16024.
+(rerunfilecheck)             Checksum: 4710D6A3D88634CF0B7E58A050A87B22;16825.
  ) 
 Here is how much of TeX's memory you used:
- 16158 strings out of 476410
- 264496 string characters out of 5789114
- 1861845 words of memory out of 5000000
- 35906 multiletter control sequences out of 15000+600000
- 525188 words of font info for 66 fonts, out of 8000000 for 9000
+ 16261 strings out of 476410
+ 267099 string characters out of 5789114
+ 1865845 words of memory out of 5000000
+ 35974 multiletter control sequences out of 15000+600000
+ 525565 words of font info for 67 fonts, out of 8000000 for 9000
  1168 hyphenation exceptions out of 8191
- 80i,13n,79p,1003b,844s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\jatov\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\jatov\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\jatov\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\jatov\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecxc1200.pk> <C:\Users\jatov\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\jatov\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1200.pk> <C:\Users\jatov\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\jatov\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\jatov\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk><C:/Users/jatov/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/jatov/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/jatov/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/jatov/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/jatov/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/jatov/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/jatov/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on EIETdeG.pdf (92 pages, 1146289 bytes).
+ 80i,15n,79p,1177b,844s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\jatov\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1200.pk> <C:\Users\jatov\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\jatov\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\jatov\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\jatov\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecxc1200.pk> <C:\Users\jatov\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\jatov\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1200.pk> <C:\Users\jatov\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\jatov\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\jatov\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk><C:/Users/jatov/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/jatov/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/jatov/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/jatov/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/jatov/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/jatov/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/jatov/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on EIETdeG.pdf (104 pages, 1324228 bytes).
 PDF statistics:
- 1690 PDF objects out of 1728 (max. 8388607)
- 282 named destinations out of 1000 (max. 500000)
- 756 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1858 PDF objects out of 2073 (max. 8388607)
+ 310 named destinations out of 1000 (max. 500000)
+ 797 words of extra memory for PDF output out of 10000 (max. 10000000)
 

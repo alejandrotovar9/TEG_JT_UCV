@@ -157,6 +157,34 @@ Basset~Salom, L.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Blackman%
+}{%
+Blackman%
+}{%
+{\protect \APACyear {2019}}%
+}]{%
+LPWANCompare}
+\APACinsertmetastar {%
+LPWANCompare}%
+\begin{APACrefauthors}%
+Blackman, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{}{}.
+\newblock
+\APACrefbtitle {LPWA matchup | LoRaWAN vs. Sigfox vs. NB-IoT vs. LTE-M:
+  technical draw (round 5).} {Lpwa matchup | lorawan vs. sigfox vs. nb-iot vs.
+  lte-m: technical draw (round 5).}
+\newblock
+\begin{APACrefURL}
+  \url{https://www.rcrwireless.com/20190829/carriers/lpwa-matchup-round-five}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{Consultado: 02/05/2024}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Blanco%
 }{%
 Blanco%
@@ -226,7 +254,7 @@ conatel}%
   EQUIPOS DE USO LIBRE}.} {{REFORMA DE LAS CONDICIONES PARA LA CALIFICACIÓN DE
   LOS EQUIPOS DE USO LIBRE}.}
 \newblock
-\APAChowpublished {Standard}.
+\APAChowpublished {Norma}.
 \newblock
 \begin{APACrefURL}
   \url{http://www.conatel.gob.ve/files/consulta/2011/2_PA_EUL_CP_PROYECTO_WEB.pdf}
@@ -254,6 +282,33 @@ Dunn, W.%
   {Introduction to instrumentation, sensors, and process control}.
 \newblock
 \APACaddressPublisher{}{Artech}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Elberger%
+}{%
+Elberger%
+}{%
+{\protect \APACyear {2021}}%
+}]{%
+rtos}
+\APACinsertmetastar {%
+rtos}%
+\begin{APACrefauthors}%
+Elberger, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+\APACrefbtitle {Why SESIP™ Certification for FreeRTOS Matters.} {Why sesip™
+  certification for freertos matters.}
+\newblock
+\begin{APACrefURL}
+  \url{https://www.freertos.org/2021/03/why-sesip-certification-for-freertos-matters.html}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{Consultado: 02/05/2024}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -723,6 +778,34 @@ Nagayama, B\BPBI F., Tomonori y Spencer~Jr.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Ogdol%
+, Ogdol%
+\BCBL {}\ \BBA {} Samar%
+}{%
+Ogdol%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2018}}%
+}]{%
+IoTCompare}
+\APACinsertmetastar {%
+IoTCompare}%
+\begin{APACrefauthors}%
+Ogdol, J\BPBI M.%
+, Ogdol, G.%
+\BCBL {}\ \BBA {} Samar, B\BHBI L.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{12}{}.
+\newblock
+{\BBOQ}\APACrefatitle {IOT-BASED FRAMEWORK FOR A CENTRALIZED MONITORING OF
+  SOLID WASTE DISPOSAL FACILITIES} {Iot-based framework for a centralized
+  monitoring of solid waste disposal facilities}.{\BBCQ}
+\newblock
+
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Proakis%
 \ \BBA {} Manolaki%
 }{%
@@ -771,6 +854,34 @@ Rytter, A.%
   ph. d}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Aalborg University, Aalborg, Denmark}{}{}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Semtech%
+}{%
+Semtech%
+}{%
+{\protect \APACyear {2015}}%
+}]{%
+datasheetSemtech}
+\APACinsertmetastar {%
+datasheetSemtech}%
+\begin{APACrefauthors}%
+Semtech.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{}{}.
+\newblock
+\APACrefbtitle {SX1276/77/78/79 - 137 MHz to 1020 MHz Low Power Long Range
+  Transceiver Datasheet.} {Sx1276/77/78/79 - 137 mhz to 1020 mhz low power long
+  range transceiver datasheet.}
+\newblock
+\begin{APACrefURL}
+  \url{https://www.semtech.com/products/wireless-rf/lora-connect/sx1278}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{Consultado: 10/01/2024}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -851,6 +962,32 @@ Sohn, H.%
 \newblock
 \APACjournalVolNumPages{Philosophical Transactions of the Royal Society A:
   Mathematical, Physical and Engineering Sciences}{365}{1851}{539--560}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Survey%
+}{%
+Survey%
+}{%
+{\protect \APACyear {2011}}%
+}]{%
+mercalli}
+\APACinsertmetastar {%
+mercalli}%
+\begin{APACrefauthors}%
+Survey, U\BPBI S\BPBI G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2011}{}{}.
+\newblock
+\APACrefbtitle {Earthquake Hazards Program.} {Earthquake hazards program.}
+\newblock
+\begin{APACrefURL}
+  \url{http://earthquake.usgs.gov/earthquakes/shakemap/background.php}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{Consultado: 04/05/2024}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

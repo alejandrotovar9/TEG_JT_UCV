@@ -2,24 +2,186 @@ En este capítulo se describirá el diseño del sensor inteligente, describiendo
 
 \section{Descripción del sistema}
 
-\subsection{Diagrama de bloques del sistema}
+El sistema diseñado integra un conjunto de sensores y módulos que permiten medir variables dinámicas y cuasi-estáticas de un sistema estructural, enviarlas a larga distancia y posteriormente procesarlas y almacenarlas.
+
+Una vez el sistema es encendido, calibra de forma automática todos los sensores, con especial énfasis en eliminar el offset de los 3 ejes del acelerómetro y también calibrar el magnetómetro y giróscopo del acelerómetro de 9 grados de libertad. El sistema ejecutará las tareas de calibración cada 2 registros de datos enviados con éxito.
+
+Luego de la calibración y ajuste de la hora y fecha,  el sistema comienza a medir de forma continua la aceleración triaxial, inclinación, temperatura, humedad y estima la inclinación con sensores electrónicos de bajo consumo para posteriormente enviar los datos de forma inalámbrica a la estación base, que puede estar ubicada a más de 150 metros de distancia. Allí son recibidos, decodificados y pre-procesados para luego ser subidos vía inaálmbrica a un computador que sirve de servidor en donde se almacenaran los datos, siendo controlado el sistema desde esta misma estación base, pudiendo enviar comandos de adquisición de datos de forma remota. A su vez, se desarrolló una interfaz gráfica que permite visualizar los datos obtenidos, realizar peticiones de datos a distancia, observar sus características principales, acceder al histórico de datos recogidos por el sensor en una fecha específica, descargar los datos y ejecutar post-procesamiento a los mismos para evañuar las variables de interés para el monitoreo de la salud estructural.
+
+Puesto que la estación base está conectada a internet, el microcontrolador ubicado en la estación adquiere la fecha y hora actualizada utilizando un servidor del protocolo NTP (\textit{Network Time Protocol}) y sincroniza su RTC (\textit{Real Time Clock}) interno con estos valores. Una vez obtenida la fecha y hora, espera el comando de inicio del sensor inteligente que envía de forma automática una vez se enciende y calibra sus sensores, la cual le indica a la estación base que debe enviar la fecha y hora actual. De esta forma se sincronizan los relojes internos de ambos y permite al sensor inteligente tener la fecha y hora a la cual tomó todo registro, enviando esta información como parte del registro de datos. La fecha y hora se envía bajo el formato \textit{UNIX Epoch}, el cual indica la cantidad de segundos transcurridos desde el 1 de Enero de 1970.
+	
+En la estación base, el sistema se conectará a internet a través de la red WiFi, enviará los datos recibidos al computador en la estación base, siendo esta herramienta la encargada de pre-procesar los datos recibidos vía inalámbrica y convertirlos a un formato adecuado para poder ser almacenados en el computador y posteriormente procesados usando librerías de análisis numérico. La interfaz de usuario podrá estar disponible para todos los usuarios de la red local, siempre que tengan los servicios necesarios instalados en local.
+
+El comportamiento de los sistemas estructurales a estudiar condiciona los rangos e intervalos de medición de los sensores, con un límite superior cercano a los 3 g en un movimiento telúrico considerable. Por su parte, la temperatura, humedad e inclinación suelen considerarse variables cuasi-estáticas, permitiendo que el sistema mida estas variables con intervalos lo suficientemente largos para poder monitorear cambios considerables en las mismas y posteriormente correlacionarlos a las condiciones estructurales. La frecuencia de muestreo de aceleración es deseable que est
+
+El sistema en su funcionamiento normal está ejecutando las siguientes tareas principales:
+
+\begin{itemize}
+    \item Adquisición continua (envío programado a ciertas horas del día o ante eventos importantes): El sensor inteligente mide constantemente las variables de interés y envía periódicamente, a ciertas horas del día programadas con antelación, un registro de datos a la estación base. Al estar midiendo de forma continua, está atento para generar una interrupción o alerta ante algún valor de aceleración o inclinación que esté por encima de algún límite escogido con anterioridad que dependerá en gran medida de la estructura a monitorear y su naturaleza, aunque se escogió por default el valor de 2 m/s como generador de alerta, basado en la \textit{Escala de Mercalli} \citep{mercalli}, la cual indica que este valor de aceleración (que corresponde a 0.20 g) equivale a un sismo fuerte con daño moderado. El sistema envía de forma automática un registro de datos del acontecimiento importante que generó la alerta.
+	\item Escuchando petición de trama de datos inmediata (Envía trama ante request/query de estación base): Al recibir desde la estación base el comando de adquisición de datos, ejecutado desde la interfaz de control por el operador, el sistema comienza a tomar un registro de datos de forma inmediata, siempre y cuando el mismo no haya detectado previamente un evento importante que superara los límites establecidos, y lo envía a la estación base permitiendo que el usuario obtenga información del sistema en el instante en el cual se realiza la petición de los datos. Una vez es enviado y recibido con éxito la trama de datos, el sistema regresa a su estado anterior, tomando datos de forma continua y esperando alertas, comandos u horas programadas.
+
+\end{itemize}
+
+\subsection{Diagrama de funcionamiento del sensor inteligente}
 
 \section{Selección de componentes}
 
+Una vez obtenida una base teórica sobre estos temas, se procedió a escoger el hardware y los protocolos de comunicación más adecuados para llevar a cabo el objetivo de diseñar un sensor inteligente para aplicaciones de monitoreo de salud estructural. 
+	
+
 \subsection{Protocolo de comunicaciones}
-\subsubsection{Módulos de comunicaciones}
+
+Para el protocolo de comunicación se buscaron protocolos capaces de manejar los datos recogidos por los sensores de forma eficaz y confiable. En este caso se refiere al protocolo utilizado para enviar los datos desde el sensor inteligente hasta la estación base. Sin embargo, se utilizaron distintos protocolos para la comunicación de los sensores con el microcontrolador y a su vez para comunicar la estación base con el receptor de datos.
+	
+Para el envío de datos a la estación base, preferiblemente el protocolo debía ser capaz de funcionar en rangos de distancia amplios, permitiendo que el sensor inteligente esté ubicado lejos de la estación base en donde serán monitoreadas las variables de interés. En primer lugar se escogieron algunos protocolos de forma preliminar, para luego estudiar a fondo sus características. Estos protocolos y sus características se resumen en la tabla \ref{tab:protocolos}:
+
+\begin{table}[H]
+    \centering
+    \caption{Comparación entre protocolos de comunicación inalámbrica, \citep{IoTCompare} y \citep{LPWANCompare}}
+    \label{tab:protocolos}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|c|c|c|c|c|}
+    \hline
+    \textbf{Protocolo} & \textbf{Frecuencia} & \textbf{Rango} & \textbf{Velocidad} & \multicolumn{1}{l|}{\textbf{Consumo de energía}} \\ \hline
+    \textbf{Zigbee} & 784 MHz/2.4 GHz & 100 m - 300 m & 250kbps-500kbps & Bajo \\ \hline
+    \textbf{Sigfox} & 868 MHz/915 MHz & 3km - 10km & 100 bps & Bajo \\ \hline
+    \textbf{NB-IoT} & LTE & 1km - 10km & 200 kbps & Bajo \\ \hline
+    \textbf{WiFi} & 2.4 GHz/5.8 GHz & 100m & 54Mbps/1.3Gbps & Alto \\ \hline
+    \textbf{Bluetooth} & 2.4 GHz & 10m - 100m & 720 kbps & Bajo \\ \hline
+    \textbf{LoRa} & \begin{tabular}[c]{@{}c@{}}430 MHz/433 MHz\\ /868 MHz/915 MHz\end{tabular} & 15 km-30 km & 0.3kbs hasta 50 kbps & Bajo \\ \hline
+    \end{tabular}%
+    }
+\end{table}
+
+Con base en esta información, se escogió el protocolo LoRa como el más adecuado para el sensor inteligente, debido a su amplio rango y bajo consumo de energía. En general, la vasta mayoría de los módulos están basados en los chips fabricados por Semtech (los precursores del protocolo LoRa) SX126X y SX127X, por tanto se compararon ambas tecnologías:
+
+% Please add the following required packages to your document preamble:
+% \usepackage{graphicx}
+\begin{table}[H]
+    \centering
+    \caption{Comparación entre módulos LoRa del fabricante Semtech \citep{datasheetSemtech}.}
+    \label{tab:moduloslora}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|c|c|c|c|c|c|}
+    \hline
+    \textbf{Módulo} & \textbf{Modem} & \textbf{Amplificador} & \textbf{Corriente RX} & \multicolumn{1}{l|}{\textbf{Sensibilidad}} & \textbf{Velocidad (bit rate)} \\ \hline
+    \textbf{SX1261/62/68} & LoRa y FSK & \begin{tabular}[c]{@{}c@{}}+15 dBm - \\ +22 dBm\end{tabular} & 4.6 mA & -148 dBm & \begin{tabular}[c]{@{}c@{}}62.5 kbps \\ - 300 kbps\end{tabular} \\ \hline
+    \textbf{S1272/73} & LoRa & +14 dBm & 10 mA & -137 dBm & 300 kbps \\ \hline
+    \textbf{S1276/77/78/79} & LoRa & +14 dBm & 9.9 mA & -148 dBm & 300 kbps \\ \hline
+    \end{tabular}%
+    }
+    \end{table}
 
 \subsection{Sensores}
-\subsubsection{Aceleración}
+
+Para la selección de los sensores a utilizarse, es preciso definir las necesidades de un sistema de adquisición para sistemas estructurales, siendo su comportamiento el que define las características de los instrumentos de medición.
+
+\subsubsection{Aceleración} 
+
+En el caso de la medición de aceleración, el sensor inteligente debe contar con un sensor con las siguientes características:
+
+\begin{itemize}
+    \item Bajo nivel de ruido.
+    \item Compensación de temperatura.
+    \item Ancho de banda dentro del rango deseado en sistemas estructurales.
+    \item Buena resolución.
+    \item Suficientes grados de libertad.
+    \item Compatibilidad con microcontroladores disponibles en el mercado.
+    \item Bajo consumo
+\end{itemize}
+
 \subsubsection{Temperatura y humedad}
-\subsubsection{Estimación de ángulos a partir de aceleraciones}
+
+Para la medición de temperatura y humedad, el sensor inteligente debe contar con un sensor con las siguientes características:
+
+\begin{itemize}
+    \item Rango de trabajo dentro de las condiciones en las que se encuentre la estructura.
+    \item Buena resolución y sensibilidad.
+    \item Compatibilidad con microcontroladores.
+    \item Bajo consumo.
+\end{itemize}
+
+\subsubsection{Inclinación}
+
+Para la medición de inclinación, la cual, como se explica en la sección \ref{subsec:sensorfusion} el sensor inteligente debe contar con un sensor que cuente con las siguientes características:
+
+\begin{itemize}
+    \item Acelerómetro, giróscopo y magnetómetro incorporado (\textit{Inertial Measurement Unit}).
+    \item Bajo nivel de ruido.
+    \item Buena resolución y sensibilidad.
+    \item Compatibilidad con microcontroladores.
+    \item Bajo consumo.
+\end{itemize}
 
 \subsection{Microcontroladores}
 
-\subsection{Selección de componentes:}
+En el caso de los microcontroladores, se buscaron microcontroladores capaces de obtener los datos provenientes de los sensores, procesarlos, almacenarlos temporalmente y posteriormente hacer uso del módulo de comunicaciones para su envío, usando este mismo módulo para recibir mensajes o comandos. También se tomaron en cuenta las capacidades de conexión inalámbrica de cada microcontrolador, su documentación y soporte por parte de los fabricantes, y por último su compatibilidad con los distintos frameworks, librerías y entornos de programación disponibles para los sensores y módulos, los cuales disminuyen el tiempo necesario para poner en marcha el funcionamiento del sistema. Se estudiaron las características de distintas placas de desarrollo, para posteriormente escoger el más adecuado. A continuación, en la tabla \ref{tab:microstabla}, se presentan las placas de desarrollo consideradas de forma preliminar y sus características principales:
+
+% Please add the following required packages to your document preamble:
+% \usepackage{graphicx}
+\begin{table}[H]
+    \centering
+    \caption{Comparación entre placas de desarrollo basadas en MCU}
+    \label{tab:microstabla}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|c|c|c|c|c|c|c|}
+    \hline
+    \textbf{Placa} & \textbf{Procesador} & \textbf{Velocidad de reloj} & \textbf{RAM (kB)} & \multicolumn{1}{l|}{\textbf{ROM (kB)}} & \textbf{GPIO} & \textbf{Conectividad} \\ \hline
+    \textbf{Teensy 4.0} & ARM M7 & 600 MHz & 1024 & 2048 & 40 & - \\ \hline
+    \textbf{\begin{tabular}[c]{@{}c@{}}Raspberry Pi \\ Pico W\end{tabular}} & Dual ARM-M0 & 133 MHz & 264 & 2048 & 26 & WiFi \\ \hline
+    \textbf{STM32 Discovery} & ARM M4 & 168 MHz & 192 & 1024 & 82 & - \\ \hline
+    \textbf{STM32 Nucleo} & \begin{tabular}[c]{@{}c@{}}ARM M0 -\\ ARM M4\end{tabular} & \begin{tabular}[c]{@{}c@{}}84 MHz -\\ 180 MHz\end{tabular} & \begin{tabular}[c]{@{}c@{}}96 - \\ 128\end{tabular} & 512 & 50 & - \\ \hline
+    \textbf{Espressif ESP32} & Dual Xtensa LX6 & 240 MHz & 520 & 4096 & 34 & WiFi/BT(BLE) \\ \hline
+    \textbf{STM32 Blackpill} & ARM M4 & 100 MHz & 128 & 512 & 37 & - \\ \hline
+    \end{tabular}%
+    }
+    \end{table}
+
+\subsection{Diagramas de selección de componentes:}
 \subsubsection{Selección del sensor de aceleración}
+
+Con base en la información recopilada de distintos módulos de acelerómetros, se observa en la figura \ref{fig:arañaacl} que el MPU6050 de Invensense se ajusta a las necesidades del acelerómetro necesario para tomar los registros de vibración. Otro módulo del mismo fabricante, el MPU9250 también presenta un buen desempeño. Sin embargo, el MPU6050 tiene un mejor precio y ofrece funcionalidades similares, por lo cual fue el escogido para el prototipo de pruebas.
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = 0.7\textwidth]{imagenes/cap2_marcometod/ArañaACL.png}
+    \caption{Diagrama de araña para selección de acelerómetro.}
+    \label{fig:arañaacl}
+\end{figure}
+
 \subsubsection{Selección del sensor de temperatura y humedad}
+
+Se observa en la figura \ref{fig:arañatemphum} que la mayoría de los sensores de temperatura y humedad, los cuales suelen estar integrados en un mismo módulo, no distan mucho en desempeño entre sí, sin embargo, entre ellos destaca el BME280 del reconocido fabricante Bosch, el cual cuenta con buena resolución además de una excelente documentación y librerías para distintos microcontroladores. El módulo SHT31 muesta potencial por su resolución, en este caso se descarta por la poca disponibilidad del módulo pero es una buena opción para futuras implementaciones. Es por esta razón que se escogió el BME280 para llevar a cabo las mediciones de las variables ambientales en el prototipo de pruebas.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = 0.7\textwidth]{imagenes/cap2_marcometod/ArañaTempHum.png}
+    \caption{Diagrama de araña para selección de sensor de temperatura y humedad.}
+    \label{fig:arañatemphum}
+\end{figure}
+
 \subsubsection{Selección del acelerómetro para estimación de ángulos}
+
+Utilizando el mismo análisis que se llevó a cabo en la figura \ref{fig:arañaacl}, se modifica para fines de estimación de ángulo tomando en cuenta las premisas de la sección \ref{subsec:sensorfusion} para la fusión de sensores. Por tanto, con base en la figura \ref{fig:arañaimu} se escoje el módulo MPU9250, el cual cumple con la función de ser una IMU de 9 grados de libertas, siendo ideal para la estimación de ángulos en el prototipo.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = 0.7\textwidth]{imagenes/cap2_marcometod/ArañaIMU.png}
+    \caption{Diagrama de araña para selección de unidad de medición inercial.}
+    \label{fig:arañaimu}
+\end{figure}
+
+\subsubsection{Selección del módulo de comunicaciones}
+
+Se ubicaron módulos de comunicaciones LoRa que fueran compatibles con el microcontrolador escogido, con documentación disponible y cuyas características se ajustaran a las necesidades del proyecto a llevar a cabo. Si bien el protocolo es el que condiciona las características de la gran mayoría de los módulos de comunicación del protocolo en cuestión, se buscó un módulo con facilidad de conexión e intercomunicación con el microcontrolador. Se observa en la figura \ref{fig:arañacomm} que la mayoría de los módulos tienen un desempeño similar, esto se debe a que están basados en distintas versiones de los módulos estudiados en la tabla \ref{tab:moduloslora}. Sin embargo, el condicionante es la disponibilidad y precio de los mismos, siendo el RA-02 de Ai-Thinker el seleccionado en este caso.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = 0.7\textwidth]{imagenes/cap2_marcometod/ArañaTransmisores.png}
+    \caption{Diagrama de araña para selección del módulo de comunicaciones.}
+    \label{fig:arañacomm}
+\end{figure}
 
 \section{Detalle del diseño}
 
@@ -35,4 +197,14 @@ En este capítulo se describirá el diseño del sensor inteligente, describiendo
 
 \subsubsection{Estación base:}
 
-\subsubsection{Aplicación para monitoreo y control:}
+Flujo de NodeRED de parseo de datos
+
+\subsubsection{Aplicación de monitoreo y control:}
+
+\subsection{Diagrama de bloques del sistema}
+
+Con drawio
+
+\subsection{Diagrama de funcionamiento del sistema}
+
+UML con drawio
