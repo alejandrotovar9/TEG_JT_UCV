@@ -323,7 +323,7 @@ Los ensayos estructurales se utilizan para evaluar la integridad y el comportami
    
 \subsection{Ensayos no invasivos} 
 
-Los ensayos no invasivos se introdujeron en la ingeniería civil durantes los años 40 \citep{mohamed2014}. Desde entonces, muchas de estas pruebas han sido estandarizadas, siendo las normas COVENIN 2221:84 y COVENIN 318-84 algunas de las normativas para este tipo de ensayos en Venezuela. 
+Los ensayos no invasivos se introdujeron en la ingeniería civil durante los años 40 \citep{mohamed2014}. Desde entonces, muchas de estas pruebas han sido estandarizadas, siendo las normas COVENIN 2221:84 y COVENIN 318-84 algunas de las normativas para este tipo de ensayos en Venezuela. 
 
 Con el envejecimiento progresivo de las estructuras, la industria de la construcción ideó nuevas técnicas durante los años 70, permitiendo evaluar de forma más rigurosa las propiedades mecánicas de los materiales y detectar anomalías o daños sin perjudicar la estructura. Algunos de estos métodos se describen a continuación:
 
@@ -415,6 +415,7 @@ Cada protocolo tiene sus características y aplicaciones, siendo diseñados para
 \end{itemize}
 
 \subsection{Sistemas Operativos en Tiempo Real (RTOS)} 
+\label{subsec:rtossubsec}
 
 Un sistema operativo en tiempo real (RTOS por sus siglas en inglés), es un distema operativo diseñado para manejar tareas que requieran ser monitoreadas de forma precisa y eficiente, usualmente estas tareas son críticas en el tiempo, lo que lo diferencia de un sistema operativo de propósito general, el cual se especializa en ejecutar varias tareas al mismo tiempo. El RTOS se concentra en ejecutar las tareas en tiempo real.
 
@@ -432,11 +433,27 @@ Entre las características principales de un RTOS se encuentran:
 
 En aplicaciones basadas en microcontroladores rara vez se requiere una implementación completa de un RTOS, por las restricciones de memoria de los mismos. Es por esto que FreeRTOS implementó un sistema enfocado en la sincronización, funcionalidades de comunicación entre tareas y planificación de tareas. Este RTOS incluye además distintas librerías que expanden sus funciones y mejoran la experiencia de uso.
 
+Los principales elementos de un programa basado en FreeRTOS contienen:
+
+\begin{itemize}
+    \item Colas (\textit{Queues}): Las colas son el método principal de comunicación entre tareas. Pueden enviar datos de una tarea a otra o entre interrupciones y tareas. Suelen utilizarse como buffers FIFO (First-In-First-Out).
+    \item Tareas (\textit{Tasks}): Las tareas son las funciones que el sistema operativo en tiempo real ejecutará una vez el scheduler inicie el ciclo de programa. En ellas se contienen las distintas acciones que se quieren implementar en el microcontrolador. No tiene valores de retorno y se implementan como un loop infinito. En la figura \ref{fig:RTOSTasks} se observan los distintos estados en los que puede encontrarse una tarea de FreeRTOS. Estas distintas posibilidades son las que permiten controlar el orden de ejecución de un programa de forma sincronizada. La ejecución de las tareas está regida por su prioridad y estas deben ser creadas antes de poderse ejecutar.
+    
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width = 0.8\textwidth]{imagenes/cap1_marcoteo/TasksRTOS.png}
+        \caption{Estados de las tareas en FreeRTOS \citep{rtos}.}
+        \label{fig:RTOSTasks}
+    \end{figure}
+
+    \item Semáforos binarios (\textit{Binary Semaphores}): La idea general de los semáforos binarios es permitir que las tareas accedan a recursos compartidos y ejecutar tareas complejas de sincronización. Suelen usarse en conjunto con los mutex (que viene del término \textit{mutual exclusion}), lo cual evita que se corrompan sectores de memoria cuando 2 tareas (que pueden estar ejecutándose en paralelo) quieran acceder a un espacio de memoria al mismo tiempo.
+\end{itemize}
+
 La arquitectura de un sistema basado en FreeRTOs se muestra en la figura \ref{fig:rtos}:
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width = 0.7\textwidth]{imagenes/cap1_marcoteo/FreeRTOSArch.png}
+    \includegraphics[width = 0.8\textwidth]{imagenes/cap1_marcoteo/FreeRTOSArch.png}
     \caption{Arquitectura de sistema embebido basado en FreeRTOS \citep{rtos}.}
     \label{fig:rtos}
 \end{figure}
@@ -544,33 +561,49 @@ En el campo de la monitorización de salud estructural (SHM), existen varios tip
 \subsection{Fusión de sensores}
 \label{subsec:sensorfusion}
 
-\subsubsection{Estimación de ángulos}
+La fusión de sensores consiste en combinar la información de múltiples sensores para obtener una medida más precisa y confiable de la variable de interés \citep{lamkin2019sensors}. La fusión de sensores puede mejorar la precisión, la confiabilidad y la robustez de las mediciones, ayudando también a reducir la incertidumbre y el ruido presente en los datos. La fusión de sensores se puede realizar de varias maneras, las cuales se mencionan a continuación:
 
 \begin{itemize}
-    \item Integración de la medición del giróscopo:
-    \item Estimación por trigonometría
-	\item Filtro de Kalman:
-	\item Filtro de Madgwick:
+    \item Sensores redundantes: Todos los sensores proporcionan la misma información sobre la variable de interés. La redundancia de sensores puede mejorar la confiabilidad y la precisión de las mediciones, ya que si un sensor falla, los otros sensores pueden seguir proporcionando datos.
+    
+    \item Sensores complementarios: Los sensores proporcionan información independiente o complementaria sobre la variable de interés. Al combinar la información de sensores complementarios, se puede obtener una medida más precisa y completa de la variable de interés.
+    \item Sensores coordinados: Los sensores recopilan información sobre la variable de interés de forma secuencial. 
 \end{itemize}
 
-REVISAR
-Los cuaterniones y el filtro de Madgwick son herramientas comúnmente utilizadas en la estimación de la orientación en sistemas de navegación inercial y aplicaciones de realidad virtual y aumentada. A continuación, se explica brevemente el uso de cuaterniones y el filtro de Madgwick:
+La fusión de sensores permite obtener información a partir de varios sensores que no está disponible a través de un sensor en específico, siendo necesario recopilar distintas variables físicas para reconstruir la variable de interés. La fusión de sensores es una técnica comúnmente utilizada en aplicaciones de monitoreo estructural, robótica, navegación y sistemas de control, entre otros.
 
-Cuaterniones:
-Los cuaterniones son una extensión de los números complejos y se utilizan para representar rotaciones en el espacio tridimensional. Un cuaternión se compone de cuatro componentes: una parte escalar (w) y tres partes vectoriales (x, y, z). La representación de un cuaternión se puede escribir como q = w + xi + yj + zk.
+\subsubsection{Estimación de ángulos}
 
-La principal ventaja de los cuaterniones en comparación con otras representaciones de rotación, como las matrices de rotación, es su eficiencia computacional y su capacidad para evitar problemas como la gimbal lock (bloqueo de cardanes). Los cuaterniones también facilitan la interpolación y la combinación de rotaciones, lo que los hace especialmente útiles en sistemas de navegación y animaciones 3D.
+Una de las variables físicas que suele obtenerse a partir de la fusión de información de varios sensores es la inclinación. Existen distintos métodos, cada uno con sus ventajas y deficiencias, para obtener una estimación de la inclinación de un sistema a partir de mediciones de acelerómetros, giróscopos y magnetómetros. Algunos de los métodos más comunes son:
 
-En el contexto de la estimación de la orientación, los cuaterniones se utilizan para representar la rotación del objeto en un espacio tridimensional. Se pueden combinar y actualizar utilizando operaciones algebraicas como la multiplicación de cuaterniones y la normalización para mantener la unicidad y la unidad del cuaternión.
+\begin{itemize}
+    \item Integración de la medición del giróscopo: Se utiliza la medición de la velocidad angular del giróscopo para estimar la orientación del sistema. Sin embargo, la integración de la velocidad angular puede acumular errores y derivar en una estimación incorrecta de la orientación.
+    \item Estimación por trigonometría: Se utilizan las mediciones de los acelerómetros y magnetómetros para estimar la orientación del sistema a partir de cálculos trigonométricos. Este método puede ser sensible a errores en las mediciones y a la presencia de campos magnéticos externos.
+	\item Filtro de Kalman: El filtro de Kalman es un algoritmo de estimación que combina mediciones de sensores con un modelo dinámico del sistema para obtener una estimación precisa de la orientación. El filtro de Kalman es particularmente útil para fusionar mediciones de acelerómetros, giróscopos y magnetómetros y estimar la orientación en tiempo real.
+	
+	\item Filtro de Madgwick: El filtro de Madgwick es un algoritmo de fusión de sensores que utiliza mediciones de giroscopios, acelerómetros y magnetómetros para estimar la orientación del sistema. El filtro de Madgwick es una versión simplificada del filtro de Kalman y es ampliamente utilizado en aplicaciones de realidad virtual, aumentada y sistemas de navegación inercial.
+	
+    Este método, desarrollado por \cite{madgwick2010efficient}, hace uso de cuaterniones para la representación espacial. Estos son una extensión de los números complejos y se utilizan para representar rotaciones en el espacio tridimensional.
 
-Filtro de Madgwick:
-El filtro de Madgwick es un algoritmo de fusión de sensores desarrollado por Sebastian Madgwick para estimar la orientación utilizando datos de sensores como giroscopios, acelerómetros y magnetómetros. El filtro de Madgwick es particularmente útil cuando se busca una solución computacionalmente eficiente y de baja latencia.
+    Las representaciones tridimensionales traen problemas como el bloqueo de cardán, que consiste en la pérdida de un grado de libertad en la representación de los ángulos de Euler.
 
-El filtro de Madgwick se basa en la representación de la orientación mediante cuaterniones y utiliza los datos de los sensores para actualizar y refinar la estimación del cuaternión de orientación. El algoritmo utiliza una combinación de la información proporcionada por los giroscopios (para estimar la velocidad angular) y los acelerómetros y magnetómetros (para estimar la gravedad y el vector magnético terrestre) para calcular la orientación.
+    Un cuaternión consta de cuatro componentes:
 
-El filtro de Madgwick utiliza una serie de ecuaciones y algoritmos basados en principios matemáticos y de física para filtrar y fusionar los datos de los sensores y estimar la orientación del objeto en tiempo real. El resultado es una estimación suave y precisa de la orientación, que se puede utilizar para diversas aplicaciones como la navegación, el seguimiento de movimiento y la realidad virtual.
+    \begin{enumerate}
+        \item Parte escalar (w).
+        \item Tres partes vectoriales (x, y, z).
+    \end{enumerate}
 
-En resumen, los cuaterniones son una forma eficiente y robusta de representar rotaciones en el espacio tridimensional, mientras que el filtro de Madgwick es un algoritmo de fusión de sensores que utiliza cuaterniones para estimar la orientación utilizando datos de sensores como giroscopios, acelerómetros y magnetómetros. Juntos, los cuaterniones y el filtro de Madgwick proporcionan una solución efectiva y precisa para la estimación de la orientación en diversas aplicaciones.
+    Se representan de la siguiente forma:
+
+    \begin{equation}
+        q = w + xi + yj + zk
+    \end{equation}
+
+    El filtro emplea esta representación para evitar los problemas asociados con la representación tridimensional de los ángulos de Euler, permitiendo que los datos de aceleración y magnetómetro se utilicen en un algoritmo de descenso de gradiente derivado de forma analítica y optimizado para calcular la dirección del error de medición del giroscopio como una derivada de cuaternión.
+
+    El algoritmo utiliza una combinación de la información proporcionada por los giroscopios (para estimar la velocidad angular) y los acelerómetros y magnetómetros (para estimar la gravedad y el vector magnético terrestre) para calcular la orientación.
+\end{itemize}
 
 \section{Sensores inteligentes}
 
@@ -578,12 +611,10 @@ En resumen, los cuaterniones son una forma eficiente y robusta de representar ro
 
 Si bien los sensores por sí mismos han permitido un rápido y sostenido desarrollo en todos los ámbitos de la instrumentación en distintas áreas de la industria, el advenimiento de la era digital y la miniaturización de los componentes ha impulsado cambios en la manera en la que se mide hoy en día. Con el poder de cómputo actual, los sensores aumentan sus capacidades cuando son parte de un sistema más grande capaz de procesar la información que estos proveen.
 
-
-
 Un sensor inteligente es un sistema en donde uno o varios sensores y una interfaz electrónica dedicada trabajan en conjunto. La tecnología empleada para llevar a cabo estos sistemas ha avanzado rápidamente en años recientes, lográndose obtener sistemas de un solo chip para medir temperatura o campo magnético \citep{nagayama2007structural}.
 
 
-El término sensor inteligente o \textit{"smart sensor"} surgió a mediados de los años 80. La "inteligencia" de estos dispositivos viene dada por un microcontrolador (MCU), un procesador de señales digitales (DSP) y circuitos de aplicación específica \citep{frank2002understanding}. Posteriormente, en el año 1998, el \textit{IEEE} en su estándar \textit{Networked smart transducer interface standard 1451} definió un \textit{"smart sensor"} como un transductor que provee funciones más allá de las necesarias para generar y representar una cantidad medida.
+El término sensor inteligente o \textit{``smart sensor''} surgió a mediados de los años 80. La ``inteligencia'' de estos dispositivos viene dada por un microcontrolador (MCU), un procesador de señales digitales (DSP) y circuitos de aplicación específica \citep{frank2002understanding}. Posteriormente, en el año 1998, el \textit{IEEE} en su estándar \textit{Networked smart transducer interface standard 1451} definió un \textit{``smart sensor''} como un transductor que provee funciones más allá de las necesarias para generar y representar una cantidad medida.
 
 %COMO CITAR UN ESTANDAR DE LA IEEE???
 
@@ -596,7 +627,7 @@ Un sensor inteligente suele tener 5 características esenciales, las cuales se r
     
     \item Capacidades de medición: La principal característica de un sensor es su capacidad de convertir una variable física en algún tipo de señal que pueda ser posteriormente procesada, en este caso por el microprocesador integrado, siendo el sensor el vínculo entre el procesador y los fenómenos físicos de interés. Un sensor inteligente, también llamado nodo, puede constar de varios sensores que miden distintas variables.
     
-    \item Comunicación inalámbrica: en gran medida, se busca que los sensores inteligentes sean capaces de reemplazar los actuales sistemas de medición cableados, permitiendo esto la expansión del sistema de medición a un bajo costo, además de las capacidades de transmisión que ofrecen alternativas como laser, infrarrojo, o incluso ondas de radio y telefonía.
+    \item Comunicación inalámbrica: En gran medida, se busca que los sensores inteligentes sean capaces de reemplazar los actuales sistemas de medición cableados, permitiendo esto la expansión del sistema de medición a un bajo costo, además de las capacidades de transmisión que ofrecen alternativas como laser, infrarrojo, o incluso ondas de radio y telefonía.
     
     \item Alimentación autónoma: Con frecuencia los sensores inteligentes son alimentados de forma autónoma como baterías, en particular en aplicaciones de difícil acceso, como es el caso de algunas estructuras civiles. Si bien esto representa un desafío, la logística y los requerimientos asociados a conectar todo un sistema mallado de sensores a la red eléctrica atenta en contra de la facilidad de instalación y mantenimiento de un sistema inteligente.
     
@@ -659,15 +690,15 @@ El monitoreo se refiere a la observación continua de un proceso, medición o me
 Un sistema de comunicaciones inalámbrico es un sistema de transmisión de información que utiliza ondas electromagnéticas para transmitir datos sin la necesidad de cables físicos. En lugar de utilizar conexiones alámbricas, se emplean tecnologías de radio, microondas, infrarrojos u otras frecuencias electromagnéticas para la transmisión de datos de manera inalámbrica. Los elementos principales de un sistema de comunicaciones se describen a continuación:
 
 \begin{itemize}
-    \item Transmisor: Dispositivo o sistema que se encarga de convertir una señal o información en una forma adecuada para su transmisión a través de un medio de comunicación. El transmisor realiza procesos de modulación y amplificación de la señal para adaptarla a las características del canal de transmisión del sistema.
+    \item Transmisor: Se refiere al dispositivo o sistema que se encarga de convertir una señal o información en una forma adecuada para su transmisión a través de un medio de comunicación. El transmisor realiza procesos de modulación y amplificación de la señal para adaptarla a las características del canal de transmisión del sistema.
 
     \item Canal de transmisión: Es el medio físico o inalámbrico a través del cual se envía la señal o información desde el transmisor al receptor. En el caso inalámbrico, este canal es el aire. Puede introducir distorsiones, atenuación, retardos o interferencias en la señal transmitida.
 
-    \item Receptor: Es el dispositivo o sistema que recibe la señal transmitida a través del canal de transmisión y la convierte nuevamente en una forma adecuada para su interpretación o uso. El receptor realiza procesos de demodulación, filtrado y amplificación de la señal recibida para recuperar la información original.
+    \item Receptor: Dentro de un canal de comunicaciones, es el dispositivo o sistema que recibe la señal transmitida a través del canal de transmisión y la convierte nuevamente en una forma adecuada para su interpretación o uso. El receptor realiza procesos de demodulación, filtrado y amplificación de la señal recibida para recuperar la información original.
 
     \item Interferencias: Las interferencias se refieren a señales o perturbaciones no deseadas que afectan la señal transmitida en el canal de comunicación. Estas interferencias pueden ser causadas por fuentes externas, como señales electromagnéticas de otros dispositivos o fenómenos naturales, o por interferencias internas generadas por componentes electrónicos o ruido en el propio sistema de comunicación. Las interferencias pueden degradar la calidad de la señal, causar errores en la transmisión o incluso impedir la correcta recepción de la información.
 
-    \item Ruido: El ruido es una señal o perturbación no deseada que se superpone a la señal útil durante la transmisión o recepción de datos. El ruido puede ser generado internamente en los componentes electrónicos, introducido por fuentes externas o ser el resultado de las características inherentes del canal de transmisión. 
+    \item Ruido: Puede definirse como una señal o perturbación no deseada que se superpone a la señal útil durante la transmisión o recepción de datos. El ruido puede ser generado internamente en los componentes electrónicos, introducido por fuentes externas o ser el resultado de las características inherentes del canal de transmisión. 
 
 \end{itemize}
 
@@ -676,11 +707,11 @@ Un sistema de comunicaciones inalámbrico es un sistema de transmisión de infor
 \begin{itemize}
     \item WiFi: Es el protocolo de comunicación inalámbrica más popular. Consiste en una tecnología inalámbrica que hace uso del estandar 802.11 del IEEE a través de frecuencias como 2.4 GHz y 5 GHz. Suele tener un rango entre 20 y 40 metros y se caracteriza por velocidades de transmisión muy altas, de hasta 600 Mbps.
     
-    \item Bluetooth: Bluetooth es una tecnología utilizada para el intercambio de datos a distancias cortas (con un rango entre 50 y 100 metros) que hace uso de frecuencias entre 2.4 a 2.485 GHz. Tiene una velocidad máxima de 1 Mbps y es ampliamente utilizado para transferencia de datos entre dispositivos móviles.
+    \item Bluetooth: Bluetooth, uno de los medios de comunicación más utilizados en la actualidad, es una tecnología utilizada para el intercambio de datos a distancias cortas (con un rango entre 50 y 100 metros) que hace uso de frecuencias entre 2.4 a 2.485 GHz. Tiene una velocidad máxima de 1 Mbps y es ampliamente utilizado para transferencia de datos entre dispositivos móviles.
     
     \item Zigbee: Zigbee es un estándar de comunicación inalámbrica de corto alcance y bajo consumo de energía diseñado para aplicaciones de Internet de las cosas (IoT). Utiliza la tecnología de radio de baja potencia y bajo consumo para permitir la comunicación inalámbrica entre dispositivos Zigbee, como sensores, actuadores y controladores. Zigbee opera en las bandas de frecuencia de 2.4 GHz, 900 MHz u 868 MHz y se basa en una topología de malla, lo que significa que los dispositivos pueden comunicarse directamente entre sí o a través de otros dispositivos Zigbee cercanos. 
     
-    \item MQTT (Message Queuing Telemetry Transport): MQTT es un protocolo liger basado en el modelo "publish/subscribe", diseñado por ingenieros de la IBM y Arcom Systems específicamente para aplicaciones del internet de las cosas (Internet of Things), requiriendo poco ancho de banda y siendo fiable en redes inestables. Consiste en un broker, encargado de gestionar los datos, al cual se conectan los clientes, los cuales pueden publicar (enviar datos), o suscribirse a un tópico del broker (acceder a los datos que se publicaron a ese tópico desde algún cliente).
+    \item MQTT (Message Queuing Telemetry Transport): MQTT es un protocolo liger basado en el modelo ``publish/subscribe'', diseñado por ingenieros de la IBM y Arcom Systems específicamente para aplicaciones del internet de las cosas (Internet of Things), requiriendo poco ancho de banda y siendo fiable en redes inestables. Consiste en un broker, encargado de gestionar los datos, al cual se conectan los clientes, los cuales pueden publicar (enviar datos), o suscribirse a un tópico del broker (acceder a los datos que se publicaron a ese tópico desde algún cliente).
     
     \begin{figure}[H]
         \centering
@@ -696,7 +727,7 @@ Un sistema de comunicaciones inalámbrico es un sistema de transmisión de infor
 \begin{itemize}
 
     \item NB-IoT: NB-IoT (Narrowband Internet of Things) es un estándar de comunicación de larga distancia y bajo consumo de energía para dispositivos IoT. Utiliza la infraestructura de redes celulares existentes y opera en bandas de frecuencia estrechas para proporcionar conectividad de bajo ancho de banda y larga duración de la batería.
-    \item Sigfox:es una tecnología de comunicación de larga distancia y bajo consumo de energía diseñada para el IoT. Utiliza una red de bajo consumo de energía y bajo costo para transmitir pequeñas cantidades de datos de forma eficiente. Sigfox es utilizado en aplicaciones de seguimiento de activos, monitoreo ambiental y aplicaciones industriales. 
+    \item Sigfox: Es una tecnología de comunicación de larga distancia y bajo consumo de energía diseñada para el IoT. Utiliza una red de bajo consumo de energía y bajo costo para transmitir pequeñas cantidades de datos de forma eficiente. Sigfox es utilizado en aplicaciones de seguimiento de activos, monitoreo ambiental y aplicaciones industriales. 
     \item LoRa: LoRa (Long Range) es una tecnología de comunicación inalámbrica de largo alcance y baja potencia diseñada para aplicaciones de IoT y M2M (\textit{machine-to-machine}). Se basa en el estándar LoRaWAN (\textit{LoRa Wide Area Network}) y utiliza una modulación de espectro ensanchado para lograr una mayor cobertura y capacidad de penetración en comparación con otras tecnologías inalámbricas. LoRa opera en las bandas de frecuencia libre de licencia y puede proporcionar alcances de varios kilómetros en áreas urbanas y aún mayores en áreas rurales. Debido a su bajo consumo de energía, es adecuado para dispositivos de batería de larga duración y aplicaciones de bajo ancho de banda.
 \end{itemize}
 
@@ -710,6 +741,7 @@ Dependiendo de la aplicación se debe escoger la tecnología más conveniente. E
 \end{figure}
 
 \subsection{Protocolo LoRa}
+\label{sec:protocololora}
 
 Esta tecnología fue desarrollada en Francia en el año 2012 por la empresa francesa Semtech. Es el tipo de modulación utilizado entre dos dispositivos LoRa o entre un \textit{end-device} y un \textit{gateway}. 
 
@@ -720,7 +752,7 @@ Suelen confundirse los términos LoRa y LoRaWAN (Long Range Wide Area Network). 
 \begin{itemize}
     \item Funcionamiento: LoRa utiliza una técnica de modulación de espectro ensanchado llamada modulación de espectro ensanchado de baja potencia (CSS, por sus siglas en inglés). Esta técnica permite que las señales de radio se propaguen a distancias más largas y atraviesen obstáculos, lo que proporciona una mayor cobertura en comparación con otras tecnologías inalámbricas.
     
-    Para transmitir los datos hace uso de "Chirps" (Compressed High Intensity Radar Pulse por sus siglas en inglés), de donde viene su nombre CSS. Esta señal, que puede observarse en la figura \ref{fig:chirp}. Un chirp es una señal que varía en frecuencia linealmente con el tiempo.
+    Para transmitir los datos hace uso de ``Chirps'' (Compressed High Intensity Radar Pulse por sus siglas en inglés), de donde viene su nombre CSS. Esta señal, que puede observarse en la figura \ref{fig:chirp}. Un chirp es una señal que varía en frecuencia linealmente con el tiempo.
 
     \begin{figure}[H]
         \centering
@@ -729,7 +761,7 @@ Suelen confundirse los términos LoRa y LoRaWAN (Long Range Wide Area Network). 
         \label{fig:chirp}
     \end{figure}
 
-    \item Ancho de banda: Se refiere a la cantidad de espectro de frecuencia ocupado por una señal de transmisión. Es un parámetro importante que determina la capacidad de transmisión de datos y la eficiencia espectral de la comunicación. En LoRa, el ancho de banda se puede configurar en diferentes opciones, como 125 kHz, 250 kHz y 500 kHz. La elección del ancho de banda afecta directamente la velocidad de transmisión de datos y el alcance de la comunicación.
+    \item Ancho de banda: Uno de los parámetros más importantes dentro de un canal de comunicaiones. Puede definirse como la cantidad de espectro de frecuencia ocupado por una señal de transmisión. Es un parámetro importante que determina la capacidad de transmisión de datos y la eficiencia espectral de la comunicación. En LoRa, el ancho de banda se puede configurar en diferentes opciones, como 125 kHz, 250 kHz y 500 kHz. La elección del ancho de banda afecta directamente la velocidad de transmisión de datos y el alcance de la comunicación.
     
     \begin{figure}[H]
         \centering
@@ -785,7 +817,7 @@ Suelen confundirse los términos LoRa y LoRaWAN (Long Range Wide Area Network). 
 
 
 
-    \item Tasa de codificación (CR): En LoRa, se utiliza la codificación de corrección de errores de tipo "\textit{forward error correction}" (FEC), que permite detectar y corregir errores en la recepción de los datos. El coding rate especifica la cantidad de bits redundantes que se agregan a los datos para mejorar la confiabilidad de la comunicación. En el caso de un $CR = 4 / 8$, 8 bits son transmitidos mientras que solo 4 bits contienen información útil.
+    \item Tasa de codificación (CR): En LoRa, se utiliza la codificación de corrección de errores de tipo ``\textit{forward error correction}'' (FEC), que permite detectar y corregir errores en la recepción de los datos. El coding rate especifica la cantidad de bits redundantes que se agregan a los datos para mejorar la confiabilidad de la comunicación. En el caso de un $CR = 4 / 8$, 8 bits son transmitidos mientras que solo 4 bits contienen información útil.
     
     
     \item Consumo de energía: El protocolo se caracteriza por tener un bajo consumo de energía, permitiendo ser empleado en dispositivos a baterías para envío de datos periódicos. Esto se traduce en velocidades bajas de tranmisión y cargas útiles (payloads) menores a los encontrados en otras tecnologías, sin embargo, la relación entre las distancias largas a cubrir y los algoritmos de detección permiten que para ciertas aplicaciones este protocolo sea el ideal, razón por la cual se ha convertido en uno de los más utilizados en años recientes.
@@ -809,7 +841,8 @@ Los análisis de vibración suelen analizarse utilizando la Transformada Rápida
 
 % When we are dealing with random signal, normally we will use Power Spectrum Density (PSD). For these types of post processing, we may want to properly set frequency resolution, windowing type, averaging, etc to be able to obtain meaningful result. For even deeper analysis, we can go for Frequency Response Function (FRF/Transmissibility) or even Waterfall (Order Tracking) analysis. By doing this, we may be able to see the dynamic characteristic of our structure (resonance, damping, Q factor, etc). For short duration transient shock pulse, sometimes we want to use Shock Response Spectrum (SRS) to check the frequency content. For fatigue analysis, especially for random signal, we can perform rainflow counting analysis. Combining this with S-N fatigue curve, we may be able to calculate the fatigue damage.
 
-\subsection{Transformada de Fourier} Ls una herramienta matemática utilizada para descomponer una función en sus componentes de frecuencia. Permite analizar una señal en el dominio de la frecuencia y determinar las diferentes frecuencias que la componen. Se ha convertido en una de las principales herramientas para resolver muchos desfíos de la comunidad científica, siendo su aplicación más conocida en el análisis de sistemas lineales invariantes en el tiempo. Se define matemáticamente como sigue:
+\subsection{Transformada de Fourier}
+Es una herramienta matemática utilizada para descomponer una función en sus componentes de frecuencia. Permite analizar una señal en el dominio de la frecuencia y determinar las diferentes frecuencias que la componen. Se ha convertido en una de las principales herramientas para resolver muchos desfíos de la comunidad científica, siendo su aplicación más conocida en el análisis de sistemas lineales invariantes en el tiempo. Se define matemáticamente como sigue:
 
 \begin{equation}
     F(k) = \int_{-\infty}^{\infty} f(x) e^{-2\pi i k x} dx
@@ -832,7 +865,7 @@ En la figura \ref{fig:fourier} se observa como una señal compuesta por distinta
 
 \subsection{Transformada Rápida de Fourier} Tal vez uno de los algoritmos más importantes de todos los tiempos. Descrita por algunos de sus autores principales, la transformada rápida de Fourier  (FFT por sus siglas en inglés) es una herramienta computacional que facilita el análisis de señales en el espectro de la frecuencia mediante el uso de computadores digitales. Ejecuta la transformada discreta de fourier de una forma más eficiente 
 
-La transformada de Fourier exige un cálculo que puede ser computacionalmente costoso, especialmente cuando se trata de muchos puntos. Es ahí donde la FFT explota las simetrías matemáticas para lograr disminuir el cálculo de una complejidad $O(N^2)$, una función prácticamente lineal en "n", a mayor "n" el valor no crece tan rápidamente que la expresión cuadrática origianl. Siendo N es el número de datos, a una complejidad de $O(N\log_{N})$. Se describe matemáticamente utilizando la siguiente expresión:
+La transformada de Fourier exige un cálculo que puede ser computacionalmente costoso, especialmente cuando se trata de muchos puntos. Es ahí donde la FFT explota las simetrías matemáticas para lograr disminuir el cálculo de una complejidad $O(N^2)$, una función prácticamente lineal en ``n'', a mayor ``n'' el valor no crece tan rápidamente que la expresión cuadrática origianl. Siendo N es el número de datos, a una complejidad de $O(N\log_{N})$. Se describe matemáticamente utilizando la siguiente expresión:
 
 \begin{equation}
     X[k] = \sum_{n=0}^{N-1} x[n] \cdot e^{-j 2 \pi k n / N}
@@ -841,8 +874,8 @@ La transformada de Fourier exige un cálculo que puede ser computacionalmente co
 Donde:
 
 \begin{itemize}
-    \item X[k] = Muestra "k" de la transformada discreta de Fourier (DFT).
-    \item x[n] = Muestra "n" de la señal de entrada.
+    \item X[k] = Muestra ``k'' de la transformada discreta de Fourier (DFT).
+    \item x[n] = Muestra ``n'' de la señal de entrada.
     \item N = Cantidad de muestras.
     \item j = Unidad imaginaria
     \item $e$ = base del logaritmo natural.
@@ -876,9 +909,9 @@ Una vez se lleva a cabo la FFT, se debe analizar el espectro en frecuencia para 
 
 % \subsection{Filtros Digitales}
 
-\subsection{Aventanamiento} Las señales provenientes de los sensores representan una ventana finita de tiempo, es decir, contienen una cantidad finita de datos. Es bien conocido que la FFT asume señales periódicas en el tiempo, eso se traduce en que las ecuaciones asumen que los datos se repiten una vez se termina el registro hasta el infinito. Esto genera discontinuidades notables en los bordes del registro que suelen verse como componentes frecuenciales que aparecen alrededor de las frecuencias naturales reales del sistema en estudio, fenómeno conocido como filtración de espectro o \textit{spectral leakage}, estas señales de alta frecuencia aparecen como "alias" en las componentes de baja frecuencia, comportamiento que es indeseado para términos de análisis.
+\subsection{Aventanamiento} Las señales provenientes de los sensores representan una ventana finita de tiempo, es decir, contienen una cantidad finita de datos. Es bien conocido que la FFT asume señales periódicas en el tiempo, eso se traduce en que las ecuaciones asumen que los datos se repiten una vez se termina el registro hasta el infinito. Esto genera discontinuidades notables en los bordes del registro que suelen verse como componentes frecuenciales que aparecen alrededor de las frecuencias naturales reales del sistema en estudio, fenómeno conocido como filtración de espectro o \textit{spectral leakage}, estas señales de alta frecuencia aparecen como ``alias'' en las componentes de baja frecuencia, comportamiento que es indeseado para términos de análisis.
 
-Para evitar este fenómeno se utiliza el método de aventanamiento, en el cual se multiplica la ventana de tiempo por una función que suaviza los ejes y disminuye su contribución en el espectro. Estas funciones hacen que los bordes del registro se "encuentren" como si se tratase de una señal periódica, resultando en un espectro mucho más limpio y en picos más claros.
+Para evitar este fenómeno se utiliza el método de aventanamiento, en el cual se multiplica la ventana de tiempo por una función que suaviza los ejes y disminuye su contribución en el espectro. Estas funciones hacen que los bordes del registro se ``encuentren'' como si se tratase de una señal periódica, resultando en un espectro mucho más limpio y en picos más claros.
 
 Algunas de las funciones de aventanamiento más utilizadas:
 \begin{itemize}

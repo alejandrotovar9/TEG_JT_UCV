@@ -285,33 +285,6 @@ Dunn, W.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Elberger%
-}{%
-Elberger%
-}{%
-{\protect \APACyear {2021}}%
-}]{%
-rtos}
-\APACinsertmetastar {%
-rtos}%
-\begin{APACrefauthors}%
-Elberger, R.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2021}{}{}.
-\newblock
-\APACrefbtitle {Why SESIP™ Certification for FreeRTOS Matters.} {Why sesip™
-  certification for freertos matters.}
-\newblock
-\begin{APACrefURL}
-  \url{https://www.freertos.org/2021/03/why-sesip-certification-for-freertos-matters.html}
-  \end{APACrefURL}
-\newblock
-\APACrefnote{Consultado: 02/05/2024}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Enckell%
 }{%
 Enckell%
@@ -440,6 +413,31 @@ Frank, R.%
   smart sensors 2nd edn}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Measurement Science and Technology}{13}{9}{1501--1502}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+FreeRTOS%
+}{%
+FreeRTOS%
+}{%
+{\protect \APACyear {2024}}%
+}]{%
+rtos}
+\APACinsertmetastar {%
+rtos}%
+\begin{APACrefauthors}%
+FreeRTOS.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2024}{}{}.
+\newblock
+\APACrefbtitle {FreeRTOS Documentation.} {Freertos documentation.}
+\newblock
+\begin{APACrefURL} \url{https://www.freertos.org/Documentation/RTOS_book.html}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{Consultado: 18/01/2024}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -673,6 +671,32 @@ Komarizadehasl, S.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Lamkin-Kennard%
+\ \BBA {} Popovic%
+}{%
+Lamkin-Kennard%
+\ \BBA {} Popovic%
+}{%
+{\protect \APACyear {2019}}%
+}]{%
+lamkin2019sensors}
+\APACinsertmetastar {%
+lamkin2019sensors}%
+\begin{APACrefauthors}%
+Lamkin-Kennard, K\BPBI A.%
+\BCBT {}\ \BBA {} Popovic, M\BPBI B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Sensors: Naturaland synthetic sensors} {Sensors:
+  Naturaland synthetic sensors}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Biomechatronics}{}{}{81--107}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Li%
 , Deng%
 \BCBL {}\ \BBA {} Xie%
@@ -700,6 +724,32 @@ Li, J.%
 \APACjournalVolNumPages{Sensors}{15}{}{8832-8851}.
 \newblock
 \begin{APACrefDOI} \doi{10.3390/s150408832} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Madgwick%
+\ \protect \BOthers {.}}{%
+Madgwick%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2010}}%
+}]{%
+madgwick2010efficient}
+\APACinsertmetastar {%
+madgwick2010efficient}%
+\begin{APACrefauthors}%
+Madgwick, S.%
+\BCBT {}\ \BOthersPeriod {.}
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2010}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {An efficient orientation filter for inertial and
+  inertial/magnetic sensor arrays} {An efficient orientation filter for
+  inertial and inertial/magnetic sensor arrays}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Report x-io and University of Bristol
+  (UK)}{25}{}{113--118}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -988,6 +1038,32 @@ Survey, U\BPBI S\BPBI G.%
   \end{APACrefURL}
 \newblock
 \APACrefnote{Consultado: 04/05/2024}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Systems%
+}{%
+Systems%
+}{%
+{\protect \APACyear {2016}}%
+}]{%
+datasheetESP32}
+\APACinsertmetastar {%
+datasheetESP32}%
+\begin{APACrefauthors}%
+Systems, E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2016}{}{}.
+\newblock
+\APACrefbtitle {ESP-IDF Programming Guide.} {Esp-idf programming guide.}
+\newblock
+\begin{APACrefURL}
+  \url{https://docs.espressif.com/projects/esp-idf/en/stable/esp32/index.html}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{Consultado: 15/11/2024}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
