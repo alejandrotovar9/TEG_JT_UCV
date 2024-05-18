@@ -1,13 +1,19 @@
 \babel@toc {spanish}{}\relax 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {2.1}{\ignorespaces Ventajas y desventajas de los enfoques de monitoreo.}}{52}{table.2.1}%
+\contentsline {table}{\numberline {2.1}{\ignorespaces Ventajas y desventajas de los enfoques de monitoreo.}}{54}{table.caption.27}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Comparación entre protocolos de comunicación inalámbrica, \citep {IoTCompare} y \citep {LPWANCompare}}}{74}{table.3.1}%
-\contentsline {table}{\numberline {3.2}{\ignorespaces Comparación entre módulos LoRa del fabricante Semtech \citep {datasheetSemtech}.}}{74}{table.3.2}%
-\contentsline {table}{\numberline {3.3}{\ignorespaces Comparación entre placas de desarrollo basadas en MCU}}{77}{table.3.3}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces Comparación entre protocolos de comunicación inalámbrica, \citep {IoTCompare} y \citep {LPWANCompare}}}{76}{table.caption.38}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces Comparación entre módulos LoRa del fabricante Semtech \citep {datasheetSemtech}.}}{76}{table.caption.39}%
+\contentsline {table}{\numberline {3.3}{\ignorespaces Comparación entre placas de desarrollo basadas en MCU}}{79}{table.caption.43}%
+\contentsline {table}{\numberline {3.4}{\ignorespaces Especificaciones del MPU6050 de Invensense.}}{82}{table.caption.49}%
+\contentsline {table}{\numberline {3.5}{\ignorespaces Especificaciones del sensor BME280 de Bosch.}}{84}{table.caption.53}%
+\contentsline {table}{\numberline {3.6}{\ignorespaces Especificaciones del MPU9250 de Invensense.}}{86}{table.caption.57}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Resultados de pruebas realizadas con módulo de comunicaciones Ra-02.}}{112}{table.4.1}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces Resultados de pruebas realizadas con módulo de comunicaciones Ra-02.}}{118}{table.caption.76}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Especificaciones de la tarjeta de adquisición PCI-6221 de National Instruments}}{124}{table.caption.83}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Especificaciones del acelerómetro FBA-11 de Kinemetrics}}{125}{table.caption.85}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces Comparación entre características de los sistemas de medición utilizados.}}{131}{table.caption.92}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

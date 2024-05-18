@@ -1,0 +1,416 @@
+\begin{lstlisting}[language=C++, caption=Tarea de lectura de datos de aceleración triaxial]
+  void leerDatosACL(void *pvParameters){
+      //Leer los valores del Acelerometro de la IMU
+      while(true){
+          mpu.getEvent(&a, &g, &tem);
+          ACLData aclData; //Estructura a ser llenada con 3 ejes
+    
+          aclData.AclX = a.acceleration.x - acl_offset[0];
+          aclData.AclY = a.acceleration.y - acl_offset[1]; 
+          aclData.AclZ = a.acceleration.z - acl_offset[2];
+    
+          if(F_SAMPLING != 0){
+            vTaskDelay(F_SAMPLING/portTICK_PERIOD_MS);
+          }
+          
+          //Evaluo los valores actuales de aceleracion
+          if(flag_limite == 0){
+            flag_limite = evaluar_limites_acl(aclData.AclX, aclData.AclY, aclData.AclZ);
+            flag_time = checktime();
+            if(flag_limite != 0){
+              flag_acl == true;
+              globalTimestamp = getEpochTime();
+              //Activando banderas para registro de temperatura y humedad
+              flag_inc = 1;
+              flag_temp_hum = 1;
+    
+              //Cambio en el LED de toma de datos
+              digitalWrite(LED_EST1, HIGH);
+              //Suspende tarea de LED IDLE
+              vTaskSuspend(xHandle_blink);
+            }
+            if(flag_time){
+              flag_limite = 1;
+              flag_inc = 1;
+              flag_temp_hum = 1;
+              globalTimestamp = getEpochTime();
+    
+              //Cambio en el LED de toma de datos
+              digitalWrite(LED_EST1, HIGH);
+              //Suspende tarea de LED IDLE
+              vTaskSuspend(xHandle_blink);
+              }
+          }
+    
+          //solo evalua si no se sobrepaso el limite al mismo tiempo
+          if(flag_acl == true && flag_limite == 0){
+              //Se cambia el valor de flag limite para solo ejecutar esto 1 vez
+              flag_limite = 1;
+              flag_inc = 1;
+              flag_temp_hum = 1;
+              globalTimestamp = getEpochTime();
+    
+              //Cambio en el LED de toma de datos
+              digitalWrite(LED_EST1, HIGH);
+              //Suspende tarea de LED IDLE
+              vTaskSuspend(xHandle_blink);
+          }
+    
+          //Envia los datos a la cola solo si se supero el limite
+          if(flag_limite != 0 || flag_acl == true || flag_time == 1)
+          {
+            if(xQueueSend(aclQueue, &aclData, portMAX_DELAY)){
+              vTaskResume(xHandle_crearBuffer); //Se llenan los buffers para enviar los datos
+            }
+            else{
+              continue;
+            }
+          }
+          else{
+            continue;
+          }
+      }
+    }
+    
+\end{lstlisting}
+
+\begin{lstlisting}[language=C++, caption=Tarea de creación de buffer para envío a módulo LoRa]
+
+void crearBuffer(void *pvParameters){
+  while(true){
+
+    ACLData datos_acl;
+
+    //Recibo los datos de la cola y los guardo en la estructura creada
+    if(xQueueReceive(aclQueue, &datos_acl, portMAX_DELAY)){
+      if( k <= NUM_DATOS ){
+        if(k == 1) tiempo1 = millis();
+        //Lleno el buffer de datos
+        struct_buffer_acl.bufferX[k] = datos_acl.AclX;
+        struct_buffer_acl.bufferY[k] = datos_acl.AclY;
+        struct_buffer_acl.bufferZ[k] = datos_acl.AclZ;
+        k++;
+      }
+      else{
+        //Reiniciando para sobreescribir en buffers "nuevos" en la siguiente accion
+        k = 0;
+        cont2 = 0;
+        cont2_inc = 0;
+
+        //Se siguen tomando datos mas no se guardan en los buffers
+        flag_limite = 0;
+        flag_inc = 0;
+        flag_temp_hum = 0;
+        flag_time = 0;
+        flag_acl = false; //Reinicio booleano de recepcion LoRa para toma de decisiones en proxima peticion
+
+        //Apago led indicativo de toma de datos
+        digitalWrite(LED_EST1, LOW);
+
+
+        //Envio los resultados a la cola
+        if(xQueueSend(tramaLoRaQueue, &struct_buffer_acl, portMAX_DELAY)){
+           vTaskSuspend(xHandle_leerDatosACL); //suspendo adquisicion hasta que se envie todo
+           vTaskSuspend(xHandle_readBMETask);
+           vTaskSuspend(xHandle_readMPU9250);
+
+          //Se envian los datos mediante lora
+          vTaskResume(xHandle_send_packet);
+        }
+        else{
+          Serial.println("No se envio la cola...");
+        }
+
+        vTaskResume(xHandle_blink);
+      }
+    }
+    else{
+      Serial.println("No se recibio la cola correctamente...");
+    };
+
+    //vPortFree(NULL);
+ 
+    //Se suspende esta tarea para esperar la toma de datos
+    vTaskSuspend(xHandle_crearBuffer);
+
+  }
+}
+
+\end{lstlisting}
+
+\begin{lstlisting}[language=C++, caption=Función del sensor inteligente para generar arreglos de datos de aceleración en paquetes de 128 bytes]
+
+int generararray(int contador_paquetes)
+{
+
+    //Recibiendo cola con datos de aceleracion en estructura de datos 
+    //Los datos son un float array dentro del buffer
+    if(contador_paquetes == 0){
+          const int chunkSize = 64;
+          contador_paquetes_interno = 0; //REINICIO CONTADOR INTERNO INDEPENDIENTE DE SI ENTRO POR PRIMERA VEZ
+
+          if(xQueueReceive(tramaLoRaQueue, &trama, portMAX_DELAY))
+          {
+            //Evita el error por MeditationGuru en Core0
+            //Copia los datos por partes en vez de completos, evita problemas de reboot
+            for (int i = 0; i < NUM_DATOS; i += chunkSize)
+            {
+                // Calculate the size of the current chunk
+                int currentChunkSize = min(chunkSize, NUM_DATOS - i);
+
+                // Copy and process the chunk
+                memcpy(floatArrayX + i, trama.bufferX + i, currentChunkSize * sizeof(float));
+                memcpy(floatArrayY + i, trama.bufferY + i, currentChunkSize * sizeof(float));
+                memcpy(floatArrayZ + i, trama.bufferZ + i, currentChunkSize * sizeof(float));
+
+                // Process the data in floatArrayX, floatArrayY, and floatArrayZ here
+            }
+            /*The memcpy function takes three arguments: the destination pointer, the source pointer, and the number of bytes to copy.*/
+          }
+          selectedFloatArray = floatArrayX;
+    }
+    else if(contador_paquetes == NUM_DATOS/CHUNK_SIZE) //32/64/128...
+    {
+          contador_paquetes_interno = 0;
+          selectedFloatArray = floatArrayY;
+    }
+    else if(contador_paquetes == NUM_DATOS/CHUNK_SIZE*2) // (NUM_DATOS/CHUNKSIZE - 1)*2
+    {
+          contador_paquetes_interno = 0;
+          selectedFloatArray = floatArrayZ;
+    }
+
+    // Calculate the number of chunks
+    int numChunks = sizeof(floatArrayX) / sizeof(float) / CHUNK_SIZE; //El numero de chunks indica el numero de bytes final
+    //Print the amount of chunks
+    Serial.print("Amount of chunks calculated: ");
+    Serial.println(numChunks);
+    
+
+    // Check if the size of floatArray is divisible by CHUNK_SIZE
+    if (NUM_DATOS / sizeof(float) % CHUNK_SIZE != 0) {
+        Serial.println("Error: Size of floatArray is not divisible by CHUNK_SIZE");
+    }
+    // Create an array to hold the chunks
+    float chunks[numChunks][CHUNK_SIZE];
+
+    // Split the array into chunks
+    for (int i = 0; i < numChunks; i++) {
+      memcpy(chunks[i], &selectedFloatArray[i * CHUNK_SIZE], CHUNK_SIZE * sizeof(float)); //Copiar 128bytes de Float Array (a partir de la posicion especificada por i) en chunks
+    }
+
+    if(xQueueSend(arrayQueue, &chunks[contador_paquetes_interno], portMAX_DELAY) == pdTRUE){
+      Serial.println("Se envio la cola a la tarea de envio LoRa.");
+    }
+    else{
+      Serial.println("Problema al enviar cola...");
+      return 0;
+    }
+
+    contador_paquetes_interno++;
+
+    return 1;
+}
+
+\end{lstlisting}
+
+\begin{lstlisting}[language=C++, caption=Tarea de envío de datos de aceleración desde sensor inteligente]
+
+void send_packet(void *pvParameters){
+  while(1){
+    transmitFlag = true;
+
+    //detach interrupt from pin 2
+    detachInterrupt(2);
+
+    Serial.print("Contador de paquetes actual antes de entrar en generararray: ");
+    Serial.println(contador_paquetes);
+
+    // if(contador_paquetes >= ((NUM_DATOS * 4))*3 / 128){
+    //   contador_paquetes = 0;
+    // }
+
+    generararray(contador_paquetes); //Genero el array y mando un chunk, dependiendo del contador
+
+    
+    if(contador_paquetes < (((NUM_DATOS * 4))*3 / 128)){
+         contador_paquetes++; //Aumento el contador para enviar el siguiente paquete en el proximo envio
+    }
+
+     float floatarray[CHUNK_SIZE];
+     byte data[CHUNK_SIZE * sizeof(float)]; //Inicializacion de byte array
+
+     if(xQueueReceive(arrayQueue, &floatarray, portMAX_DELAY)){
+        Serial.println("Se recibio la cola con los datos");
+     }
+    
+     memcpy(data, floatarray, sizeof(floatarray)); //CHUNK_SIZE * sizeof(float)
+    
+    size_t size_data;
+
+    size_data = sizeof(data);
+
+    //Llamo a la funcion que crea la trama de datos (payload)
+    sendmessage_radiolib(size_data, data);
+    Serial.println("Sending byte array con datos!");
+    Serial.println();
+
+    //Espero X segundos luego de enviar mensaje
+    vTaskDelay(interval/portTICK_PERIOD_MS);
+
+    //Suspendo esta tarea hasta que se reciba otro mensaje
+    if(contador_paquetes >= (((NUM_DATOS * 4))*3 / 128)){
+      
+    //Ejecuto funciones para calcular valor promedio de variables cuasiestaticas
+      promediofinal_inc();
+      promediofinal_temphum();
+      send_thi();
+
+      iteraciones_peticiones++;
+      Serial.print("Iteraciones: ");
+      Serial.println(iteraciones_peticiones);
+
+      if(iteraciones_peticiones == 2){
+        Serial.println("Reiniciando micro...");
+        esp_restart();
+      }
+
+      Serial.println("Reactivando tareas de adquisicion de datos!");
+      contador_paquetes = 0;
+      vTaskResume(xHandle_leerDatosACL);
+      vTaskResume(xHandle_readBMETask);
+      vTaskResume(xHandle_readMPU9250);
+
+        Serial.print("Memoria disponible en send task: ");
+        Serial.println(ESP.getFreeHeap());
+        Serial.println(ESP.getFreePsram());
+        Serial.println(uxTaskGetStackHighWaterMark(NULL));
+
+      transmitFlag = false; 
+      Serial.print(F("[SX1278] Comienza a escuchar comandos de nuevo... "));
+      attachInterrupt(digitalPinToInterrupt(2), setFlag, RISING);
+      int state = radio.startReceive();
+      if (state == RADIOLIB_ERR_NONE) {
+        Serial.println(F("exito!"));
+      } 
+      else{
+        Serial.print(F("fallo, codigo "));
+        Serial.println(state);
+        //while (true);
+      }
+
+      vTaskSuspend(NULL);
+    }
+  }  
+}
+
+\end{lstlisting}
+
+\begin{lstlisting}[language=C++, caption=Tarea de lectura de datos de temperatura y humedad]
+
+void readBMETask(void *parameter) {
+  while (true) {
+    //Crea una estructura de tipo BMEData
+    BMEData data_readtemp;
+
+    //Lee los valores del sensor y los guarda en la estructura
+    data_readtemp.humidity = bme.readHumidity();
+    data_readtemp.temperature = bme.readTemperature();
+
+    //Envia los datos a la cola dataQueue si bandera esta activada
+    if(flag_temp_hum){
+        if(xQueueSend(data_temphumQueue, &data_readtemp, portMAX_DELAY)){
+          //Serial.println("Se envio correctamente la cola de temperatura");
+          vTaskDelay(10 / portTICK_PERIOD_MS);
+          vTaskResume(xHandle_receive_temphum); //Reactivo tarea de creacion de buffers y promedios
+        }
+        else{
+          Serial.println("No se envio correctamente la cola de temperatura");
+        }
+    }
+    
+    //Delay dependiendo del tiempo de muestreo
+    vTaskDelay(T_SAMPLING_TEMPHUM / portTICK_PERIOD_MS); //5Hz
+  }
+}
+
+
+\begin{lstlisting}[language=C++, caption= Tarea de lectura de datos del MPU9250]
+
+void readMPU9250(void *pvParameters){
+  while (true) {
+      //Crea una estructura de tipo IncData
+      IncData data_inc;
+
+       //Lee los valores del sensor y los guarda en la estructura
+       if(mpu9250.update()){
+          data_inc.IncRoll = mpu9250.getRoll();
+          data_inc.IncPitch = mpu9250.getPitch();
+          data_inc.IncYaw = mpu9250.getYaw();
+
+          //Envia los datos a la cola incQueue solo si la bandera esta activada
+          if(flag_inc){
+            if(xQueueSend(incQueue, &data_inc, portMAX_DELAY)){
+            //Serial.println("Se envio correctamente la cola de inclinacion");
+            vTaskResume(xHandle_recInclinacion); //Reactivo tarea de creacion de buffers y promedios
+            }
+            else{
+              Serial.println("No se envio correctamente la cola de inclinacion");
+              continue;
+            }
+          }
+          vTaskDelayUntil(&xLastWakeTime, T_SAMPLING_INC / portTICK_PERIOD_MS)
+       }
+}
+\end{lstlisting}
+
+\begin{lstlisting}[language=C++, caption=Tarea de envío de datos de variables ambientales e inclinación desde sensor inteligente]
+
+  int send_thi_radiolib(time_t tstamp, float temp, float hum, float yaw, float pitch, float roll){
+  if(transmitFlag){
+    Serial.print(F("[SX1278] Transmitiendo T.H.I ... "));
+
+    THIPacket packet; //Creando paquete como estructura Packet
+
+    //Se llena estructura de datos
+    packet.messageID = 200;
+    packet.senderID = 0x2;
+    packet.receiverID = 0x1; 
+    packet.timestamp = tstamp;
+    packet.temperature = temp;
+    packet.humidity = hum;
+    packet.yaw = yaw;
+    packet.pitch = pitch;
+    packet.roll = roll;
+    
+    //Generacion de byte array
+    byte* packetBytes = reinterpret_cast<byte*>(&packet);
+
+    int state = radio.startTransmit(packetBytes, sizeof(packet));
+
+    if (state == RADIOLIB_ERR_NONE) {
+      Serial.println(F(" exito!"));
+      return 1;
+
+    } else if (state == RADIOLIB_ERR_PACKET_TOO_LONG) {
+      Serial.println(F("muy largo!"));
+      return 0;
+
+    } else if (state == RADIOLIB_ERR_TX_TIMEOUT) {
+      Serial.println(F("timeout!"));
+      return 0;
+
+    } else {
+      Serial.print(F("fallo, codigo "));
+      Serial.println(state);
+      return 0;
+    }
+    return 1;
+  }
+  else{
+      Serial.println("Se estan recibiendo datos");
+      return 0;
+  }  
+}
+
+\end{lstlisting}

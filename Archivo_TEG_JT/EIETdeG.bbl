@@ -262,6 +262,34 @@ conatel}%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+{Comisión Venezolana de Normas Industriales}%
+}{%
+{Comisión Venezolana de Normas Industriales}%
+}{%
+{\protect \APACyear {2019}}%
+}]{%
+covenin}
+\APACinsertmetastar {%
+covenin}%
+\begin{APACrefauthors}%
+{Comisión Venezolana de Normas Industriales}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{}{}.
+\newblock
+\APACrefbtitle {{Norma COVENIN 1756-1:2019 CONSTRUCCIONES SISMORRESISTENTES -
+  PARTE 1: REQUISITOS}.} {{Norma COVENIN 1756-1:2019 CONSTRUCCIONES
+  SISMORRESISTENTES - PARTE 1: REQUISITOS}.}
+\newblock
+\APAChowpublished {Norma}.
+\newblock
+\begin{APACrefURL}
+  \url{https://comisionpresidencialucv.gob.ve/wp-content/uploads/2024/01/Normas.pdf}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Dunn%
 }{%
 Dunn%
@@ -309,6 +337,33 @@ Enckell, M.%
 \unskip\
 \newblock
 \APACaddressSchool {}{KTH}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Ewald%
+}{%
+Ewald%
+}{%
+{\protect \APACyear {2021}}%
+}]{%
+mpu9250}
+\APACinsertmetastar {%
+mpu9250}%
+\begin{APACrefauthors}%
+Ewald, W.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+\APACrefbtitle {MPU9250 - 9-Axis Sensor Module - Part 1.} {Mpu9250 - 9-axis
+  sensor module - part 1.}
+\newblock
+\begin{APACrefURL}
+  \url{https://wolles-elektronikkiste.de/en/mpu9250-9-axis-sensor-module-part-1}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{Consultado: 28/12/2023}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -753,6 +808,60 @@ Madgwick, S.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Mechatronics%
+}{%
+Mechatronics%
+}{%
+{\protect \APACyear {2016}}%
+}]{%
+mpu6050}
+\APACinsertmetastar {%
+mpu6050}%
+\begin{APACrefauthors}%
+Mechatronics, N.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2016}{}{}.
+\newblock
+\APACrefbtitle {TUTORIAL MPU6050, ACELERÓMETRO Y GIROSCOPIO.} {Tutorial
+  mpu6050, acelerÓmetro y giroscopio.}
+\newblock
+\begin{APACrefURL}
+  \url{https://naylampmechatronics.com/blog/45_tutorial-mpu6050-acelerometro-y-giroscopio.html}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{Consultado: 20/12/2023}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Mechatronics%
+}{%
+Mechatronics%
+}{%
+{\protect \APACyear {2023}}%
+}]{%
+bme280}
+\APACinsertmetastar {%
+bme280}%
+\begin{APACrefauthors}%
+Mechatronics, N.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2023}{}{}.
+\newblock
+\APACrefbtitle {SENSOR BME280 PRESIÓN, TEMPERATURA Y HUMEDAD.} {Sensor bme280
+  presiÓn, temperatura y humedad.}
+\newblock
+\begin{APACrefURL}
+  \url{https://naylampmechatronics.com/sensores-posicion-inerciales-gps/357-sensor-bme280-presion-temperatura-y-humedad.html}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{Consultado: 15/12/2023}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Montagny%
 }{%
 Montagny%
@@ -935,6 +1044,34 @@ Semtech.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Sharma%
+\ \BBA {} Kumar%
+}{%
+Sharma%
+\ \BBA {} Kumar%
+}{%
+{\protect \APACyear {2006}}%
+}]{%
+balanceforce}
+\APACinsertmetastar {%
+balanceforce}%
+\begin{APACrefauthors}%
+Sharma, B.%
+\BCBT {}\ \BBA {} Kumar, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2006}{07}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Characteristics evolution of indigenously designed and
+  developed tri-axial force balance accelerometer} {Characteristics evolution
+  of indigenously designed and developed tri-axial force balance
+  accelerometer}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of scientific and industrial research}{65}{}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Shi%
 , Law%
 \BCBL {}\ \BBA {} Zhang%
@@ -1012,6 +1149,35 @@ Sohn, H.%
 \newblock
 \APACjournalVolNumPages{Philosophical Transactions of the Royal Society A:
   Mathematical, Physical and Engineering Sciences}{365}{1851}{539--560}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Song%
+\ \BBA {} Lee%
+}{%
+Song%
+\ \BBA {} Lee%
+}{%
+{\protect \APACyear {2008}}%
+}]{%
+song2008understanding}
+\APACinsertmetastar {%
+song2008understanding}%
+\begin{APACrefauthors}%
+Song, E\BPBI Y.%
+\BCBT {}\ \BBA {} Lee, K.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2008}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Understanding IEEE 1451-Networked smart transducer
+  interface standard-What is a smart transducer?} {Understanding ieee
+  1451-networked smart transducer interface standard-what is a smart
+  transducer?}{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IEEE Instrumentation \& Measurement
+  Magazine}{11}{2}{11--17}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

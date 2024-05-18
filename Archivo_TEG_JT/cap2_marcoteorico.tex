@@ -23,6 +23,7 @@ En general, estos elementos suelen soportar cargas, pueden ser estacionarios y t
 La combinación de estos elementos y los materiales que los componen es lo que se denomina un sistema estructural. Estos sistemas, aunque sean pasados por alto, son utilizados diariamente por industrias y personas, siendo elementos claves en el desarrollo y progreso de la civilización actual.
 
 \subsection{Comportamiento de las estructuras civiles}
+\label{sec:comportamiento_estructuras}
 
 La gran mayoría de los sistemas cuentan con una respuesta dinámica y estática. Ambas respuestas permiten conocer el comportamiento completo del sistema en estudio ante distintas entradas o en diferentes situaciones. Al estudiar el comportamiento estructural se encuentra una extensa literatura tanto para el estudio dinámico como para el régimen estático, recopilándose lo siguiente:
 
@@ -62,7 +63,7 @@ La gran mayoría de los sistemas cuentan con una respuesta dinámica y estática
 
     Entre estos parámetros modales se encuentran: 
         \begin{itemize}
-            \item Frecuencia natural: Toda estructura física tiene asociada una frecuencia de vibración natural. Las máquinas, los puentes, los edificios; todas estas estructuras vibran u oscilan al ser perturbadas o removidas de su estado de reposo inicial. Es una propiedad es intrínseca del sistema y depende de su masa, rigidez y amortiguamiento. Todas tienen al menos una frecuencia natural y es posible que tengan múltiples frecuencias de resonancia \citep{irvine2000introduction}. 
+            \item Frecuencia natural: Toda estructura física tiene asociada una frecuencia de vibración natural. Las máquinas, los puentes, los edificios; todas estas estructuras vibran u oscilan al ser perturbadas o removidas de su estado de reposo inicial. Es una propiedad intrínseca del sistema y depende de su masa, rigidez y amortiguamiento. Todas tienen al menos una frecuencia natural y es posible que tengan múltiples frecuencias de resonancia \citep{irvine2000introduction}. 
             
                 Se suele calcular la frecuencia natural de resonancia de un sistema libre usando:
 
@@ -70,7 +71,7 @@ La gran mayoría de los sistemas cuentan con una respuesta dinámica y estática
                     f =  \frac{1}{\sqrt{\frac{k}{m}}}
                 \end{equation}
 
-            \item Amortiguamiento: Toda estructura comienza a oscilar una vez es removida de su estado de reposo o equilibrio, sin embargo, ese movimiento no es perpetuo. El amortiguamiento se define como la capacidad de disipación de energía que posee la estructura bajo excitaciones externas. Las soluciones a la ecuación \ref{eq:vib_lib}, al añadir el amortiguamiento de tipo viscoso, arrojan 3 posibles casos:
+            \item Amortiguamiento: Toda estructura comienza a oscilar una vez es removida de su estado de reposo o equilibrio, sin embargo, ese movimiento no es perpetuo. El amortiguamiento se define como la capacidad de disipación de energía que posee la estructura bajo excitaciones externas. Al añadir el amortiguamiento de tipo viscoso, las soluciones a la ecuación \ref{eq:vib_lib} arrojan 3 posibles casos:
                 \begin{enumerate}
                     \item Sistema críticamente amortiguado: El sistema no vibra.
                     \item Subamortiguado o amortiguado subcrítico: Caso más común por la naturaleza de los materiales utilizados en las estructuras. La respuesta del sistema decae con el tiempo de forma exponencial, como se puede ver en la Figura \ref{fig:resp_subamorti}. 
@@ -96,7 +97,7 @@ La gran mayoría de los sistemas cuentan con una respuesta dinámica y estática
 
 El daño a una estructura civil o mecánica puede definirse como todo cambio en las propiedades materiales o geométricas del material que llegan a afectar de forma adversa la confiabilidad y el desempeño actual o futuro del sistema. Por tanto, el daño es una comparación entre el sistema en cuestión en 2 instantes de tiempo distintos \citep{farrar2007introduction}. Estos efectos adversos pueden ser, en el caso estructural, desplazamientos, estrés indeseado en un elemento o vibraciones estructurales indeseadas \citep{chen2018}.
 
-Toda estructura civil, como puentes y edificios, acumulan daño de forma continua a medida que están en servicio y transcurre su vida útil. Este daño puede manifestarse como fracturas, fatiga, socavaciones o desprendimiento del concreto. El daño que no sea detectado puede conducir a una falla estructural que a su vez ocasione pérdidas humanas. Por tanto, es imperativo y necesario detectar el daño en una estrcutrura tan pronto como sea posible, \citep{chen2018}.
+Todas las estructuras civiles, como puentes y edificios, acumulan daño de forma continua a medida que están en servicio y transcurre su vida útil. Este daño puede manifestarse como fracturas, fatiga, socavaciones o desprendimiento del concreto. El daño que no sea detectado puede conducir a una falla estructural que a su vez ocasione pérdidas humanas. Por tanto, es imperativo y necesario detectar el daño en una estrcutrura tan pronto como sea posible, \citep{chen2018}.
 
 Entre algunos de los factores que influyen del deterioro de una estructura se encuentran:
     
@@ -127,11 +128,11 @@ Algunas de las características de una estructura sismoresistente son:
             \item Fijación de acabados e instalaciones.
         \end{itemize}
 
-En Venezuela las estructuras deben cumplir con la Norma Venezolana COVENIN 1756:2001 (Edificaciones Sismorresistentes).
+En Venezuela las estructuras deben cumplir con la Norma Venezolana COVENIN 1756-1:20019 (Construcciones Sismorresistentes), \citep{covenin}.
 
 Se ha observado que al estudiar el comportamiento de las estructuras luego de un evento sísmico, es evidente que cuando se toman en cuenta las normas de diseño sismorresistente dispuestas en la ley y la construcción es debidamente supervisada, los daños estructurales resultan ser considerablemente menores que en las edificaciones en las cuales no se cumplen los requerimientos mínimos indispensables estipulados en la norma, \citep{blanco2012criterios}.
 
-\subsubsection{Importancia de la instrumentación} La instrumentación estructural permite medir y monitorear las acciones y respuestas estructurales ante distintos eventos. Esto proporciona datos en tiempo real sobre el comportamiento dinámico y estático de la estructura, como deformaciones, aceleraciones y desplazamientos, que son fundamentales para evaluar y verificar si la estructura cumple con los criterios de diseño sismoresistente establecidos en la norma.
+\subsubsection{Importancia de la instrumentación} La instrumentación estructural permite medir y monitorear las acciones y respuestas estructurales ante distintos eventos. Esto proporciona datos en tiempo real y fuera de línea sobre el comportamiento dinámico y estático de la estructura, como deformaciones, aceleraciones y desplazamientos, que son fundamentales para evaluar y verificar si la estructura cumple con los criterios de diseño sismoresistente establecidos en la norma.
 
 La instrumentación estructural ayuda a validar los modelos y suposiciones utilizados en el diseño estructural inicial. Al comparar los datos recopilados por la instrumentación durante un evento sísimco con las predicciones del modelo, es posible verificar si la estructura se comporta de acuerdo con las expectativas y si cumple con los criterios de seguridad establecidos en la norma.
 
@@ -175,7 +176,7 @@ Inicialmente, las técnicas no destructivas fueron introducidas en la ingenierí
         \item Métodos basados en vibración
     \end{itemize}
 
-La comunidad de ingeniería civil ha estudiado la identificación de daño basada en vibración en puentes y edificios desde comienzos de los años 80. Las propiedades modales han sido estudiadas por diferentes autores y son las principales características que se analizan al identificar daño. El auge del SHM es tal, que algunos países asiáticos han implementado regulaciones en donde las compañías constructoras deben verificar la salud estructural de los puentes periódicamente. Estas regulaciones han provocado que la investigación e inversión en esta área siga aumentando de forma considerable, \citep{chen2018}. 
+La comunidad de ingeniería civil ha estudiado la identificación de daño basada en vibración en puentes y edificios desde comienzos de los años 80. Las propiedades modales han sido estudiadas por diferentes autores y son las principales características que se analizan al identificar daño. El auge del SHM es tal, que algunos países asiáticos han implementado regulaciones en donde las compañías constructoras deben verificar la salud estructural de los puentes periódicamente. Estas regulaciones han provocado que la investigación e inversión en esta área siga aumentando de forma considerable \citep{chen2018}. 
 
 \subsection{Línea de trabajo del Monitoreo de Salud Estructural}
 
@@ -232,11 +233,11 @@ La estrategia de Monitoreo de Salud Estructural podría resumirse en el siguient
 
 \subsection{Criterios de evaluación}
 
-Como se definió anteriormente, el daño estructural puede tener distintas causas y formas. Lo que se sabe con certeza es que una estructura, una vez entra en funcionamiento, análogo a los seres humanos al nacer, estará sujeta a envejecimiento natural y a condiciones adversas. Ahora bien, en el caso del SHM, surge la siguiente pregunta ¿Qué se debe medir para poder detectar este daño?. 
+Como se definió anteriormente, el daño estructural puede tener distintas causas y formas. Lo que se sabe con certeza es que una estructura, una vez entra en funcionamiento, análogo a los seres humanos al nacer, estará sujeta a envejecimiento natural y a condiciones adversas. Ahora bien, en el caso del SHM, surge la siguiente pregunta: ¿Qué se debe medir para poder detectar este daño?. 
 
 Numerosos autores concluyen que uno de los indicativos de daño de una estructura viene dado por los parámetros modales definidos anteriormente, frecuencia y amortiguamiento. Esta relación entre los parámetros modales y el daño viene dada por la premisa de que todo daño presente en la estructura se reflejará en un cambio en las propiedades dinámicas de la misma. \citet{worden2009modal}, comprobó la relación entre el cambio progresivo en todas las frecuencias naturales de 15 vigas estudiadas a las cuales se les introdujo un daño relacionado con un cambio del Módulo de Young, el cual, como fue mencionado anteriormente, provee un indicativo de la rigidez de un elemento.
 
-Anterioremente en la ecuación \ref{eq:vib_lib} se definió un sistema con un grado de libertad (DOF por sus siglas en ingles), sin embargo, en la realidad las estructuras tienen múltiples grados de libertad, por lo que es conveniente modelarlas de estar forma para obtener resultados más precisos. En el caso de los sistemas \textit{n-dregrees of freedom} (DOF por sus siglas en ingles), la ecuacion de movimiento que describe la dinámica del sistema en vibración libre vendrá dada por:
+Anterioremente en la ecuación \ref{eq:vib_lib} se definió un sistema con un grado de libertad (DOF por sus siglas en inglés), sin embargo, en la realidad las estructuras tienen múltiples grados de libertad, por lo que es conveniente modelarlas de estar forma para obtener resultados más precisos. En el caso de los sistemas con ``n grados de libertad'', la ecuación de movimiento que describe la dinámica del sistema en vibración libre vendrá dada por:
 
 \begin{equation} \label{eq:ecu_movimiento}
     M\ddot{u} + C\dot{u} + Ku = 0
@@ -287,7 +288,7 @@ Tomando en cuenta la relación entre los parámetros modales y el daño presente
         
         A su vez, el amortiguamiento varía al introducir daño en la estructura, puesto que su capacidad de disipar energía se ve afectada. Usualmente, los investigadores observan un aumento en el amortiguamiento a medida que el daño aumenta, como se ha demostrado experimentalmente por autores como \citet{hearn1991modal} y \citet{rytter1993vibration}.
 
-        \item Temperatura y humedad: En los sistemas de monitoreo, la detección del daño estructural puede tomar períodos de tiempo considerables, durante los cuales las caracterpisticas sujetas a temperatura y humedad, sufren cambios que afectan la respuesta estructural.
+        \item Temperatura y humedad: En los sistemas de monitoreo, la detección del daño estructural puede tomar períodos de tiempo considerables, durante los cuales las características sujetas a temperatura y humedad, sufren cambios que afectan la respuesta estructural.
                 
         Es evidente que las condiciones climáticas contribuyen con el deterioro de las edificaciones. A pesar de esta conclusión, relacionar las condiciones climáticas con el daño introducido usando mediciones ambientales es difícil. La medición de estas variables suele tomarse en cuenta para poder cuantificar el cambio que producen estas condiciones en los demás indicadores de daño. \citet{rytter1993vibration} observó que la humedad y temperatura afectaban las mediciones de amortiguamiento. Por su parte, \citet{mohamed2014}, observó que las frecuencias naturales de barras y vigas disminuían a medida que aumentaba la temperatura. A su vez, \citet{sohn2007effects} determinó que cuando hay humedad presente en el ambiente, los puentes de hormigón absorben una cantidad considerable de esta, lo que aumenta sus masas y altera sus frecuencias naturales.
         
@@ -295,7 +296,7 @@ Tomando en cuenta la relación entre los parámetros modales y el daño presente
         
         Los inclinómetros son utilizados en elementos estructurales para medir el desplazamiento lineal de un elemento respecto a una referencia. Suelen ser utilizados para dar una idea de la fijación que presentan los puentes en sus soportes o para monitorear a largo plazo el movimiento de estructuras sobre superficies propensas a deslizamientos.
 
-        La deflección, que puede medirse haciendo uso de inclinómetros los cuales han generado un gran interés en la industria por su sensibilidad y bajo costo, es una variable muy importante a medirse en una estructura. La deflección puede ser consecuencia de la corrosión de los elementos de soporte, pérdida del pretensado o el crecimiento de grietas en el concreto. Es decir, a medida que la deflección aumenta se acelera la acumulación de daño, por tanto, medir esta variable puede proveer alertas tempranoas sobre posibles cambios estructurales o deterioro \citep{zhang2017bridge}.
+        La deflección, que puede medirse haciendo uso de inclinómetros los cuales han generado un gran interés en la industria por su sensibilidad y bajo costo, es una variable muy importante a medirse en una estructura. La deflección puede ser consecuencia de la corrosión de los elementos de soporte, pérdida del pretensado o el crecimiento de grietas en el concreto. Es decir, a medida que la deflección aumenta se acelera la acumulación de daño, por tanto, medir esta variable puede proveer alertas tempranas sobre posibles cambios estructurales o deterioro \citep{zhang2017bridge}.
 
         Autores como \citet{komarizadehasl2022development} destacan la medición de la inclinación en las últimas décadas en el sector de la Ingeniería Estructural, inicialmente con propósitos geotécnicos. Sin embargo, gracias a los avances tecnológicos en los sensores, se comenzó a emplear su uso en otras áres, sobre todo en el monitoreo de salud estructural.
 
@@ -305,7 +306,7 @@ Tomando en cuenta la relación entre los parámetros modales y el daño presente
 
     \subsection{Basado en modelo} El método basado en modelo consiste en estructurar un modelo de elemento finito que será utilizado para identificar y localizar el daño en la estrucutra. Su precisión dependerá de su nivel de correlación con la estructura real, por lo que este método suele emplearse luego de realizar mediciones sobre el sistema y obtener datos experimentales, que permiten ajustar el modelo y disminuir las discrepancias, \citep{garcia2023review}.
 
-    \subsection{Basado en respuesta} El monitoreo de salud estructural basado en datos hace uso de datos reales sobre la estructura obtenidos a través de mediciones experimentales en sitio. Diferentes arreglos de sensores se utilizan para medir los parámetros de interés para el SHM \citep{mohamed2014}.
+    \subsection{Basado en respuesta} El monitoreo de salud estructural basado en datos hace uso de datos reales de la estructura obtenidos a través de mediciones experimentales en sitio. Diferentes arreglos de sensores se utilizan para medir los parámetros de interés para el SHM \citep{mohamed2014}.
 
     En este método, se comparan los datos obtenidos con los datos históricos de la estructura sin daño. Esta información previa puede ser suministrada por un software de simulación de la estructura basado en sus características iniciales de construcción. Autores como \cite{fritzen2005vibration} estudiaron el uso de la información modal mediante estudios de vibración ambiental y forzada.
 
@@ -321,7 +322,7 @@ Los ensayos estructurales se utilizan para evaluar la integridad y el comportami
 
 \end{itemize}
    
-\subsection{Ensayos no invasivos} 
+\subsection{Ensayos no invasivos o mínimamente invasivos} 
 
 Los ensayos no invasivos se introdujeron en la ingeniería civil durante los años 40 \citep{mohamed2014}. Desde entonces, muchas de estas pruebas han sido estandarizadas, siendo las normas COVENIN 2221:84 y COVENIN 318-84 algunas de las normativas para este tipo de ensayos en Venezuela. 
 
@@ -353,12 +354,12 @@ Entre los elementos que componen un microcontrolador se encuentran:
 
 \begin{itemize}
     \item Unidad Central de Procesamiento.
-    \item Memoria RAM y ROM.
+    \item Memoria RAM (\textit{Random Access Memory}) y ROM (\textit{Read Only Memory}).
     \item Periféricos.
-    \item Convertidores ADC y DAC.
+    \item Convertidores analógico-digital (ADC) y digital-analógico (DAC).
     \item Temporizadores.
     \item Interfaces de comunicación.
-    \item Real Time Clock.
+    \item Real Time Clock (RTC).
 \end{itemize}
 
 En la figura \ref{fig:ESP32_Block_Diagram} se observa el diagrama de bloques de las partes que constituyen un microcontrolador del fabricante Espressif.
@@ -379,7 +380,7 @@ Las placas de desarrollo se pueden sudividir en:
 
 \begin{itemize}
     \item \textit{System-on-Chip} (SoC).
-    \item Basadas en microcontrolador (MCU-based).
+    \item Basadas en microcontrolador (\textit{MCU-based}).
     \item \textit{Single-Board-Computer} (SBC).
 \end{itemize}
 Algunas de los fabricantes de tarjetas de desarrollo más reconocidos que cuentan con comunidades y soporte técnico son:
@@ -389,7 +390,7 @@ Algunas de los fabricantes de tarjetas de desarrollo más reconocidos que cuenta
     \item Espressif.
     \item Texas Instruments.
     \item Nordic Semiconductors.
-    \item NXP
+    \item NXP.
     \item Arduino.
     \item Raspberry Pi.
 
@@ -397,16 +398,16 @@ Algunas de los fabricantes de tarjetas de desarrollo más reconocidos que cuenta
 
 \subsection{Protocolos de comunicación}
 
-Los protocolos de comunicación fueron desarrollador y estandarizados para que sensores, drivers y diferentes perifericos y dispositivos de entrada y salida pudieran comunicarse entre sí sin problemas, evitando la tediosa tarea de buscar dispositivos compatibles dependiendo de la aplicación y el fabricante a utilizar. 
+Los protocolos de comunicación fueron desarrollados y estandarizados para que sensores, drivers y diferentes periféricos y dispositivos de entrada y salida pudieran comunicarse entre sí sin problemas, evitando la tediosa tarea de buscar dispositivos compatibles dependiendo de la aplicación y el fabricante a utilizar. 
 
 Cada protocolo tiene sus características y aplicaciones, siendo diseñados para propósitos distintos. El desarrollador o diseñador puede escoger uno o más dependiendo de las especificaciones del producto a diseñar. A continuación se mencionan los más utilizados por los microcontroladores:
 
 \begin{itemize}
     \item UART (\textit{Universal Asynchronous Receiver-Transmitter}): Uno de los protocolos más simples y comúnmente utilizado para comunicación entre dos dispositivos. Como su nombre lo indica, no utiliza una señal de reloj para sincronizar al dispositivo transmisor y receptor. Es por esto que, a diferencia de la mayoría de los protocolos, solo utiliza 2 cables para lograr la comunicación.
     
-    UART requiere de bits de inicio y parada para detectar data entrante, además de requerir que la velocidad de comunicación sea configurada al mismo valor en bits por segundo (bps) en el receptor y transmisor. Admite comunicaciones Simplex, Half-Duplex y Full-Duplex.
+    UART requiere de bits de inicio y parada para detectar datos entrante, además de requerir que la velocidad de comunicación sea configurada al mismo valor en bits por segundo (bps) en el receptor y transmisor. Admite comunicaciones Simplex, Half-Duplex y Full-Duplex.
  
-    \item I2C (\textit{Inter-Integrated Communication}):  El protocolo I2C fue desarrollado por Philips Semiconductors en 1982. Se utiliza principalmente para comunicación entre periféricos, sensores y circuitos integrados en distancias cortas. Requiere 2 cables de datos (SDA y SCL) para el envío de la data serial. Este protocolo utiliza un bus de reloj para sincronizarse y verificar que la data se envíe y reciba correctamente.
+    \item I2C (\textit{Inter-Integrated Communication}):  El protocolo I2C fue desarrollado por Philips Semiconductors en 1982. Se utiliza principalmente para comunicación entre periféricos, sensores y circuitos integrados en distancias cortas. Requiere 2 cables de datos (SDA y SCL, \textit{serial data line} y \textit{serial clock line} respectivamente) para el envío de la data serial. Este protocolo utiliza un bus de reloj para sincronizarse y verificar que los datos se envíen y reciban correctamente.
     
     \item SPI (\textit{Serial Peripheral Interface}): Desarrollado por Motorola en los años 80. Es un protocolo de un solo maestro, varios esclavos. Requiere una señal de reloj para la sincronización entre los dispositivos esclavos y el maestro. Siendo una comunicación Full-Duplex, puede enviar y recibir datos de forma simultánea. Requiere 4 cables para la comunicación serial.
 
@@ -417,7 +418,7 @@ Cada protocolo tiene sus características y aplicaciones, siendo diseñados para
 \subsection{Sistemas Operativos en Tiempo Real (RTOS)} 
 \label{subsec:rtossubsec}
 
-Un sistema operativo en tiempo real (RTOS por sus siglas en inglés), es un distema operativo diseñado para manejar tareas que requieran ser monitoreadas de forma precisa y eficiente, usualmente estas tareas son críticas en el tiempo, lo que lo diferencia de un sistema operativo de propósito general, el cual se especializa en ejecutar varias tareas al mismo tiempo. El RTOS se concentra en ejecutar las tareas en tiempo real.
+Un sistema operativo en tiempo real (RTOS por sus siglas en inglés), es un sistema operativo diseñado para manejar tareas que requieran ser monitoreadas de forma precisa y eficiente. Usualmente estas tareas son críticas en el tiempo, lo que lo diferencia de un sistema operativo de propósito general, el cual se especializa en ejecutar varias tareas al mismo tiempo. mientras que el RTOS se concentra en ejecutar las tareas en tiempo real.
 
 El primer RTOS fue un programa desarrollado en la Universidad de Cambridge en los años 60. Este sistema permitía que varios procesos se llevaran a cabo bajo restricciones de tiempo precisas. Desde entonces, numerosos avances en la industria han hecho crecer la demanda por sistemas operativos en tiempo real, siendo utilizados en aplicaciones espaciales, médicas, militares y entre otras.
 
@@ -429,7 +430,7 @@ Entre las características principales de un RTOS se encuentran:
     \item Multiprocesamiento simétrico: El RTOS es el sistema operativo ideal para una arquitectura de multiprocesamiento simétrico (SMP por sus siglas en inglés), en la cual cada núcleo de un procesador tiene su propio sistema operativo y tiene la capacidad de acceder a la lista de tareas disponibles. Todos los núcleos deben tener la misma arquitectura, lo que lo diferencia del multiprocesamiento asimétrico.
 \end{itemize}
 
-\subsubsection{FreeRTOS} FreeRTOS es una clase de RTOS diseñado para ser ejecutado en microcontroladores. A pesar de ser un kernel muy liviano, su uso se ha extendido más allá de los sistemas embebidos. Es distribuido de forma libre bajo la licencia MIT de software libre.
+\subsubsection{FreeRTOS} FreeRTOS es una clase de RTOS diseñado para ser ejecutado en microcontroladores. A pesar de ser un kernel muy liviano, su uso se ha extendido más allá de los sistemas embebidos. Es distribuido de forma libre bajo la licencia MIT (\textit{Massachusetts Institute of Technology}) de software libre.
 
 En aplicaciones basadas en microcontroladores rara vez se requiere una implementación completa de un RTOS, por las restricciones de memoria de los mismos. Es por esto que FreeRTOS implementó un sistema enfocado en la sincronización, funcionalidades de comunicación entre tareas y planificación de tareas. Este RTOS incluye además distintas librerías que expanden sus funciones y mejoran la experiencia de uso.
 
@@ -446,10 +447,10 @@ Los principales elementos de un programa basado en FreeRTOS contienen:
         \label{fig:RTOSTasks}
     \end{figure}
 
-    \item Semáforos binarios (\textit{Binary Semaphores}): La idea general de los semáforos binarios es permitir que las tareas accedan a recursos compartidos y ejecutar tareas complejas de sincronización. Suelen usarse en conjunto con los mutex (que viene del término \textit{mutual exclusion}), lo cual evita que se corrompan sectores de memoria cuando 2 tareas (que pueden estar ejecutándose en paralelo) quieran acceder a un espacio de memoria al mismo tiempo.
+    \item Semáforos binarios (\textit{Binary Semaphores}): La idea general de los semáforos binarios es permitir que las tareas accedan a recursos compartidos y ejecutar tareas complejas de sincronización. Suelen usarse en conjunto con los mutex (que viene del término \textit{mutual exclusion}), los cuales evitan que se corrompan sectores de memoria cuando 2 tareas (que pueden estar ejecutándose en paralelo) quieran acceder a un espacio de memoria al mismo tiempo.
 \end{itemize}
 
-La arquitectura de un sistema basado en FreeRTOs se muestra en la figura \ref{fig:rtos}:
+La arquitectura de un sistema basado en FreeRTOS se muestra en la figura \ref{fig:rtos}:
 
 \begin{figure}[H]
     \centering
@@ -477,6 +478,7 @@ Los sensores son dispositivos capaces de detectar un parámetro físico y respon
 \end{itemize}
 
 \subsection{Sensores de interés para el Monitoreo de Salud Estructural}
+\label{subsec:sensmonitoreo}
 
 En el campo de la monitorización de salud estructural (SHM), existen varios tipos de sensores que se utilizan comúnmente. Algunos de los sensores más utilizados en SHM son los siguientes:
 
@@ -526,9 +528,9 @@ En el campo de la monitorización de salud estructural (SHM), existen varios tip
             \end{figure}
         \end{itemize}
 
-        \item Acelerómetros: 
+        \item Acelerómetros: Estos sensores se encargan de medir la aceleración de la estructura en una o varias direcciones. Son útiles para evaluar la respuesta dinámica de la estructura ante cargas externas, vibraciones o sismos. Existen varios tipos de acelerómetros, entre los que se encuentran:
         
-        \item \begin{itemize}
+        \begin{itemize}
             \item Piezoeléctrico: Se basan en el principio piezoeléctrico, donde un cristal piezoeléctrico genera una carga eléctrica proporcional a la aceleración aplicada. Son sensibles, ofrecen una amplia respuesta en frecuencia y son adecuados para medir tanto bajas como altas frecuencias de vibración. 
             \begin{figure}[H]
                 \centering
@@ -536,7 +538,7 @@ En el campo de la monitorización de salud estructural (SHM), existen varios tip
                 \caption{Esquema general de un acelerómetro piezoeléctrico \citep{dunn2005introduction}.}
                 \label{fig:acc-pie}
             \end{figure}
-            \item Capacitancia Diferencial: utilizan un conjunto de placas móviles y fijas separadas por una pequeña distancia. La aceleración causa un cambio en la distancia entre las placas, lo que a su vez modifica la capacitancia del dispositivo.
+            \item Capacitancia Diferencial: utilizan un conjunto de placas móviles y fijas separadas por una pequeña distancia. La aceleración causa un cambio en la distancia entre las placas, lo que a su vez modifica la capacitancia del dispositivo. Este cambio en la capacitancia es proporcional a la aceleración.
             \item Microelectromecánicos (MEMS): Se basan en el desplazamiento de una masa suspendida mediante resortes micromecánicos. Son pequeños, económicos y se utilizan ampliamente en aplicaciones de monitoreo estructural debido a su tamaño compacto y bajo consumo de energía.
             \begin{figure}[H]
                 \centering
@@ -554,6 +556,20 @@ En el campo de la monitorización de salud estructural (SHM), existen varios tip
                     \label{fig:acc-mems2}
                 \end{minipage}
             \end{figure}
+
+
+            \item Balance de fuerzas: Este tipo de acelerómetro consiste en un detector de posición, un amplificador y un sistema electromecánico de posicionamiento. El sistema convierte una fuerza mecánica en una corriente proporcional que se convierte en una fuerza en dirección contraria para contrarestar el movimiento de la masa suspendida. 
+            
+            El detector de posición registra la posición de una masa acoplada al generador de fuerza. Un cambio inducido externamente en la posición de la masa resulta en una combinación de la salida del detector de posición y del amplificador de tal forma que el generador de fuerza o motor de torque lleve la masa de vuelta a su posición original. La salida del sensor es una medida de la corriente a través del generador de fuerza o motor, siendo esta corriente proporcional a la fuerza de restauración que es igual a la fuerza de entrada a través de la masa calibrada.
+
+            \begin{figure}[H]
+                \centering
+                \includegraphics[width = 0.7\textwidth]{imagenes/cap1_marcoteo/Block-diagram-of-force-balance-accelerometer.png}
+                \caption{Esquema general de un acelerómetro por balance de fuerza \citep{balanceforce}.}
+                \label{fig:acc-fba}
+            \end{figure}
+
+            Si no hay aceleración en la masa, la corriente a través del motor de torque es nula. El amortiguamiento es controlado por un condensador y se coloca en paralelo con la resistencia de muestreo.
         \end{itemize}
 
     \end{itemize}
@@ -561,7 +577,7 @@ En el campo de la monitorización de salud estructural (SHM), existen varios tip
 \subsection{Fusión de sensores}
 \label{subsec:sensorfusion}
 
-La fusión de sensores consiste en combinar la información de múltiples sensores para obtener una medida más precisa y confiable de la variable de interés \citep{lamkin2019sensors}. La fusión de sensores puede mejorar la precisión, la confiabilidad y la robustez de las mediciones, ayudando también a reducir la incertidumbre y el ruido presente en los datos. La fusión de sensores se puede realizar de varias maneras, las cuales se mencionan a continuación:
+La fusión de sensores consiste en combinar la información de múltiples sensores para obtener una medida más precisa y confiable de la variable de interés \citep{lamkin2019sensors}. La fusión de sensores puede mejorar la precisión, la confiabilidad y la robustez de las mediciones, ayudando también a reducir la incertidumbre y el ruido presente en los datos. La combinación de estas mediciones se puede hacer de distintas formas, las cuales se mencionan a continuación:
 
 \begin{itemize}
     \item Sensores redundantes: Todos los sensores proporcionan la misma información sobre la variable de interés. La redundancia de sensores puede mejorar la confiabilidad y la precisión de las mediciones, ya que si un sensor falla, los otros sensores pueden seguir proporcionando datos.
@@ -579,7 +595,7 @@ Una de las variables físicas que suele obtenerse a partir de la fusión de info
 \begin{itemize}
     \item Integración de la medición del giróscopo: Se utiliza la medición de la velocidad angular del giróscopo para estimar la orientación del sistema. Sin embargo, la integración de la velocidad angular puede acumular errores y derivar en una estimación incorrecta de la orientación.
     \item Estimación por trigonometría: Se utilizan las mediciones de los acelerómetros y magnetómetros para estimar la orientación del sistema a partir de cálculos trigonométricos. Este método puede ser sensible a errores en las mediciones y a la presencia de campos magnéticos externos.
-	\item Filtro de Kalman: El filtro de Kalman es un algoritmo de estimación que combina mediciones de sensores con un modelo dinámico del sistema para obtener una estimación precisa de la orientación. El filtro de Kalman es particularmente útil para fusionar mediciones de acelerómetros, giróscopos y magnetómetros y estimar la orientación en tiempo real.
+	\item Filtro de Kalman: El Filtro de Kalman es uno de los algoritmos de estimación más utilizados en la industria. En el caso de la estimación de inclinación, combina mediciones de sensores con un modelo dinámico del sistema para obtener una estimación precisa de la orientación. El filtro de Kalman es particularmente útil para fusionar mediciones de acelerómetros, giróscopos y magnetómetros y estimar la orientación en tiempo real.
 	
 	\item Filtro de Madgwick: El filtro de Madgwick es un algoritmo de fusión de sensores que utiliza mediciones de giroscopios, acelerómetros y magnetómetros para estimar la orientación del sistema. El filtro de Madgwick es una versión simplificada del filtro de Kalman y es ampliamente utilizado en aplicaciones de realidad virtual, aumentada y sistemas de navegación inercial.
 	
@@ -614,24 +630,22 @@ Si bien los sensores por sí mismos han permitido un rápido y sostenido desarro
 Un sensor inteligente es un sistema en donde uno o varios sensores y una interfaz electrónica dedicada trabajan en conjunto. La tecnología empleada para llevar a cabo estos sistemas ha avanzado rápidamente en años recientes, lográndose obtener sistemas de un solo chip para medir temperatura o campo magnético \citep{nagayama2007structural}.
 
 
-El término sensor inteligente o \textit{``smart sensor''} surgió a mediados de los años 80. La ``inteligencia'' de estos dispositivos viene dada por un microcontrolador (MCU), un procesador de señales digitales (DSP) y circuitos de aplicación específica \citep{frank2002understanding}. Posteriormente, en el año 1998, el \textit{IEEE} en su estándar \textit{Networked smart transducer interface standard 1451} definió un \textit{``smart sensor''} como un transductor que provee funciones más allá de las necesarias para generar y representar una cantidad medida.
-
-%COMO CITAR UN ESTANDAR DE LA IEEE???
+El término sensor inteligente o \textit{``smart sensor''} surgió a mediados de los años 80. La ``inteligencia'' de estos dispositivos viene dada por un microcontrolador (MCU), un procesador de señales digitales (DSP) y circuitos de aplicación específica \citep{frank2002understanding}. Posteriormente, en el año 1998, el \textit{IEEE} en su estándar \textit{Networked smart transducer interface standard 1451} definió un \textit{``smart sensor''} como un transductor que provee funciones más allá de las necesarias para generar y representar una cantidad medida \citep{song2008understanding}.
 
 \subsection{Características:}
 
 Un sensor inteligente suele tener 5 características esenciales, las cuales se resumen a continuación:
 
 \begin{itemize}
-    \item Microprocesador integrado: El microprocesador es lo que diferencia un sensor común de un sensor inteligente, siendo este el encargado de hacer los cálculos necesarios, guardar los datos de forma local, enviar resultados y coordinar las tareas a ejecutarse. 
+    \item Microprocesador integrado: Es lo que diferencia un sensor común de un sensor inteligente, siendo este el encargado de hacer los cálculos necesarios, guardar los datos de forma local, enviar resultados y coordinar las tareas a ejecutarse. 
     
     \item Capacidades de medición: La principal característica de un sensor es su capacidad de convertir una variable física en algún tipo de señal que pueda ser posteriormente procesada, en este caso por el microprocesador integrado, siendo el sensor el vínculo entre el procesador y los fenómenos físicos de interés. Un sensor inteligente, también llamado nodo, puede constar de varios sensores que miden distintas variables.
     
-    \item Comunicación inalámbrica: En gran medida, se busca que los sensores inteligentes sean capaces de reemplazar los actuales sistemas de medición cableados, permitiendo esto la expansión del sistema de medición a un bajo costo, además de las capacidades de transmisión que ofrecen alternativas como laser, infrarrojo, o incluso ondas de radio y telefonía.
+    \item Comunicación inalámbrica: En gran medida, se busca que los sensores inteligentes sean capaces de reemplazar los actuales sistemas de medición cableados, permitiendo esto la expansión del sistema de medición a un bajo costo, además de las capacidades de transmisión que ofrecen alternativas como láser, infrarrojo, o incluso ondas de radio y telefonía.
     
-    \item Alimentación autónoma: Con frecuencia los sensores inteligentes son alimentados de forma autónoma como baterías, en particular en aplicaciones de difícil acceso, como es el caso de algunas estructuras civiles. Si bien esto representa un desafío, la logística y los requerimientos asociados a conectar todo un sistema mallado de sensores a la red eléctrica atenta en contra de la facilidad de instalación y mantenimiento de un sistema inteligente.
+    \item Alimentación autónoma: Con frecuencia los sensores inteligentes son alimentados de forma autónoma con baterías, en particular en aplicaciones de difícil acceso, como es el caso de algunas estructuras civiles. Si bien esto representa un desafío, la logística y los requerimientos asociados a conectar todo un sistema mallado de sensores a la red eléctrica atenta en contra de la facilidad de instalación y mantenimiento de un sistema inteligente.
     
-    \item Bajo costo: Una de las características más importantes que se busca obtener al hacer uso de sistemas basados en sensores inteligentes es reducir los distintos costos generados por un sistema basado en sensores comunes. Tecnologías como MEMS (\textit{Micro electro-mechanical systems}) han logrado reducir de forma considerable el tamaño y el costo por su producción en masa basada en semiconductores. Esta característuca permite que redes densas de sensores sean implementadas en estructuras civiles.
+    \item Bajo costo: Una de las características más importantes que se busca obtener al hacer uso de sistemas basados en sensores inteligentes es reducir los costos generados por un sistema basado en sensores comunes. Tecnologías como MEMS (\textit{Micro electro-mechanical systems}) han logrado reducir de forma considerable el tamaño y el costo por su producción en masa basada en semiconductores. Esta característica permite que redes densas de sensores sean implementadas en estructuras civiles.
 \end{itemize}
 
 
@@ -648,7 +662,7 @@ El monitoreo se refiere a la observación continua de un proceso, medición o me
     \caption{Ventajas y desventajas de los enfoques de monitoreo.}
     \label{tab:monitoreo}
     \resizebox{0.9\textwidth}{!}{%
-    \begin{tabular}{|c|P{0.3\textwidth}|P{0.3\textwidth}|}
+    \begin{tabular}{|P{0.3\textwidth}|P{0.3\textwidth}|P{0.3\textwidth}|}
     \hline
     \textbf{Monitoreo} & \textbf{Ventajas} & \textbf{Desventajas} \\ \hline
     \textbf{Cableado} & \begin{itemize}
@@ -676,11 +690,11 @@ El monitoreo se refiere a la observación continua de un proceso, medición o me
 
 \section{Sistemas de adquisición de datos}
 
-\subsection{Definición y esquema general} Un sistema de adquisición de datos o DAQ (textit{Data acquisition systems})  consiste en un sistema que incluye sensores, un computador o procesador y software de adquisición de datos integrado. Es capaz de obtener, almacenar, visualizar y procesar los datos de interés. Fueron diseñados con el fin de obtener información sobre algún fenómeno físico aislado o parte de un proceso o sistema más grande, siendo la interfaz entre las variables físicas y el monitoreo del sistema en cuestión.
+\subsection{Definición y esquema general} Un sistema de adquisición de datos o DAQ (\textit{Data acquisition systems})  consiste en un sistema que incluye sensores, un computador o procesador y software de adquisición de datos integrado. Es capaz de obtener, almacenar, visualizar y procesar los datos de interés. Fueron diseñados con el fin de obtener información sobre algún fenómeno físico aislado o parte de un proceso o sistema más grande, siendo la interfaz entre las variables físicas y el monitoreo del sistema en cuestión.
 
 \subsection{Acondicionamiento de señales} Las señales obtenidas por el DAQ presentan ruido y pueden verse atenuadas por el canal de comunicación que comunica los sensores con el dispositivo de almacenamiento y procesamiento, es por esto que es preciso filtrar y amplificar la señal previo a su entrada al sistema de adquisición, o en su defecto, previo a su almacenamiento y procesamiento.
 
-\subsection{DAQ basados en MCU} Dadas las capacidades de procesamiento y comunicación de los microcontroladores en la actualidad, es común ver sistemas de adquisición de datos basados en microcontroladores, haciendo uso de sus periféricos y leyendo el voltaje de los sensores usando el ADC integrado en los mismos, o a su vez, interpretando las señales digitales provenientes de sensores que utilizan protocolos de comunicación serial.
+\subsection{DAQ basados en MCU} Dadas las capacidades de procesamiento y comunicación de los microcontroladores en la actualidad, es común ver sistemas de adquisición de datos basados en microcontroladores, haciendo uso de sus periféricos para leer el voltaje de los sensores usando el ADC integrado en los mismos, o a su vez, interpretando las señales digitales provenientes de sensores que utilizan protocolos de comunicación serial.
 
 
 \section{Sistemas de comunicaciones inalámbricos}
@@ -705,13 +719,13 @@ Un sistema de comunicaciones inalámbrico es un sistema de transmisión de infor
 \subsection{Protocolos de comunicación para distancias cortas}
 
 \begin{itemize}
-    \item WiFi: Es el protocolo de comunicación inalámbrica más popular. Consiste en una tecnología inalámbrica que hace uso del estandar 802.11 del IEEE a través de frecuencias como 2.4 GHz y 5 GHz. Suele tener un rango entre 20 y 40 metros y se caracteriza por velocidades de transmisión muy altas, de hasta 600 Mbps.
+    \item WiFi (\textit{Wireless Fidelity}): Es el protocolo de comunicación inalámbrica más popular. Consiste en una tecnología inalámbrica que hace uso del estandar 802.11 del IEEE a través de frecuencias como 2.4 GHz y 5 GHz. Suele tener un rango entre 20 y 40 metros y se caracteriza por velocidades de transmisión muy altas, de hasta 600 Mbps.
     
-    \item Bluetooth: Bluetooth, uno de los medios de comunicación más utilizados en la actualidad, es una tecnología utilizada para el intercambio de datos a distancias cortas (con un rango entre 50 y 100 metros) que hace uso de frecuencias entre 2.4 a 2.485 GHz. Tiene una velocidad máxima de 1 Mbps y es ampliamente utilizado para transferencia de datos entre dispositivos móviles.
+    \item Bluetooth: Uno de los medios de comunicación más utilizados en la actualidad. Bluetooth es una tecnología utilizada para el intercambio de datos a distancias cortas (con un rango entre 50 y 100 metros) que hace uso de frecuencias entre 2.4 a 2.485 GHz. Tiene una velocidad máxima de 1 Mbps y es ampliamente utilizado para transferencia de datos entre dispositivos móviles.
     
-    \item Zigbee: Zigbee es un estándar de comunicación inalámbrica de corto alcance y bajo consumo de energía diseñado para aplicaciones de Internet de las cosas (IoT). Utiliza la tecnología de radio de baja potencia y bajo consumo para permitir la comunicación inalámbrica entre dispositivos Zigbee, como sensores, actuadores y controladores. Zigbee opera en las bandas de frecuencia de 2.4 GHz, 900 MHz u 868 MHz y se basa en una topología de malla, lo que significa que los dispositivos pueden comunicarse directamente entre sí o a través de otros dispositivos Zigbee cercanos. 
+    \item Zigbee: Es un estándar de comunicación inalámbrica de corto alcance y bajo consumo de energía diseñado para aplicaciones de Internet de las cosas (IoT). Utiliza la tecnología de radio de baja potencia y bajo consumo para permitir la comunicación inalámbrica entre dispositivos Zigbee, como sensores, actuadores y controladores. Zigbee opera en las bandas de frecuencia de 2.4 GHz, 900 MHz u 868 MHz y se basa en una topología de malla, lo que significa que los dispositivos pueden comunicarse directamente entre sí o a través de otros dispositivos Zigbee cercanos. 
     
-    \item MQTT (Message Queuing Telemetry Transport): MQTT es un protocolo liger basado en el modelo ``publish/subscribe'', diseñado por ingenieros de la IBM y Arcom Systems específicamente para aplicaciones del internet de las cosas (Internet of Things), requiriendo poco ancho de banda y siendo fiable en redes inestables. Consiste en un broker, encargado de gestionar los datos, al cual se conectan los clientes, los cuales pueden publicar (enviar datos), o suscribirse a un tópico del broker (acceder a los datos que se publicaron a ese tópico desde algún cliente).
+    \item MQTT (Message Queuing Telemetry Transport): MQTT es un protocolo ligero basado en el modelo ``publish/subscribe'', diseñado por ingenieros de la IBM y Arcom Systems específicamente para aplicaciones del internet de las cosas (\textit{Internet of Things}), requiriendo poco ancho de banda y siendo fiable en redes inestables. Consiste en un broker, encargado de gestionar los datos, al cual se conectan los clientes, los cuales pueden publicar (enviar datos), o suscribirse a un tópico del broker (acceder a los datos que se publicaron a ese tópico desde algún cliente).
     
     \begin{figure}[H]
         \centering
@@ -726,9 +740,9 @@ Un sistema de comunicaciones inalámbrico es un sistema de transmisión de infor
 
 \begin{itemize}
 
-    \item NB-IoT: NB-IoT (Narrowband Internet of Things) es un estándar de comunicación de larga distancia y bajo consumo de energía para dispositivos IoT. Utiliza la infraestructura de redes celulares existentes y opera en bandas de frecuencia estrechas para proporcionar conectividad de bajo ancho de banda y larga duración de la batería.
-    \item Sigfox: Es una tecnología de comunicación de larga distancia y bajo consumo de energía diseñada para el IoT. Utiliza una red de bajo consumo de energía y bajo costo para transmitir pequeñas cantidades de datos de forma eficiente. Sigfox es utilizado en aplicaciones de seguimiento de activos, monitoreo ambiental y aplicaciones industriales. 
-    \item LoRa: LoRa (Long Range) es una tecnología de comunicación inalámbrica de largo alcance y baja potencia diseñada para aplicaciones de IoT y M2M (\textit{machine-to-machine}). Se basa en el estándar LoRaWAN (\textit{LoRa Wide Area Network}) y utiliza una modulación de espectro ensanchado para lograr una mayor cobertura y capacidad de penetración en comparación con otras tecnologías inalámbricas. LoRa opera en las bandas de frecuencia libre de licencia y puede proporcionar alcances de varios kilómetros en áreas urbanas y aún mayores en áreas rurales. Debido a su bajo consumo de energía, es adecuado para dispositivos de batería de larga duración y aplicaciones de bajo ancho de banda.
+    \item NB-IoT: NB-IoT (\textit{Narrowband Internet of Things}) es un estándar de comunicación de larga distancia y bajo consumo de energía para dispositivos IoT. Utiliza la infraestructura de redes celulares existentes y opera en bandas de frecuencia estrechas para proporcionar conectividad de bajo ancho de banda y larga duración de la batería.
+    \item Sigfox: Es una tecnología de comunicación de larga distancia y bajo consumo de energía diseñada para el IoT (\textit{Internet of Things}). Utiliza una red de bajo consumo de energía y bajo costo para transmitir pequeñas cantidades de datos de forma eficiente. Sigfox es utilizado en aplicaciones de seguimiento de activos, monitoreo ambiental y aplicaciones industriales. 
+    \item LoRa: LoRa (cuyas siglas provienen de \textit{Long Range}) es una tecnología de comunicación inalámbrica de largo alcance y baja potencia diseñada para aplicaciones de IoT y M2M (\textit{machine-to-machine}). Se basa en el estándar LoRaWAN (\textit{LoRa Wide Area Network}) y utiliza una modulación de espectro ensanchado para lograr una mayor cobertura y capacidad de penetración en comparación con otras tecnologías inalámbricas. LoRa opera en las bandas de frecuencia libre de licencia y puede proporcionar alcances de varios kilómetros en áreas urbanas y aún mayores en áreas rurales. Debido a su bajo consumo de energía, es adecuado para dispositivos de batería de larga duración y aplicaciones de bajo ancho de banda.
 \end{itemize}
 
 Dependiendo de la aplicación se debe escoger la tecnología más conveniente. Esto dependerá de la distancia entre los dispositivos que recolectan datos y la estación base, la naturaleza de los datos a enviar y las restricciones de tiempo impuestas por el sistema en estudio. A continuación se presenta un gráfico comparativo entre las distintas tecnologías:
@@ -761,7 +775,7 @@ Suelen confundirse los términos LoRa y LoRaWAN (Long Range Wide Area Network). 
         \label{fig:chirp}
     \end{figure}
 
-    \item Ancho de banda: Uno de los parámetros más importantes dentro de un canal de comunicaiones. Puede definirse como la cantidad de espectro de frecuencia ocupado por una señal de transmisión. Es un parámetro importante que determina la capacidad de transmisión de datos y la eficiencia espectral de la comunicación. En LoRa, el ancho de banda se puede configurar en diferentes opciones, como 125 kHz, 250 kHz y 500 kHz. La elección del ancho de banda afecta directamente la velocidad de transmisión de datos y el alcance de la comunicación.
+    \item Ancho de banda: Uno de los parámetros más importantes dentro de un canal de comunicaciones. Puede definirse como la cantidad de espectro de frecuencia ocupado por una señal de transmisión. Es un parámetro importante que determina la capacidad de transmisión de datos y la eficiencia espectral de la comunicación. En LoRa, el ancho de banda se puede configurar en diferentes opciones, como 125 kHz, 250 kHz y 500 kHz. La elección del ancho de banda afecta directamente la velocidad de transmisión de datos y el alcance de la comunicación.
     
     \begin{figure}[H]
         \centering
@@ -809,9 +823,9 @@ Suelen confundirse los términos LoRa y LoRaWAN (Long Range Wide Area Network). 
     \end{figure}
 
     \begin{enumerate}
-        \item Preámbulo (Preamble): Secuencia de bits que se utiliza para sincronizar el receptor con la transmisión y permitir la detección y sincronización de la trama.
-        \item Encabezado (Header): Se puede utilizar un encabezado adicional para incluir información adicional sobre la trama, como la dirección de origen o destino, los identificadores de servicio, etc. Puede ser generada de forma automática o programada.
-        \item Carga útil (Payload): Campo principal de la trama que contiene los datos que se van a transmitir. 
+        \item Preámbulo (\textit{Preamble}): Secuencia de bits que se utiliza para sincronizar el receptor con la transmisión y permitir la detección y sincronización de la trama.
+        \item Encabezado (\textit{Header}): Se puede utilizar un encabezado adicional para incluir información adicional sobre la trama, como la dirección de origen o destino, los identificadores de servicio, etc. Puede ser generada de forma automática o programada.
+        \item Carga útil (\textit{Payload}): Campo principal de la trama que contiene los datos que se van a transmitir. 
         \item CRC (\textit{Cyclic Redundancy Checking}): Campo que contiene un código de detección de errores para verificar la integridad de la trama recibida. El receptor realiza un cálculo CRC sobre los datos recibidos y compara el resultado con el valor de CRC incluido en la trama. Si el valor calculado y el valor de CRC coinciden, se asume que la trama se recibió sin errores
     \end{enumerate}
 
@@ -820,7 +834,7 @@ Suelen confundirse los términos LoRa y LoRaWAN (Long Range Wide Area Network). 
     \item Tasa de codificación (CR): En LoRa, se utiliza la codificación de corrección de errores de tipo ``\textit{forward error correction}'' (FEC), que permite detectar y corregir errores en la recepción de los datos. El coding rate especifica la cantidad de bits redundantes que se agregan a los datos para mejorar la confiabilidad de la comunicación. En el caso de un $CR = 4 / 8$, 8 bits son transmitidos mientras que solo 4 bits contienen información útil.
     
     
-    \item Consumo de energía: El protocolo se caracteriza por tener un bajo consumo de energía, permitiendo ser empleado en dispositivos a baterías para envío de datos periódicos. Esto se traduce en velocidades bajas de tranmisión y cargas útiles (payloads) menores a los encontrados en otras tecnologías, sin embargo, la relación entre las distancias largas a cubrir y los algoritmos de detección permiten que para ciertas aplicaciones este protocolo sea el ideal, razón por la cual se ha convertido en uno de los más utilizados en años recientes.
+    \item Consumo de energía: El protocolo se caracteriza por tener un bajo consumo de energía, permitiendo ser empleado en dispositivos a baterías para envío de datos periódicos. Esto se traduce en velocidades bajas de tranmisión y cargas útiles (\textit{payloads}) menores a los encontrados en otras tecnologías, sin embargo, la relación entre las distancias largas a cubrir y los algoritmos de detección permiten que para ciertas aplicaciones este protocolo sea el ideal, razón por la cual se ha convertido en uno de los más utilizados en años recientes.
 \end{itemize}
 
 \section{Procesamiento digital de señales:}
@@ -863,7 +877,7 @@ En la figura \ref{fig:fourier} se observa como una señal compuesta por distinta
 
 
 
-\subsection{Transformada Rápida de Fourier} Tal vez uno de los algoritmos más importantes de todos los tiempos. Descrita por algunos de sus autores principales, la transformada rápida de Fourier  (FFT por sus siglas en inglés) es una herramienta computacional que facilita el análisis de señales en el espectro de la frecuencia mediante el uso de computadores digitales. Ejecuta la transformada discreta de fourier de una forma más eficiente 
+\subsection{Transformada Rápida de Fourier} Tal vez uno de los algoritmos más importantes de todos los tiempos. Descrita por algunos de sus autores principales, la transformada rápida de Fourier  (FFT) es una herramienta computacional que facilita el análisis de señales en el espectro de la frecuencia mediante el uso de computadores digitales. Ejecuta la transformada discreta de fourier de una forma más eficiente 
 
 La transformada de Fourier exige un cálculo que puede ser computacionalmente costoso, especialmente cuando se trata de muchos puntos. Es ahí donde la FFT explota las simetrías matemáticas para lograr disminuir el cálculo de una complejidad $O(N^2)$, una función prácticamente lineal en ``n'', a mayor ``n'' el valor no crece tan rápidamente que la expresión cuadrática origianl. Siendo N es el número de datos, a una complejidad de $O(N\log_{N})$. Se describe matemáticamente utilizando la siguiente expresión:
 
@@ -884,7 +898,7 @@ Donde:
 Una vez se lleva a cabo la FFT, se debe analizar el espectro en frecuencia para así obtener los parámetros de interés, entre algunas de estas técnicas se encuentran:
 
 \begin{itemize}
-    \item Método de \textit{Peak Picking}: Este método es utilizado para determinar la ubicación de los picos sobresalientes de la representación gráfica de una unidad física. En el contexto del dominio de la frecuencia, estos picos se corresponden con la respuesta en frecuencia del sistema, asociandose con las frecuencias de vibración del sistema en estudio. El peak picking asume que todo pico en frecuencia se corresponde con uno de los modos de vibración natural del sistema, en el caso del espectro de la figura \ref{fig:peakpicking}, serían los picos encerrados en círculo en el espectro. Esta premisa implica que al estar los picos muy cercanos entre sí, se dificulte el proceso de evaluación usando esta técnica.
+    \item Método de \textit{Peak Picking}: Este método es utilizado para determinar la ubicación de los picos sobresalientes de la representación gráfica de una unidad física. En el contexto del dominio de la frecuencia, estos picos se corresponden con la respuesta en frecuencia del sistema, asociándose con las frecuencias de vibración del sistema en estudio. El \textit{peak picking} asume que todo pico en frecuencia se corresponde con uno de los modos de vibración natural del sistema, en el caso del espectro de la figura \ref{fig:peakpicking}, serían los picos encerrados en círculo en el espectro. Esta premisa implica que al estar los picos muy cercanos entre sí, se dificulte el proceso de evaluación usando esta técnica.
     
     \begin{figure}[H]
         \centering
@@ -902,14 +916,16 @@ Una vez se lleva a cabo la FFT, se debe analizar el espectro en frecuencia para 
     \begin{figure}[H]
         \centering
         \includegraphics[width = 0.7\textwidth]{imagenes/cap1_marcoteo/Half-power-bandwidth-method.png}
-        \caption{Método de cálculo de amortiguamiento por ancho de banda local \citep{potenciamitad2019}.}
+        \caption{Método de obtención de amortiguamiento por ancho de banda local \citep{potenciamitad2019}.}
         \label{fig:potenciamitad}
     \end{figure}
 \end{itemize}
 
 % \subsection{Filtros Digitales}
 
-\subsection{Aventanamiento} Las señales provenientes de los sensores representan una ventana finita de tiempo, es decir, contienen una cantidad finita de datos. Es bien conocido que la FFT asume señales periódicas en el tiempo, eso se traduce en que las ecuaciones asumen que los datos se repiten una vez se termina el registro hasta el infinito. Esto genera discontinuidades notables en los bordes del registro que suelen verse como componentes frecuenciales que aparecen alrededor de las frecuencias naturales reales del sistema en estudio, fenómeno conocido como filtración de espectro o \textit{spectral leakage}, estas señales de alta frecuencia aparecen como ``alias'' en las componentes de baja frecuencia, comportamiento que es indeseado para términos de análisis.
+\subsection{Aventanamiento}
+\label{sec:aventanamiento}
+Las señales provenientes de los sensores representan una ventana finita de tiempo, es decir, contienen una cantidad finita de datos. Es bien conocido que la FFT asume señales periódicas en el tiempo, eso se traduce en que las ecuaciones asumen que los datos se repiten una vez se termina el registro hasta el infinito. Esto genera discontinuidades notables en los bordes del registro que suelen verse como componentes frecuenciales que aparecen alrededor de las frecuencias naturales reales del sistema en estudio, fenómeno conocido como filtración de espectro o \textit{spectral leakage}, estas señales de alta frecuencia aparecen como ``\textit{alias}'' en las componentes de baja frecuencia, comportamiento que es indeseado para términos de análisis.
 
 Para evitar este fenómeno se utiliza el método de aventanamiento, en el cual se multiplica la ventana de tiempo por una función que suaviza los ejes y disminuye su contribución en el espectro. Estas funciones hacen que los bordes del registro se ``encuentren'' como si se tratase de una señal periódica, resultando en un espectro mucho más limpio y en picos más claros.
 

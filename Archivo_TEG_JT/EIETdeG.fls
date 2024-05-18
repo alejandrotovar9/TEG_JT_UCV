@@ -42,6 +42,22 @@ INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex\latex\base\fontenc.sty
 INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex\latex\base\fontenc.sty
 INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex\latex\base\fontenc.sty
 INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm1200.tfm
+INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex\latex\subfig\subfig.sty
+INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex\latex\subfig\subfig.sty
+INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex\latex\subfig\subfig.sty
+INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex\latex\subfig\subfig.sty
+INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
+INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
+INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
+INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
+INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption.sty
+INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption.sty
+INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption.sty
+INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption.sty
+INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption3.sty
+INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption3.sty
+INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption3.sty
+INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption3.sty
 INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amssymb.sty
 INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amssymb.sty
 INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amssymb.sty
@@ -78,10 +94,6 @@ INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.s
 INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.sty
 INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.sty
 INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.sty
-INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
-INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
-INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
-INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
 INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifvtex.sty
 INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifvtex.sty
 INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifvtex.sty
@@ -135,14 +147,6 @@ INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex\latex\xstring\xstring.sty
 INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex\latex\xstring\xstring.sty
 INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex\latex\xstring\xstring.sty
 INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex\generic\xstring\xstring.tex
-INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption2.sty
-INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption2.sty
-INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption2.sty
-INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption2.sty
-INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption3.sty
-INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption3.sty
-INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption3.sty
-INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption3.sty
 INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex\latex\graphics\epsfig.sty
 INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex\latex\graphics\epsfig.sty
 INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex\latex\graphics\epsfig.sty
@@ -334,6 +338,10 @@ INPUT .\EIETdeG.aux
 INPUT EIETdeG.aux
 INPUT EIETdeG.aux
 OUTPUT EIETdeG.aux
+INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex\latex\caption\ltcaption.sty
+INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex\latex\caption\ltcaption.sty
+INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex\latex\caption\ltcaption.sty
+INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex\latex\caption\ltcaption.sty
 INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -533,6 +541,13 @@ INPUT .\imagenes\cap1_marcoteo\AccelerometerMEMS2.png
 INPUT .\imagenes\cap1_marcoteo\AccelerometerMEMS2.png
 INPUT .\imagenes\cap1_marcoteo\AccelerometerMEMS2.png
 INPUT .\imagenes\cap1_marcoteo\AccelerometerMEMS2.png
+INPUT .\imagenes\cap1_marcoteo\Block-diagram-of-force-balance-accelerometer.png
+INPUT .\imagenes\cap1_marcoteo\Block-diagram-of-force-balance-accelerometer.png
+INPUT imagenes\cap1_marcoteo\Block-diagram-of-force-balance-accelerometer.png
+INPUT .\imagenes\cap1_marcoteo\Block-diagram-of-force-balance-accelerometer.png
+INPUT .\imagenes\cap1_marcoteo\Block-diagram-of-force-balance-accelerometer.png
+INPUT .\imagenes\cap1_marcoteo\Block-diagram-of-force-balance-accelerometer.png
+INPUT .\imagenes\cap1_marcoteo\Block-diagram-of-force-balance-accelerometer.png
 INPUT .\imagenes\cap1_marcoteo\MQTT-protocol-model.png
 INPUT .\imagenes\cap1_marcoteo\MQTT-protocol-model.png
 INPUT imagenes\cap1_marcoteo\MQTT-protocol-model.png
@@ -616,6 +631,13 @@ INPUT .\imagenes\cap2_marcometod\ArañaMICROS.png
 INPUT .\imagenes\cap2_marcometod\ArañaMICROS.png
 INPUT .\imagenes\cap2_marcometod\ArañaMICROS.png
 INPUT .\imagenes\cap2_marcometod\ArañaMICROS.png
+INPUT .\imagenes\cap2_marcometod\esp32.jpg
+INPUT .\imagenes\cap2_marcometod\esp32.jpg
+INPUT imagenes\cap2_marcometod\esp32.jpg
+INPUT .\imagenes\cap2_marcometod\esp32.jpg
+INPUT .\imagenes\cap2_marcometod\esp32.jpg
+INPUT .\imagenes\cap2_marcometod\esp32.jpg
+INPUT .\imagenes\cap2_marcometod\esp32.jpg
 INPUT .\imagenes\cap2_marcometod\ArañaACL.png
 INPUT .\imagenes\cap2_marcometod\ArañaACL.png
 INPUT imagenes\cap2_marcometod\ArañaACL.png
@@ -623,6 +645,13 @@ INPUT .\imagenes\cap2_marcometod\ArañaACL.png
 INPUT .\imagenes\cap2_marcometod\ArañaACL.png
 INPUT .\imagenes\cap2_marcometod\ArañaACL.png
 INPUT .\imagenes\cap2_marcometod\ArañaACL.png
+INPUT .\imagenes\cap2_marcometod\MPU6050BREAKOUT.jpg
+INPUT .\imagenes\cap2_marcometod\MPU6050BREAKOUT.jpg
+INPUT imagenes\cap2_marcometod\MPU6050BREAKOUT.jpg
+INPUT .\imagenes\cap2_marcometod\MPU6050BREAKOUT.jpg
+INPUT .\imagenes\cap2_marcometod\MPU6050BREAKOUT.jpg
+INPUT .\imagenes\cap2_marcometod\MPU6050BREAKOUT.jpg
+INPUT .\imagenes\cap2_marcometod\MPU6050BREAKOUT.jpg
 INPUT .\imagenes\cap2_marcometod\ArañaTempHum.png
 INPUT .\imagenes\cap2_marcometod\ArañaTempHum.png
 INPUT imagenes\cap2_marcometod\ArañaTempHum.png
@@ -630,6 +659,13 @@ INPUT .\imagenes\cap2_marcometod\ArañaTempHum.png
 INPUT .\imagenes\cap2_marcometod\ArañaTempHum.png
 INPUT .\imagenes\cap2_marcometod\ArañaTempHum.png
 INPUT .\imagenes\cap2_marcometod\ArañaTempHum.png
+INPUT .\imagenes\cap2_marcometod\BME280BREAKOUT.jpeg
+INPUT .\imagenes\cap2_marcometod\BME280BREAKOUT.jpeg
+INPUT imagenes\cap2_marcometod\BME280BREAKOUT.jpeg
+INPUT .\imagenes\cap2_marcometod\BME280BREAKOUT.jpeg
+INPUT .\imagenes\cap2_marcometod\BME280BREAKOUT.jpeg
+INPUT .\imagenes\cap2_marcometod\BME280BREAKOUT.jpeg
+INPUT .\imagenes\cap2_marcometod\BME280BREAKOUT.jpeg
 INPUT .\imagenes\cap2_marcometod\ArañaIMU.png
 INPUT .\imagenes\cap2_marcometod\ArañaIMU.png
 INPUT imagenes\cap2_marcometod\ArañaIMU.png
@@ -637,6 +673,13 @@ INPUT .\imagenes\cap2_marcometod\ArañaIMU.png
 INPUT .\imagenes\cap2_marcometod\ArañaIMU.png
 INPUT .\imagenes\cap2_marcometod\ArañaIMU.png
 INPUT .\imagenes\cap2_marcometod\ArañaIMU.png
+INPUT .\imagenes\cap2_marcometod\MPU9250.jpeg
+INPUT .\imagenes\cap2_marcometod\MPU9250.jpeg
+INPUT imagenes\cap2_marcometod\MPU9250.jpeg
+INPUT .\imagenes\cap2_marcometod\MPU9250.jpeg
+INPUT .\imagenes\cap2_marcometod\MPU9250.jpeg
+INPUT .\imagenes\cap2_marcometod\MPU9250.jpeg
+INPUT .\imagenes\cap2_marcometod\MPU9250.jpeg
 INPUT .\imagenes\cap2_marcometod\ArañaTransmisores.png
 INPUT .\imagenes\cap2_marcometod\ArañaTransmisores.png
 INPUT imagenes\cap2_marcometod\ArañaTransmisores.png
@@ -702,6 +745,230 @@ INPUT .\imagenes\cap3_resultados\Pruebas LoRa\MapaLora.png
 INPUT .\imagenes\cap3_resultados\Pruebas LoRa\MapaLora.png
 INPUT .\imagenes\cap3_resultados\Pruebas LoRa\MapaLora.png
 INPUT .\imagenes\cap3_resultados\Pruebas LoRa\MapaLora.png
+INPUT .\imagenes\cap3_resultados\Pruebas ACL\Inclinacion\Comparacion entre Metodo1 (ACL) y Metodo 2 (Kalman) ante vibraciones.png
+INPUT .\imagenes\cap3_resultados\Pruebas ACL\Inclinacion\Comparacion entre Metodo1 (ACL) y Metodo 2 (Kalman) ante vibraciones.png
+INPUT imagenes\cap3_resultados\Pruebas ACL\Inclinacion\Comparacion entre Metodo1 (ACL) y Metodo 2 (Kalman) ante vibraciones.png
+INPUT .\imagenes\cap3_resultados\Pruebas ACL\Inclinacion\Comparacion entre Metodo1 (ACL) y Metodo 2 (Kalman) ante vibraciones.png
+INPUT .\imagenes\cap3_resultados\Pruebas ACL\Inclinacion\Comparacion entre Metodo1 (ACL) y Metodo 2 (Kalman) ante vibraciones.png
+INPUT .\imagenes\cap3_resultados\Pruebas ACL\Inclinacion\Comparacion entre Metodo1 (ACL) y Metodo 2 (Kalman) ante vibraciones.png
+INPUT .\imagenes\cap3_resultados\Pruebas ACL\Inclinacion\Comparacion entre Metodo1 (ACL) y Metodo 2 (Kalman) ante vibraciones.png
+INPUT .\imagenes\cap3_resultados\Pruebas ACL\Inclinacion\PruebaInclinacion.png
+INPUT .\imagenes\cap3_resultados\Pruebas ACL\Inclinacion\PruebaInclinacion.png
+INPUT imagenes\cap3_resultados\Pruebas ACL\Inclinacion\PruebaInclinacion.png
+INPUT .\imagenes\cap3_resultados\Pruebas ACL\Inclinacion\PruebaInclinacion.png
+INPUT .\imagenes\cap3_resultados\Pruebas ACL\Inclinacion\PruebaInclinacion.png
+INPUT .\imagenes\cap3_resultados\Pruebas ACL\Inclinacion\PruebaInclinacion.png
+INPUT .\imagenes\cap3_resultados\Pruebas ACL\Inclinacion\PruebaInclinacion.png
+INPUT .\imagenes\cap3_resultados\Pruebas ACL\Inclinacion\Comparacion M1 M2 M3 (Maggwick) ante vibraciones.png
+INPUT .\imagenes\cap3_resultados\Pruebas ACL\Inclinacion\Comparacion M1 M2 M3 (Maggwick) ante vibraciones.png
+INPUT imagenes\cap3_resultados\Pruebas ACL\Inclinacion\Comparacion M1 M2 M3 (Maggwick) ante vibraciones.png
+INPUT .\imagenes\cap3_resultados\Pruebas ACL\Inclinacion\Comparacion M1 M2 M3 (Maggwick) ante vibraciones.png
+INPUT .\imagenes\cap3_resultados\Pruebas ACL\Inclinacion\Comparacion M1 M2 M3 (Maggwick) ante vibraciones.png
+INPUT .\imagenes\cap3_resultados\Pruebas ACL\Inclinacion\Comparacion M1 M2 M3 (Maggwick) ante vibraciones.png
+INPUT .\imagenes\cap3_resultados\Pruebas ACL\Inclinacion\Comparacion M1 M2 M3 (Maggwick) ante vibraciones.png
+INPUT .\imagenes\cap3_resultados\Pruebas ACL\Inclinacion\Comparacion M1 M2 M3 (Maggwick) ante movimiento aleatorios.png
+INPUT .\imagenes\cap3_resultados\Pruebas ACL\Inclinacion\Comparacion M1 M2 M3 (Maggwick) ante movimiento aleatorios.png
+INPUT imagenes\cap3_resultados\Pruebas ACL\Inclinacion\Comparacion M1 M2 M3 (Maggwick) ante movimiento aleatorios.png
+INPUT .\imagenes\cap3_resultados\Pruebas ACL\Inclinacion\Comparacion M1 M2 M3 (Maggwick) ante movimiento aleatorios.png
+INPUT .\imagenes\cap3_resultados\Pruebas ACL\Inclinacion\Comparacion M1 M2 M3 (Maggwick) ante movimiento aleatorios.png
+INPUT .\imagenes\cap3_resultados\Pruebas ACL\Inclinacion\Comparacion M1 M2 M3 (Maggwick) ante movimiento aleatorios.png
+INPUT .\imagenes\cap3_resultados\Pruebas ACL\Inclinacion\Comparacion M1 M2 M3 (Maggwick) ante movimiento aleatorios.png
+INPUT .\imagenes\cap3_resultados\Ensayos\NationalInstruments_PCI6221.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\NationalInstruments_PCI6221.jpg
+INPUT imagenes\cap3_resultados\Ensayos\NationalInstruments_PCI6221.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\NationalInstruments_PCI6221.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\NationalInstruments_PCI6221.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\NationalInstruments_PCI6221.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\NationalInstruments_PCI6221.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\National_Instruments_SCB_68.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\National_Instruments_SCB_68.jpg
+INPUT imagenes\cap3_resultados\Ensayos\National_Instruments_SCB_68.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\National_Instruments_SCB_68.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\National_Instruments_SCB_68.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\National_Instruments_SCB_68.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\National_Instruments_SCB_68.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\FBA11.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\FBA11.jpg
+INPUT imagenes\cap3_resultados\Ensayos\FBA11.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\FBA11.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\FBA11.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\FBA11.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\FBA11.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\CONFIGURACION1.png
+INPUT .\imagenes\cap3_resultados\Ensayos\CONFIGURACION1.png
+INPUT imagenes\cap3_resultados\Ensayos\CONFIGURACION1.png
+INPUT .\imagenes\cap3_resultados\Ensayos\CONFIGURACION1.png
+INPUT .\imagenes\cap3_resultados\Ensayos\CONFIGURACION1.png
+INPUT .\imagenes\cap3_resultados\Ensayos\CONFIGURACION1.png
+INPUT .\imagenes\cap3_resultados\Ensayos\CONFIGURACION1.png
+INPUT .\imagenes\cap3_resultados\Ensayos\CONFIGURACION1PLANTA.png
+INPUT .\imagenes\cap3_resultados\Ensayos\CONFIGURACION1PLANTA.png
+INPUT imagenes\cap3_resultados\Ensayos\CONFIGURACION1PLANTA.png
+INPUT .\imagenes\cap3_resultados\Ensayos\CONFIGURACION1PLANTA.png
+INPUT .\imagenes\cap3_resultados\Ensayos\CONFIGURACION1PLANTA.png
+INPUT .\imagenes\cap3_resultados\Ensayos\CONFIGURACION1PLANTA.png
+INPUT .\imagenes\cap3_resultados\Ensayos\CONFIGURACION1PLANTA.png
+INPUT .\imagenes\cap3_resultados\Ensayos\InstrumentacionConf1FBA.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\InstrumentacionConf1FBA.jpg
+INPUT imagenes\cap3_resultados\Ensayos\InstrumentacionConf1FBA.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\InstrumentacionConf1FBA.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\InstrumentacionConf1FBA.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\InstrumentacionConf1FBA.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\InstrumentacionConf1FBA.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\InstrumentacionConf1FBASmartSensor.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\InstrumentacionConf1FBASmartSensor.jpg
+INPUT imagenes\cap3_resultados\Ensayos\InstrumentacionConf1FBASmartSensor.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\InstrumentacionConf1FBASmartSensor.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\InstrumentacionConf1FBASmartSensor.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\InstrumentacionConf1FBASmartSensor.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\InstrumentacionConf1FBASmartSensor.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\GUI1.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\GUI1.jpg
+INPUT imagenes\cap3_resultados\Ensayos\GUI1.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\GUI1.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\GUI1.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\GUI1.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\GUI1.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\GUI2.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\GUI2.jpg
+INPUT imagenes\cap3_resultados\Ensayos\GUI2.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\GUI2.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\GUI2.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\GUI2.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\GUI2.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\datosmatlab.png
+INPUT .\imagenes\cap3_resultados\Ensayos\datosmatlab.png
+INPUT imagenes\cap3_resultados\Ensayos\datosmatlab.png
+INPUT .\imagenes\cap3_resultados\Ensayos\datosmatlab.png
+INPUT .\imagenes\cap3_resultados\Ensayos\datosmatlab.png
+INPUT .\imagenes\cap3_resultados\Ensayos\datosmatlab.png
+INPUT .\imagenes\cap3_resultados\Ensayos\datosmatlab.png
+INPUT .\imagenes\cap3_resultados\Ensayos\VibHammer6EsteOesteNIDAQ.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibHammer6EsteOesteNIDAQ.jpg
+INPUT imagenes\cap3_resultados\Ensayos\VibHammer6EsteOesteNIDAQ.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibHammer6EsteOesteNIDAQ.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibHammer6EsteOesteNIDAQ.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibHammer6EsteOesteNIDAQ.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibHammer6EsteOesteNIDAQ.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibHammer6EsteOesteEspectroNIDAQ.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibHammer6EsteOesteEspectroNIDAQ.jpg
+INPUT imagenes\cap3_resultados\Ensayos\VibHammer6EsteOesteEspectroNIDAQ.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibHammer6EsteOesteEspectroNIDAQ.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibHammer6EsteOesteEspectroNIDAQ.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibHammer6EsteOesteEspectroNIDAQ.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibHammer6EsteOesteEspectroNIDAQ.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibHammer6EsteOesteSMARTSENSOR.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibHammer6EsteOesteSMARTSENSOR.jpg
+INPUT imagenes\cap3_resultados\Ensayos\VibHammer6EsteOesteSMARTSENSOR.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibHammer6EsteOesteSMARTSENSOR.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibHammer6EsteOesteSMARTSENSOR.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibHammer6EsteOesteSMARTSENSOR.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibHammer6EsteOesteSMARTSENSOR.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibHammer1NorteSurSMARTSENSORVentana2.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibHammer1NorteSurSMARTSENSORVentana2.jpg
+INPUT imagenes\cap3_resultados\Ensayos\VibHammer1NorteSurSMARTSENSORVentana2.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibHammer1NorteSurSMARTSENSORVentana2.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibHammer1NorteSurSMARTSENSORVentana2.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibHammer1NorteSurSMARTSENSORVentana2.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibHammer1NorteSurSMARTSENSORVentana2.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibHammer1NorteSurNIDAQ.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibHammer1NorteSurNIDAQ.jpg
+INPUT imagenes\cap3_resultados\Ensayos\VibHammer1NorteSurNIDAQ.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibHammer1NorteSurNIDAQ.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibHammer1NorteSurNIDAQ.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibHammer1NorteSurNIDAQ.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibHammer1NorteSurNIDAQ.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibHammer1NorteSurEspectroNIDAQ.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibHammer1NorteSurEspectroNIDAQ.jpg
+INPUT imagenes\cap3_resultados\Ensayos\VibHammer1NorteSurEspectroNIDAQ.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibHammer1NorteSurEspectroNIDAQ.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibHammer1NorteSurEspectroNIDAQ.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibHammer1NorteSurEspectroNIDAQ.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibHammer1NorteSurEspectroNIDAQ.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibHammer1NorteSurSMARTSENSOR.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibHammer1NorteSurSMARTSENSOR.jpg
+INPUT imagenes\cap3_resultados\Ensayos\VibHammer1NorteSurSMARTSENSOR.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibHammer1NorteSurSMARTSENSOR.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibHammer1NorteSurSMARTSENSOR.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibHammer1NorteSurSMARTSENSOR.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibHammer1NorteSurSMARTSENSOR.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\AmpVibLibreSinLastresNIDAQ.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\AmpVibLibreSinLastresNIDAQ.jpg
+INPUT imagenes\cap3_resultados\Ensayos\AmpVibLibreSinLastresNIDAQ.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\AmpVibLibreSinLastresNIDAQ.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\AmpVibLibreSinLastresNIDAQ.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\AmpVibLibreSinLastresNIDAQ.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\AmpVibLibreSinLastresNIDAQ.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibLibreSinLastresNIDAQ.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibLibreSinLastresNIDAQ.jpg
+INPUT imagenes\cap3_resultados\Ensayos\VibLibreSinLastresNIDAQ.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibLibreSinLastresNIDAQ.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibLibreSinLastresNIDAQ.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibLibreSinLastresNIDAQ.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibLibreSinLastresNIDAQ.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibLibreSinLastresSMARTSENSOR.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibLibreSinLastresSMARTSENSOR.jpg
+INPUT imagenes\cap3_resultados\Ensayos\VibLibreSinLastresSMARTSENSOR.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibLibreSinLastresSMARTSENSOR.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibLibreSinLastresSMARTSENSOR.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibLibreSinLastresSMARTSENSOR.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibLibreSinLastresSMARTSENSOR.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\AmplitudVibLibreLastresNIDAQ1.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\AmplitudVibLibreLastresNIDAQ1.jpg
+INPUT imagenes\cap3_resultados\Ensayos\AmplitudVibLibreLastresNIDAQ1.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\AmplitudVibLibreLastresNIDAQ1.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\AmplitudVibLibreLastresNIDAQ1.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\AmplitudVibLibreLastresNIDAQ1.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\AmplitudVibLibreLastresNIDAQ1.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibLibreLastresNIDAQ1.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibLibreLastresNIDAQ1.jpg
+INPUT imagenes\cap3_resultados\Ensayos\VibLibreLastresNIDAQ1.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibLibreLastresNIDAQ1.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibLibreLastresNIDAQ1.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibLibreLastresNIDAQ1.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibLibreLastresNIDAQ1.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibLibreLastresSMARTSENSOR.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibLibreLastresSMARTSENSOR.jpg
+INPUT imagenes\cap3_resultados\Ensayos\VibLibreLastresSMARTSENSOR.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibLibreLastresSMARTSENSOR.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibLibreLastresSMARTSENSOR.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibLibreLastresSMARTSENSOR.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibLibreLastresSMARTSENSOR.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\AmplitudVibAmb2NIDAQ1.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\AmplitudVibAmb2NIDAQ1.jpg
+INPUT imagenes\cap3_resultados\Ensayos\AmplitudVibAmb2NIDAQ1.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\AmplitudVibAmb2NIDAQ1.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\AmplitudVibAmb2NIDAQ1.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\AmplitudVibAmb2NIDAQ1.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\AmplitudVibAmb2NIDAQ1.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibAmb2EspectroNIDAQ1.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibAmb2EspectroNIDAQ1.jpg
+INPUT imagenes\cap3_resultados\Ensayos\VibAmb2EspectroNIDAQ1.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibAmb2EspectroNIDAQ1.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibAmb2EspectroNIDAQ1.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibAmb2EspectroNIDAQ1.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibAmb2EspectroNIDAQ1.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibAmb2SmartSensorGUI.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibAmb2SmartSensorGUI.jpg
+INPUT imagenes\cap3_resultados\Ensayos\VibAmb2SmartSensorGUI.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibAmb2SmartSensorGUI.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibAmb2SmartSensorGUI.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibAmb2SmartSensorGUI.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibAmb2SmartSensorGUI.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\AmplitudVibAmb2CONCATENADASMARTSENSOR.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\AmplitudVibAmb2CONCATENADASMARTSENSOR.jpg
+INPUT imagenes\cap3_resultados\Ensayos\AmplitudVibAmb2CONCATENADASMARTSENSOR.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\AmplitudVibAmb2CONCATENADASMARTSENSOR.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\AmplitudVibAmb2CONCATENADASMARTSENSOR.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\AmplitudVibAmb2CONCATENADASMARTSENSOR.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\AmplitudVibAmb2CONCATENADASMARTSENSOR.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibAmb2EspectroCONC.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibAmb2EspectroCONC.jpg
+INPUT imagenes\cap3_resultados\Ensayos\VibAmb2EspectroCONC.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibAmb2EspectroCONC.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibAmb2EspectroCONC.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibAmb2EspectroCONC.jpg
+INPUT .\imagenes\cap3_resultados\Ensayos\VibAmb2EspectroCONC.jpg
 INPUT .\cap5_conclu.tex
 INPUT cap5_conclu.tex
 INPUT .\cap5_conclu.tex
@@ -710,6 +977,33 @@ INPUT .\cap6_recom.tex
 INPUT cap6_recom.tex
 INPUT .\cap6_recom.tex
 INPUT cap6_recom.tex
+INPUT .\anexos1.tex
+INPUT anexos1.tex
+INPUT .\anexos1.tex
+INPUT anexos1.tex
+INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam7.tfm
+INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
+INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
+INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
+INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\fonts\tfm\public\latex-fonts\lasy10.tfm
+INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\fonts\tfm\public\latex-fonts\lasy7.tfm
+INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\fonts\tfm\public\latex-fonts\lasy5.tfm
+INPUT .\anexos2.tex
+INPUT anexos2.tex
+INPUT .\anexos2.tex
+INPUT anexos2.tex
+INPUT .\anexos3.tex
+INPUT anexos3.tex
+INPUT .\anexos3.tex
+INPUT anexos3.tex
+INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
+INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
+INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
+INPUT C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
 INPUT .\EIETdeG.bbl
 INPUT EIETdeG.bbl
 INPUT .\EIETdeG.bbl
@@ -725,6 +1019,10 @@ INPUT .\EIETdeG.out
 INPUT .\EIETdeG.out
 INPUT C:\Users\jatov\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1200.pk
 INPUT C:\Users\jatov\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1200.pk
+INPUT C:\Users\jatov\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk
+INPUT C:\Users\jatov\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk
+INPUT C:\Users\jatov\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk
+INPUT C:\Users\jatov\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk
 INPUT C:\Users\jatov\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1000.pk
 INPUT C:\Users\jatov\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1000.pk
 INPUT C:\Users\jatov\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0600.pk
@@ -733,6 +1031,8 @@ INPUT C:\Users\jatov\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcr
 INPUT C:\Users\jatov\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
 INPUT C:\Users\jatov\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecxc1200.pk
 INPUT C:\Users\jatov\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecxc1200.pk
+INPUT C:\Users\jatov\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1440.pk
+INPUT C:\Users\jatov\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1440.pk
 INPUT C:\Users\jatov\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk
 INPUT C:\Users\jatov\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk
 INPUT C:\Users\jatov\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1200.pk

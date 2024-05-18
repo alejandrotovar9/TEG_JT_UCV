@@ -1,25 +1,25 @@
-En este capítulo se describirá el diseño del sensor inteligente, describiendo detalles de hardware y software del mismo.
+En este capítulo se describirá el diseño del sensor inteligente, explicando en detalle el hardware y software del mismo.
 
 \section{Descripción breve del sistema}
 \label{subsec:descpsist}
 
 El sistema diseñado integra un conjunto de sensores y módulos que permiten medir variables dinámicas y cuasi-estáticas de un sistema estructural, enviarlas a larga distancia y posteriormente procesarlas y almacenarlas.
 
-Una vez el sistema es encendido, calibra de forma automática todos los sensores, con especial énfasis en eliminar el offset de los 3 ejes del acelerómetro y también calibrar el magnetómetro y giróscopo del acelerómetro de 9 grados de libertad. El sistema ejecutará las tareas de calibración cada 2 registros de datos enviados con éxito.
+Una vez el sistema es encendido, calibra de forma automática todos los sensores, con especial énfasis en eliminar el offset de los 3 ejes del acelerómetro y también calibrar el giróscopo del acelerómetro de 9 grados de libertad. Una vez calibrado, el sistema envía de forma inalámbrica un mensaje a estación base para sincronizar la fecha y hora actual. El sistema ejecutará las tareas de calibración cada 2 registros de datos enviados con éxito.
 
-Luego de la calibración y ajuste de la hora y fecha,  el sistema comienza a medir de forma continua la aceleración triaxial, inclinación, temperatura, humedad y estima la inclinación con sensores electrónicos de bajo consumo para posteriormente enviar los datos de forma inalámbrica a la estación base, que puede estar ubicada a más de 150 metros de distancia. Allí son recibidos, decodificados y pre-procesados para luego ser subidos vía inaálmbrica a un computador que sirve de servidor en donde se almacenaran los datos, siendo controlado el sistema desde esta misma estación base, pudiendo enviar comandos de adquisición de datos de forma remota. A su vez, se desarrolló una interfaz gráfica que permite visualizar los datos obtenidos, realizar peticiones de datos a distancia, observar sus características principales, acceder al histórico de datos recogidos por el sensor en una fecha específica, descargar los datos y ejecutar post-procesamiento a los mismos para evañuar las variables de interés para el monitoreo de la salud estructural.
+Luego de la calibración y ajuste de la hora y fecha,  el sistema comienza a medir de forma continua la aceleración triaxial, inclinación, temperatura, humedad y estima la inclinación con sensores electrónicos de bajo consumo para posteriormente enviar los datos de forma inalámbrica a la estación base, que puede estar ubicada a más de 150 metros de distancia. Allí son recibidos, decodificados y pre-procesados para luego ser subidos vía inalámbrica a un computador que sirve de servidor en donde se almacenarán los datos, siendo controlado el sistema desde esta misma estación base, pudiendo enviar comandos de adquisición de datos de forma remota. A su vez, se desarrolló una interfaz gráfica que permite visualizar los datos obtenidos, realizar peticiones de datos a distancia, observar sus características principales, acceder al histórico de datos recogidos por el sensor en una fecha específica, descargar los datos y ejecutar post-procesamiento a los mismos para evaluar las variables de interés para el monitoreo de la salud estructural.
 
 Puesto que la estación base está conectada a internet, el microcontrolador ubicado en la estación adquiere la fecha y hora actualizada utilizando un servidor del protocolo NTP (\textit{Network Time Protocol}) y sincroniza su RTC (\textit{Real Time Clock}) interno con estos valores. Una vez obtenida la fecha y hora, espera el comando de inicio del sensor inteligente que envía de forma automática una vez se enciende y calibra sus sensores, la cual le indica a la estación base que debe enviar la fecha y hora actual. De esta forma se sincronizan los relojes internos de ambos y permite al sensor inteligente tener la fecha y hora a la cual tomó todo registro, enviando esta información como parte del registro de datos. La fecha y hora se envía bajo el formato \textit{UNIX Epoch}, el cual indica la cantidad de segundos transcurridos desde el 1 de Enero de 1970.
 	
-En la estación base, el sistema se conectará a internet a través de la red WiFi, enviará los datos recibidos al computador en la estación base, siendo esta herramienta la encargada de pre-procesar los datos recibidos vía inalámbrica y convertirlos a un formato adecuado para poder ser almacenados en el computador y posteriormente procesados usando librerías de análisis numérico. La interfaz de usuario podrá estar disponible para todos los usuarios de la red local, siempre que tengan los servicios necesarios instalados en local.
+En la estación base, el sistema se conectará a internet a través de la red WiFi, enviará los datos recibidos al computador en la estación base, siendo esta herramienta la encargada de pre-procesar los datos recibidos vía inalámbrica y convertirlos a un formato adecuado para poder ser almacenados en el computador y posteriormente procesados usando librerías de análisis numérico.
 
-El comportamiento de los sistemas estructurales a estudiar condiciona los rangos e intervalos de medición de los sensores, con un límite superior cercano a los 3 g en un movimiento telúrico considerable. Por su parte, la temperatura, humedad e inclinación suelen considerarse variables cuasi-estáticas, permitiendo que el sistema mida estas variables con intervalos lo suficientemente largos para poder monitorear cambios considerables en las mismas y posteriormente correlacionarlos a las condiciones estructurales. La frecuencia de muestreo de aceleración es deseable que est
+El comportamiento de los sistemas estructurales a estudiar condiciona los rangos e intervalos de medición de los sensores, con un límite superior cercano a los 3 g en un movimiento telúrico considerable. Por su parte, la temperatura, humedad e inclinación suelen considerarse variables cuasi-estáticas, permitiendo que el sistema mida estas variables con intervalos lo suficientemente largos para poder monitorear cambios considerables en las mismas y posteriormente correlacionarlos a las condiciones estructurales. La frecuencia de muestreo de aceleración es deseable que esté limitada de tal forma que el espectro en frecuencia contenga las frecuencias de interés de la estructura.
 
 El sistema en su funcionamiento normal está ejecutando las siguientes tareas principales:
 
 \begin{itemize}
     \item Adquisición continua (envío programado a ciertas horas del día o ante eventos importantes): El sensor inteligente mide constantemente las variables de interés y envía periódicamente, a ciertas horas del día programadas con antelación, un registro de datos a la estación base. Al estar midiendo de forma continua, está atento para generar una interrupción o alerta ante algún valor de aceleración o inclinación que esté por encima de algún límite escogido con anterioridad que dependerá en gran medida de la estructura a monitorear y su naturaleza, aunque se escogió por default el valor de 2 m/s como generador de alerta, basado en la \textit{Escala de Mercalli} \citep{mercalli}, la cual indica que este valor de aceleración (que corresponde a 0.20 g) equivale a un sismo fuerte con daño moderado. El sistema envía de forma automática un registro de datos del acontecimiento importante que generó la alerta.
-	\item Escuchando petición de trama de datos inmediata (Envía trama ante request/query de estación base): Al recibir desde la estación base el comando de adquisición de datos, ejecutado desde la interfaz de control por el operador, el sistema comienza a tomar un registro de datos de forma inmediata, siempre y cuando el mismo no haya detectado previamente un evento importante que superara los límites establecidos, y lo envía a la estación base permitiendo que el usuario obtenga información del sistema en el instante en el cual se realiza la petición de los datos. Una vez es enviado y recibido con éxito la trama de datos, el sistema regresa a su estado anterior, tomando datos de forma continua y esperando alertas, comandos u horas programadas.
+	\item Escuchando petición de trama de datos inmediata (Envía trama ante \textit{request/query} de estación base): Al recibir desde la estación base el comando de adquisición de datos, ejecutado desde la interfaz de control por el operador, el sistema comienza a tomar un registro de datos de forma inmediata, siempre y cuando el mismo no haya detectado previamente un evento importante que superara los límites establecidos, y lo envía a la estación base permitiendo que el usuario obtenga información del sistema en el instante en el cual se realiza la petición de los datos. Una vez es enviado y recibido con éxito la trama de datos, el sistema regresa a su estado anterior, tomando datos de forma continua y esperando alertas, comandos u horas programadas.
 
 \end{itemize}
 
@@ -150,6 +150,18 @@ Siendo el componente central del sensor inteligente y el encargado de darle al s
     \label{fig:arañamcu}
 \end{figure}
 
+Con base en estos resultados, se escogió el microcontrolador ESP32 de Espressif Systems para ser el encargado de gestionar los datos provenientes de los sensores al ser el que se ajusta a las necesidades del proyecto para la construcción del prototipo de pruebas.
+
+El  DevKit v1 es una placa de desarrollo creada por la empresa DOIT para evaluar el módulo ESP-WROOM-32. Esta permite acceder fácilmente a los pines del microcontrolador, además de proveer un puerto USB para la programación del mismo, incorporando un convertidor USB a serial en la tarjeta de desarrollo. También incorpora un regulador de voltaje que permite alimentar al microcontrolador con voltajes de hasta 12 V. En la figura \ref{fig:esp32} se observa la placa de desarrollo DevKit v1.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = 0.9\textwidth]{imagenes/cap2_marcometod/esp32.jpg}
+    \caption{Placa de desarrollo ESP32 DevKit1 basada en el ESP32 de Espressif Systems.}
+    \label{fig:esp32}
+\end{figure}
+
+
 \subsubsection{Selección del sensor de aceleración}
 
 Con base en la información recopilada de distintos módulos de acelerómetros, se observa en la figura \ref{fig:arañaacl} que el MPU6050 de Invensense se ajusta a las necesidades del acelerómetro necesario para tomar los registros de vibración. Otro módulo del mismo fabricante, el MPU9250 también presenta un buen desempeño. Sin embargo, el MPU6050 tiene un mejor precio y ofrece funcionalidades similares, por lo cual fue el escogido para el prototipo de pruebas.
@@ -162,15 +174,80 @@ Con base en la información recopilada de distintos módulos de acelerómetros, 
     \label{fig:arañaacl}
 \end{figure}
 
+En la tabla \ref{tab:specs6050} se encuentran las especificaciones del módulo:
+
+% Please add the following required packages to your document preamble:
+% \usepackage{graphicx}
+\begin{table}[H]
+    \centering
+    \caption{Especificaciones del MPU6050 de Invensense.}
+    \label{tab:specs6050}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|c|c|c|}
+    \hline
+    \textbf{Parámetro} & \textbf{Acelerómetro} & \textbf{Giróscopo} \\ \hline
+    Rango a escala completa & $\pm2 g, \pm4 g, \pm8 g, \pm16 g,$ & $\pm250 ^\circ/s, \pm500 ^\circ/s, \pm1000 ^\circ/s, \pm2000 ^\circ/s$ \\ \hline
+    Porcentaje de no linearidad & 0.5\% & 0.2\% \\ \hline
+    Muestreo simultáneo & Sí & Sí \\ \hline
+    Densidad espectral de potencia de ruido & $400 \mu g / / \sqrt{Hz}$ & $0.005 \mu ^\circ / \sqrt{Hz} $ \\ \hline
+    Protocolo de comunicaciones & I2C & I2C \\ \hline
+    Resolución del ADC & 16 bits & 16 bits \\ \hline
+    Corriente & $500 \mu A$ & .6 mA \\ \hline
+    \end{tabular}%
+    }
+    \end{table}
+
+En la figura \ref{fig:mpu6050} se observa el módulo o \textit{breakout board} GY-521, el cual integra el acelerómetro MPU6050 y provee los pines necesarios para su integración en prototipos:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = 0.7\textwidth]{imagenes/cap2_marcometod/MPU6050BREAKOUT.jpg}
+    \caption{Módulo GY-521 basado en el MPU6050 \citep{mpu6050}.}
+    \label{fig:mpu6050}
+\end{figure}
+
+
 \subsubsection{Selección del sensor de temperatura y humedad}
 
-Se observa en la figura \ref{fig:arañatemphum} que la mayoría de los sensores de temperatura y humedad, los cuales suelen estar integrados en un mismo módulo, no distan mucho en desempeño entre sí, sin embargo, entre ellos destaca el BME280 del reconocido fabricante Bosch, el cual cuenta con buena resolución además de una excelente documentación y librerías para distintos microcontroladores. El módulo SHT31 muesta potencial por su resolución, en este caso se descarta por la poca disponibilidad del módulo, pero es una buena opción para futuras implementaciones. Es por esta razón que se escogió el BME280 para llevar a cabo las mediciones de las variables ambientales en el prototipo de pruebas.
+Se observa en la figura \ref{fig:arañatemphum} que la mayoría de los sensores de temperatura y humedad, los cuales suelen estar integrados en un mismo módulo, no distan mucho en desempeño entre sí, sin embargo, entre ellos destaca el BME280 del reconocido fabricante Bosch, el cual cuenta con buena resolución además de una excelente documentación y librerías para distintos microcontroladores. El módulo SHT31 muesta potencial por su resolución. En este caso se descarta por la poca disponibilidad del módulo, pero es una buena opción para futuras implementaciones. Es por esta razón que se escogió el BME280 para llevar a cabo las mediciones de las variables ambientales en el prototipo de pruebas.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width = 0.9\textwidth]{imagenes/cap2_marcometod/ArañaTempHum.png}
     \caption{Diagrama de araña para selección de sensor de temperatura y humedad.}
     \label{fig:arañatemphum}
+\end{figure}
+
+En la tabla \ref{tab:specsBME280} se recopilaron las especificaciones más relevantes del sensor BME280:
+
+% Please add the following required packages to your document preamble:
+% \usepackage{graphicx}
+\begin{table}[H]
+    \centering
+    \caption{Especificaciones del sensor BME280 de Bosch.}
+    \label{tab:specsBME280}
+    \resizebox{0.7\textwidth}{!}{%
+    \begin{tabular}{|c|c|}
+    \hline
+    \textbf{Parámetro} & \textbf{Valor} \\ \hline
+    Rango de humedad relativa & 0-100\% RH \\ \hline
+    Precisión de humedad relativa & $\pm3 \%$ \\ \hline
+    Rango de temperatura & $-40^\circ a 85^\circ $ \\ \hline
+    Resolución de temperatura & $0.01 ^\circ$ \\ \hline
+    Protocolo de comunicaciones & I2C \\ \hline
+    Voltaje de operación & 1.8 V - 3.3 V DC \\ \hline
+    Frecuencia de muestreo máxima & 157 Hz \\ \hline
+    \end{tabular}%
+    }
+    \end{table}
+
+El módulo GY-BME280 de la figura \ref{fig:bme280} permite acceder a los pines del sensor de forma sencilla, facilitando su integración en el prototipo de pruebas implementado:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = 0.9\textwidth]{imagenes/cap2_marcometod/BME280BREAKOUT.jpeg}
+    \caption{Módulo GY-BME280 basado en el sensor BME280 de Bosch \citep{bme280}.}
+    \label{fig:bme280}
 \end{figure}
 
 \subsubsection{Selección del acelerómetro para estimación de ángulos}
@@ -185,6 +262,38 @@ Utilizando el mismo análisis que se llevó a cabo en la figura \ref{fig:arañaa
 \end{figure}
 
 
+En la tabla \ref{tab:specs9250} se observan las características más relevantes del módulo:
+
+% Please add the following required packages to your document preamble:
+% \usepackage{graphicx}
+\begin{table}[H]
+    \centering
+    \caption{Especificaciones del MPU9250 de Invensense.}
+    \label{tab:specs9250}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|c|c|c|c|}
+    \hline
+    \textbf{Parámetro} & \textbf{Acelerómetro} & \textbf{Giroscopio} & \multicolumn{1}{l|}{\textbf{Magnetómetro}} \\ \hline
+    Rango a escala completa & $\pm2 g, \pm4 g, \pm8 g, \pm16 g,$ & $\pm250 ^\circ/s, \pm500 ^\circ/s, \pm1000 ^\circ/s, \pm2000 ^\circ/s$  & $\pm 4800 \mu T$ \\ \hline
+    Porcentaje de no linearidad & 0.5\% & 0.1\% & - \\ \hline
+    Muestreo simultáneo & Sí & Sí & No \\ \hline
+    Densidad espectral de potencia de ruido & $300 \mu g / \sqrt{Hz}$ & $0.1 ^\circ/ \sqrt{Hz}$ & - \\ \hline
+    Protocolo de comunicaciones & I2C/SPI & I2C/SPI & I2C/SPI \\ \hline
+    Resolución del ADC & 16 bits & 16 bits & 14 bits \\ \hline
+    Corriente & $450 \mu A$ & 3.2 mA & $280 \mu A$ \\ \hline
+    \end{tabular}%
+    }
+    \end{table}
+
+Similar al módulo GY-521, el módulo GY-9250 contiene al MPU9250 de Invensense y facilita el acceso a sus pines, además de incorporar un regulador de voltaje para poder alimentar el módulo con 5V. El módulo se observa en la figura \ref{fig:mpu9250}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = 0.5\textwidth]{imagenes/cap2_marcometod/MPU9250.jpeg}
+    \caption{Módulo GY-9250 basado en el MPU9250 de Invensense \citep{mpu9250}.}
+    \label{fig:mpu9250}
+\end{figure}
+
 
 \subsubsection{Selección del módulo de comunicaciones}
 
@@ -196,6 +305,8 @@ Se ubicaron módulos de comunicaciones LoRa que fueran compatibles con el microc
     \caption{Diagrama de araña para selección del módulo de comunicaciones.}
     \label{fig:arañacomm}
 \end{figure}
+
+
 
 
 \section{Detalle del diseño} A continuación se describe en detalle tanto el hardware como el software utilizado para llevar a cabo el sensor inteligente, además de las herramientas utilizadas para verificar su funcionamiento.
@@ -290,6 +401,7 @@ Basados en el funcionamiento del sistema explicado en el apartado \ref{subsec:de
 \end{figure}
 
 \subsection{Descripción del software}
+\label{subsec:softwaredesc}
 
 A continuación se describen las distintas tareas programadas tanto en el sensor inteligente como en la estación base para cumplir con el funcionamiento descrito en el apartado \ref{subsec:descripcion}.
 
@@ -364,10 +476,10 @@ Estas colas permiten que se envíe la información adquirida por una tarea, como
 Una vez creadas las colas, se inicializa el hardware del sensor inteligente con las siguientes funciones:
 \begin{itemize}
     
-    \item bme.begin(0x76): Inicializa el sensor BME280 usando el objeto bme. Dentro de esta rutina de la librería se definen los parámetros como modo de operación, cantidad de sobremuestreo en datos, duración del tiempo de standby.
-    \item setup\_acl\_MPU6050(): Esta función inicializa el sensor MPU6050, configura su tiempo de muestreo a 200 Hz, enciende el led de calibración amarillo, lleva a cabo la función de self test y verifica que el valor se encuentre dentro de los valores nominales de fabricación. Posteriormente, se elimina el offset en todos los ejes al tomar 1000 mediciones y tomar el promedio de estas aceleraciones. Se inicializan los rangos del acelerómetro y se desactiva el filtro pasa-altos ya que, según la documentación del MPU6050 de Invensense, esto introduce retardo en las mediciones.
+    \item bme.begin(): Inicializa el sensor BME280 usando el objeto bme. Dentro de esta rutina de la librería se definen los parámetros como modo de operación, cantidad de sobremuestreo en datos, duración del tiempo de standby.
+    \item setup\_acl\_MPU6050(): Esta función inicializa el sensor MPU6050, configura su tiempo de muestreo a 200 Hz, enciende el led de calibración amarillo, lleva a cabo la función de \textit{self test} y verifica que el valor se encuentre dentro de los valores nominales de fabricación. Posteriormente, se elimina el offset en todos los ejes al tomar 1000 mediciones y tomar el promedio de estas aceleraciones. Se inicializan los rangos del acelerómetro y se desactiva el filtro pasa-alto ya que, según la documentación del MPU6050 de Invensense, esto introduce retardo en las mediciones.
     \item setup\_mpu9250(): Esta función, análoga a las funciones anteriores, inicializa el MPU9250 usando el objeto creado perteneciente a la clase definida en la librería MPU9250. Se ejecuta una rutina de eliminación de offset similar a la del MPU6050 en donde se toman mediciones por un intervalo de tiempo, se promedian, y posteriormente se guardan en los registros de ``bias'' del dispositivo.
-    \item setup\_lora\_radiolib(): La función de inicialización del módulo LoRa Ra-02 se encarga de configurar la frecuencia de trabajo, el factor de propagación y el ancho de banda. Luego de esto, envía un mensaje de inicialización en donde le hace saber al dispositivo de la estación base que el sensor inteligente ya se encuentra operativo y con sus sensores listos para las mediciones. Luego, se activa la interrupción (ISR por sus siglas en inglés), y se configura la función de callback a ejecutar en caso de que la señal cambie de 0 V a un valor positivo en el pin 2 del microcontrolador. Esta ISR es la que permite manejar el caso en el que el módulo reciba una señal desde estación base. Una vez configurada la interrupción, se configura el módulo tal que escuche a mensajes presentes en el espectro.
+    \item setup\_lora\_radiolib(): La función de inicialización del módulo LoRa Ra-02 se encarga de configurar la frecuencia de trabajo, el factor de propagación y el ancho de banda. Luego de esto, envía un mensaje de inicialización en donde le hace saber al dispositivo de la estación base que el sensor inteligente ya se encuentra operativo y con sus sensores listos para las mediciones. Luego, se activa la interrupción (ISR por sus siglas en inglés), y se configura la función de \textit{callback} a ejecutar en caso de que la señal cambie de 0 V a un valor positivo en el pin 2 del microcontrolador. Esta ISR es la que permite manejar el caso en el que el módulo reciba una señal desde estación base. Una vez configurada la interrupción, se configura el módulo tal que escuche a mensajes presentes en el espectro.
     \item Wire.setClock(400000): Ajusta la frecuencia de las comunicaciones I2C del microcontrolador a 400 kHz.
 \end{itemize}
 
@@ -375,17 +487,17 @@ En cuanto a la estación base, la inicialización consta de las siguientes funci
 
 \begin{itemize}
     \item setup\_wifi(): Se encarga de conectarse a una red WiFi cuyas credenciales se encuentran definidas en un archivo wifi\_credentials.h. Si no logra conectarse, seguirá intentando hasta lograr la conexión a la red especificada.
-    \item setup\_mqtt(): Si la conexión a la red WiFi es exitosa, el mcirocontrolador de la estación base se conecta al broker ubicado en la dirección IP especificada y asignada al computador donde está alojado el broker MQTT. Una vez ahí, se suscribe a un tópico al cual envia mensajes periódicos para que no se pierda la conexión. Finalmente, configura el tamaño del buffer del cliente a 40000 bytes.
+    \item setup\_mqtt(): Si la conexión a la red WiFi es exitosa, el microcontrolador de la estación base se conecta al broker ubicado en la dirección IP especificada y asignada al computador donde está alojado el broker MQTT. Una vez ahí, se suscribe a un tópico al cual envía mensajes periódicos para que no se pierda la conexión. Finalmente, configura el tamaño del buffer del cliente a 40000 bytes.
     \item update\_timepacket(): Esta función tiene como objetivo actualizar el reloj RTC interno del ESP32 usando el protocolo NTP, con el cual el microcontrolador solicita a un servidor la fecha y hora actual, el servidor responde y esta información es almacenada en el ESP32.
 \end{itemize}
 
-Una vez el hardware está configurado, se procedió a crear las tareas que se ejecutarán por el sensor inteligente. Para esto, se hace uso del comando xTaskCreatePinnedToCore de la siguiente forma:
+Una vez configurado el hardware, se procedió a crear las tareas que se ejecutarán por el sensor inteligente. Para esto, se hace uso del comando xTaskCreatePinnedToCore de la siguiente forma:
 
 \begin{lstlisting}[language=C++, caption=Creación de tareas en FreeRTOS]
     BaseType_t xTaskCreatePinnedToCore(TaskFunction_t pvTaskCode, const char * const pcName, const uint32_t usStackDepth, void * const pvParameters, UBaseType_t uxPriority, TaskHandle_t * const pvCreatedTask, const BaseType_t xCoreID);    
 \end{lstlisting}
 
-A todas las tareas se les asigna una prioridad, un handle, el núcleo donde se ejecutarán y el espacio de memoria que pueden  ocupar dependiendo de la que necesite una vez se ejecute. 
+A todas las tareas se les asigna una prioridad, un \textit{handle}, el núcleo donde se ejecutarán y el espacio de memoria que pueden  ocupar dependiendo de la que necesite una vez se ejecute. 
 
 \subsubsection{Estructuras de datos del sensor inteligente}
 
@@ -396,10 +508,10 @@ Se crearon distintas estructuras de datos para manejar las mediciones tomadas po
     \item BufferTempHumedad: Almacena los valores de temperatura y humedad obtenidos por el sensor BME280. Estos valores son promediados previos al almacenamiento y además pasan por un filtro de primer orden que le asigna un mayor peso a la medición anterior para evitar cambios bruscos.
     \item BufferInclinacion: Almacena los valores de inclinación estimados por el sensor MPU9250 luego de implementar el Filtro de Madgwick.
     \item Packet: Corresponde a la estructura principal del sistema, ya que es la encargada de almacenar los distintos paquetes que surgen producto de la subdivisión del arreglo de flotantes de aceleraciones. Este paquete consta de los bytes de encabezado y el payload (los datos de aceleración adquiridos).
-    \item Packet2: Sigue la estructura de Packet con la diferencia de tener un payload de tamaño 1. Este paquete se corresponde con los mensajes de comandos desde y hacia estación base, los cuales constan de 1 solo byte.
+    \item Packet2: Sigue la estructura de Packet con la diferencia de tener un \textit{payload} de tamaño 1. Este paquete se corresponde con los mensajes de comandos desde y hacia estación base, los cuales constan de 1 solo byte.
     \item TimePacket: Se utiliza para actualizar el reloj RTC interno del ESP32 del sensor inteligente con la fecha y hora obtenida usando el protocolo NTP en la estación base.
     \item StringPacket: Es la encargada de almacenar el string de inicialización enviado por el sensor ingeligenteuna vez termina su inicialización y notifica a la estación base que está listo para actualizar su RTC y tomar datos.
-    \item THIPacket: Siguiendo la estructura de los paquetes anteriores, esta estructura almacena los valores promedio de inclinación, temperatura y humedad que estaban almacenados en los buffers BufferInclinacion y BufferTempHumedad. Además, se incluye en esta estructura el timestamp correspondiente al momento en el cual se comienza a tomar el registro de datos de aceleración en formato ``UNIX Epoch'', que corresponde al número de segundos transcurridos desde el 1 de enero de 1970, siendo este formato más sencillo de enviar y luego reconvertir en la estación base al formato de fecha y hora más adecuado.
+    \item THIPacket: Siguiendo la estructura de los paquetes anteriores, esta estructura almacena los valores promedio de inclinación, temperatura y humedad que estaban almacenados en los buffers BufferInclinacion y BufferTempHumedad. Además, se incluye en esta estructura el timestamp correspondiente al momento en el cual se comienza a tomar el registro de datos de aceleración en formato ``\textit{UNIX Epoch}'', que corresponde al número de segundos transcurridos desde el 1 de enero de 1970, siendo este formato más sencillo de enviar y luego reconvertir en la estación base al formato de fecha y hora más adecuado.
 \end{itemize}
 
 
@@ -443,7 +555,7 @@ A continuación se describen las tareas encargadas de la comunicación de los da
 
     La interrupción se genera gracias a la configuración del módulo Ra-02 SX1278 de Ai-Thinker, el cual, al recibir un mensaje que cumpla con las características de encabezado de un mensaje LoRa, activa el pin DIO0 del módulo. Esta salida digital se conecta al pin configurado para detectar el flanco de subida y se genera la interrupción.
     
-    \item Tarea de recepción de datos: Esta tarea es clave al ser la que decodifica la naturalez del mensaje recibido desde la estación base. Dependiendo de la longitud del mensaje recibido, se identifica si el mensaje corresponde a un comando de adquisición o a una actualización de RTC. Si la longitud no se corresponde con ninguno de los 2 casos, la data está corrupta o no es para este receptor. Una vez se recibe el paquete con éxito, se verifica el payload y se levanta bandera de adquisición inmediata o se ejecuta función de actualización de RTC, según sea el caso.
+    \item Tarea de recepción de datos: Esta tarea es clave al ser la que decodifica la naturalez del mensaje recibido desde la estación base. Dependiendo de la longitud del mensaje recibido, se identifica si el mensaje corresponde a un comando de adquisición o a una actualización de RTC. Si la longitud no se corresponde con ninguno de los 2 casos, los datos está corrupta o no es para este receptor. Una vez se recibe el paquete con éxito, se verifica el payload y se levanta bandera de adquisición inmediata o se ejecuta función de actualización de RTC, según sea el caso.
     
     \item Tarea de envío de mensaje de inicialización: Es la encargada de enviar un string de inicialización a la estación base para notificar que el sensor inteligente ya culminó su período de inicialización y ajuste y está listo para una actualización de RTC.
     
@@ -451,7 +563,7 @@ A continuación se describen las tareas encargadas de la comunicación de los da
     
     \item Tarea de envío de paquetes de datos de aceleración: Una de las tareas de mayor importancia en todo el sistema al ser la encargada de gestionar el envío de los paquetes sucesivos de byte arrays a la estación base con la información almacenada en los buffers de aceleración correspondientes. 
     
-    \item Función para generar arreglo de datos a enviar: Funcion para generar el arreglo de subpaquetes (chunks) que contienen 128 bytes cada uno para su posterior envío, mediante una cola, a la tarea de envio de datos LoRa en forma de byte array.
+    \item Función para generar arreglo de datos a enviar: Función para generar el arreglo de subpaquetes (chunks) que contienen 128 bytes cada uno para su posterior envío, mediante una cola, a la tarea de envio de datos LoRa en forma de byte array.
     
     \item Tarea de envío de datos de temperatura, humedad e inclinación: Una vez se envían todos los datos de aceleración, siguiendo la misma estructura de envío de datos de aceleración, se envían los contenidos del buffer promedio.
     
@@ -466,15 +578,15 @@ A continuación se describen las tareas encargadas de la comunicación de los da
     
     \item Rutina de interrupción: Análoga a la ISR implementada en el sensor inteligente, se encarga de ejecutar en RAM la activación de la tarea encargada de la recepción de los datos independientemente del código que se esté ejecutando.
     
-    \item Tarea de envío de fecha y hora para actualización de RTC: Esta tarea es la encargada de enviar una estructura de tiempo, dentro de una estructura de tipo TimePacket, al sensor inteligente con el fin de sincronizar su reloj RTC interno. Para el envío del paquete, se llena la estructura de tiempo y luego se convierte a un arreglo de bytes usando la línea de código presente en \ref{code:casting}, esto consiste en "castear" de un tipo de datos a otro. En este caso, es un cast de reinterpretación, permitiendo que esta conversión sea compatbile en distintas arquitecturas. La notación es originaria del lenguaje C y permite efectuar operaciones de bajo nivel con el puntero que contiene el byte array.
+    \item Tarea de envío de fecha y hora para actualización de RTC: Esta tarea es la encargada de enviar una estructura de tiempo, dentro de una estructura de tipo TimePacket, al sensor inteligente con el fin de sincronizar su reloj RTC interno. Para el envío del paquete, se llena la estructura de tiempo y luego se convierte a un arreglo de bytes usando la línea de código presente en \ref{code:casting}, esto consiste en ``castea'' de un tipo de datos a otro. En este caso, es un cast de reinterpretación, permitiendo que esta conversión sea compatbile en distintas arquitecturas. La notación es originaria del lenguaje C y permite efectuar operaciones de bajo nivel con el puntero que contiene el byte array.
     
     \begin{lstlisting}[language=C++, caption=Conversión de datos a tipo byte array usando casting, label=code:casting]
         byte *byteArrTime = (byte *)&time_packet;
     \end{lstlisting}
 
-    Una vez los datos están en el tipo byte array, el cual es aceptado por el módulo Ra-02 Ai-Thinker, los datos se envían utilizando el comando ``startTransmit'' de la librería RadioLib. Este comando recibe como entradas el arreglo de datos de toda la estructura a enviar, la cual contiene el encabezado y el payload, y el tamaño del arreglo de datos final. Este comando devuelve un código de respuesta indicativo del estado del envío, notificando sobre si el envío fue exitoso o no.
+    Una vez los datos están en el tipo byte array, el cual es aceptado por el módulo Ra-02 Ai-Thinker, los datos se envían utilizando el comando ``\textit{startTransmit}'' de la librería RadioLib. Este comando recibe como entradas el arreglo de datos de toda la estructura a enviar, la cual contiene el encabezado y el payload, y el tamaño del arreglo de datos final. Este comando devuelve un código de respuesta indicativo del estado del envío, notificando sobre si el envío fue exitoso o no.
 
-    Una vez el arreglo de bytes es enviado con éxito, se debe introducir un retardo de 500 ms antes de configurar el módulo para que escuche comando nuevamente con el comando ``startReceive'', como se observa en la figura \ref{code:loralisten}. La necesidad de este retardo surgió luego de observar que el módulo no recibía comandos si se configuraba para escuchar comandos inmediatamente después. Esto se debe a la necesidad del módulo de unos cuantos milisegundos para enviar el paquete exitosamente. Luego de enviar el paquete, se debe reiniciar la ISR para comenzar a escuchar paquetes nuevamente.
+    Una vez el arreglo de bytes es enviado con éxito, se debe introducir un retardo de 500 ms antes de configurar el módulo para que escuche comando nuevamente con el comando ``\textit{startReceive}'', como se observa en la figura \ref{code:loralisten}. La necesidad de este retardo surgió luego de observar que el módulo no recibía comandos si se configuraba para escuchar comandos inmediatamente después. Esto se debe a la necesidad del módulo de unos cuantos milisegundos para enviar el paquete exitosamente. Luego de enviar el paquete, se debe reiniciar la ISR para comenzar a escuchar paquetes nuevamente.
 
     \begin{lstlisting}[language=C++, caption=Configuración del módulo LoRa para escuchar paquetes, label=code:loralisten]
         int state2 = radio.startReceive();
@@ -554,10 +666,10 @@ A continuación se describen las tareas encargadas de la comunicación de los da
     Esta tarea tiene como objetivo subir los datos recibidos mediante una cola, enviada por el RTOS luego de recibir los datos de temperatura, humedad e inclinación, al broker ubicado en el computador cuya dirección IP es conocida. Para lograrlo se llevaron a cabo los siguientes pasos:
 
     \begin{enumerate}
-        \item Suspende temporalmente la tarea keepalive\_task, encargada de enviar mensajes cortos de forma periódica al broker y mantener activa la conexión mientras no se están enviando datos.
+        \item Suspende temporalmente la tarea \textit{keepalive\_task}, encargada de enviar mensajes cortos de forma periódica al broker y mantener activa la conexión mientras no se están enviando datos.
         \item Crea estructura de datos de tipo THIPacket.
         \item Recibe la cola con los datos.
-        \item Ejecuta la función sendTHI, la cual recibe como entrada el tópico y el dato a enviar. Esta función convierte los datos a tipo string y luego los publica en el tópico de interés.
+        \item Ejecuta la función \textit{sendTHI}, la cual recibe como entrada el tópico y el dato a enviar. Esta función convierte los datos a tipo string y luego los publica en el tópico de interés.
         \item Activa la tarea para envío de datos de aceleración
         \item Se suspende a sí misma.
     \end{enumerate}
@@ -568,8 +680,8 @@ A continuación se describen las tareas encargadas de la comunicación de los da
 
     \begin{enumerate}
         \item Recibe la cola con los arreglos de aceleración y los almacena en una estructura de datos.
-        \item Ejecuta la función ``sendAxis'', similar a ``sendTHI'', la cual recibe como entrada el tópico, el nombre del eje que está siendo enviado, el arreglo de datos almacenado en la estructura y el tamaño del arreglo. Esta función crea un ``nestedArray'', es decir, crea nuevo array JSON anidado. El arreglo se llena con los datos de forma sucesiva utilizando un bucle. Luego, serializa el documento JSON a una cadena de texto. Finalmente, la representación en texto del documento JSON es publicada al tópico de interés.
-        \item Reinicia la ejecución de la tarea keepalive\_task.
+        \item Ejecuta la función ``\textit{sendAxis}'', similar a ``\textit{sendTHI}'', la cual recibe como entrada el tópico, el nombre del eje que está siendo enviado, el arreglo de datos almacenado en la estructura y el tamaño del arreglo. Esta función crea un ``nestedArray'', es decir, crea nuevo array JSON anidado. El arreglo se llena con los datos de forma sucesiva utilizando un bucle. Luego, serializa el documento JSON a una cadena de texto. Finalmente, la representación en texto del documento JSON es publicada al tópico de interés.
+        \item Reinicia la ejecución de la tarea \textit{keepalive\_task}.
         \item Se suspende a sí misma hasta que sea reanudada en el próximo envío.
     \end{enumerate}
     

@@ -1,108 +1,112 @@
 \babel@toc {spanish}{}\relax 
-\contentsline {chapter}{RECONOCIMIENTOS Y AGRADECIMIENTOS}{\es@scroman {iii}}{chapter*.1}%
-\contentsline {chapter}{ÍNDICE GENERAL}{\es@scroman {viii}}{chapter*.2}%
-\contentsline {chapter}{LISTA DE FIGURAS}{\es@scroman {xii}}{chapter*.3}%
-\contentsline {chapter}{LISTA DE TABLAS}{\es@scroman {xv}}{chapter*.4}%
-\contentsline {chapter}{LISTA DE ACRÓNIMOS}{\es@scroman {xvi}}{chapter*.5}%
-\contentsline {chapter}{INTRODUCCIÓN}{1}{chapter*.6}%
+\contentsline {chapter}{RECONOCIMIENTOS Y AGRADECIMIENTOS}{\es@scroman {iii}}{chapter*.3}%
+\contentsline {chapter}{ÍNDICE GENERAL}{\es@scroman {viii}}{chapter*.4}%
+\contentsline {chapter}{LISTA DE FIGURAS}{\es@scroman {xiii}}{chapter*.5}%
+\contentsline {chapter}{LISTA DE TABLAS}{\es@scroman {xvii}}{chapter*.6}%
+\contentsline {chapter}{LISTA DE ACRÓNIMOS}{\es@scroman {xviii}}{chapter*.7}%
+\contentsline {chapter}{INTRODUCCIÓN}{1}{chapter*.8}%
 \contentsline {chapter}{MARCO REFERENCIAL}{5}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Planteamiento del problema}{5}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Justificación}{5}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Objetivos}{7}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}Objetivo general}{7}{subsection.1.3.1}%
-\contentsline {subsection}{\numberline {1.3.2}Objetivos específicos}{7}{subsection.1.3.2}%
-\contentsline {section}{\numberline {1.4}Antecedentes}{8}{section.1.4}%
-\contentsline {chapter}{MARCO TEÓRICO}{11}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Estructuras civiles}{11}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Características generales}{11}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Tipos de estructuras}{11}{subsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.1.3}Comportamiento de las estructuras civiles}{12}{subsection.2.1.3}%
-\contentsline {subsection}{\numberline {2.1.4}Daño en estructuras}{16}{subsection.2.1.4}%
-\contentsline {subsection}{\numberline {2.1.5}Principios de la Sismoresistencia}{17}{subsection.2.1.5}%
-\contentsline {subsubsection}{Importancia de la instrumentación}{18}{section*.7}%
-\contentsline {section}{\numberline {2.2}Salud estructural}{19}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Definición}{19}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Reseña histórica}{20}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}Línea de trabajo del Monitoreo de Salud Estructural}{22}{subsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.2.4}Criterios de evaluación}{24}{subsection.2.2.4}%
-\contentsline {subsection}{\numberline {2.2.5}Variables de interés}{27}{subsection.2.2.5}%
-\contentsline {section}{\numberline {2.3}Métodos de identificación de daño}{30}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Basado en modelo}{30}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Basado en respuesta}{30}{subsection.2.3.2}%
-\contentsline {section}{\numberline {2.4}Ensayos estructurales}{30}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Ensayos invasivos}{31}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Ensayos no invasivos}{31}{subsection.2.4.2}%
-\contentsline {section}{\numberline {2.5}Microcontroladores (MCU)}{32}{section.2.5}%
-\contentsline {subsection}{\numberline {2.5.1}Definición y características}{32}{subsection.2.5.1}%
-\contentsline {subsection}{\numberline {2.5.2}Placas de desarrollo}{34}{subsection.2.5.2}%
-\contentsline {subsection}{\numberline {2.5.3}Protocolos de comunicación}{35}{subsection.2.5.3}%
-\contentsline {subsection}{\numberline {2.5.4}Sistemas Operativos en Tiempo Real (RTOS)}{37}{subsection.2.5.4}%
-\contentsline {subsubsection}{FreeRTOS}{38}{section*.8}%
-\contentsline {section}{\numberline {2.6}Sensores}{40}{section.2.6}%
-\contentsline {subsection}{\numberline {2.6.1}Definición}{40}{subsection.2.6.1}%
-\contentsline {subsection}{\numberline {2.6.2}Características de los sensores}{41}{subsection.2.6.2}%
-\contentsline {subsection}{\numberline {2.6.3}Sensores de interés para el Monitoreo de Salud Estructural}{41}{subsection.2.6.3}%
-\contentsline {subsection}{\numberline {2.6.4}Fusión de sensores}{46}{subsection.2.6.4}%
-\contentsline {subsubsection}{Estimación de ángulos}{47}{section*.9}%
-\contentsline {section}{\numberline {2.7}Sensores inteligentes}{49}{section.2.7}%
-\contentsline {subsection}{\numberline {2.7.1}Definición:}{49}{subsection.2.7.1}%
-\contentsline {subsection}{\numberline {2.7.2}Características:}{50}{subsection.2.7.2}%
-\contentsline {section}{\numberline {2.8}Monitoreo}{51}{section.2.8}%
-\contentsline {subsection}{\numberline {2.8.1}Monitoreo cableado}{51}{subsection.2.8.1}%
-\contentsline {subsection}{\numberline {2.8.2}Monitoreo inalámbrico}{52}{subsection.2.8.2}%
-\contentsline {section}{\numberline {2.9}Sistemas de adquisición de datos}{53}{section.2.9}%
-\contentsline {subsection}{\numberline {2.9.1}Definición y esquema general}{53}{subsection.2.9.1}%
-\contentsline {subsection}{\numberline {2.9.2}Acondicionamiento de señales}{53}{subsection.2.9.2}%
-\contentsline {subsection}{\numberline {2.9.3}DAQ basados en MCU}{53}{subsection.2.9.3}%
-\contentsline {section}{\numberline {2.10}Sistemas de comunicaciones inalámbricos}{54}{section.2.10}%
-\contentsline {subsection}{\numberline {2.10.1}Características y conceptos básicos}{54}{subsection.2.10.1}%
-\contentsline {subsection}{\numberline {2.10.2}Protocolos de comunicación para distancias cortas}{55}{subsection.2.10.2}%
-\contentsline {subsection}{\numberline {2.10.3}Protocolos de comunicación de larga distancia}{57}{subsection.2.10.3}%
-\contentsline {subsection}{\numberline {2.10.4}Protocolo LoRa}{58}{subsection.2.10.4}%
-\contentsline {section}{\numberline {2.11}Procesamiento digital de señales:}{63}{section.2.11}%
-\contentsline {subsection}{\numberline {2.11.1}Estudio en el dominio de la frecuencia}{64}{subsection.2.11.1}%
-\contentsline {subsection}{\numberline {2.11.2}Transformada de Fourier}{65}{subsection.2.11.2}%
-\contentsline {subsection}{\numberline {2.11.3}Transformada Rápida de Fourier}{66}{subsection.2.11.3}%
-\contentsline {subsection}{\numberline {2.11.4}Aventanamiento}{68}{subsection.2.11.4}%
-\contentsline {chapter}{MARCO METODOLÓGICO}{70}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Descripción breve del sistema}{70}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Selección de componentes}{73}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Protocolo de comunicaciones}{73}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Sensores}{74}{subsection.3.2.2}%
-\contentsline {subsubsection}{Aceleración}{75}{section*.10}%
-\contentsline {subsubsection}{Temperatura y humedad}{75}{section*.11}%
-\contentsline {subsubsection}{Inclinación}{76}{section*.12}%
-\contentsline {subsection}{\numberline {3.2.3}Microcontroladores}{76}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}Diagramas de selección de componentes:}{77}{subsection.3.2.4}%
-\contentsline {subsubsection}{Selección del microcontrolador}{77}{section*.13}%
-\contentsline {subsubsection}{Selección del sensor de aceleración}{78}{section*.14}%
-\contentsline {subsubsection}{Selección del sensor de temperatura y humedad}{79}{section*.15}%
-\contentsline {subsubsection}{Selección del acelerómetro para estimación de ángulos}{80}{section*.16}%
-\contentsline {subsubsection}{Selección del módulo de comunicaciones}{81}{section*.17}%
-\contentsline {section}{\numberline {3.3}Detalle del diseño}{82}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Descripción detallada del sistema:}{82}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Diagrama general funcionamiento del sensor inteligente en conjunto con la estación base}{86}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Descripción del hardware}{87}{subsection.3.3.3}%
-\contentsline {subsubsection}{Sensor inteligente:}{87}{section*.18}%
-\contentsline {subsubsection}{Estación base:}{88}{section*.19}%
-\contentsline {subsection}{\numberline {3.3.4}Descripción del software}{88}{subsection.3.3.4}%
-\contentsline {subsubsection}{Programación del ESP32:}{88}{section*.20}%
-\contentsline {subsubsection}{Librerías}{90}{section*.21}%
-\contentsline {subsubsection}{Programación de la aplicación de monitoreo y control}{91}{section*.22}%
-\contentsline {subsubsection}{Inicialización y setup}{93}{section*.23}%
-\contentsline {subsubsection}{Estructuras de datos del sensor inteligente}{96}{section*.24}%
-\contentsline {subsubsection}{Programas del sensor ingeligente}{98}{section*.25}%
-\contentsline {subsubsection}{Programas de la estación base:}{101}{section*.26}%
-\contentsline {subsubsection}{Aplicación de monitoreo y control:}{107}{section*.27}%
-\contentsline {subsection}{\numberline {3.3.5}Diagrama de flujo del sistema}{109}{subsection.3.3.5}%
-\contentsline {subsection}{\numberline {3.3.6}Diagrama de funcionamiento del sistema}{109}{subsection.3.3.6}%
-\contentsline {chapter}{PRUEBAS Y RESULTADOS}{110}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Pruebas de comunicaciones}{110}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Pruebas para estimación de inclinación}{112}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Pruebas de funcionamiento del prototipo}{113}{section.4.3}%
-\contentsline {chapter}{CONCLUSIONES}{114}{chapter.5}%
-\contentsline {chapter}{RECOMENDACIONES}{116}{chapter.6}%
-\contentsline {chapter}{TÍTULO DEL ANEXO}{117}{appendix.Alph1}%
-\contentsline {chapter}{TÍTULO DEL ANEXO}{118}{appendix.Alph2}%
-\contentsline {chapter}{TÍTULO DEL ANEXO}{119}{appendix.Alph3}%
-\contentsline {chapter}{REFERENCIAS}{120}{appendix*.28}%
+\contentsline {section}{\numberline {1.3}Alcance y limitaciones}{7}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Objetivos}{8}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Objetivo general}{8}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}Objetivos específicos}{8}{subsection.1.4.2}%
+\contentsline {section}{\numberline {1.5}Antecedentes}{9}{section.1.5}%
+\contentsline {chapter}{MARCO TEÓRICO}{12}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Estructuras civiles}{12}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Características generales}{12}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Tipos de estructuras}{12}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Comportamiento de las estructuras civiles}{13}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}Daño en estructuras}{17}{subsection.2.1.4}%
+\contentsline {subsection}{\numberline {2.1.5}Principios de la Sismoresistencia}{18}{subsection.2.1.5}%
+\contentsline {subsubsection}{Importancia de la instrumentación}{19}{section*.11}%
+\contentsline {section}{\numberline {2.2}Salud estructural}{20}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Definición}{20}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Reseña histórica}{21}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Línea de trabajo del Monitoreo de Salud Estructural}{23}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Criterios de evaluación}{25}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.5}Variables de interés}{28}{subsection.2.2.5}%
+\contentsline {section}{\numberline {2.3}Métodos de identificación de daño}{31}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Basado en modelo}{31}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Basado en respuesta}{31}{subsection.2.3.2}%
+\contentsline {section}{\numberline {2.4}Ensayos estructurales}{31}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Ensayos invasivos}{32}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Ensayos no invasivos o mínimamente invasivos}{32}{subsection.2.4.2}%
+\contentsline {section}{\numberline {2.5}Microcontroladores (MCU)}{33}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Definición y características}{33}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Placas de desarrollo}{35}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}Protocolos de comunicación}{36}{subsection.2.5.3}%
+\contentsline {subsection}{\numberline {2.5.4}Sistemas Operativos en Tiempo Real (RTOS)}{38}{subsection.2.5.4}%
+\contentsline {subsubsection}{FreeRTOS}{39}{section*.15}%
+\contentsline {section}{\numberline {2.6}Sensores}{41}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}Definición}{41}{subsection.2.6.1}%
+\contentsline {subsection}{\numberline {2.6.2}Características de los sensores}{42}{subsection.2.6.2}%
+\contentsline {subsection}{\numberline {2.6.3}Sensores de interés para el Monitoreo de Salud Estructural}{42}{subsection.2.6.3}%
+\contentsline {subsection}{\numberline {2.6.4}Fusión de sensores}{48}{subsection.2.6.4}%
+\contentsline {subsubsection}{Estimación de ángulos}{49}{section*.26}%
+\contentsline {section}{\numberline {2.7}Sensores inteligentes}{51}{section.2.7}%
+\contentsline {subsection}{\numberline {2.7.1}Definición:}{51}{subsection.2.7.1}%
+\contentsline {subsection}{\numberline {2.7.2}Características:}{52}{subsection.2.7.2}%
+\contentsline {section}{\numberline {2.8}Monitoreo}{53}{section.2.8}%
+\contentsline {subsection}{\numberline {2.8.1}Monitoreo cableado}{53}{subsection.2.8.1}%
+\contentsline {subsection}{\numberline {2.8.2}Monitoreo inalámbrico}{54}{subsection.2.8.2}%
+\contentsline {section}{\numberline {2.9}Sistemas de adquisición de datos}{55}{section.2.9}%
+\contentsline {subsection}{\numberline {2.9.1}Definición y esquema general}{55}{subsection.2.9.1}%
+\contentsline {subsection}{\numberline {2.9.2}Acondicionamiento de señales}{55}{subsection.2.9.2}%
+\contentsline {subsection}{\numberline {2.9.3}DAQ basados en MCU}{55}{subsection.2.9.3}%
+\contentsline {section}{\numberline {2.10}Sistemas de comunicaciones inalámbricos}{56}{section.2.10}%
+\contentsline {subsection}{\numberline {2.10.1}Características y conceptos básicos}{56}{subsection.2.10.1}%
+\contentsline {subsection}{\numberline {2.10.2}Protocolos de comunicación para distancias cortas}{57}{subsection.2.10.2}%
+\contentsline {subsection}{\numberline {2.10.3}Protocolos de comunicación de larga distancia}{59}{subsection.2.10.3}%
+\contentsline {subsection}{\numberline {2.10.4}Protocolo LoRa}{60}{subsection.2.10.4}%
+\contentsline {section}{\numberline {2.11}Procesamiento digital de señales:}{65}{section.2.11}%
+\contentsline {subsection}{\numberline {2.11.1}Estudio en el dominio de la frecuencia}{66}{subsection.2.11.1}%
+\contentsline {subsection}{\numberline {2.11.2}Transformada de Fourier}{67}{subsection.2.11.2}%
+\contentsline {subsection}{\numberline {2.11.3}Transformada Rápida de Fourier}{68}{subsection.2.11.3}%
+\contentsline {subsection}{\numberline {2.11.4}Aventanamiento}{70}{subsection.2.11.4}%
+\contentsline {chapter}{MARCO METODOLÓGICO}{72}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Descripción breve del sistema}{72}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Selección de componentes}{75}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Protocolo de comunicaciones}{75}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Sensores}{76}{subsection.3.2.2}%
+\contentsline {subsubsection}{Aceleración}{77}{section*.40}%
+\contentsline {subsubsection}{Temperatura y humedad}{77}{section*.41}%
+\contentsline {subsubsection}{Inclinación}{78}{section*.42}%
+\contentsline {subsection}{\numberline {3.2.3}Microcontroladores}{78}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Diagramas de selección de componentes:}{79}{subsection.3.2.4}%
+\contentsline {subsubsection}{Selección del microcontrolador}{79}{section*.44}%
+\contentsline {subsubsection}{Selección del sensor de aceleración}{81}{section*.47}%
+\contentsline {subsubsection}{Selección del sensor de temperatura y humedad}{83}{section*.51}%
+\contentsline {subsubsection}{Selección del acelerómetro para estimación de ángulos}{85}{section*.55}%
+\contentsline {subsubsection}{Selección del módulo de comunicaciones}{87}{section*.59}%
+\contentsline {section}{\numberline {3.3}Detalle del diseño}{88}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Descripción detallada del sistema:}{88}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Diagrama general funcionamiento del sensor inteligente en conjunto con la estación base}{92}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Descripción del hardware}{93}{subsection.3.3.3}%
+\contentsline {subsubsection}{Sensor inteligente:}{93}{section*.62}%
+\contentsline {subsubsection}{Estación base:}{94}{section*.64}%
+\contentsline {subsection}{\numberline {3.3.4}Descripción del software}{94}{subsection.3.3.4}%
+\contentsline {subsubsection}{Programación del ESP32:}{94}{section*.66}%
+\contentsline {subsubsection}{Librerías}{96}{section*.68}%
+\contentsline {subsubsection}{Programación de la aplicación de monitoreo y control}{97}{section*.69}%
+\contentsline {subsubsection}{Inicialización y setup}{99}{section*.70}%
+\contentsline {subsubsection}{Estructuras de datos del sensor inteligente}{102}{section*.71}%
+\contentsline {subsubsection}{Programas del sensor ingeligente}{104}{section*.72}%
+\contentsline {subsubsection}{Programas de la estación base:}{107}{section*.73}%
+\contentsline {subsubsection}{Aplicación de monitoreo y control:}{113}{section*.74}%
+\contentsline {subsection}{\numberline {3.3.5}Diagrama de flujo del sistema}{115}{subsection.3.3.5}%
+\contentsline {subsection}{\numberline {3.3.6}Diagrama de funcionamiento del sistema}{115}{subsection.3.3.6}%
+\contentsline {chapter}{PRUEBAS Y RESULTADOS}{116}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Pruebas de comunicaciones}{116}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Pruebas para estimación de inclinación}{119}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Pruebas de funcionamiento del prototipo}{122}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Vibración forzada por impacto}{131}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Vibración libre por condición inicial}{136}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Vibración ambiental}{142}{subsection.4.3.3}%
+\contentsline {chapter}{CONCLUSIONES}{147}{chapter.5}%
+\contentsline {chapter}{RECOMENDACIONES}{150}{chapter.6}%
+\contentsline {chapter}{CÓDIGO DEL SENSOR INTELIGENTE}{154}{appendix.Alph1}%
+\contentsline {chapter}{CÓDIGO DE LA ESTACIÓN BASE}{168}{appendix.Alph2}%
+\contentsline {chapter}{CÓDIGO DE LA INTERFAZ GRÁFICA}{182}{appendix.Alph3}%
+\contentsline {chapter}{REFERENCIAS}{198}{appendix*.106}%

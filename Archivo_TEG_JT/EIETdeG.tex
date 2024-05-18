@@ -49,7 +49,7 @@
 {\cleardoublepage \thispagestyle{empty} \vspace*{\stretch{1}}%
 \begin{center} \em} {\end{center} \vspace*{\stretch{3}} }%
 \begin{dedication}%
-A quien desees dedicar este trabajo
+Dedicado a Gregoria del Valle Briceño Aray y José Edmundo Tovar Silva.
 \end{dedication}%
 
 %=============================== RECONOCIMIENTOS Y AGRADECIMIENTOS ===================================
@@ -66,23 +66,23 @@ A quien desees dedicar este trabajo
 \begin{spacing}{1}
 \begin{center}%
 
-\textbf{Autor del Trabajo de Grado}
+\textbf{Tovar B., José A.}
 
 \begin{large}
-\textbf{Título del Trabajo de Grado}
+DISEÑO DE UN SENSOR INTELIGENTE PARA APLICACIONES DE MONITOREO DE SALUD ESTRUCTURAL
 \end{large}
 \end{center}
 
 \noindent%
-\textbf{Tutor Académico: MSc Jose Romero. Tesis.
+\textbf{Tutor Académico: Prof. Jose Romero. Tesis.
 Caracas, Universidad Central de Venezuela. Facultad de Ingeniería.
-Escuela de Ingeniería Eléctrica. Mención Electrónica y Control. Año 2024,
-xvii, 144 pp.}
+Escuela de Ingeniería Eléctrica. Ingeniero Electricista. Opción: Electrónica y Control. Institución: IMME Año 2024,
+xvii, 153 h. + anexos}
 
 \noindent
-\textbf{Palabras Claves:} Palabras clave. \\[1ex]
+\textbf{Palabras Claves:} Salud estructural, Sensor inteligente,  Respuesta dinámica, Frecuencia natural, Microcontrolador, Acelerómetro, LoRa, ESP32, MQTT, Espectro en frecuencia. \\[1ex]
 
-\noindent \textbf{Resumen.-} Escribe acá tu resumen
+\noindent \textbf{Resumen.-} En el siguiente trabajo se plantea el diseño de un sensor inteligente para ser utilizado en aplicaciones de salud estructural. En primer lugar, se llevó a cabo la investigación documental necesaria para identificar las variables de interés al evaluar la respuesta dinámica de los sistemas estructurales y su relación con la instrumentación electrónica. Se escogió el hardware necesario para la implementación de un prototipo de pruebas capaz de verificar el funcionamiento del diseño. Se escogieron sensores de tecnología MEMS como el MPU6250, MPU9250 y BME280, en conjunto con el microcontrolador ESP32 y el módulo Ra-02 de Ai-Thinker para las comunicaciones inalámbricas. Se diseñó el software necesario para controlar el sistema haciendo uso de FreeRTOS y se implementaron con éxito las tareas tanto en el sensor inteligente como en la estación base para obtener los registros de vibración y de las variables cuasi-estáticas (temperatura, humedad relativa e inclinación). Se programó una interfaz gráfica de monitoreo y control para observar los registros y enviar comandos al sensor inteligente. Las pruebas realizadas en el IMME demostraron el funcionamiento satisfactorio del sensor inteligente al comparar los registros obtenidos con el equipo de vibración comercial basado en la tarjeta PCI-6221 de National Instruments, obteniendo resultados muy similares que permitieron caracterizar el comportamiento dinámico de una estrucutra de acero.
 
 \end{spacing}
 
@@ -149,29 +149,25 @@ xvii, 144 pp.}
 \input{cap6_recom.tex}
 
 %==================================================================
-%\chapter{RECOMENDACIONES}\label{CAP:recomendaciones}
-%\markboth{Tu Segundo Capítulo}{Tu Segundo Capítulo}%
-%\input{recomendaciones.tex}
-
 
 \appendix
 
 \renewcommand \thechapter{\Roman{chapter}}
 %==================================================================
-\chapter{TÍTULO DEL ANEXO}\label{CAP:anexo0}
+\chapter{CÓDIGO DEL SENSOR INTELIGENTE}\label{CAP:anexo0}
 %\markboth{Tu anexo}{Tu anexo}%
-%\input{apendice0.tex}%
+\input{anexos1.tex}%
 
 %==================================================================
-\chapter{TÍTULO DEL ANEXO}\label{CAP:anexo1}
+\chapter{CÓDIGO DE LA ESTACIÓN BASE}\label{CAP:anexo1}
 %\markboth{Tu anexo}{Tu anexo}%
-%\input{apendice1.tex}%
+\input{anexos2.tex}
 
 %\backmatter
 %==================================================================
-\chapter{TÍTULO DEL ANEXO}\label{CAP:anexo2}
+\chapter{CÓDIGO DE LA INTERFAZ GRÁFICA}\label{CAP:anexo2}
 %\markboth{Tu anexo}{Tu anexo}%
-%\input{apendice2.tex}%
+\input{anexos3.tex}%
 
 
 

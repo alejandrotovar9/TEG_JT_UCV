@@ -15,6 +15,15 @@ Para lograr medir todas estas variables en tiempo real es conveniente contar con
 
 Sabiendo esto, existe una necesidad clara de desarrollar un sistema de adquisición de datos y monitoreo inalámbrico de bajo costo para aplicaciones de salud estructural que permita reducir la acción humana, minimizando el error humano y los recursos necesarios, aumentando a su vez la confiabilidad y la seguridad; con este desarrollo se busca verificar que el desempeño de la estructura se encuentra entre los rangos establecidos, y en caso contrario notificarlas con el objetivo de garantizar la seguridad de las personas, mediante la realización de un plan de mantenimiento preventivo y correctivo.
 
+\section{Alcance y limitaciones}
+
+Los principales equipos de medición estructural cuentan con salidas digitales o en su defecto salidas analógicas que pueden ser convertidas y soportan distintos protocolos de comunicación, lo que representa una ventaja al trabajar con microcontroladores, pues estos son adaptables a la mayoría de los protocolos lo que facilita la adquisición de los datos a partir del medidor.
+Los desafíos al usar el convertidor analógico-digital (ADC por sus siglas en inglés) de un microcontrolador en mediciones estructurales pueden ser varios. Uno de los principales es la precisión de la medición, ya que el ADC puede presentar errores en la conversión analógico digital. Además, la resolución del ADC puede limitar la precisión de las mediciones, lo que puede afectar la calidad de los datos obtenidos, esto se verificará comparando los resultados obtenidos con datos.
+Otro desafío importante es la velocidad de muestreo, ya que en aplicaciones estructurales puede ser necesario tomar mediciones en tiempo real para detectar posibles fallas o cambios en el comportamiento de la estructura. En este sentido, es importante que el ADC del microcontrolador tenga una velocidad de muestreo adecuada para las
+necesidades de la aplicación. Para validar el funcionamiento del sistema diseñado se propone la realización de un
+prototipo de pruebas para demostrar el desempeño del diseño.
+
+\newpage
 
 \section{Objetivos}
 
