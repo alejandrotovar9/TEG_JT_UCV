@@ -1,19 +1,19 @@
 # Fdb version 4
-["bibtex EIETdeG"] 1716043452 "EIETdeG.aux" "EIETdeG.bbl" "EIETdeG" 1716044530 0
+["bibtex EIETdeG"] 1716046703 "EIETdeG.aux" "EIETdeG.bbl" "EIETdeG" 1716046711 0
   "./biblioteca.bib" 1716033200 16170 d92f511b5b9e5748516594b04694251b ""
   "C:/Users/jatov/AppData/Local/Programs/MiKTeX/bibtex/bst/apacite/apacite.bst" 1374952728 146156 9d7b79dbf9d91133318126032cff8c27 ""
-  "EIETdeG.aux" 1716044529 60359 8f36e7920d9b28f02f2cad862bb5f459 "pdflatex"
+  "EIETdeG.aux" 1716046710 62800 081c4af7119a949e498cdad56e5b2a0a "pdflatex"
   (generated)
   "EIETdeG.bbl"
   "EIETdeG.blg"
   (rewritten before read)
-["makeindex EIETdeG.idx"] 1716043438 "EIETdeG.idx" "EIETdeG.ind" "EIETdeG" 1716044530 0
-  "EIETdeG.idx" 1716044525 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex EIETdeG.idx"] 1716043438 "EIETdeG.idx" "EIETdeG.ind" "EIETdeG" 1716046711 0
+  "EIETdeG.idx" 1716046704 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "EIETdeG.ilg"
   "EIETdeG.ind"
   (rewritten before read)
-["pdflatex"] 1716044523 "c:/Users/jatov/Desktop/TEG_JT_UCV/Archivo_TEG_JT/EIETdeG.tex" "EIETdeG.pdf" "EIETdeG" 1716044530 0
+["pdflatex"] 1716046703 "c:/Users/jatov/Desktop/TEG_JT_UCV/Archivo_TEG_JT/EIETdeG.tex" "EIETdeG.pdf" "EIETdeG" 1716046711 0
   "C:/Users/jatov/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1715988420 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/jatov/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1200.pk" 1695479167 31952 77e00920d6f91ce7066ebbc03c587570 ""
   "C:/Users/jatov/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1440.pk" 1695479179 40136 d6c80adda3ad38521c16d62273739264 ""
@@ -166,22 +166,23 @@
   "C:/Users/jatov/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/jatov/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1656236890 56148 51a9a8571c07b9921892ae11063ae853 ""
   "C:/Users/jatov/AppData/Local/Programs/MiKTeX/tex/latex/xstring/xstring.sty" 1693735632 123 a302f2c651a95033260db60e51527ae8 ""
-  "EIETdeG.aux" 1716044529 60359 8f36e7920d9b28f02f2cad862bb5f459 "pdflatex"
-  "EIETdeG.bbl" 1716043452 31650 37c272eb74d88a1f6f362c8e34684d04 "bibtex EIETdeG"
+  "EIETdeG.aux" 1716046710 62800 081c4af7119a949e498cdad56e5b2a0a "pdflatex"
+  "EIETdeG.bbl" 1716046703 31650 37c272eb74d88a1f6f362c8e34684d04 "bibtex EIETdeG"
   "EIETdeG.ind" 1716043439 0 d41d8cd98f00b204e9800998ecf8427e "makeindex EIETdeG.idx"
-  "EIETdeG.lof" 1716044529 12313 3a5ef6818e69bbbb0b0e6ca24baeffe3 "pdflatex"
-  "EIETdeG.lot" 1716044529 1796 4a8b45deb8d27c8031da62813eb29bd8 "pdflatex"
-  "EIETdeG.out" 1716044529 19390 d0387c07d3c55b99593a70a5e7b54779 "pdflatex"
-  "EIETdeG.tex" 1716044523 7746 aaa9dabf3200397dc282b1bc9643c5bb ""
-  "EIETdeG.toc" 1716044529 9818 922c8d59fe7c81d2972abeb9dd50d5b8 "pdflatex"
+  "EIETdeG.lof" 1716046710 12313 9769f2189b4e64b68164c79a6a51e5bc "pdflatex"
+  "EIETdeG.lot" 1716046710 1796 db02d2214f6120cbf4845f3678ae7c14 "pdflatex"
+  "EIETdeG.out" 1716046710 18841 42281667622fc002f6d007e26d36f81d "pdflatex"
+  "EIETdeG.tex" 1716046611 7745 3610ff362fe02174aa7d2fcc5fdb349b ""
+  "EIETdeG.toc" 1716046710 9604 24253361a7c3a92ea850adb360205986 "pdflatex"
+  "acroni.tex" 1716046695 1642 9edd0adacae7863bf76691c3fe17b278 ""
   "anexos1.tex" 1716040547 14266 09d9b37d7b08839bafbb17c4ffd14bde ""
   "anexos2.tex" 1716041081 14837 df7029e778e61c6343c7d2059e657285 ""
   "anexos3.tex" 1716043432 17255 4851906bcb7e926e320cd74264631479 ""
-  "c:/Users/jatov/Desktop/TEG_JT_UCV/Archivo_TEG_JT/EIETdeG.tex" 1716044523 7746 aaa9dabf3200397dc282b1bc9643c5bb ""
+  "c:/Users/jatov/Desktop/TEG_JT_UCV/Archivo_TEG_JT/EIETdeG.tex" 1716046611 7745 3610ff362fe02174aa7d2fcc5fdb349b ""
   "cap0_intro.tex" 1716030908 7621 124a2b3428f399c24d3f9a6767f77feb ""
   "cap1_marcoreferencial.tex" 1716030908 11856 cf68d7895becc22558842c32e1e48bcb ""
   "cap2_marcoteorico.tex" 1716034348 91582 f6eeab818142e4ea04f5f6b2a1157e08 ""
-  "cap3_marco_meto.tex" 1716036786 66609 a4c618f372fdd654f4471c97bbdd64fa ""
+  "cap3_marco_meto.tex" 1716045254 66613 bd6110824c44e189a36f1ba017320ec1 ""
   "cap4_pruebas_resul.tex" 1716041643 31234 14d50f25a6324f5125868bfb62449e6b ""
   "cap5_conclu.tex" 1716037119 3406 23f1afb64174811d4a392fd6b55909cf ""
   "cap6_recom.tex" 1716037367 5355 0b085effd5128af5a53a8c1d6fdac595 ""
@@ -259,7 +260,7 @@
   "imagenes/cap3_resultados/Pruebas LoRa/MapaLora.png" 1707494662 98921 dea81ec6ded6343323ebce18745b104b ""
   "portada.tex" 1715352182 2591 1cb919374fd2e24bf38cc098c717d88b ""
   "report_eie.cls" 1693616386 24705 3813f1df7df557ac673b940128f8c9ff ""
-  "setup.tex" 1715989071 7643 0a9f380ec25c2fe53d4881161ad3fcd3 ""
+  "setup.tex" 1716046538 7663 84d2c6033763f8dc34a279adccc4a731 ""
   "silabear.tex" 1693616386 865 1b4358aa7a12c0565407434f5498a065 ""
   (generated)
   "EIETdeG.aux"

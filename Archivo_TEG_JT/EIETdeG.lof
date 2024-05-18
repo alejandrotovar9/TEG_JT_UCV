@@ -42,45 +42,45 @@
 \contentsline {figure}{\numberline {3.12}{\ignorespaces Diagrama de bloques de la estación base.}}{94}{figure.caption.65}%
 \contentsline {figure}{\numberline {3.13}{\ignorespaces Ilustración del proceso para programar el ESP32 \citep {datasheetESP32}.}}{95}{figure.caption.67}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Vista en mapa de distancia máxima de pruebas usando módulo SX1278.}}{117}{figure.caption.75}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Entorno TelePlot.}}{119}{figure.caption.77}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Comparación entre métodos de estimación de inclinación en vibración ambiental.}}{120}{figure.caption.78}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Comparación entre métodos de estimación de inclinación ante vibraciones.}}{121}{figure.caption.79}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Comparación entre métodos de estimación de inclinación ante movimientos sostenidos.}}{122}{figure.caption.80}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Tarjeta de adquisición de datos PCI-6221 de National Instruments.}}{123}{figure.caption.81}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Tarjeta de conexiones SCB-68 de National Instruments (Artisan Technology).}}{124}{figure.caption.82}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Acelerómetro FBA-11 de Kinemetrics.}}{125}{figure.caption.84}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Vista frontal de la configuración utilizada en ensayo.}}{127}{figure.caption.86}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Vista de planta de la configuración utilizada en ensayo.}}{127}{figure.caption.87}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Instrumentación de la estructura}}{128}{figure.caption.88}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Vista de la estructura instrumentada con los acelerómetros FBA-11 de Kinemetrics}}}{128}{subfigure.11.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Vista de la estructura instrumentada incluyendo el prototipo de pruebas}}}{128}{subfigure.11.2}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Ventana 1 de la interfaz gráfica diseñada.}}{129}{figure.caption.89}%
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Ventana 2 de la interfaz gráfica diseñada.}}{129}{figure.caption.90}%
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Ventana de la interfaz gráfica de MATLAB para importar los datos obtenidos mediante LabVIEW.}}{130}{figure.caption.91}%
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Respuesta del sistema ante vibración por impacto según la tarjeta PCI-6221 de National Instruments}}{132}{figure.caption.93}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Aceleración en el tiempo del sistema ante vibración por impacto en dirección Este-Oeste}}}{132}{subfigure.15.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Espectro en frecuencia del sistema ante vibración por impacto en dirección Este-Oeste}}}{132}{subfigure.15.2}%
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Registro de vibración por impacto en la dirección Este-Oeste obtenido mediante el sensor inteligente.}}{133}{figure.caption.94}%
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Ventana auxiliar de la GUI para observar la inclinación y la densidad espectral de potencia.}}{134}{figure.caption.95}%
-\contentsline {figure}{\numberline {4.18}{\ignorespaces Respuesta del sistema ante vibración por impacto según la tarjeta PCI-6221 de National Instruments}}{135}{figure.caption.96}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Aceleración en el tiempo del sistema ante vibración por impacto en dirección Norte-Sur}}}{135}{subfigure.18.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Espectro en frecuencia del sistema ante vibración por impacto en dirección Norte-Sur}}}{135}{subfigure.18.2}%
-\contentsline {figure}{\numberline {4.19}{\ignorespaces Registro de vibración por impacto en la dirección Norte-Sur obtenido mediante el sensor inteligente.}}{136}{figure.caption.97}%
-\contentsline {figure}{\numberline {4.20}{\ignorespaces Respuesta del sistema ante vibración libre sin lastres según la tarjeta PCI-6221 de National Instruments}}{138}{figure.caption.98}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Aceleración en el tiempo del sistema ante vibración libre sin lastres}}}{138}{subfigure.20.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Espectro en frecuencia del sistema ante vibración libre sin lastres}}}{138}{subfigure.20.2}%
-\contentsline {figure}{\numberline {4.21}{\ignorespaces Registro de vibración libre sin lastres obtenido mediante el sensor inteligente.}}{139}{figure.caption.99}%
-\contentsline {figure}{\numberline {4.22}{\ignorespaces Respuesta del sistema ante vibración libre con lastres según la tarjeta PCI-6221 de National Instruments}}{140}{figure.caption.100}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Aceleración en el tiempo del sistema ante vibración libre con lastres}}}{140}{subfigure.22.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Espectro en frecuencia del sistema ante vibración libre con lastres}}}{140}{subfigure.22.2}%
-\contentsline {figure}{\numberline {4.23}{\ignorespaces Registro de vibración libre con lastres obtenido mediante el sensor inteligente.}}{141}{figure.caption.101}%
-\contentsline {figure}{\numberline {4.24}{\ignorespaces Respuesta del sistema ante vibración ambiental según la tarjeta PCI-6221 de National Instruments}}{143}{figure.caption.102}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Aceleración en el tiempo del sistema ante vibración ambiental}}}{143}{subfigure.24.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Espectro en frecuencia del sistema ante vibración ambiental}}}{143}{subfigure.24.2}%
-\contentsline {figure}{\numberline {4.25}{\ignorespaces Ventana de la interfaz gráfica diseñada con el registro de vibración ambiental obtenido.}}{144}{figure.caption.103}%
-\contentsline {figure}{\numberline {4.26}{\ignorespaces Forma del registro concatenado tras aventanamiento de Hanning utilizando Python.}}{145}{figure.caption.104}%
-\contentsline {figure}{\numberline {4.27}{\ignorespaces Forma del espectro del registro concatenado.}}{145}{figure.caption.105}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Vista en mapa de distancia máxima de pruebas usando módulo SX1278.}}{116}{figure.caption.75}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Entorno TelePlot.}}{118}{figure.caption.77}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Comparación entre métodos de estimación de inclinación en vibración ambiental.}}{119}{figure.caption.78}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Comparación entre métodos de estimación de inclinación ante vibraciones.}}{120}{figure.caption.79}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Comparación entre métodos de estimación de inclinación ante movimientos sostenidos.}}{121}{figure.caption.80}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Tarjeta de adquisición de datos PCI-6221 de National Instruments.}}{122}{figure.caption.81}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Tarjeta de conexiones SCB-68 de National Instruments (Artisan Technology).}}{123}{figure.caption.82}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Acelerómetro FBA-11 de Kinemetrics.}}{124}{figure.caption.84}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Vista frontal de la configuración utilizada en ensayo.}}{126}{figure.caption.86}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Vista de planta de la configuración utilizada en ensayo.}}{126}{figure.caption.87}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Instrumentación de la estructura}}{127}{figure.caption.88}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Vista de la estructura instrumentada con los acelerómetros FBA-11 de Kinemetrics}}}{127}{subfigure.11.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Vista de la estructura instrumentada incluyendo el prototipo de pruebas}}}{127}{subfigure.11.2}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Ventana 1 de la interfaz gráfica diseñada.}}{128}{figure.caption.89}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Ventana 2 de la interfaz gráfica diseñada.}}{128}{figure.caption.90}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Ventana de la interfaz gráfica de MATLAB para importar los datos obtenidos mediante LabVIEW.}}{129}{figure.caption.91}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Respuesta del sistema ante vibración por impacto según la tarjeta PCI-6221 de National Instruments}}{131}{figure.caption.93}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Aceleración en el tiempo del sistema ante vibración por impacto en dirección Este-Oeste}}}{131}{subfigure.15.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Espectro en frecuencia del sistema ante vibración por impacto en dirección Este-Oeste}}}{131}{subfigure.15.2}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Registro de vibración por impacto en la dirección Este-Oeste obtenido mediante el sensor inteligente.}}{132}{figure.caption.94}%
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Ventana auxiliar de la GUI para observar la inclinación y la densidad espectral de potencia.}}{133}{figure.caption.95}%
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Respuesta del sistema ante vibración por impacto según la tarjeta PCI-6221 de National Instruments}}{134}{figure.caption.96}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Aceleración en el tiempo del sistema ante vibración por impacto en dirección Norte-Sur}}}{134}{subfigure.18.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Espectro en frecuencia del sistema ante vibración por impacto en dirección Norte-Sur}}}{134}{subfigure.18.2}%
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Registro de vibración por impacto en la dirección Norte-Sur obtenido mediante el sensor inteligente.}}{135}{figure.caption.97}%
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Respuesta del sistema ante vibración libre sin lastres según la tarjeta PCI-6221 de National Instruments}}{137}{figure.caption.98}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Aceleración en el tiempo del sistema ante vibración libre sin lastres}}}{137}{subfigure.20.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Espectro en frecuencia del sistema ante vibración libre sin lastres}}}{137}{subfigure.20.2}%
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Registro de vibración libre sin lastres obtenido mediante el sensor inteligente.}}{138}{figure.caption.99}%
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Respuesta del sistema ante vibración libre con lastres según la tarjeta PCI-6221 de National Instruments}}{139}{figure.caption.100}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Aceleración en el tiempo del sistema ante vibración libre con lastres}}}{139}{subfigure.22.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Espectro en frecuencia del sistema ante vibración libre con lastres}}}{139}{subfigure.22.2}%
+\contentsline {figure}{\numberline {4.23}{\ignorespaces Registro de vibración libre con lastres obtenido mediante el sensor inteligente.}}{140}{figure.caption.101}%
+\contentsline {figure}{\numberline {4.24}{\ignorespaces Respuesta del sistema ante vibración ambiental según la tarjeta PCI-6221 de National Instruments}}{142}{figure.caption.102}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Aceleración en el tiempo del sistema ante vibración ambiental}}}{142}{subfigure.24.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Espectro en frecuencia del sistema ante vibración ambiental}}}{142}{subfigure.24.2}%
+\contentsline {figure}{\numberline {4.25}{\ignorespaces Ventana de la interfaz gráfica diseñada con el registro de vibración ambiental obtenido.}}{143}{figure.caption.103}%
+\contentsline {figure}{\numberline {4.26}{\ignorespaces Forma del registro concatenado tras aventanamiento de Hanning utilizando Python.}}{144}{figure.caption.104}%
+\contentsline {figure}{\numberline {4.27}{\ignorespaces Forma del espectro del registro concatenado.}}{144}{figure.caption.105}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
