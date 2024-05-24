@@ -2,8 +2,8 @@
 \contentsline {chapter}{RECONOCIMIENTOS Y AGRADECIMIENTOS}{\es@scroman {iii}}{chapter*.3}%
 \contentsline {chapter}{ÍNDICE GENERAL}{\es@scroman {viii}}{chapter*.4}%
 \contentsline {chapter}{LISTA DE FIGURAS}{\es@scroman {xii}}{chapter*.5}%
-\contentsline {chapter}{LISTA DE TABLAS}{\es@scroman {xvi}}{chapter*.6}%
-\contentsline {chapter}{LISTA DE ACRÓNIMOS}{\es@scroman {xvii}}{chapter*.7}%
+\contentsline {chapter}{LISTA DE TABLAS}{\es@scroman {xvii}}{chapter*.6}%
+\contentsline {chapter}{LISTA DE ACRÓNIMOS}{\es@scroman {xviii}}{chapter*.7}%
 \contentsline {chapter}{INTRODUCCIÓN}{1}{chapter*.8}%
 \contentsline {chapter}{MARCO REFERENCIAL}{5}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Planteamiento del problema}{5}{section.1.1}%
@@ -19,7 +19,7 @@
 \contentsline {subsection}{\numberline {2.1.2}Tipos de estructuras}{12}{subsection.2.1.2}%
 \contentsline {subsection}{\numberline {2.1.3}Comportamiento de las estructuras civiles}{13}{subsection.2.1.3}%
 \contentsline {subsection}{\numberline {2.1.4}Daño en estructuras}{17}{subsection.2.1.4}%
-\contentsline {subsection}{\numberline {2.1.5}Principios de la Sismoresistencia}{18}{subsection.2.1.5}%
+\contentsline {subsection}{\numberline {2.1.5}Principios de la sismo-resistencia}{18}{subsection.2.1.5}%
 \contentsline {subsubsection}{Importancia de la instrumentación}{19}{section*.11}%
 \contentsline {section}{\numberline {2.2}Salud estructural}{20}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}Definición}{20}{subsection.2.2.1}%
@@ -69,7 +69,7 @@
 \contentsline {section}{\numberline {3.1}Descripción breve del sistema}{72}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Selección de componentes}{75}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Protocolo de comunicaciones}{75}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Sensores}{76}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.2}Sensores}{77}{subsection.3.2.2}%
 \contentsline {subsubsection}{Aceleración}{77}{section*.40}%
 \contentsline {subsubsection}{Temperatura y humedad}{77}{section*.41}%
 \contentsline {subsubsection}{Inclinación}{78}{section*.42}%
@@ -97,14 +97,15 @@
 \contentsline {subsubsection}{Aplicación de monitoreo y control:}{113}{section*.74}%
 \contentsline {chapter}{PRUEBAS Y RESULTADOS}{115}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Pruebas de comunicaciones}{115}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Pruebas para estimación de inclinación}{118}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Pruebas de funcionamiento del prototipo}{121}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Vibración forzada por impacto}{130}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Vibración libre por condición inicial}{135}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}Vibración ambiental}{141}{subsection.4.3.3}%
-\contentsline {chapter}{CONCLUSIONES}{146}{chapter.5}%
-\contentsline {chapter}{RECOMENDACIONES}{149}{chapter.6}%
-\contentsline {chapter}{CÓDIGO DEL SENSOR INTELIGENTE}{153}{appendix.Alph1}%
-\contentsline {chapter}{CÓDIGO DE LA ESTACIÓN BASE}{167}{appendix.Alph2}%
-\contentsline {chapter}{CÓDIGO DE LA INTERFAZ GRÁFICA}{181}{appendix.Alph3}%
-\contentsline {chapter}{REFERENCIAS}{197}{appendix*.106}%
+\contentsline {section}{\numberline {4.2}Pruebas para estimación de inclinación}{117}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Pruebas de funcionamiento del prototipo}{122}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Vibración forzada por impacto}{131}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Vibración libre por condición inicial}{136}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Vibración ambiental}{142}{subsection.4.3.3}%
+\contentsline {chapter}{CONCLUSIONES}{150}{chapter.5}%
+\contentsline {chapter}{RECOMENDACIONES}{153}{chapter.6}%
+\contentsline {chapter}{CÓDIGO DEL SENSOR INTELIGENTE}{157}{appendix.Alph1}%
+\contentsline {chapter}{CÓDIGO DE LA ESTACIÓN BASE}{171}{appendix.Alph2}%
+\contentsline {chapter}{CÓDIGO DE LA INTERFAZ GRÁFICA}{185}{appendix.Alph3}%
+\contentsline {chapter}{PROGRAMAS DE POST-PROCESAMIENTO}{201}{appendix.Alph4}%
+\contentsline {chapter}{REFERENCIAS}{205}{appendix*.109}%

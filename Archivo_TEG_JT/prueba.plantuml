@@ -1,0 +1,13 @@
+@startuml
+start
+:Read Sensor;
+if (Sensor is ON) then (yes)
+    :Turn LED ON;
+    :Wait;
+    :Turn LED OFF;
+else (no)
+    :LED remains OFF;
+endif
+:Wait;
+stop
+@enduml

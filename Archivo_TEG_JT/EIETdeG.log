@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.6.1)  18 MAY 2024 11:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.6.1)  24 MAY 2024 18:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -382,7 +382,7 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count310
 )
-LaTeX Info: Redefining \BBA on input line 55.
+LaTeX Info: Redefining \BBA on input line 56.
  (C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
@@ -531,7 +531,7 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
 )
-Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 112.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 113.
 \c@theorem=\count331
 \c@condition=\count332
 \c@conjecture=\count333
@@ -684,7 +684,7 @@ l.51 \begin{dedication}
 ] [3
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 82--84
+Underfull \hbox (badness 10000) in paragraph at lines 81--83
 
  []
 
@@ -702,271 +702,283 @@ LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
  [12
 
-] [13] [14])
+] [13] [14] [15])
 \tf@lof=\write6
 \openout6 = `EIETdeG.lof'.
 
- [15] (EIETdeG.lot
+ [16] (EIETdeG.lot
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 )
 \tf@lot=\write7
 \openout7 = `EIETdeG.lot'.
 
- [16
+ [17
 
 ] (acroni.tex
 
-LaTeX Warning: Hyper reference `acro:SHM' on page \es@scroman {xvii} undefined on input line 4.
+LaTeX Warning: Hyper reference `acro:IMME' on page \es@scroman {xviii} undefined on input line 4.
 
 
-LaTeX Warning: Hyper reference `acro:SHM' on page \es@scroman {xvii} undefined on input line 4.
+LaTeX Warning: Hyper reference `acro:IMME' on page \es@scroman {xviii} undefined on input line 4.
 
 
-LaTeX Warning: Hyper reference `acro:ADC' on page \es@scroman {xvii} undefined on input line 5.
+LaTeX Warning: Hyper reference `acro:SHM' on page \es@scroman {xviii} undefined on input line 5.
 
 
-LaTeX Warning: Hyper reference `acro:ADC' on page \es@scroman {xvii} undefined on input line 5.
+LaTeX Warning: Hyper reference `acro:SHM' on page \es@scroman {xviii} undefined on input line 5.
 
 
-LaTeX Warning: Hyper reference `acro:NASA' on page \es@scroman {xvii} undefined on input line 6.
+LaTeX Warning: Hyper reference `acro:ADC' on page \es@scroman {xviii} undefined on input line 6.
 
 
-LaTeX Warning: Hyper reference `acro:NASA' on page \es@scroman {xvii} undefined on input line 6.
+LaTeX Warning: Hyper reference `acro:ADC' on page \es@scroman {xviii} undefined on input line 6.
 
 
-LaTeX Warning: Hyper reference `acro:SMIS' on page \es@scroman {xvii} undefined on input line 7.
+LaTeX Warning: Hyper reference `acro:NASA' on page \es@scroman {xviii} undefined on input line 7.
 
 
-LaTeX Warning: Hyper reference `acro:SMIS' on page \es@scroman {xvii} undefined on input line 7.
+LaTeX Warning: Hyper reference `acro:NASA' on page \es@scroman {xviii} undefined on input line 7.
 
 
-LaTeX Warning: Hyper reference `acro:DOF' on page \es@scroman {xvii} undefined on input line 8.
+LaTeX Warning: Hyper reference `acro:SMIS' on page \es@scroman {xviii} undefined on input line 8.
 
 
-LaTeX Warning: Hyper reference `acro:DOF' on page \es@scroman {xvii} undefined on input line 8.
+LaTeX Warning: Hyper reference `acro:SMIS' on page \es@scroman {xviii} undefined on input line 8.
 
 
-LaTeX Warning: Hyper reference `acro:VLSI' on page \es@scroman {xvii} undefined on input line 9.
+LaTeX Warning: Hyper reference `acro:DOF' on page \es@scroman {xviii} undefined on input line 9.
 
 
-LaTeX Warning: Hyper reference `acro:VLSI' on page \es@scroman {xvii} undefined on input line 9.
+LaTeX Warning: Hyper reference `acro:DOF' on page \es@scroman {xviii} undefined on input line 9.
 
 
-LaTeX Warning: Hyper reference `acro:RAM' on page \es@scroman {xvii} undefined on input line 10.
+LaTeX Warning: Hyper reference `acro:VLSI' on page \es@scroman {xviii} undefined on input line 10.
 
 
-LaTeX Warning: Hyper reference `acro:RAM' on page \es@scroman {xvii} undefined on input line 10.
+LaTeX Warning: Hyper reference `acro:VLSI' on page \es@scroman {xviii} undefined on input line 10.
 
 
-LaTeX Warning: Hyper reference `acro:ROM' on page \es@scroman {xvii} undefined on input line 11.
+LaTeX Warning: Hyper reference `acro:RAM' on page \es@scroman {xviii} undefined on input line 11.
 
 
-LaTeX Warning: Hyper reference `acro:ROM' on page \es@scroman {xvii} undefined on input line 11.
+LaTeX Warning: Hyper reference `acro:RAM' on page \es@scroman {xviii} undefined on input line 11.
 
 
-LaTeX Warning: Hyper reference `acro:DAC' on page \es@scroman {xvii} undefined on input line 12.
+LaTeX Warning: Hyper reference `acro:ROM' on page \es@scroman {xviii} undefined on input line 12.
 
 
-LaTeX Warning: Hyper reference `acro:DAC' on page \es@scroman {xvii} undefined on input line 12.
+LaTeX Warning: Hyper reference `acro:ROM' on page \es@scroman {xviii} undefined on input line 12.
 
 
-LaTeX Warning: Hyper reference `acro:SoC' on page \es@scroman {xvii} undefined on input line 13.
+LaTeX Warning: Hyper reference `acro:DAC' on page \es@scroman {xviii} undefined on input line 13.
 
 
-LaTeX Warning: Hyper reference `acro:SoC' on page \es@scroman {xvii} undefined on input line 13.
+LaTeX Warning: Hyper reference `acro:DAC' on page \es@scroman {xviii} undefined on input line 13.
 
 
-LaTeX Warning: Hyper reference `acro:MCU' on page \es@scroman {xvii} undefined on input line 14.
+LaTeX Warning: Hyper reference `acro:SoC' on page \es@scroman {xviii} undefined on input line 14.
 
 
-LaTeX Warning: Hyper reference `acro:MCU' on page \es@scroman {xvii} undefined on input line 14.
+LaTeX Warning: Hyper reference `acro:SoC' on page \es@scroman {xviii} undefined on input line 14.
 
 
-LaTeX Warning: Hyper reference `acro:SBC' on page \es@scroman {xvii} undefined on input line 15.
+LaTeX Warning: Hyper reference `acro:MCU' on page \es@scroman {xviii} undefined on input line 15.
 
 
-LaTeX Warning: Hyper reference `acro:SBC' on page \es@scroman {xvii} undefined on input line 15.
+LaTeX Warning: Hyper reference `acro:MCU' on page \es@scroman {xviii} undefined on input line 15.
 
 
-LaTeX Warning: Hyper reference `acro:UART' on page \es@scroman {xvii} undefined on input line 16.
+LaTeX Warning: Hyper reference `acro:SBC' on page \es@scroman {xviii} undefined on input line 16.
 
 
-LaTeX Warning: Hyper reference `acro:UART' on page \es@scroman {xvii} undefined on input line 16.
+LaTeX Warning: Hyper reference `acro:SBC' on page \es@scroman {xviii} undefined on input line 16.
 
 
-LaTeX Warning: Hyper reference `acro:I2C' on page \es@scroman {xvii} undefined on input line 17.
+LaTeX Warning: Hyper reference `acro:UART' on page \es@scroman {xviii} undefined on input line 17.
 
 
-LaTeX Warning: Hyper reference `acro:I2C' on page \es@scroman {xvii} undefined on input line 17.
+LaTeX Warning: Hyper reference `acro:UART' on page \es@scroman {xviii} undefined on input line 17.
 
 
-LaTeX Warning: Hyper reference `acro:SDA' on page \es@scroman {xvii} undefined on input line 18.
+LaTeX Warning: Hyper reference `acro:I2C' on page \es@scroman {xviii} undefined on input line 18.
 
 
-LaTeX Warning: Hyper reference `acro:SDA' on page \es@scroman {xvii} undefined on input line 18.
+LaTeX Warning: Hyper reference `acro:I2C' on page \es@scroman {xviii} undefined on input line 18.
 
 
-LaTeX Warning: Hyper reference `acro:SCL' on page \es@scroman {xvii} undefined on input line 19.
+LaTeX Warning: Hyper reference `acro:SDA' on page \es@scroman {xviii} undefined on input line 19.
 
 
-LaTeX Warning: Hyper reference `acro:SCL' on page \es@scroman {xvii} undefined on input line 19.
+LaTeX Warning: Hyper reference `acro:SDA' on page \es@scroman {xviii} undefined on input line 19.
 
 
-LaTeX Warning: Hyper reference `acro:SPI' on page \es@scroman {xvii} undefined on input line 20.
+LaTeX Warning: Hyper reference `acro:SCL' on page \es@scroman {xviii} undefined on input line 20.
 
 
-LaTeX Warning: Hyper reference `acro:SPI' on page \es@scroman {xvii} undefined on input line 20.
+LaTeX Warning: Hyper reference `acro:SCL' on page \es@scroman {xviii} undefined on input line 20.
 
 
-LaTeX Warning: Hyper reference `acro:USB' on page \es@scroman {xvii} undefined on input line 21.
+LaTeX Warning: Hyper reference `acro:SPI' on page \es@scroman {xviii} undefined on input line 21.
 
 
-LaTeX Warning: Hyper reference `acro:USB' on page \es@scroman {xvii} undefined on input line 21.
+LaTeX Warning: Hyper reference `acro:SPI' on page \es@scroman {xviii} undefined on input line 21.
 
 
-LaTeX Warning: Hyper reference `acro:RTOS' on page \es@scroman {xvii} undefined on input line 22.
+LaTeX Warning: Hyper reference `acro:USB' on page \es@scroman {xviii} undefined on input line 22.
 
 
-LaTeX Warning: Hyper reference `acro:RTOS' on page \es@scroman {xvii} undefined on input line 22.
+LaTeX Warning: Hyper reference `acro:USB' on page \es@scroman {xviii} undefined on input line 22.
 
-[17
+[18
 
 ]
 
-LaTeX Warning: Hyper reference `acro:SMP' on page \es@scroman {xviii} undefined on input line 23.
+LaTeX Warning: Hyper reference `acro:RTOS' on page \es@scroman {xix} undefined on input line 23.
 
 
-LaTeX Warning: Hyper reference `acro:SMP' on page \es@scroman {xviii} undefined on input line 23.
+LaTeX Warning: Hyper reference `acro:RTOS' on page \es@scroman {xix} undefined on input line 23.
 
 
-LaTeX Warning: Hyper reference `acro:MIT' on page \es@scroman {xviii} undefined on input line 24.
+LaTeX Warning: Hyper reference `acro:SMP' on page \es@scroman {xix} undefined on input line 24.
 
 
-LaTeX Warning: Hyper reference `acro:MIT' on page \es@scroman {xviii} undefined on input line 24.
+LaTeX Warning: Hyper reference `acro:SMP' on page \es@scroman {xix} undefined on input line 24.
 
 
-LaTeX Warning: Hyper reference `acro:FIFO' on page \es@scroman {xviii} undefined on input line 25.
+LaTeX Warning: Hyper reference `acro:MIT' on page \es@scroman {xix} undefined on input line 25.
 
 
-LaTeX Warning: Hyper reference `acro:FIFO' on page \es@scroman {xviii} undefined on input line 25.
+LaTeX Warning: Hyper reference `acro:MIT' on page \es@scroman {xix} undefined on input line 25.
 
 
-LaTeX Warning: Hyper reference `acro:MEMS' on page \es@scroman {xviii} undefined on input line 26.
+LaTeX Warning: Hyper reference `acro:FIFO' on page \es@scroman {xix} undefined on input line 26.
 
 
-LaTeX Warning: Hyper reference `acro:MEMS' on page \es@scroman {xviii} undefined on input line 26.
+LaTeX Warning: Hyper reference `acro:FIFO' on page \es@scroman {xix} undefined on input line 26.
 
 
-LaTeX Warning: Hyper reference `acro:DSP' on page \es@scroman {xviii} undefined on input line 27.
+LaTeX Warning: Hyper reference `acro:MEMS' on page \es@scroman {xix} undefined on input line 27.
 
 
-LaTeX Warning: Hyper reference `acro:DSP' on page \es@scroman {xviii} undefined on input line 27.
+LaTeX Warning: Hyper reference `acro:MEMS' on page \es@scroman {xix} undefined on input line 27.
 
 
-LaTeX Warning: Hyper reference `acro:IEEE' on page \es@scroman {xviii} undefined on input line 28.
+LaTeX Warning: Hyper reference `acro:DSP' on page \es@scroman {xix} undefined on input line 28.
 
 
-LaTeX Warning: Hyper reference `acro:IEEE' on page \es@scroman {xviii} undefined on input line 28.
+LaTeX Warning: Hyper reference `acro:DSP' on page \es@scroman {xix} undefined on input line 28.
 
 
-LaTeX Warning: Hyper reference `acro:DAQ' on page \es@scroman {xviii} undefined on input line 29.
+LaTeX Warning: Hyper reference `acro:IEEE' on page \es@scroman {xix} undefined on input line 29.
 
 
-LaTeX Warning: Hyper reference `acro:DAQ' on page \es@scroman {xviii} undefined on input line 29.
+LaTeX Warning: Hyper reference `acro:IEEE' on page \es@scroman {xix} undefined on input line 29.
 
 
-LaTeX Warning: Hyper reference `acro:WiFi' on page \es@scroman {xviii} undefined on input line 30.
+LaTeX Warning: Hyper reference `acro:DAQ' on page \es@scroman {xix} undefined on input line 30.
 
 
-LaTeX Warning: Hyper reference `acro:WiFi' on page \es@scroman {xviii} undefined on input line 30.
+LaTeX Warning: Hyper reference `acro:DAQ' on page \es@scroman {xix} undefined on input line 30.
 
 
-LaTeX Warning: Hyper reference `acro:MQTT' on page \es@scroman {xviii} undefined on input line 31.
+LaTeX Warning: Hyper reference `acro:WiFi' on page \es@scroman {xix} undefined on input line 31.
 
 
-LaTeX Warning: Hyper reference `acro:MQTT' on page \es@scroman {xviii} undefined on input line 31.
+LaTeX Warning: Hyper reference `acro:WiFi' on page \es@scroman {xix} undefined on input line 31.
 
 
-LaTeX Warning: Hyper reference `acro:IoT' on page \es@scroman {xviii} undefined on input line 32.
+LaTeX Warning: Hyper reference `acro:MQTT' on page \es@scroman {xix} undefined on input line 32.
 
 
-LaTeX Warning: Hyper reference `acro:IoT' on page \es@scroman {xviii} undefined on input line 32.
+LaTeX Warning: Hyper reference `acro:MQTT' on page \es@scroman {xix} undefined on input line 32.
 
 
-LaTeX Warning: Hyper reference `acro:M2M' on page \es@scroman {xviii} undefined on input line 33.
+LaTeX Warning: Hyper reference `acro:IoT' on page \es@scroman {xix} undefined on input line 33.
 
 
-LaTeX Warning: Hyper reference `acro:M2M' on page \es@scroman {xviii} undefined on input line 33.
+LaTeX Warning: Hyper reference `acro:IoT' on page \es@scroman {xix} undefined on input line 33.
 
 
-LaTeX Warning: Hyper reference `acro:CSS' on page \es@scroman {xviii} undefined on input line 34.
+LaTeX Warning: Hyper reference `acro:M2M' on page \es@scroman {xix} undefined on input line 34.
 
 
-LaTeX Warning: Hyper reference `acro:CSS' on page \es@scroman {xviii} undefined on input line 34.
+LaTeX Warning: Hyper reference `acro:M2M' on page \es@scroman {xix} undefined on input line 34.
 
 
-LaTeX Warning: Hyper reference `acro:CRC' on page \es@scroman {xviii} undefined on input line 35.
+LaTeX Warning: Hyper reference `acro:CSS' on page \es@scroman {xix} undefined on input line 35.
 
 
-LaTeX Warning: Hyper reference `acro:CRC' on page \es@scroman {xviii} undefined on input line 35.
+LaTeX Warning: Hyper reference `acro:CSS' on page \es@scroman {xix} undefined on input line 35.
 
 
-LaTeX Warning: Hyper reference `acro:FFT' on page \es@scroman {xviii} undefined on input line 36.
+LaTeX Warning: Hyper reference `acro:CMRR' on page \es@scroman {xix} undefined on input line 36.
 
 
-LaTeX Warning: Hyper reference `acro:FFT' on page \es@scroman {xviii} undefined on input line 36.
+LaTeX Warning: Hyper reference `acro:CMRR' on page \es@scroman {xix} undefined on input line 36.
 
 
-LaTeX Warning: Hyper reference `acro:NTP' on page \es@scroman {xviii} undefined on input line 37.
+LaTeX Warning: Hyper reference `acro:CRC' on page \es@scroman {xix} undefined on input line 37.
 
 
-LaTeX Warning: Hyper reference `acro:NTP' on page \es@scroman {xviii} undefined on input line 37.
+LaTeX Warning: Hyper reference `acro:CRC' on page \es@scroman {xix} undefined on input line 37.
 
 
-LaTeX Warning: Hyper reference `acro:RTC' on page \es@scroman {xviii} undefined on input line 38.
+LaTeX Warning: Hyper reference `acro:FFT' on page \es@scroman {xix} undefined on input line 38.
 
 
-LaTeX Warning: Hyper reference `acro:RTC' on page \es@scroman {xviii} undefined on input line 38.
+LaTeX Warning: Hyper reference `acro:FFT' on page \es@scroman {xix} undefined on input line 38.
 
 
-LaTeX Warning: Hyper reference `acro:IMU' on page \es@scroman {xviii} undefined on input line 39.
+LaTeX Warning: Hyper reference `acro:NTP' on page \es@scroman {xix} undefined on input line 39.
 
 
-LaTeX Warning: Hyper reference `acro:IMU' on page \es@scroman {xviii} undefined on input line 39.
+LaTeX Warning: Hyper reference `acro:NTP' on page \es@scroman {xix} undefined on input line 39.
 
 
-LaTeX Warning: Hyper reference `acro:MARG' on page \es@scroman {xviii} undefined on input line 40.
+LaTeX Warning: Hyper reference `acro:RTC' on page \es@scroman {xix} undefined on input line 40.
 
 
-LaTeX Warning: Hyper reference `acro:MARG' on page \es@scroman {xviii} undefined on input line 40.
+LaTeX Warning: Hyper reference `acro:RTC' on page \es@scroman {xix} undefined on input line 40.
 
 
-LaTeX Warning: Hyper reference `acro:JSON' on page \es@scroman {xviii} undefined on input line 41.
+LaTeX Warning: Hyper reference `acro:IMU' on page \es@scroman {xix} undefined on input line 41.
 
 
-LaTeX Warning: Hyper reference `acro:JSON' on page \es@scroman {xviii} undefined on input line 41.
+LaTeX Warning: Hyper reference `acro:IMU' on page \es@scroman {xix} undefined on input line 41.
 
 
-LaTeX Warning: Hyper reference `acro:CSV' on page \es@scroman {xviii} undefined on input line 42.
+LaTeX Warning: Hyper reference `acro:MARG' on page \es@scroman {xix} undefined on input line 42.
 
 
-LaTeX Warning: Hyper reference `acro:CSV' on page \es@scroman {xviii} undefined on input line 42.
+LaTeX Warning: Hyper reference `acro:MARG' on page \es@scroman {xix} undefined on input line 42.
 
 
-LaTeX Warning: Hyper reference `acro:GUI' on page \es@scroman {xviii} undefined on input line 43.
+LaTeX Warning: Hyper reference `acro:JSON' on page \es@scroman {xix} undefined on input line 43.
 
 
-LaTeX Warning: Hyper reference `acro:GUI' on page \es@scroman {xviii} undefined on input line 43.
+LaTeX Warning: Hyper reference `acro:JSON' on page \es@scroman {xix} undefined on input line 43.
 
-[18]
+[19]
 
-LaTeX Warning: Hyper reference `acro:ISR' on page \es@scroman {xix} undefined on input line 44.
+LaTeX Warning: Hyper reference `acro:CSV' on page \es@scroman {xx} undefined on input line 44.
 
 
-LaTeX Warning: Hyper reference `acro:ISR' on page \es@scroman {xix} undefined on input line 44.
+LaTeX Warning: Hyper reference `acro:CSV' on page \es@scroman {xx} undefined on input line 44.
 
-) [19] (cap0_intro.tex [1
+
+LaTeX Warning: Hyper reference `acro:GUI' on page \es@scroman {xx} undefined on input line 45.
+
+
+LaTeX Warning: Hyper reference `acro:GUI' on page \es@scroman {xx} undefined on input line 45.
+
+
+LaTeX Warning: Hyper reference `acro:ISR' on page \es@scroman {xx} undefined on input line 46.
+
+
+LaTeX Warning: Hyper reference `acro:ISR' on page \es@scroman {xx} undefined on input line 46.
+
+) [20] (cap0_intro.tex [1
 
 ] [2] [3]) [4]
 CAPÍTULO 1.
@@ -977,93 +989,93 @@ CAPÍTULO 2.
 (cap2_marcoteorico.tex [12
 
 ] [13]
-<imagenes/cap1_marcoteo/modelo_masa_simple.png, id=940, 106.14656pt x 155.83218pt>
+<imagenes/cap1_marcoteo/modelo_masa_simple.png, id=960, 106.14656pt x 155.83218pt>
 File: imagenes/cap1_marcoteo/modelo_masa_simple.png Graphic file (type png)
 <use imagenes/cap1_marcoteo/modelo_masa_simple.png>
 Package pdftex.def Info: imagenes/cap1_marcoteo/modelo_masa_simple.png  used on input line 43.
 (pdftex.def)             Requested size: 103.78142pt x 152.36734pt.
  [14] [15 <./imagenes/cap1_marcoteo/modelo_masa_simple.png>]
-<imagenes/cap1_marcoteo/respuesta_sist_subamorti.png, id=969, 463.7325pt x 290.58563pt>
+<imagenes/cap1_marcoteo/respuesta_sist_subamorti.png, id=989, 463.7325pt x 290.58563pt>
 File: imagenes/cap1_marcoteo/respuesta_sist_subamorti.png Graphic file (type png)
 <use imagenes/cap1_marcoteo/respuesta_sist_subamorti.png>
 Package pdftex.def Info: imagenes/cap1_marcoteo/respuesta_sist_subamorti.png  used on input line 81.
 (pdftex.def)             Requested size: 290.58673pt x 182.09pt.
  [16] [17 <./imagenes/cap1_marcoteo/respuesta_sist_subamorti.png>] [18] [19] [20] [21] [22]
-<imagenes/cap1_marcoteo/Schematics-of-an-on-line-structural-health-monitoring-system-and-technical-challenges.png, id=1042, 853.1875pt x 295.1025pt>
+<imagenes/cap1_marcoteo/Schematics-of-an-on-line-structural-health-monitoring-system-and-technical-challenges.png, id=1062, 853.1875pt x 295.1025pt>
 File: imagenes/cap1_marcoteo/Schematics-of-an-on-line-structural-health-monitoring-system-and-technical-challenges.png Graphic file (type png)
 <use imagenes/cap1_marcoteo/Schematics-of-an-on-line-structural-health-monitoring-system-and-technical-challenges.png>
 Package pdftex.def Info: imagenes/cap1_marcoteo/Schematics-of-an-on-line-structural-health-monitoring-system-and-technical-challenges.png  used on input line 196.
 (pdftex.def)             Requested size: 373.61061pt x 129.22859pt.
  [23] [24 <./imagenes/cap1_marcoteo/Schematics-of-an-on-line-structural-health-monitoring-system-and-technical-challenges.png>]
-<imagenes/cap1_marcoteo/Diagrama SHM timeline.png, id=1069, 953.5625pt x 331.2375pt>
+<imagenes/cap1_marcoteo/Diagrama SHM timeline.png, id=1090, 953.5625pt x 331.2375pt>
 File: imagenes/cap1_marcoteo/Diagrama SHM timeline.png Graphic file (type png)
 <use imagenes/cap1_marcoteo/Diagrama SHM timeline.png>
 Package pdftex.def Info: imagenes/cap1_marcoteo/Diagrama SHM timeline.png  used on input line 229.
 (pdftex.def)             Requested size: 415.12572pt x 144.20338pt.
  [25 <./imagenes/cap1_marcoteo/Diagrama SHM timeline.png>] [26] [27] [28] [29] [30] [31] [32] [33]
-<imagenes/cap1_marcoteo/ESP32-Block-Diagram.jpg, id=1174, 377.15906pt x 317.68687pt>
+<imagenes/cap1_marcoteo/ESP32-Block-Diagram.jpg, id=1194, 377.15906pt x 317.68687pt>
 File: imagenes/cap1_marcoteo/ESP32-Block-Diagram.jpg Graphic file (type jpg)
 <use imagenes/cap1_marcoteo/ESP32-Block-Diagram.jpg>
 Package pdftex.def Info: imagenes/cap1_marcoteo/ESP32-Block-Diagram.jpg  used on input line 369.
 (pdftex.def)             Requested size: 415.12572pt x 349.66507pt.
  [34] [35 <./imagenes/cap1_marcoteo/ESP32-Block-Diagram.jpg>] [36] [37] [38] [39]
-<imagenes/cap1_marcoteo/TasksRTOS.png, id=1202, 349.305pt x 328.97906pt>
+<imagenes/cap1_marcoteo/TasksRTOS.png, id=1226, 349.305pt x 328.97906pt>
 File: imagenes/cap1_marcoteo/TasksRTOS.png Graphic file (type png)
 <use imagenes/cap1_marcoteo/TasksRTOS.png>
 Package pdftex.def Info: imagenes/cap1_marcoteo/TasksRTOS.png  used on input line 445.
 (pdftex.def)             Requested size: 332.10184pt x 312.79439pt.
  [40 <./imagenes/cap1_marcoteo/TasksRTOS.png>]
-<imagenes/cap1_marcoteo/FreeRTOSArch.png, id=1213, 532.99126pt x 316.18124pt>
+<imagenes/cap1_marcoteo/FreeRTOSArch.png, id=1237, 532.99126pt x 316.18124pt>
 File: imagenes/cap1_marcoteo/FreeRTOSArch.png Graphic file (type png)
 <use imagenes/cap1_marcoteo/FreeRTOSArch.png>
 Package pdftex.def Info: imagenes/cap1_marcoteo/FreeRTOSArch.png  used on input line 457.
 (pdftex.def)             Requested size: 332.10184pt x 197.01454pt.
  [41 <./imagenes/cap1_marcoteo/FreeRTOSArch.png>] [42]
-<imagenes/cap1_marcoteo/termocupla-con-voltimetro.png, id=1227, 426.84468pt x 175.40532pt>
+<imagenes/cap1_marcoteo/termocupla-con-voltimetro.png, id=1252, 426.84468pt x 175.40532pt>
 File: imagenes/cap1_marcoteo/termocupla-con-voltimetro.png Graphic file (type png)
 <use imagenes/cap1_marcoteo/termocupla-con-voltimetro.png>
 Package pdftex.def Info: imagenes/cap1_marcoteo/termocupla-con-voltimetro.png  used on input line 492.
 (pdftex.def)             Requested size: 290.58673pt x 119.41855pt.
-<imagenes/cap1_marcoteo/TempMEMS.png, id=1232, 283.0575pt x 207.77625pt>
+<imagenes/cap1_marcoteo/TempMEMS.png, id=1257, 283.0575pt x 207.77625pt>
 File: imagenes/cap1_marcoteo/TempMEMS.png Graphic file (type png)
 <use imagenes/cap1_marcoteo/TempMEMS.png>
 Package pdftex.def Info: imagenes/cap1_marcoteo/TempMEMS.png  used on input line 500.
 (pdftex.def)             Requested size: 290.58673pt x 213.32076pt.
  [43 <./imagenes/cap1_marcoteo/termocupla-con-voltimetro.png>]
-<imagenes/cap1_marcoteo/HigrometroCapacitivo.png, id=1243, 197.23688pt x 108.405pt>
+<imagenes/cap1_marcoteo/HigrometroCapacitivo.png, id=1267, 197.23688pt x 108.405pt>
 File: imagenes/cap1_marcoteo/HigrometroCapacitivo.png Graphic file (type png)
 <use imagenes/cap1_marcoteo/HigrometroCapacitivo.png>
 Package pdftex.def Info: imagenes/cap1_marcoteo/HigrometroCapacitivo.png  used on input line 511.
 (pdftex.def)             Requested size: 290.58673pt x 159.72559pt.
  [44 <./imagenes/cap1_marcoteo/TempMEMS.png>]
-<imagenes/cap1_marcoteo/HigrometroResistivo.png, id=1253, 227.34938pt x 103.88812pt>
+<imagenes/cap1_marcoteo/HigrometroResistivo.png, id=1277, 227.34938pt x 103.88812pt>
 File: imagenes/cap1_marcoteo/HigrometroResistivo.png Graphic file (type png)
 <use imagenes/cap1_marcoteo/HigrometroResistivo.png>
 Package pdftex.def Info: imagenes/cap1_marcoteo/HigrometroResistivo.png  used on input line 518.
 (pdftex.def)             Requested size: 290.58673pt x 132.7861pt.
-<imagenes/cap1_marcoteo/HigrometroMEMS.png, id=1258, 264.99pt x 98.769pt>
+<imagenes/cap1_marcoteo/HigrometroMEMS.png, id=1282, 264.99pt x 98.769pt>
 File: imagenes/cap1_marcoteo/HigrometroMEMS.png Graphic file (type png)
 <use imagenes/cap1_marcoteo/HigrometroMEMS.png>
 Package pdftex.def Info: imagenes/cap1_marcoteo/HigrometroMEMS.png  used on input line 525.
 (pdftex.def)             Requested size: 290.58673pt x 108.31766pt.
  [45 <./imagenes/cap1_marcoteo/HigrometroCapacitivo.png> <./imagenes/cap1_marcoteo/HigrometroResistivo.png>]
-<imagenes/cap1_marcoteo/AccelerometerPiezo.png, id=1269, 294.34969pt x 102.3825pt>
+<imagenes/cap1_marcoteo/AccelerometerPiezo.png, id=1293, 294.34969pt x 102.3825pt>
 File: imagenes/cap1_marcoteo/AccelerometerPiezo.png Graphic file (type png)
 <use imagenes/cap1_marcoteo/AccelerometerPiezo.png>
 Package pdftex.def Info: imagenes/cap1_marcoteo/AccelerometerPiezo.png  used on input line 537.
 (pdftex.def)             Requested size: 290.58673pt x 101.07466pt.
-<imagenes/cap1_marcoteo/AccelerometerMEMS.png, id=1274, 296.60812pt x 152.82094pt>
+<imagenes/cap1_marcoteo/AccelerometerMEMS.png, id=1298, 296.60812pt x 152.82094pt>
 File: imagenes/cap1_marcoteo/AccelerometerMEMS.png Graphic file (type png)
 <use imagenes/cap1_marcoteo/AccelerometerMEMS.png>
 Package pdftex.def Info: imagenes/cap1_marcoteo/AccelerometerMEMS.png  used on input line 547.
 (pdftex.def)             Requested size: 186.8053pt x 96.2497pt.
-<imagenes/cap1_marcoteo/AccelerometerMEMS2.png, id=1279, 323.70938pt x 147.55125pt>
+<imagenes/cap1_marcoteo/AccelerometerMEMS2.png, id=1303, 323.70938pt x 147.55125pt>
 File: imagenes/cap1_marcoteo/AccelerometerMEMS2.png Graphic file (type png)
 <use imagenes/cap1_marcoteo/AccelerometerMEMS2.png>
 Package pdftex.def Info: imagenes/cap1_marcoteo/AccelerometerMEMS2.png  used on input line 554.
 (pdftex.def)             Requested size: 186.8053pt x 85.14975pt.
  [46 <./imagenes/cap1_marcoteo/HigrometroMEMS.png> <./imagenes/cap1_marcoteo/AccelerometerPiezo.png>]
-<imagenes/cap1_marcoteo/Block-diagram-of-force-balance-accelerometer.png, id=1289, 853.1875pt x 290.08376pt>
+<imagenes/cap1_marcoteo/Block-diagram-of-force-balance-accelerometer.png, id=1313, 853.1875pt x 290.08376pt>
 File: imagenes/cap1_marcoteo/Block-diagram-of-force-balance-accelerometer.png Graphic file (type png)
 <use imagenes/cap1_marcoteo/Block-diagram-of-force-balance-accelerometer.png>
 Package pdftex.def Info: imagenes/cap1_marcoteo/Block-diagram-of-force-balance-accelerometer.png  used on input line 567.
@@ -1099,144 +1111,144 @@ Underfull \hbox (badness 2617) in paragraph at lines 687--687
  []
 
 [54] [55] [56] [57]
-<imagenes/cap1_marcoteo/MQTT-protocol-model.png, id=1362, 853.1875pt x 515.9275pt>
+<imagenes/cap1_marcoteo/MQTT-protocol-model.png, id=1386, 853.1875pt x 515.9275pt>
 File: imagenes/cap1_marcoteo/MQTT-protocol-model.png Graphic file (type png)
 <use imagenes/cap1_marcoteo/MQTT-protocol-model.png>
 Package pdftex.def Info: imagenes/cap1_marcoteo/MQTT-protocol-model.png  used on input line 732.
 (pdftex.def)             Requested size: 290.58673pt x 175.72005pt.
  [58 <./imagenes/cap1_marcoteo/MQTT-protocol-model.png>]
-<imagenes/cap1_marcoteo/CommPrtocolsComparison.png, id=1372, 359.09157pt x 202.50656pt>
+<imagenes/cap1_marcoteo/CommPrtocolsComparison.png, id=1396, 359.09157pt x 202.50656pt>
 File: imagenes/cap1_marcoteo/CommPrtocolsComparison.png Graphic file (type png)
 <use imagenes/cap1_marcoteo/CommPrtocolsComparison.png>
 Package pdftex.def Info: imagenes/cap1_marcoteo/CommPrtocolsComparison.png  used on input line 752.
 (pdftex.def)             Requested size: 332.10184pt x 187.30016pt.
  [59] [60 <./imagenes/cap1_marcoteo/CommPrtocolsComparison.png>]
-<imagenes/cap1_marcoteo/ChripSignal.png, id=1390, 295.85532pt x 223.58531pt>
+<imagenes/cap1_marcoteo/ChripSignal.png, id=1415, 295.85532pt x 223.58531pt>
 File: imagenes/cap1_marcoteo/ChripSignal.png Graphic file (type png)
 <use imagenes/cap1_marcoteo/ChripSignal.png>
 Package pdftex.def Info: imagenes/cap1_marcoteo/ChripSignal.png  used on input line 773.
 (pdftex.def)             Requested size: 290.58673pt x 219.61018pt.
  [61 <./imagenes/cap1_marcoteo/ChripSignal.png>]
-<imagenes/cap1_marcoteo/AnchodeBandaLoRa.png, id=1401, 400.49625pt x 123.46124pt>
+<imagenes/cap1_marcoteo/AnchodeBandaLoRa.png, id=1425, 400.49625pt x 123.46124pt>
 File: imagenes/cap1_marcoteo/AnchodeBandaLoRa.png Graphic file (type png)
 <use imagenes/cap1_marcoteo/AnchodeBandaLoRa.png>
 Package pdftex.def Info: imagenes/cap1_marcoteo/AnchodeBandaLoRa.png  used on input line 782.
 (pdftex.def)             Requested size: 332.10184pt x 102.38235pt.
-<imagenes/cap1_marcoteo/SpreadingFactor.png, id=1407, 452.4403pt x 234.8775pt>
+<imagenes/cap1_marcoteo/SpreadingFactor.png, id=1431, 452.4403pt x 234.8775pt>
 File: imagenes/cap1_marcoteo/SpreadingFactor.png Graphic file (type png)
 <use imagenes/cap1_marcoteo/SpreadingFactor.png>
 Package pdftex.def Info: imagenes/cap1_marcoteo/SpreadingFactor.png  used on input line 801.
 (pdftex.def)             Requested size: 332.10184pt x 172.4053pt.
  [62 <./imagenes/cap1_marcoteo/AnchodeBandaLoRa.png>] [63 <./imagenes/cap1_marcoteo/SpreadingFactor.png>]
-<imagenes/cap1_marcoteo/FormatramaLora.png, id=1428, 493.845pt x 140.02313pt>
+<imagenes/cap1_marcoteo/FormatramaLora.png, id=1452, 493.845pt x 140.02313pt>
 File: imagenes/cap1_marcoteo/FormatramaLora.png Graphic file (type png)
 <use imagenes/cap1_marcoteo/FormatramaLora.png>
 Package pdftex.def Info: imagenes/cap1_marcoteo/FormatramaLora.png  used on input line 820.
 (pdftex.def)             Requested size: 290.58673pt x 82.39072pt.
  [64 <./imagenes/cap1_marcoteo/FormatramaLora.png>] [65] [66]
-<imagenes/cap1_marcoteo/FourierTRansform.png, id=1455, 596.98032pt x 331.2375pt>
+<imagenes/cap1_marcoteo/FourierTRansform.png, id=1480, 596.98032pt x 331.2375pt>
 File: imagenes/cap1_marcoteo/FourierTRansform.png Graphic file (type png)
 <use imagenes/cap1_marcoteo/FourierTRansform.png>
-Package pdftex.def Info: imagenes/cap1_marcoteo/FourierTRansform.png  used on input line 869.
+Package pdftex.def Info: imagenes/cap1_marcoteo/FourierTRansform.png  used on input line 867.
 (pdftex.def)             Requested size: 290.58673pt x 161.23123pt.
  [67 <./imagenes/cap1_marcoteo/FourierTRansform.png>] [68]
-<imagenes/cap1_marcoteo/peakpicking.png, id=1475, 642.4pt x 471.7625pt>
+<imagenes/cap1_marcoteo/peakpicking.png, id=1499, 642.4pt x 471.7625pt>
 File: imagenes/cap1_marcoteo/peakpicking.png Graphic file (type png)
 <use imagenes/cap1_marcoteo/peakpicking.png>
-Package pdftex.def Info: imagenes/cap1_marcoteo/peakpicking.png  used on input line 905.
+Package pdftex.def Info: imagenes/cap1_marcoteo/peakpicking.png  used on input line 903.
 (pdftex.def)             Requested size: 290.58673pt x 213.40692pt.
  [69 <./imagenes/cap1_marcoteo/peakpicking.png>]
-<imagenes/cap1_marcoteo/Half-power-bandwidth-method.png, id=1486, 597.23125pt x 409.53pt>
+<imagenes/cap1_marcoteo/Half-power-bandwidth-method.png, id=1510, 597.23125pt x 409.53pt>
 File: imagenes/cap1_marcoteo/Half-power-bandwidth-method.png Graphic file (type png)
 <use imagenes/cap1_marcoteo/Half-power-bandwidth-method.png>
-Package pdftex.def Info: imagenes/cap1_marcoteo/Half-power-bandwidth-method.png  used on input line 918.
+Package pdftex.def Info: imagenes/cap1_marcoteo/Half-power-bandwidth-method.png  used on input line 916.
 (pdftex.def)             Requested size: 290.58673pt x 199.25919pt.
  [70 <./imagenes/cap1_marcoteo/Half-power-bandwidth-method.png>]
-<imagenes/cap1_marcoteo/windows.png, id=1497, 173.64874pt x 137.01187pt>
+<imagenes/cap1_marcoteo/windows.png, id=1521, 173.64874pt x 137.01187pt>
 File: imagenes/cap1_marcoteo/windows.png Graphic file (type png)
 <use imagenes/cap1_marcoteo/windows.png>
-Package pdftex.def Info: imagenes/cap1_marcoteo/windows.png  used on input line 941.
+Package pdftex.def Info: imagenes/cap1_marcoteo/windows.png  used on input line 939.
 (pdftex.def)             Requested size: 249.07796pt x 196.53386pt.
 ) [71 <./imagenes/cap1_marcoteo/windows.png>]
 CAPÍTULO 3.
 (cap3_marco_meto.tex [72
 
 ] [73] [74] [75] [76] [77] [78]
-<imagenes/cap2_marcometod/ArañaMICROS.png, id=1560, 585.68813pt x 327.47343pt>
+<imagenes/cap2_marcometod/ArañaMICROS.png, id=1587, 585.68813pt x 327.47343pt>
 File: imagenes/cap2_marcometod/ArañaMICROS.png Graphic file (type png)
 <use imagenes/cap2_marcometod/ArañaMICROS.png>
-Package pdftex.def Info: imagenes/cap2_marcometod/ArañaMICROS.png  used on input line 148.
+Package pdftex.def Info: imagenes/cap2_marcometod/ArañaMICROS.png  used on input line 147.
 (pdftex.def)             Requested size: 373.61061pt x 208.90271pt.
  [79]
-<imagenes/cap2_marcometod/esp32.jpg, id=1568, 983.675pt x 983.675pt>
+<imagenes/cap2_marcometod/esp32.jpg, id=1594, 983.675pt x 983.675pt>
 File: imagenes/cap2_marcometod/esp32.jpg Graphic file (type jpg)
 <use imagenes/cap2_marcometod/esp32.jpg>
-Package pdftex.def Info: imagenes/cap2_marcometod/esp32.jpg  used on input line 159.
+Package pdftex.def Info: imagenes/cap2_marcometod/esp32.jpg  used on input line 158.
 (pdftex.def)             Requested size: 373.61061pt x 373.60526pt.
  [80 <./imagenes/cap2_marcometod/ArañaMICROS.png>]
-<imagenes/cap2_marcometod/ArañaACL.png, id=1575, 414.04688pt x 339.51843pt>
+<imagenes/cap2_marcometod/ArañaACL.png, id=1601, 414.04688pt x 339.51843pt>
 File: imagenes/cap2_marcometod/ArañaACL.png Graphic file (type png)
 <use imagenes/cap2_marcometod/ArañaACL.png>
-Package pdftex.def Info: imagenes/cap2_marcometod/ArañaACL.png  used on input line 172.
+Package pdftex.def Info: imagenes/cap2_marcometod/ArañaACL.png  used on input line 170.
 (pdftex.def)             Requested size: 290.58673pt x 238.28813pt.
  [81 <./imagenes/cap2_marcometod/esp32.jpg>]
-<imagenes/cap2_marcometod/MPU6050BREAKOUT.jpg, id=1583, 359.09157pt x 267.24844pt>
+<imagenes/cap2_marcometod/MPU6050BREAKOUT.jpg, id=1609, 359.09157pt x 267.24844pt>
 File: imagenes/cap2_marcometod/MPU6050BREAKOUT.jpg Graphic file (type jpg)
 <use imagenes/cap2_marcometod/MPU6050BREAKOUT.jpg>
-Package pdftex.def Info: imagenes/cap2_marcometod/MPU6050BREAKOUT.jpg  used on input line 204.
+Package pdftex.def Info: imagenes/cap2_marcometod/MPU6050BREAKOUT.jpg  used on input line 202.
 (pdftex.def)             Requested size: 290.58673pt x 216.27838pt.
  [82 <./imagenes/cap2_marcometod/ArañaACL.png>]
-<imagenes/cap2_marcometod/ArañaTempHum.png, id=1594, 505.13719pt x 335.75438pt>
+<imagenes/cap2_marcometod/ArañaTempHum.png, id=1620, 505.13719pt x 335.75438pt>
 File: imagenes/cap2_marcometod/ArañaTempHum.png Graphic file (type png)
 <use imagenes/cap2_marcometod/ArañaTempHum.png>
-Package pdftex.def Info: imagenes/cap2_marcometod/ArañaTempHum.png  used on input line 216.
+Package pdftex.def Info: imagenes/cap2_marcometod/ArañaTempHum.png  used on input line 214.
 (pdftex.def)             Requested size: 373.61061pt x 248.33652pt.
  [83 <./imagenes/cap2_marcometod/MPU6050BREAKOUT.jpg>]
-<imagenes/cap2_marcometod/BME280BREAKOUT.jpeg, id=1602, 1204.5pt x 1204.5pt>
+<imagenes/cap2_marcometod/BME280BREAKOUT.jpeg, id=1628, 1204.5pt x 1204.5pt>
 File: imagenes/cap2_marcometod/BME280BREAKOUT.jpeg Graphic file (type jpg)
 <use imagenes/cap2_marcometod/BME280BREAKOUT.jpeg>
-Package pdftex.def Info: imagenes/cap2_marcometod/BME280BREAKOUT.jpeg  used on input line 248.
+Package pdftex.def Info: imagenes/cap2_marcometod/BME280BREAKOUT.jpeg  used on input line 246.
 (pdftex.def)             Requested size: 373.61061pt x 373.6117pt.
  [84 <./imagenes/cap2_marcometod/ArañaTempHum.png>]
-<imagenes/cap2_marcometod/ArañaIMU.png, id=1615, 402.75468pt x 325.215pt>
+<imagenes/cap2_marcometod/ArañaIMU.png, id=1642, 402.75468pt x 325.215pt>
 File: imagenes/cap2_marcometod/ArañaIMU.png Graphic file (type png)
 <use imagenes/cap2_marcometod/ArañaIMU.png>
-Package pdftex.def Info: imagenes/cap2_marcometod/ArañaIMU.png  used on input line 259.
+Package pdftex.def Info: imagenes/cap2_marcometod/ArañaIMU.png  used on input line 257.
 (pdftex.def)             Requested size: 290.58673pt x 234.64093pt.
  [85 <./imagenes/cap2_marcometod/BME280BREAKOUT.jpeg>]
-<imagenes/cap2_marcometod/MPU9250.jpeg, id=1624, 527.72156pt x 770.88pt>
+<imagenes/cap2_marcometod/MPU9250.jpeg, id=1650, 527.72156pt x 770.88pt>
 File: imagenes/cap2_marcometod/MPU9250.jpeg Graphic file (type jpg)
 <use imagenes/cap2_marcometod/MPU9250.jpeg>
-Package pdftex.def Info: imagenes/cap2_marcometod/MPU9250.jpeg  used on input line 292.
+Package pdftex.def Info: imagenes/cap2_marcometod/MPU9250.jpeg  used on input line 290.
 (pdftex.def)             Requested size: 207.56285pt x 303.19449pt.
  [86 <./imagenes/cap2_marcometod/ArañaIMU.png>]
-<imagenes/cap2_marcometod/ArañaTransmisores.png, id=1636, 444.15938pt x 337.26pt>
+<imagenes/cap2_marcometod/ArañaTransmisores.png, id=1662, 444.15938pt x 337.26pt>
 File: imagenes/cap2_marcometod/ArañaTransmisores.png Graphic file (type png)
 <use imagenes/cap2_marcometod/ArañaTransmisores.png>
-Package pdftex.def Info: imagenes/cap2_marcometod/ArañaTransmisores.png  used on input line 304.
+Package pdftex.def Info: imagenes/cap2_marcometod/ArañaTransmisores.png  used on input line 302.
 (pdftex.def)             Requested size: 290.58673pt x 220.64703pt.
  [87 <./imagenes/cap2_marcometod/MPU9250.jpeg>] [88 <./imagenes/cap2_marcometod/ArañaTransmisores.png>] [89] [90] [91]
-<imagenes/cap2_marcometod/EsquemaGeneralSistema.png, id=1662, 735.74875pt x 482.80376pt>
+<imagenes/cap2_marcometod/EsquemaGeneralSistema.png, id=1688, 735.74875pt x 482.80376pt>
 File: imagenes/cap2_marcometod/EsquemaGeneralSistema.png Graphic file (type png)
 <use imagenes/cap2_marcometod/EsquemaGeneralSistema.png>
-Package pdftex.def Info: imagenes/cap2_marcometod/EsquemaGeneralSistema.png  used on input line 374.
+Package pdftex.def Info: imagenes/cap2_marcometod/EsquemaGeneralSistema.png  used on input line 371.
 (pdftex.def)             Requested size: 415.12572pt x 272.41628pt.
  [92 <./imagenes/cap2_marcometod/EsquemaGeneralSistema.png>]
-<imagenes/cap2_marcometod/DiagramaHardwareSmartSensor.png, id=1671, 732.7375pt x 543.02875pt>
+<imagenes/cap2_marcometod/DiagramaHardwareSmartSensor.png, id=1697, 732.7375pt x 543.02875pt>
 File: imagenes/cap2_marcometod/DiagramaHardwareSmartSensor.png Graphic file (type png)
 <use imagenes/cap2_marcometod/DiagramaHardwareSmartSensor.png>
-Package pdftex.def Info: imagenes/cap2_marcometod/DiagramaHardwareSmartSensor.png  used on input line 389.
+Package pdftex.def Info: imagenes/cap2_marcometod/DiagramaHardwareSmartSensor.png  used on input line 386.
 (pdftex.def)             Requested size: 373.61061pt x 276.88298pt.
-<imagenes/cap2_marcometod/DiagramaHardwareEstacionBase.png, id=1672, 588.1975pt x 372.39125pt>
+<imagenes/cap2_marcometod/DiagramaHardwareEstacionBase.png, id=1698, 588.1975pt x 372.39125pt>
 File: imagenes/cap2_marcometod/DiagramaHardwareEstacionBase.png Graphic file (type png)
 <use imagenes/cap2_marcometod/DiagramaHardwareEstacionBase.png>
-Package pdftex.def Info: imagenes/cap2_marcometod/DiagramaHardwareEstacionBase.png  used on input line 398.
+Package pdftex.def Info: imagenes/cap2_marcometod/DiagramaHardwareEstacionBase.png  used on input line 395.
 (pdftex.def)             Requested size: 373.61061pt x 236.534pt.
  [93 <./imagenes/cap2_marcometod/DiagramaHardwareSmartSensor.png>]
-<imagenes/cap2_marcometod/Toolchain.png, id=1681, 507.8975pt x 378.41376pt>
+<imagenes/cap2_marcometod/Toolchain.png, id=1707, 507.8975pt x 378.41376pt>
 File: imagenes/cap2_marcometod/Toolchain.png Graphic file (type png)
 <use imagenes/cap2_marcometod/Toolchain.png>
-Package pdftex.def Info: imagenes/cap2_marcometod/Toolchain.png  used on input line 414.
+Package pdftex.def Info: imagenes/cap2_marcometod/Toolchain.png  used on input line 411.
 (pdftex.def)             Requested size: 332.10184pt x 247.4442pt.
  [94 <./imagenes/cap2_marcometod/DiagramaHardwareEstacionBase.png>] [95 <./imagenes/cap2_marcometod/Toolchain.png>] [96] [97] [98] [99] [100] [101] (C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
@@ -1245,17 +1257,17 @@ File: lstlang1.sty 2023/02/27 1.9 listings language file
 ) (C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
 )
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 496.
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 496.
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 493.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 493.
  (C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
 File: t1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
-Overfull \hbox (19.56947pt too wide) in paragraph at lines 507--508
+Overfull \hbox (19.56947pt too wide) in paragraph at lines 504--505
 []\T1/cmr/m/n/12 BufferACL: Es-truc-tu-ra que al-ma-ce-na los da-tos pro-ve-nien-tes del sen-sor MPU6050
  []
 
 [102] [103] [104] [105]
-Overfull \hbox (2.35281pt too wide) in paragraph at lines 556--557
+Overfull \hbox (2.35281pt too wide) in paragraph at lines 553--554
 []\T1/cmr/m/n/12 La in-te-rrup-ci�n se ge-ne-ra gra-cias a la con-fi-gu-ra-ci�n del m�-du-lo Ra-02 SX1278
  []
 
@@ -1264,220 +1276,250 @@ CAPÍTULO 4.
 (cap4_pruebas_resul.tex [115
 
 ]
-<imagenes/cap3_resultados/Pruebas LoRa/MapaLora.png, id=1866, 581.17125pt x 399.74344pt>
+<imagenes/cap3_resultados/Pruebas LoRa/MapaLora.png, id=1891, 581.17125pt x 399.74344pt>
 File: imagenes/cap3_resultados/Pruebas LoRa/MapaLora.png Graphic file (type png)
 <use imagenes/cap3_resultados/Pruebas LoRa/MapaLora.png>
-Package pdftex.def Info: imagenes/cap3_resultados/Pruebas LoRa/MapaLora.png  used on input line 23.
+Package pdftex.def Info: imagenes/cap3_resultados/Pruebas LoRa/MapaLora.png  used on input line 30.
 (pdftex.def)             Requested size: 373.61061pt x 256.98164pt.
  [116 <./imagenes/cap3_resultados/Pruebas LoRa/MapaLora.png>] [117]
-<imagenes/cap3_resultados/Pruebas ACL/Inclinacion/Comparacion entre Metodo1 (ACL) y Metodo 2 (Kalman) ante vibraciones.png, id=1877, 758.835pt x 493.845pt>
+<imagenes/cap3_resultados/Pruebas ACL/Inclinacion/Comparacion entre Metodo1 (ACL) y Metodo 2 (Kalman) ante vibraciones.png, id=1903, 758.835pt x 493.845pt>
 File: imagenes/cap3_resultados/Pruebas ACL/Inclinacion/Comparacion entre Metodo1 (ACL) y Metodo 2 (Kalman) ante vibraciones.png Graphic file (type png)
 <use imagenes/cap3_resultados/Pruebas ACL/Inclinacion/Comparacion entre Metodo1 (ACL) y Metodo 2 (Kalman) ante vibraciones.png>
-Package pdftex.def Info: imagenes/cap3_resultados/Pruebas ACL/Inclinacion/Comparacion entre Metodo1 (ACL) y Metodo 2 (Kalman) ante vibraciones.png  used on input line 81.
-(pdftex.def)             Requested size: 332.10184pt x 216.132pt.
+Package pdftex.def Info: imagenes/cap3_resultados/Pruebas ACL/Inclinacion/Comparacion entre Metodo1 (ACL) y Metodo 2 (Kalman) ante vibraciones.png  used on input line 80.
+(pdftex.def)             Requested size: 415.12572pt x 270.16124pt.
  [118 <./imagenes/cap3_resultados/Pruebas ACL/Inclinacion/Comparacion entre Metodo1 (ACL) y Metodo 2 (Kalman) ante vibraciones.png>]
-<imagenes/cap3_resultados/Pruebas ACL/Inclinacion/PruebaInclinacion.png, id=1884, 655.69969pt x 392.96812pt>
+<imagenes/cap3_resultados/Pruebas ACL/Inclinacion/PruebaInclinacion.png, id=1910, 655.69969pt x 392.96812pt>
 File: imagenes/cap3_resultados/Pruebas ACL/Inclinacion/PruebaInclinacion.png Graphic file (type png)
 <use imagenes/cap3_resultados/Pruebas ACL/Inclinacion/PruebaInclinacion.png>
-Package pdftex.def Info: imagenes/cap3_resultados/Pruebas ACL/Inclinacion/PruebaInclinacion.png  used on input line 92.
-(pdftex.def)             Requested size: 332.10184pt x 199.03195pt.
-<imagenes/cap3_resultados/Pruebas ACL/Inclinacion/Comparacion M1 M2 M3 (Maggwick) ante vibraciones.png, id=1885, 599.23875pt x 427.5975pt>
+Package pdftex.def Info: imagenes/cap3_resultados/Pruebas ACL/Inclinacion/PruebaInclinacion.png  used on input line 91.
+(pdftex.def)             Requested size: 415.12572pt x 248.78844pt.
+<imagenes/cap3_resultados/Pruebas ACL/Inclinacion/Comparacion M1 M2 M3 (Maggwick) ante vibraciones.png, id=1912, 599.23875pt x 427.5975pt>
 File: imagenes/cap3_resultados/Pruebas ACL/Inclinacion/Comparacion M1 M2 M3 (Maggwick) ante vibraciones.png Graphic file (type png)
 <use imagenes/cap3_resultados/Pruebas ACL/Inclinacion/Comparacion M1 M2 M3 (Maggwick) ante vibraciones.png>
-Package pdftex.def Info: imagenes/cap3_resultados/Pruebas ACL/Inclinacion/Comparacion M1 M2 M3 (Maggwick) ante vibraciones.png  used on input line 101.
-(pdftex.def)             Requested size: 373.61061pt x 266.60184pt.
+Package pdftex.def Info: imagenes/cap3_resultados/Pruebas ACL/Inclinacion/Comparacion M1 M2 M3 (Maggwick) ante vibraciones.png  used on input line 100.
+(pdftex.def)             Requested size: 415.12572pt x 296.22354pt.
  [119 <./imagenes/cap3_resultados/Pruebas ACL/Inclinacion/PruebaInclinacion.png>]
-<imagenes/cap3_resultados/Pruebas ACL/Inclinacion/Comparacion M1 M2 M3 (Maggwick) ante movimiento aleatorios.png, id=1891, 598.48593pt x 429.85594pt>
+<imagenes/cap3_resultados/Pruebas ACL/Inclinacion/Comparacion M1 M2 M3 (Maggwick) ante movimiento aleatorios.png, id=1919, 598.48593pt x 429.85594pt>
 File: imagenes/cap3_resultados/Pruebas ACL/Inclinacion/Comparacion M1 M2 M3 (Maggwick) ante movimiento aleatorios.png Graphic file (type png)
 <use imagenes/cap3_resultados/Pruebas ACL/Inclinacion/Comparacion M1 M2 M3 (Maggwick) ante movimiento aleatorios.png>
-Package pdftex.def Info: imagenes/cap3_resultados/Pruebas ACL/Inclinacion/Comparacion M1 M2 M3 (Maggwick) ante movimiento aleatorios.png  used on input line 111.
-(pdftex.def)             Requested size: 332.10184pt x 238.53351pt.
+Package pdftex.def Info: imagenes/cap3_resultados/Pruebas ACL/Inclinacion/Comparacion M1 M2 M3 (Maggwick) ante movimiento aleatorios.png  used on input line 110.
+(pdftex.def)             Requested size: 415.12572pt x 298.16197pt.
  [120 <./imagenes/cap3_resultados/Pruebas ACL/Inclinacion/Comparacion M1 M2 M3 (Maggwick) ante vibraciones.png>] [121 <./imagenes/cap3_resultados/Pruebas ACL/Inclinacion/Comparacion M1 M2 M3 (Maggwick) ante movimiento aleatorios.png>]
-<imagenes/cap3_resultados/Ensayos/NationalInstruments_PCI6221.jpg, id=1907, 903.375pt x 677.53125pt>
+<imagenes/cap3_resultados/Ensayos/NationalInstruments_PCI6221.jpg, id=1937, 903.375pt x 677.53125pt>
 File: imagenes/cap3_resultados/Ensayos/NationalInstruments_PCI6221.jpg Graphic file (type jpg)
 <use imagenes/cap3_resultados/Ensayos/NationalInstruments_PCI6221.jpg>
-Package pdftex.def Info: imagenes/cap3_resultados/Ensayos/NationalInstruments_PCI6221.jpg  used on input line 132.
+Package pdftex.def Info: imagenes/cap3_resultados/Ensayos/NationalInstruments_PCI6221.jpg  used on input line 131.
 (pdftex.def)             Requested size: 332.10184pt x 249.0802pt.
-<imagenes/cap3_resultados/Ensayos/National_Instruments_SCB_68.jpg, id=1908, 451.6875pt x 451.6875pt>
+ [122]
+<imagenes/cap3_resultados/Ensayos/National_Instruments_SCB_68.jpg, id=1943, 451.6875pt x 451.6875pt>
 File: imagenes/cap3_resultados/Ensayos/National_Instruments_SCB_68.jpg Graphic file (type jpg)
 <use imagenes/cap3_resultados/Ensayos/National_Instruments_SCB_68.jpg>
-Package pdftex.def Info: imagenes/cap3_resultados/Ensayos/National_Instruments_SCB_68.jpg  used on input line 139.
+Package pdftex.def Info: imagenes/cap3_resultados/Ensayos/National_Instruments_SCB_68.jpg  used on input line 138.
 (pdftex.def)             Requested size: 332.10184pt x 332.12071pt.
- [122 <./imagenes/cap3_resultados/Ensayos/NationalInstruments_PCI6221.jpg>] [123 <./imagenes/cap3_resultados/Ensayos/National_Instruments_SCB_68.jpg>]
-<imagenes/cap3_resultados/Ensayos/FBA11.jpg, id=1921, 1606.0pt x 1069.9975pt>
+ [123 <./imagenes/cap3_resultados/Ensayos/NationalInstruments_PCI6221.jpg>] [124 <./imagenes/cap3_resultados/Ensayos/National_Instruments_SCB_68.jpg>]
+<imagenes/cap3_resultados/Ensayos/FBA11.jpg, id=1955, 1606.0pt x 1069.9975pt>
 File: imagenes/cap3_resultados/Ensayos/FBA11.jpg Graphic file (type jpg)
 <use imagenes/cap3_resultados/Ensayos/FBA11.jpg>
-Package pdftex.def Info: imagenes/cap3_resultados/Ensayos/FBA11.jpg  used on input line 171.
+Package pdftex.def Info: imagenes/cap3_resultados/Ensayos/FBA11.jpg  used on input line 170.
 (pdftex.def)             Requested size: 332.10184pt x 221.26114pt.
- [124 <./imagenes/cap3_resultados/Ensayos/FBA11.jpg>]
-<imagenes/cap3_resultados/Ensayos/CONFIGURACION1.png, id=1928, 432.61626pt x 370.38374pt>
+ [125 <./imagenes/cap3_resultados/Ensayos/FBA11.jpg>]
+<imagenes/cap3_resultados/Ensayos/CONFIGURACION1.png, id=1963, 432.61626pt x 370.38374pt>
 File: imagenes/cap3_resultados/Ensayos/CONFIGURACION1.png Graphic file (type png)
 <use imagenes/cap3_resultados/Ensayos/CONFIGURACION1.png>
-Package pdftex.def Info: imagenes/cap3_resultados/Ensayos/CONFIGURACION1.png  used on input line 215.
+Package pdftex.def Info: imagenes/cap3_resultados/Ensayos/CONFIGURACION1.png  used on input line 236.
 (pdftex.def)             Requested size: 332.10184pt x 284.33731pt.
- [125]
-<imagenes/cap3_resultados/Ensayos/CONFIGURACION1PLANTA.png, id=1933, 521.95pt x 210.7875pt>
+ [126]
+<imagenes/cap3_resultados/Ensayos/CONFIGURACION1PLANTA.png, id=1969, 521.95pt x 210.7875pt>
 File: imagenes/cap3_resultados/Ensayos/CONFIGURACION1PLANTA.png Graphic file (type png)
 <use imagenes/cap3_resultados/Ensayos/CONFIGURACION1PLANTA.png>
-Package pdftex.def Info: imagenes/cap3_resultados/Ensayos/CONFIGURACION1PLANTA.png  used on input line 222.
+Package pdftex.def Info: imagenes/cap3_resultados/Ensayos/CONFIGURACION1PLANTA.png  used on input line 243.
 (pdftex.def)             Requested size: 332.10184pt x 134.11874pt.
-<imagenes/cap3_resultados/Ensayos/InstrumentacionConf1FBA.jpg, id=1936, 603.75563pt x 465.99094pt>
+<imagenes/cap3_resultados/Ensayos/InstrumentacionConf1FBA.jpg, id=1972, 603.75563pt x 465.99094pt>
 File: imagenes/cap3_resultados/Ensayos/InstrumentacionConf1FBA.jpg Graphic file (type jpg)
 <use imagenes/cap3_resultados/Ensayos/InstrumentacionConf1FBA.jpg>
-Package pdftex.def Info: imagenes/cap3_resultados/Ensayos/InstrumentacionConf1FBA.jpg  used on input line 233.
+Package pdftex.def Info: imagenes/cap3_resultados/Ensayos/InstrumentacionConf1FBA.jpg  used on input line 254.
 (pdftex.def)             Requested size: 249.07796pt x 192.23785pt.
-<imagenes/cap3_resultados/Ensayos/InstrumentacionConf1FBASmartSensor.jpg, id=1937, 605.26125pt x 481.04718pt>
+<imagenes/cap3_resultados/Ensayos/InstrumentacionConf1FBASmartSensor.jpg, id=1973, 605.26125pt x 481.04718pt>
 File: imagenes/cap3_resultados/Ensayos/InstrumentacionConf1FBASmartSensor.jpg Graphic file (type jpg)
 <use imagenes/cap3_resultados/Ensayos/InstrumentacionConf1FBASmartSensor.jpg>
-Package pdftex.def Info: imagenes/cap3_resultados/Ensayos/InstrumentacionConf1FBASmartSensor.jpg  used on input line 235.
+Package pdftex.def Info: imagenes/cap3_resultados/Ensayos/InstrumentacionConf1FBASmartSensor.jpg  used on input line 256.
 (pdftex.def)             Requested size: 249.07796pt x 197.95729pt.
- [126 <./imagenes/cap3_resultados/Ensayos/CONFIGURACION1.png> <./imagenes/cap3_resultados/Ensayos/CONFIGURACION1PLANTA.png>] [127 <./imagenes/cap3_resultados/Ensayos/InstrumentacionConf1FBA.jpg> <./imagenes/cap3_resultados/Ensayos/InstrumentacionConf1FBASmartSensor.jpg>]
-<imagenes/cap3_resultados/Ensayos/GUI1.jpg, id=1955, 1028.34187pt x 537.50812pt>
+ [127 <./imagenes/cap3_resultados/Ensayos/CONFIGURACION1.png> <./imagenes/cap3_resultados/Ensayos/CONFIGURACION1PLANTA.png>] [128 <./imagenes/cap3_resultados/Ensayos/InstrumentacionConf1FBA.jpg> <./imagenes/cap3_resultados/Ensayos/InstrumentacionConf1FBASmartSensor.jpg>]
+<imagenes/cap3_resultados/Ensayos/GUI1.jpg, id=1990, 1028.34187pt x 537.50812pt>
 File: imagenes/cap3_resultados/Ensayos/GUI1.jpg Graphic file (type jpg)
 <use imagenes/cap3_resultados/Ensayos/GUI1.jpg>
-Package pdftex.def Info: imagenes/cap3_resultados/Ensayos/GUI1.jpg  used on input line 244.
+Package pdftex.def Info: imagenes/cap3_resultados/Ensayos/GUI1.jpg  used on input line 265.
 (pdftex.def)             Requested size: 415.12572pt x 216.98425pt.
-<imagenes/cap3_resultados/Ensayos/GUI2.jpg, id=1956, 1028.34187pt x 542.77782pt>
+<imagenes/cap3_resultados/Ensayos/GUI2.jpg, id=1991, 1028.34187pt x 542.77782pt>
 File: imagenes/cap3_resultados/Ensayos/GUI2.jpg Graphic file (type jpg)
 <use imagenes/cap3_resultados/Ensayos/GUI2.jpg>
-Package pdftex.def Info: imagenes/cap3_resultados/Ensayos/GUI2.jpg  used on input line 251.
+Package pdftex.def Info: imagenes/cap3_resultados/Ensayos/GUI2.jpg  used on input line 272.
 (pdftex.def)             Requested size: 415.12572pt x 219.11154pt.
- [128 <./imagenes/cap3_resultados/Ensayos/GUI1.jpg> <./imagenes/cap3_resultados/Ensayos/GUI2.jpg>]
-<imagenes/cap3_resultados/Ensayos/datosmatlab.png, id=1963, 1027.58907pt x 542.77782pt>
+ [129 <./imagenes/cap3_resultados/Ensayos/GUI1.jpg> <./imagenes/cap3_resultados/Ensayos/GUI2.jpg>]
+<imagenes/cap3_resultados/Ensayos/datosmatlab.png, id=1998, 1027.58907pt x 542.77782pt>
 File: imagenes/cap3_resultados/Ensayos/datosmatlab.png Graphic file (type png)
 <use imagenes/cap3_resultados/Ensayos/datosmatlab.png>
-Package pdftex.def Info: imagenes/cap3_resultados/Ensayos/datosmatlab.png  used on input line 262.
+Package pdftex.def Info: imagenes/cap3_resultados/Ensayos/datosmatlab.png  used on input line 283.
 (pdftex.def)             Requested size: 415.12572pt x 219.2689pt.
- [129 <./imagenes/cap3_resultados/Ensayos/datosmatlab.png>]
-<imagenes/cap3_resultados/Ensayos/VibHammer6EsteOesteNIDAQ.jpg, id=1971, 861.9703pt x 453.19313pt>
+ [130 <./imagenes/cap3_resultados/Ensayos/datosmatlab.png>]
+<imagenes/cap3_resultados/Ensayos/VibHammer6EsteOesteNIDAQ.jpg, id=2006, 1371.1225pt x 653.44125pt>
 File: imagenes/cap3_resultados/Ensayos/VibHammer6EsteOesteNIDAQ.jpg Graphic file (type jpg)
 <use imagenes/cap3_resultados/Ensayos/VibHammer6EsteOesteNIDAQ.jpg>
-Package pdftex.def Info: imagenes/cap3_resultados/Ensayos/VibHammer6EsteOesteNIDAQ.jpg  used on input line 299.
-(pdftex.def)             Requested size: 415.12572pt x 218.26323pt.
-<imagenes/cap3_resultados/Ensayos/VibHammer6EsteOesteEspectroNIDAQ.jpg, id=1972, 872.50969pt x 455.45157pt>
+Package pdftex.def Info: imagenes/cap3_resultados/Ensayos/VibHammer6EsteOesteNIDAQ.jpg  used on input line 322.
+(pdftex.def)             Requested size: 415.12572pt x 197.83858pt.
+<imagenes/cap3_resultados/Ensayos/VibHammer6EsteOesteEspectroNIDAQ.jpg, id=2007, 1371.1225pt x 653.44125pt>
 File: imagenes/cap3_resultados/Ensayos/VibHammer6EsteOesteEspectroNIDAQ.jpg Graphic file (type jpg)
 <use imagenes/cap3_resultados/Ensayos/VibHammer6EsteOesteEspectroNIDAQ.jpg>
-Package pdftex.def Info: imagenes/cap3_resultados/Ensayos/VibHammer6EsteOesteEspectroNIDAQ.jpg  used on input line 301.
-(pdftex.def)             Requested size: 415.12572pt x 216.69617pt.
- [130] [131 <./imagenes/cap3_resultados/Ensayos/VibHammer6EsteOesteNIDAQ.jpg> <./imagenes/cap3_resultados/Ensayos/VibHammer6EsteOesteEspectroNIDAQ.jpg>]
-<imagenes/cap3_resultados/Ensayos/VibHammer6EsteOesteSMARTSENSOR.jpg, id=1985, 1028.34187pt x 524.71031pt>
+Package pdftex.def Info: imagenes/cap3_resultados/Ensayos/VibHammer6EsteOesteEspectroNIDAQ.jpg  used on input line 324.
+(pdftex.def)             Requested size: 415.12572pt x 197.83858pt.
+ [131] [132 <./imagenes/cap3_resultados/Ensayos/VibHammer6EsteOesteNIDAQ.jpg> <./imagenes/cap3_resultados/Ensayos/VibHammer6EsteOesteEspectroNIDAQ.jpg>]
+<imagenes/cap3_resultados/Ensayos/VibHammer6EsteOesteSMARTSENSOR.jpg, id=2021, 1028.34187pt x 524.71031pt>
 File: imagenes/cap3_resultados/Ensayos/VibHammer6EsteOesteSMARTSENSOR.jpg Graphic file (type jpg)
 <use imagenes/cap3_resultados/Ensayos/VibHammer6EsteOesteSMARTSENSOR.jpg>
-Package pdftex.def Info: imagenes/cap3_resultados/Ensayos/VibHammer6EsteOesteSMARTSENSOR.jpg  used on input line 310.
+Package pdftex.def Info: imagenes/cap3_resultados/Ensayos/VibHammer6EsteOesteSMARTSENSOR.jpg  used on input line 333.
 (pdftex.def)             Requested size: 415.12572pt x 211.81795pt.
-<imagenes/cap3_resultados/Ensayos/VibHammer1NorteSurSMARTSENSORVentana2.jpg, id=1986, 1005.7575pt x 537.50812pt>
+<imagenes/cap3_resultados/Ensayos/VibHammer1NorteSurSMARTSENSORVentana2.jpg, id=2022, 1005.7575pt x 537.50812pt>
 File: imagenes/cap3_resultados/Ensayos/VibHammer1NorteSurSMARTSENSORVentana2.jpg Graphic file (type jpg)
 <use imagenes/cap3_resultados/Ensayos/VibHammer1NorteSurSMARTSENSORVentana2.jpg>
-Package pdftex.def Info: imagenes/cap3_resultados/Ensayos/VibHammer1NorteSurSMARTSENSORVentana2.jpg  used on input line 317.
+Package pdftex.def Info: imagenes/cap3_resultados/Ensayos/VibHammer1NorteSurSMARTSENSORVentana2.jpg  used on input line 340.
 (pdftex.def)             Requested size: 415.12572pt x 221.85606pt.
- [132 <./imagenes/cap3_resultados/Ensayos/VibHammer6EsteOesteSMARTSENSOR.jpg>]
-<imagenes/cap3_resultados/Ensayos/VibHammer1NorteSurNIDAQ.jpg, id=1994, 865.73438pt x 457.71pt>
+ [133 <./imagenes/cap3_resultados/Ensayos/VibHammer6EsteOesteSMARTSENSOR.jpg> <./imagenes/cap3_resultados/Ensayos/VibHammer1NorteSurSMARTSENSORVentana2.jpg>]
+<imagenes/cap3_resultados/Ensayos/VibHammer1NorteSurNIDAQ.jpg, id=2032, 1371.1225pt x 653.44125pt>
 File: imagenes/cap3_resultados/Ensayos/VibHammer1NorteSurNIDAQ.jpg Graphic file (type jpg)
 <use imagenes/cap3_resultados/Ensayos/VibHammer1NorteSurNIDAQ.jpg>
-Package pdftex.def Info: imagenes/cap3_resultados/Ensayos/VibHammer1NorteSurNIDAQ.jpg  used on input line 328.
-(pdftex.def)             Requested size: 415.12572pt x 219.47481pt.
-<imagenes/cap3_resultados/Ensayos/VibHammer1NorteSurEspectroNIDAQ.jpg, id=1995, 877.77937pt x 454.69875pt>
+Package pdftex.def Info: imagenes/cap3_resultados/Ensayos/VibHammer1NorteSurNIDAQ.jpg  used on input line 353.
+(pdftex.def)             Requested size: 415.12572pt x 197.83858pt.
+<imagenes/cap3_resultados/Ensayos/VibHammer1NorteSurEspectroNIDAQ.jpg, id=2033, 1371.1225pt x 653.44125pt>
 File: imagenes/cap3_resultados/Ensayos/VibHammer1NorteSurEspectroNIDAQ.jpg Graphic file (type jpg)
 <use imagenes/cap3_resultados/Ensayos/VibHammer1NorteSurEspectroNIDAQ.jpg>
-Package pdftex.def Info: imagenes/cap3_resultados/Ensayos/VibHammer1NorteSurEspectroNIDAQ.jpg  used on input line 330.
-(pdftex.def)             Requested size: 415.12572pt x 215.04056pt.
- [133 <./imagenes/cap3_resultados/Ensayos/VibHammer1NorteSurSMARTSENSORVentana2.jpg>]
-<imagenes/cap3_resultados/Ensayos/VibHammer1NorteSurSMARTSENSOR.jpg, id=2002, 1017.8025pt x 520.19344pt>
+Package pdftex.def Info: imagenes/cap3_resultados/Ensayos/VibHammer1NorteSurEspectroNIDAQ.jpg  used on input line 355.
+(pdftex.def)             Requested size: 415.12572pt x 197.83858pt.
+ [134]
+<imagenes/cap3_resultados/Ensayos/VibHammer1NorteSurSMARTSENSOR.jpg, id=2039, 1017.8025pt x 520.19344pt>
 File: imagenes/cap3_resultados/Ensayos/VibHammer1NorteSurSMARTSENSOR.jpg Graphic file (type jpg)
 <use imagenes/cap3_resultados/Ensayos/VibHammer1NorteSurSMARTSENSOR.jpg>
-Package pdftex.def Info: imagenes/cap3_resultados/Ensayos/VibHammer1NorteSurSMARTSENSOR.jpg  used on input line 339.
+Package pdftex.def Info: imagenes/cap3_resultados/Ensayos/VibHammer1NorteSurSMARTSENSOR.jpg  used on input line 364.
 (pdftex.def)             Requested size: 415.12572pt x 212.16943pt.
- [134 <./imagenes/cap3_resultados/Ensayos/VibHammer1NorteSurNIDAQ.jpg> <./imagenes/cap3_resultados/Ensayos/VibHammer1NorteSurEspectroNIDAQ.jpg>] [135 <./imagenes/cap3_resultados/Ensayos/VibHammer1NorteSurSMARTSENSOR.jpg>]
-<imagenes/cap3_resultados/Ensayos/AmpVibLibreSinLastresNIDAQ.jpg, id=2015, 882.29625pt x 455.45157pt>
+ [135 <./imagenes/cap3_resultados/Ensayos/VibHammer1NorteSurNIDAQ.jpg> <./imagenes/cap3_resultados/Ensayos/VibHammer1NorteSurEspectroNIDAQ.jpg>] [136 <./imagenes/cap3_resultados/Ensayos/VibHammer1NorteSurSMARTSENSOR.jpg>]
+<imagenes/cap3_resultados/Ensayos/AmpVibLibreSinLastresNIDAQ.jpg, id=2052, 1371.1225pt x 653.44125pt>
 File: imagenes/cap3_resultados/Ensayos/AmpVibLibreSinLastresNIDAQ.jpg Graphic file (type jpg)
 <use imagenes/cap3_resultados/Ensayos/AmpVibLibreSinLastresNIDAQ.jpg>
-Package pdftex.def Info: imagenes/cap3_resultados/Ensayos/AmpVibLibreSinLastresNIDAQ.jpg  used on input line 356.
-(pdftex.def)             Requested size: 415.12572pt x 214.2916pt.
-<imagenes/cap3_resultados/Ensayos/VibLibreSinLastresNIDAQ.jpg, id=2016, 875.52094pt x 453.19313pt>
+Package pdftex.def Info: imagenes/cap3_resultados/Ensayos/AmpVibLibreSinLastresNIDAQ.jpg  used on input line 381.
+(pdftex.def)             Requested size: 415.12572pt x 197.83858pt.
+<imagenes/cap3_resultados/Ensayos/VibLibreSinLastresNIDAQ.jpg, id=2053, 1371.1225pt x 653.44125pt>
 File: imagenes/cap3_resultados/Ensayos/VibLibreSinLastresNIDAQ.jpg Graphic file (type jpg)
 <use imagenes/cap3_resultados/Ensayos/VibLibreSinLastresNIDAQ.jpg>
-Package pdftex.def Info: imagenes/cap3_resultados/Ensayos/VibLibreSinLastresNIDAQ.jpg  used on input line 358.
-(pdftex.def)             Requested size: 415.12572pt x 214.88171pt.
- [136]
-<imagenes/cap3_resultados/Ensayos/VibLibreSinLastresSMARTSENSOR.jpg, id=2022, 1028.34187pt x 516.42938pt>
+Package pdftex.def Info: imagenes/cap3_resultados/Ensayos/VibLibreSinLastresNIDAQ.jpg  used on input line 383.
+(pdftex.def)             Requested size: 415.12572pt x 197.83858pt.
+ [137]
+<imagenes/cap3_resultados/Ensayos/VibLibreSinLastresSMARTSENSOR.jpg, id=2059, 1028.34187pt x 516.42938pt>
 File: imagenes/cap3_resultados/Ensayos/VibLibreSinLastresSMARTSENSOR.jpg Graphic file (type jpg)
 <use imagenes/cap3_resultados/Ensayos/VibLibreSinLastresSMARTSENSOR.jpg>
-Package pdftex.def Info: imagenes/cap3_resultados/Ensayos/VibLibreSinLastresSMARTSENSOR.jpg  used on input line 367.
+Package pdftex.def Info: imagenes/cap3_resultados/Ensayos/VibLibreSinLastresSMARTSENSOR.jpg  used on input line 392.
 (pdftex.def)             Requested size: 415.12572pt x 208.47507pt.
- [137 <./imagenes/cap3_resultados/Ensayos/AmpVibLibreSinLastresNIDAQ.jpg> <./imagenes/cap3_resultados/Ensayos/VibLibreSinLastresNIDAQ.jpg>]
-<imagenes/cap3_resultados/Ensayos/AmplitudVibLibreLastresNIDAQ1.jpg, id=2031, 901.11656pt x 456.95718pt>
+ [138 <./imagenes/cap3_resultados/Ensayos/AmpVibLibreSinLastresNIDAQ.jpg> <./imagenes/cap3_resultados/Ensayos/VibLibreSinLastresNIDAQ.jpg>]
+<imagenes/cap3_resultados/Ensayos/AmplitudVibLibreLastresNIDAQ1.jpg, id=2069, 1371.1225pt x 653.44125pt>
 File: imagenes/cap3_resultados/Ensayos/AmplitudVibLibreLastresNIDAQ1.jpg Graphic file (type jpg)
 <use imagenes/cap3_resultados/Ensayos/AmplitudVibLibreLastresNIDAQ1.jpg>
-Package pdftex.def Info: imagenes/cap3_resultados/Ensayos/AmplitudVibLibreLastresNIDAQ1.jpg  used on input line 378.
-(pdftex.def)             Requested size: 415.12572pt x 210.50964pt.
-<imagenes/cap3_resultados/Ensayos/VibLibreLastresNIDAQ1.jpg, id=2032, 877.77937pt x 455.45157pt>
+Package pdftex.def Info: imagenes/cap3_resultados/Ensayos/AmplitudVibLibreLastresNIDAQ1.jpg  used on input line 403.
+(pdftex.def)             Requested size: 415.12572pt x 197.83858pt.
+<imagenes/cap3_resultados/Ensayos/VibLibreLastresNIDAQ1.jpg, id=2070, 1371.1225pt x 653.44125pt>
 File: imagenes/cap3_resultados/Ensayos/VibLibreLastresNIDAQ1.jpg Graphic file (type jpg)
 <use imagenes/cap3_resultados/Ensayos/VibLibreLastresNIDAQ1.jpg>
-Package pdftex.def Info: imagenes/cap3_resultados/Ensayos/VibLibreLastresNIDAQ1.jpg  used on input line 380.
-(pdftex.def)             Requested size: 415.12572pt x 215.39659pt.
- [138 <./imagenes/cap3_resultados/Ensayos/VibLibreSinLastresSMARTSENSOR.jpg>]
-<imagenes/cap3_resultados/Ensayos/VibLibreLastresSMARTSENSOR.jpg, id=2038, 1026.08344pt x 517.935pt>
+Package pdftex.def Info: imagenes/cap3_resultados/Ensayos/VibLibreLastresNIDAQ1.jpg  used on input line 405.
+(pdftex.def)             Requested size: 415.12572pt x 197.83858pt.
+ [139 <./imagenes/cap3_resultados/Ensayos/VibLibreSinLastresSMARTSENSOR.jpg>]
+<imagenes/cap3_resultados/Ensayos/VibLibreLastresSMARTSENSOR.jpg, id=2076, 1026.08344pt x 517.935pt>
 File: imagenes/cap3_resultados/Ensayos/VibLibreLastresSMARTSENSOR.jpg Graphic file (type jpg)
 <use imagenes/cap3_resultados/Ensayos/VibLibreLastresSMARTSENSOR.jpg>
-Package pdftex.def Info: imagenes/cap3_resultados/Ensayos/VibLibreLastresSMARTSENSOR.jpg  used on input line 390.
+Package pdftex.def Info: imagenes/cap3_resultados/Ensayos/VibLibreLastresSMARTSENSOR.jpg  used on input line 415.
 (pdftex.def)             Requested size: 415.12572pt x 209.54123pt.
- [139 <./imagenes/cap3_resultados/Ensayos/AmplitudVibLibreLastresNIDAQ1.jpg> <./imagenes/cap3_resultados/Ensayos/VibLibreLastresNIDAQ1.jpg>] [140 <./imagenes/cap3_resultados/Ensayos/VibLibreLastresSMARTSENSOR.jpg>]
-<imagenes/cap3_resultados/Ensayos/AmplitudVibAmb2NIDAQ1.jpg, id=2056, 889.07156pt x 450.18187pt>
+ [140 <./imagenes/cap3_resultados/Ensayos/AmplitudVibLibreLastresNIDAQ1.jpg> <./imagenes/cap3_resultados/Ensayos/VibLibreLastresNIDAQ1.jpg>] [141 <./imagenes/cap3_resultados/Ensayos/VibLibreLastresSMARTSENSOR.jpg>]
+<imagenes/cap3_resultados/Ensayos/AmplitudVibAmb2NIDAQ1.jpg, id=2094, 889.82437pt x 452.4403pt>
 File: imagenes/cap3_resultados/Ensayos/AmplitudVibAmb2NIDAQ1.jpg Graphic file (type jpg)
 <use imagenes/cap3_resultados/Ensayos/AmplitudVibAmb2NIDAQ1.jpg>
-Package pdftex.def Info: imagenes/cap3_resultados/Ensayos/AmplitudVibAmb2NIDAQ1.jpg  used on input line 406.
-(pdftex.def)             Requested size: 415.12572pt x 210.19792pt.
-<imagenes/cap3_resultados/Ensayos/VibAmb2EspectroNIDAQ1.jpg, id=2057, 888.31876pt x 461.47406pt>
+Package pdftex.def Info: imagenes/cap3_resultados/Ensayos/AmplitudVibAmb2NIDAQ1.jpg  used on input line 431.
+(pdftex.def)             Requested size: 415.12572pt x 211.07294pt.
+<imagenes/cap3_resultados/Ensayos/VibAmb2EspectroNIDAQ1.jpg, id=2095, 871.00406pt x 461.47406pt>
 File: imagenes/cap3_resultados/Ensayos/VibAmb2EspectroNIDAQ1.jpg Graphic file (type jpg)
 <use imagenes/cap3_resultados/Ensayos/VibAmb2EspectroNIDAQ1.jpg>
-Package pdftex.def Info: imagenes/cap3_resultados/Ensayos/VibAmb2EspectroNIDAQ1.jpg  used on input line 408.
-(pdftex.def)             Requested size: 415.12572pt x 215.65352pt.
- [141]
-<imagenes/cap3_resultados/Ensayos/VibAmb2SmartSensorGUI.jpg, id=2065, 1028.34187pt x 526.96875pt>
+Package pdftex.def Info: imagenes/cap3_resultados/Ensayos/VibAmb2EspectroNIDAQ1.jpg  used on input line 433.
+(pdftex.def)             Requested size: 415.12572pt x 219.93477pt.
+ [142]
+<imagenes/cap3_resultados/Ensayos/VibAmb2SmartSensorGUI.jpg, id=2103, 1028.34187pt x 526.96875pt>
 File: imagenes/cap3_resultados/Ensayos/VibAmb2SmartSensorGUI.jpg Graphic file (type jpg)
 <use imagenes/cap3_resultados/Ensayos/VibAmb2SmartSensorGUI.jpg>
-Package pdftex.def Info: imagenes/cap3_resultados/Ensayos/VibAmb2SmartSensorGUI.jpg  used on input line 417.
+Package pdftex.def Info: imagenes/cap3_resultados/Ensayos/VibAmb2SmartSensorGUI.jpg  used on input line 442.
 (pdftex.def)             Requested size: 415.12572pt x 212.72964pt.
- [142 <./imagenes/cap3_resultados/Ensayos/AmplitudVibAmb2NIDAQ1.jpg> <./imagenes/cap3_resultados/Ensayos/VibAmb2EspectroNIDAQ1.jpg>]
-<imagenes/cap3_resultados/Ensayos/AmplitudVibAmb2CONCATENADASMARTSENSOR.jpg, id=2074, 879.285pt x 451.6875pt>
-File: imagenes/cap3_resultados/Ensayos/AmplitudVibAmb2CONCATENADASMARTSENSOR.jpg Graphic file (type jpg)
-<use imagenes/cap3_resultados/Ensayos/AmplitudVibAmb2CONCATENADASMARTSENSOR.jpg>
-Package pdftex.def Info: imagenes/cap3_resultados/Ensayos/AmplitudVibAmb2CONCATENADASMARTSENSOR.jpg  used on input line 428.
-(pdftex.def)             Requested size: 415.12572pt x 213.24426pt.
- [143 <./imagenes/cap3_resultados/Ensayos/VibAmb2SmartSensorGUI.jpg>]
-<imagenes/cap3_resultados/Ensayos/VibAmb2EspectroCONC.jpg, id=2080, 876.27374pt x 457.71pt>
-File: imagenes/cap3_resultados/Ensayos/VibAmb2EspectroCONC.jpg Graphic file (type jpg)
-<use imagenes/cap3_resultados/Ensayos/VibAmb2EspectroCONC.jpg>
-Package pdftex.def Info: imagenes/cap3_resultados/Ensayos/VibAmb2EspectroCONC.jpg  used on input line 437.
-(pdftex.def)             Requested size: 415.12572pt x 216.83482pt.
-) [144 <./imagenes/cap3_resultados/Ensayos/AmplitudVibAmb2CONCATENADASMARTSENSOR.jpg> <./imagenes/cap3_resultados/Ensayos/VibAmb2EspectroCONC.jpg>] [145]
+ [143 <./imagenes/cap3_resultados/Ensayos/AmplitudVibAmb2NIDAQ1.jpg> <./imagenes/cap3_resultados/Ensayos/VibAmb2EspectroNIDAQ1.jpg>]
+<imagenes/cap3_resultados/Ensayos/AmplitudVibAmb5CONCATENADASMARTSENSOR.jpg, id=2113, 903.375pt x 453.19313pt>
+File: imagenes/cap3_resultados/Ensayos/AmplitudVibAmb5CONCATENADASMARTSENSOR.jpg Graphic file (type jpg)
+<use imagenes/cap3_resultados/Ensayos/AmplitudVibAmb5CONCATENADASMARTSENSOR.jpg>
+Package pdftex.def Info: imagenes/cap3_resultados/Ensayos/AmplitudVibAmb5CONCATENADASMARTSENSOR.jpg  used on input line 453.
+(pdftex.def)             Requested size: 415.12572pt x 208.25699pt.
+ [144 <./imagenes/cap3_resultados/Ensayos/VibAmb2SmartSensorGUI.jpg>]
+<imagenes/cap3_resultados/Ensayos/VibAmb5EspectroCONC.jpg, id=2121, 870.25125pt x 446.41782pt>
+File: imagenes/cap3_resultados/Ensayos/VibAmb5EspectroCONC.jpg Graphic file (type jpg)
+<use imagenes/cap3_resultados/Ensayos/VibAmb5EspectroCONC.jpg>
+Package pdftex.def Info: imagenes/cap3_resultados/Ensayos/VibAmb5EspectroCONC.jpg  used on input line 464.
+(pdftex.def)             Requested size: 415.12572pt x 212.95662pt.
+ [145 <./imagenes/cap3_resultados/Ensayos/AmplitudVibAmb5CONCATENADASMARTSENSOR.jpg>]
+<imagenes/cap3_resultados/Ensayos/VibAmb5EspectroCONC_SOLOX.jpg, id=2129, 884.55469pt x 453.19313pt>
+File: imagenes/cap3_resultados/Ensayos/VibAmb5EspectroCONC_SOLOX.jpg Graphic file (type jpg)
+<use imagenes/cap3_resultados/Ensayos/VibAmb5EspectroCONC_SOLOX.jpg>
+Package pdftex.def Info: imagenes/cap3_resultados/Ensayos/VibAmb5EspectroCONC_SOLOX.jpg  used on input line 474.
+(pdftex.def)             Requested size: 415.12572pt x 212.6896pt.
+<imagenes/cap3_resultados/Ensayos/VibAmb5EspectroCONC_SOLOY.jpg, id=2130, 883.04906pt x 446.41782pt>
+File: imagenes/cap3_resultados/Ensayos/VibAmb5EspectroCONC_SOLOY.jpg Graphic file (type jpg)
+<use imagenes/cap3_resultados/Ensayos/VibAmb5EspectroCONC_SOLOY.jpg>
+Package pdftex.def Info: imagenes/cap3_resultados/Ensayos/VibAmb5EspectroCONC_SOLOY.jpg  used on input line 476.
+(pdftex.def)             Requested size: 415.12572pt x 209.86407pt.
+ [146 <./imagenes/cap3_resultados/Ensayos/VibAmb5EspectroCONC.jpg>] [147 <./imagenes/cap3_resultados/Ensayos/VibAmb5EspectroCONC_SOLOX.jpg> <./imagenes/cap3_resultados/Ensayos/VibAmb5EspectroCONC_SOLOY.jpg>]
+
+LaTeX Warning: Reference `{fig:espectroconcX}' on page 148 undefined on input line 484.
+
+) [148] [149]
 CAPÍTULO 5.
-(cap5_conclu.tex [146
+(cap5_conclu.tex [150
 
-]) [147] [148]
+]) [151] [152]
 CAPÍTULO 6.
-(cap6_recom.tex [149
+(cap6_recom.tex [153
 
-] [150] [151]) [152]
+] [154] [155]) [156]
 Apéndice I.
-(anexos1.tex [153
+(anexos1.tex [157
 
-] [154] [155] [156] [157] [158] [159] [160] [161] [162] [163] [164] [165]) [166]
+] [158] [159] [160] [161] [162] [163] [164] [165] [166] [167] [168] [169]) [170]
 Apéndice II.
-(anexos2.tex [167
+(anexos2.tex [171
 
-] [168] [169] [170] [171] [172] [173] [174] [175] [176] [177] [178] [179]) [180]
+] [172] [173] [174] [175] [176] [177] [178] [179] [180] [181] [182] [183]) [184]
 Apéndice III.
 (anexos3.tex (C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
-) [181
+) [185
 
-] [182] [183] [184] [185] [186] [187] [188] [189] [190] [191] [192] [193] [194] [195]) [196] (EIETdeG.bbl
+] [186] [187] [188] [189] [190] [191] [192] [193] [194] [195] [196] [197] [198] [199]) [200]
+Apéndice IV.
+(anexos4.tex (C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2023/02/27 1.9 listings language file
+) [201
+
+] (C:\Users\jatov\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2023/02/27 1.9 listings language file
+) [202] [203]
+<imagenes/cap3_resultados/Anexos/FlujoNodeRED.jpg, id=3683, 666.23906pt x 379.4175pt>
+File: imagenes/cap3_resultados/Anexos/FlujoNodeRED.jpg Graphic file (type jpg)
+<use imagenes/cap3_resultados/Anexos/FlujoNodeRED.jpg>
+Package pdftex.def Info: imagenes/cap3_resultados/Anexos/FlujoNodeRED.jpg  used on input line 104.
+(pdftex.def)             Requested size: 415.12572pt x 236.41167pt.
+) [204 <./imagenes/cap3_resultados/Anexos/FlujoNodeRED.jpg>] (EIETdeG.bbl
 Underfull \hbox (badness 4001) in paragraph at lines 170--186
 \T1/cmtt/m/n/12 .com / 20190829 / carriers / lpwa [] -matchup [] -round [] -five$[]   \T1/cmr/m/n/12 (Con-sul-ta-do:
  []
 
-[197
+[205
 
 ]
 Underfull \hbox (badness 1221) in paragraph at lines 353--368
@@ -1504,7 +1546,7 @@ Underfull \hbox (badness 7468) in paragraph at lines 484--497
 \T1/cmtt/m/n/12 www [] .freertos [] .org / Documentation / RTOS [] []book [] .html$[]   \T1/cmr/m/n/12 (Con-sul-ta-do:
  []
 
-[198]
+[206]
 Underfull \hbox (badness 1107) in paragraph at lines 821--836
 []\T1/cmr/m/n/12 Mechatronics, N.  (2016).  \T1/cmr/m/it/12 Tu-to-rial mpu6050, ace-le-r�-me-tro y gi-ros-co-pio.
  []
@@ -1514,7 +1556,7 @@ Underfull \hbox (badness 2343) in paragraph at lines 821--836
 \T1/cmr/m/n/12 Des-car-ga-do de []$\T1/cmtt/m/n/12 https :// naylampmechatronics [] .com / blog / 45 [] []tutorial []
  []
 
-[199]
+[207]
 Underfull \hbox (badness 6204) in paragraph at lines 848--863
 []\T1/cmr/m/n/12 Mechatronics, N.  (2023).  \T1/cmr/m/it/12 Sen-sor bme280 pre-si�n, tem-pe-ra-tu-ra y
  []
@@ -1539,7 +1581,7 @@ Underfull \hbox (badness 7468) in paragraph at lines 1029--1045
 \T1/cmtt/m/n/12 .com / products / wireless [] -rf / lora [] -connect / sx1278$[]   \T1/cmr/m/n/12 (Con-sul-ta-do:
  []
 
-[200]
+[208]
 Underfull \hbox (badness 3199) in paragraph at lines 1113--1128
 []\T1/cmr/m/n/12 Siemens.  (2019).  \T1/cmr/m/it/12 What is the fou-rier trans-form?  \T1/cmr/m/n/12 Des-car-ga-do de
  []
@@ -1564,7 +1606,7 @@ Underfull \hbox (badness 1635) in paragraph at lines 1248--1260
 []\T1/cmr/m/n/12 Worden, K., y Fris-well, M. I.  (2009).  Modal--vibration-based da-ma-ge
  []
 
-) (EIETdeG.ind) [201] (EIETdeG.aux
+) (EIETdeG.ind) [209] (EIETdeG.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 )
@@ -1572,20 +1614,20 @@ LaTeX Info: Redefining \% on input line 23.
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `EIETdeG.out' has not changed.
-(rerunfilecheck)             Checksum: 42281667622FC002F6D007E26D36F81D;18841.
+(rerunfilecheck)             Checksum: F2486F67109269B31538AB0459FB8224;19056.
  ) 
 Here is how much of TeX's memory you used:
- 22234 strings out of 476410
- 375563 string characters out of 5789114
+ 23003 strings out of 476410
+ 386593 string characters out of 5789114
  2240845 words of memory out of 5000000
- 40313 multiletter control sequences out of 15000+600000
+ 40961 multiletter control sequences out of 15000+600000
  528281 words of font info for 79 fonts, out of 8000000 for 9000
  1168 hyphenation exceptions out of 8191
- 80i,16n,82p,1593b,2218s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 80i,16n,82p,1612b,2609s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\jatov\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\jatov\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\jatov\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\jatov\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk> <C:\Users\jatov\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0600.pk> <C:\Users\jatov\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\jatov\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecxc1200.pk> <C:\Users\jatov\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\jatov\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\jatov\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1200.pk> <C:\Users\jatov\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\jatov\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\jatov\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk><C:/Users/jatov/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/jatov/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/jatov/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/jatov/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/jatov/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/jatov/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/jatov/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/jatov/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on EIETdeG.pdf (219 pages, 5653522 bytes).
+Output written on EIETdeG.pdf (228 pages, 5877574 bytes).
 PDF statistics:
- 4526 PDF objects out of 5155 (max. 8388607)
- 1835 named destinations out of 2073 (max. 500000)
- 1065 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 4728 PDF objects out of 5155 (max. 8388607)
+ 1945 named destinations out of 2073 (max. 500000)
+ 1088 words of extra memory for PDF output out of 10000 (max. 10000000)
 

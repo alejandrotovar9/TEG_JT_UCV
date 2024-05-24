@@ -1,5 +1,5 @@
 
-En este capítulo se definirán los conceptos  o fundamentos de instrumentación estructural, sensores inteligentes y adquisición de datos, necesarios para llevar a cabo esta investigación.
+En este capítulo se definirán los conceptos  o fundamentos de instrumentación estructural, sensores inteligentes, adquisición y procesamiento de datos, necesarios para llevar a cabo esta investigación.
 
 \section{Estructuras civiles}
 
@@ -97,7 +97,7 @@ La gran mayoría de los sistemas cuentan con una respuesta dinámica y estática
 
 El daño a una estructura civil o mecánica puede definirse como todo cambio en las propiedades materiales o geométricas del material que llegan a afectar de forma adversa la confiabilidad y el desempeño actual o futuro del sistema. Por tanto, el daño es una comparación entre el sistema en cuestión en 2 instantes de tiempo distintos \citep{farrar2007introduction}. Estos efectos adversos pueden ser, en el caso estructural, desplazamientos, estrés indeseado en un elemento o vibraciones estructurales indeseadas \citep{chen2018}.
 
-Todas las estructuras civiles, como puentes y edificios, acumulan daño de forma continua a medida que están en servicio y transcurre su vida útil. Este daño puede manifestarse como fracturas, fatiga, socavaciones o desprendimiento del concreto. El daño que no sea detectado puede conducir a una falla estructural que a su vez ocasione pérdidas humanas. Por tanto, es imperativo y necesario detectar el daño en una estrcutrura tan pronto como sea posible, \citep{chen2018}.
+Todas las estructuras civiles, como puentes y edificios, acumulan daño de forma continua a medida que están en servicio y transcurre su vida útil. Este daño puede manifestarse como fracturas, fatiga, socavaciones o desprendimiento del concreto. El daño que no sea detectado puede conducir a una falla estructural que a su vez ocasione pérdidas humanas. Por tanto, es imperativo y necesario detectar el daño en una estructura tan pronto como sea posible, \citep{chen2018}.
 
 Entre algunos de los factores que influyen del deterioro de una estructura se encuentran:
     
@@ -110,12 +110,12 @@ Entre algunos de los factores que influyen del deterioro de una estructura se en
     
 Las escalas de tiempo y de extensión del daño son diversas. Por ejemplo, el deterioro por el paso del tiempo bajo ciertas condiciones climáticas es muy lento comparado al daño causado por un evento catastrófico.
 
-\subsection{Principios de la Sismoresistencia}
+\subsection{Principios de la sismo-resistencia}
 
 Una edificación sismorresistente es aquella que está diseñada y construida para soportar las fuerzas causadas por eventos sísmicos. Sin embargo, incluso las edificaciones diseñadas y construidas según las normas sismorresistentes pueden sufrir daños en caso de un terremoto muy fuerte, sin embargo, las normas establecen los requisitos mínimos para proteger la vida de
 las personas que ocupan la edificación
 
-Algunas de las características de una estructura sismoresistente son:
+Algunas de las características de una estructura sismorresistente son:
 
         \begin{itemize}
             \item Forma regular.
@@ -132,9 +132,9 @@ En Venezuela las estructuras deben cumplir con la Norma Venezolana COVENIN 1756-
 
 Se ha observado que al estudiar el comportamiento de las estructuras luego de un evento sísmico, es evidente que cuando se toman en cuenta las normas de diseño sismorresistente dispuestas en la ley y la construcción es debidamente supervisada, los daños estructurales resultan ser considerablemente menores que en las edificaciones en las cuales no se cumplen los requerimientos mínimos indispensables estipulados en la norma, \citep{blanco2012criterios}.
 
-\subsubsection{Importancia de la instrumentación} La instrumentación estructural permite medir y monitorear las acciones y respuestas estructurales ante distintos eventos. Esto proporciona datos en tiempo real y fuera de línea sobre el comportamiento dinámico y estático de la estructura, como deformaciones, aceleraciones y desplazamientos, que son fundamentales para evaluar y verificar si la estructura cumple con los criterios de diseño sismoresistente establecidos en la norma.
+\subsubsection{Importancia de la instrumentación} La instrumentación estructural permite medir y monitorear las acciones y respuestas estructurales ante distintos eventos. Esto proporciona datos en tiempo real y fuera de línea sobre el comportamiento dinámico y estático de la estructura, como deformaciones, aceleraciones y desplazamientos, que son fundamentales para evaluar y verificar si la estructura cumple con los criterios de diseño sismorresistente establecidos en la norma.
 
-La instrumentación estructural ayuda a validar los modelos y suposiciones utilizados en el diseño estructural inicial. Al comparar los datos recopilados por la instrumentación durante un evento sísimco con las predicciones del modelo, es posible verificar si la estructura se comporta de acuerdo con las expectativas y si cumple con los criterios de seguridad establecidos en la norma.
+La instrumentación estructural ayuda a validar los modelos y suposiciones utilizados en el diseño estructural inicial. Al comparar los datos recopilados por la instrumentación durante un evento sísmico con las predicciones del modelo, es posible verificar si la estructura se comporta de acuerdo con las expectativas y si cumple con los criterios de seguridad establecidos en la norma.
 
 Además, el monitoreo continuo de la estructura permite conocer el estado actual de la misma, tema que representa la idea principal del Monitoreo de Salud Estructural, permitiendo a los ingenieros evaluar si se sigue cumpliendo con la norma para luego tomar decisiones y actuar en pro de la seguridad de la edificación.
 
@@ -158,16 +158,16 @@ Según \citet{enckell2006structural}, el SHM se ha convertido en una herramienta
 Las técnicas de detección de daño basadas en vibración tienen sus primeras aplicaciones desde hace cientos de años. En la antigüedad, los constructores golpeaban las estructuras para encontrar espacios vacíos o grietas en elementos de arcilla. La utilidad de estas inspecciones tan simples indicaban que la sofisticación de estos métodos podía proveer información muy valiosa sobre el elemento de interés, sin embargo, esto requiere de instrumentos y herramientas matemáticas que se han desarrollado con el pasar de los años. El auge en el uso de SHM en años recientes es consecuencia de la evolución y miniaturización del hardware computacional actual.
 
 
-El uso más exitoso del SHM ha sido el monitoreo de la condición de máquinas rotativas, las cuales actualmente han adoptado un enfoque de indetificación de daño sin basarse en un modelo de forma casi exclusiva, \citep{farrar2007introduction}.
+El uso más exitoso del SHM ha sido el monitoreo de la condición de máquinas rotativas, las cuales actualmente han adoptado un enfoque de identificación de daño sin basarse en un modelo de forma casi exclusiva, \citep{farrar2007introduction}.
 
 En los años 70 la industria petrolera consideró el uso de técnicas basadas en vibración para identificar daños en plataformas costa-afuera, este enfoque se diferenció de las máquinas rotativas al estudiar un sistema en donde la ubicación del daño es desconocida y difícil de instrumentar.
 
-En esa misma época, la comunidad aeroespacial y la \textit{National Eeronautics Space Agency} (NASA), comenzaron a estudiar esta técnica de identificación de daño en los comienzos de la era de lanzamientos espaciales. Este trabajo continúa hoy en día y el \textit{Shuttle Modal Inspection System} (SMIS) se desarrolló para identificar fatiga en distintos componentes de cohetes espaciales reusables, los cuales representan el futuro de esta industria.
+En esa misma época, la comunidad aeroespacial y la \textit{National Aeronautics Space Agency} (NASA), comenzaron a estudiar esta técnica de identificación de daño en los comienzos de la era de lanzamientos espaciales. Este trabajo continúa hoy en día y el \textit{Shuttle Modal Inspection System} (SMIS) se desarrolló para identificar fatiga en distintos componentes de cohetes espaciales reutilizables, los cuales representan el futuro de esta industria.
 
 
 Usualmente, los enfoques de estas industrias se basan en comparar modelos analíticos de estructuras sin daño con las mediciones de estructuras con daño, observando principalmente las propiedades modales de las mismas. Se ha observado que cambios en la rigidez en ambos modelos han permitido localizar y cuantificar el daño, \citep{farrar2007introduction}.
 
-Inicialmente, las técnicas no destructivas fueron introducidas en la ingeniería civil a mediados de los años 40, \citep{mohamed2014}. La necesidad principal surgió en determinar propiedades del concreto fresco \textit{in-situ}. Estas técnicas, que buscaban evaluar la homogeneidad y la resistencia del concreto eran en su mayoría pruebas con martillo y pruebas de \textit{pull-out}. A medida que las estructuras envejecieron, los ingenieros necesitaban idear maneras de medir o estimar las propiedades mecánicas de los elementos que consituyen las estructuras, además de detectar daños que no eran fáciles de observar por la envergadura de las estructuras civiles que se han desarrollado en los últimos 150 años. Es ahí, en los años 70, donde surgen nuevas estrategias no destructivas tales como:
+Inicialmente, las técnicas no destructivas fueron introducidas en la ingeniería civil a mediados de los años 40, \citep{mohamed2014}. La necesidad principal surgió en determinar propiedades del concreto fresco \textit{in-situ}. Estas técnicas, que buscaban evaluar la homogeneidad y la resistencia del concreto eran en su mayoría pruebas con martillo y pruebas de \textit{pull-out}. A medida que las estructuras envejecieron, los ingenieros necesitaban idear maneras de medir o estimar las propiedades mecánicas de los elementos que constituyen las estructuras, además de detectar daños que no eran fáciles de observar por la envergadura de las estructuras civiles que se han desarrollado en los últimos 150 años. Es ahí, en los años 70, donde surgen nuevas estrategias no destructivas tales como:
 
     \begin{itemize}
         \item Emisión acústica.
@@ -237,7 +237,7 @@ Como se definió anteriormente, el daño estructural puede tener distintas causa
 
 Numerosos autores concluyen que uno de los indicativos de daño de una estructura viene dado por los parámetros modales definidos anteriormente, frecuencia y amortiguamiento. Esta relación entre los parámetros modales y el daño viene dada por la premisa de que todo daño presente en la estructura se reflejará en un cambio en las propiedades dinámicas de la misma. \citet{worden2009modal}, comprobó la relación entre el cambio progresivo en todas las frecuencias naturales de 15 vigas estudiadas a las cuales se les introdujo un daño relacionado con un cambio del Módulo de Young, el cual, como fue mencionado anteriormente, provee un indicativo de la rigidez de un elemento.
 
-Anterioremente en la ecuación \ref{eq:vib_lib} se definió un sistema con un grado de libertad (DOF por sus siglas en inglés), sin embargo, en la realidad las estructuras tienen múltiples grados de libertad, por lo que es conveniente modelarlas de estar forma para obtener resultados más precisos. En el caso de los sistemas con ``n grados de libertad'', la ecuación de movimiento que describe la dinámica del sistema en vibración libre vendrá dada por:
+Anteriormente, en la ecuación \ref{eq:vib_lib}, se definió un sistema con un grado de libertad (DOF por sus siglas en inglés), sin embargo, en la realidad las estructuras tienen múltiples grados de libertad, por lo que es conveniente modelarlas de estar forma para obtener resultados más precisos. En el caso de los sistemas con ``n grados de libertad'', la ecuación de movimiento que describe la dinámica del sistema en vibración libre vendrá dada por:
 
 \begin{equation} \label{eq:ecu_movimiento}
     M\ddot{u} + C\dot{u} + Ku = 0
@@ -281,10 +281,10 @@ De la ecuación \ref{eq:relacion_final} se observa que cambios en los autovalore
 
 \subsection{Variables de interés}
 
-Tomando en cuenta la relación entre los parámetros modales y el daño presente en una estructura, es preciso definir las variables de interés para el monitoreo de la salud estructural de una estructura. Si bien existen distintas varibales que permiten obtener información valiosa sobre la estructura en estudio, algunas de estas no proporcionan información global del daño, como es el caso de las formas modales y la deflección local \citep{rytter1993vibration}. Sin embargo, estas mediciones proveen indicativos de la ubicación del daño, por lo que pueden constituir parte del sistema de monitoreo en una etapa más avanzada, es decir, una vez el daño fue detectado. A continuación se presentan las más relevantes para el daño global:
+Tomando en cuenta la relación entre los parámetros modales y el daño presente en una estructura, es preciso definir las variables de interés para el monitoreo de la salud estructural de una estructura. Si bien existen distintas variables que permiten obtener información valiosa sobre la estructura en estudio, algunas de estas no proporcionan información global del daño, como es el caso de las formas modales y la deflección local \citep{rytter1993vibration}. Sin embargo, estas mediciones proveen indicativos de la ubicación del daño, por lo que pueden constituir parte del sistema de monitoreo en una etapa más avanzada, es decir, una vez el daño fue detectado. A continuación se presentan las más relevantes para el daño global:
 
     \begin{itemize}
-        \item Frecuencias naturales y amortiguamiento: Los parametros modales de la estructura están ligados de forma directa al estado de la misma. El deterioro en una edificiación induce cambios en la rigidez estructural, como se observa claramente en la ecuación \ref{eq:relacion_final}. El daño puede tener efectos distintos en cada modo o cada frecuencia de vibración, por lo que es importante no ubicar los sensores sobre los nodos modales, ya que experimentos han demostrado la ineficacia en las mediciones. Usualmente, el daño se refleja como una disminución en las frecuencias naturales afectadas, aunque se han observado casos de aumento en las frecuencias de vibración en estructuras de concreto pretensado, \citep{rytter1993vibration}.
+        \item Frecuencias naturales y amortiguamiento: Los parámetros modales de la estructura están ligados de forma directa al estado de la misma. El deterioro en una edificación induce cambios en la rigidez estructural, como se observa claramente en la ecuación \ref{eq:relacion_final}. El daño puede tener efectos distintos en cada modo o cada frecuencia de vibración, por lo que es importante no ubicar los sensores sobre los nodos modales, ya que experimentos han demostrado la ineficacia en las mediciones. Usualmente, el daño se refleja como una disminución en las frecuencias naturales afectadas, aunque se han observado casos de aumento en las frecuencias de vibración en estructuras de concreto pretensado, \citep{rytter1993vibration}.
         
         A su vez, el amortiguamiento varía al introducir daño en la estructura, puesto que su capacidad de disipar energía se ve afectada. Usualmente, los investigadores observan un aumento en el amortiguamiento a medida que el daño aumenta, como se ha demostrado experimentalmente por autores como \citet{hearn1991modal} y \citet{rytter1993vibration}.
 
@@ -298,13 +298,13 @@ Tomando en cuenta la relación entre los parámetros modales y el daño presente
 
         La deflección, que puede medirse haciendo uso de inclinómetros los cuales han generado un gran interés en la industria por su sensibilidad y bajo costo, es una variable muy importante a medirse en una estructura. La deflección puede ser consecuencia de la corrosión de los elementos de soporte, pérdida del pretensado o el crecimiento de grietas en el concreto. Es decir, a medida que la deflección aumenta se acelera la acumulación de daño, por tanto, medir esta variable puede proveer alertas tempranas sobre posibles cambios estructurales o deterioro \citep{zhang2017bridge}.
 
-        Autores como \citet{komarizadehasl2022development} destacan la medición de la inclinación en las últimas décadas en el sector de la Ingeniería Estructural, inicialmente con propósitos geotécnicos. Sin embargo, gracias a los avances tecnológicos en los sensores, se comenzó a emplear su uso en otras áres, sobre todo en el monitoreo de salud estructural.
+        Autores como \citet{komarizadehasl2022development} destacan la medición de la inclinación en las últimas décadas en el sector de la Ingeniería Estructural, inicialmente con propósitos geotécnicos. Sin embargo, gracias a los avances tecnológicos en los sensores, se comenzó a emplear su uso en otras áreas, sobre todo en el monitoreo de salud estructural.
 
     \end{itemize}
 
 \section{Métodos de identificación de daño}
 
-    \subsection{Basado en modelo} El método basado en modelo consiste en estructurar un modelo de elemento finito que será utilizado para identificar y localizar el daño en la estrucutra. Su precisión dependerá de su nivel de correlación con la estructura real, por lo que este método suele emplearse luego de realizar mediciones sobre el sistema y obtener datos experimentales, que permiten ajustar el modelo y disminuir las discrepancias, \citep{garcia2023review}.
+    \subsection{Basado en modelo} El método basado en modelo consiste en estructurar un modelo de elemento finito que será utilizado para identificar y localizar el daño en la estructura. Su precisión dependerá de su nivel de correlación con la estructura real, por lo que este método suele emplearse luego de realizar mediciones sobre el sistema y obtener datos experimentales, que permiten ajustar el modelo y disminuir las discrepancias, \citep{garcia2023review}.
 
     \subsection{Basado en respuesta} El monitoreo de salud estructural basado en datos hace uso de datos reales de la estructura obtenidos a través de mediciones experimentales en sitio. Diferentes arreglos de sensores se utilizan para medir los parámetros de interés para el SHM \citep{mohamed2014}.
 
@@ -356,7 +356,7 @@ Entre los elementos que componen un microcontrolador se encuentran:
     \item Unidad Central de Procesamiento.
     \item Memoria RAM (\textit{Random Access Memory}) y ROM (\textit{Read Only Memory}).
     \item Periféricos.
-    \item Convertidores analógico-digital (ADC) y digital-analógico (DAC).
+    \item Convertidores analógico digital (ADC) y digital-analógico (DAC).
     \item Temporizadores.
     \item Interfaces de comunicación.
     \item Real Time Clock (RTC).
@@ -367,7 +367,7 @@ En la figura \ref{fig:ESP32_Block_Diagram} se observa el diagrama de bloques de 
 \begin{figure}[H]
     \centering
     \includegraphics[width = \textwidth]{imagenes/cap1_marcoteo/ESP32-Block-Diagram.jpg}
-    \caption{Esquema general del microcontrolador ESP32 (Espressif).}
+    \caption{Esquema general del microcontrolador ESP32 \citep{datasheetESP32}.}
     \label{fig:ESP32_Block_Diagram}
 \end{figure}
 
@@ -375,7 +375,7 @@ En la figura \ref{fig:ESP32_Block_Diagram} se observa el diagrama de bloques de 
 
 Actualmente existen numerosas formas de hacer uso de las bondades que ofrecen los microcontroladores, especialmente al utilizar las distintas placas de desarrollo que se han diseñado para facilitar su programación e interfaz, ofreciendo la capacidad de comunicarse con un computador de forma sencilla a través del puerto USB, brindando distintas funcionalidades a los periféricos y facilitando la alimentación al microcontrolador. Estas tarjetas han logrado disminuir el costo del uso de los microcontroladores, especialmente para la creación de prototipos que permiten evaluar la factibilidad de un proyecto antes de diseñar la placa de circuito impreso (PCB por sus siglas en inglés) con un microcontrolador pre-programado.
 
-Las placas de desarrollo se pueden sudividir en:
+Las placas de desarrollo se pueden subdividir en:
 
 
 \begin{itemize}
@@ -418,7 +418,7 @@ Cada protocolo tiene sus características y aplicaciones, siendo diseñados para
 \subsection{Sistemas Operativos en Tiempo Real (RTOS)} 
 \label{subsec:rtossubsec}
 
-Un sistema operativo en tiempo real (RTOS por sus siglas en inglés), es un sistema operativo diseñado para manejar tareas que requieran ser monitoreadas de forma precisa y eficiente. Usualmente estas tareas son críticas en el tiempo, lo que lo diferencia de un sistema operativo de propósito general, el cual se especializa en ejecutar varias tareas al mismo tiempo. mientras que el RTOS se concentra en ejecutar las tareas en tiempo real.
+Un sistema operativo en tiempo real (RTOS por sus siglas en inglés), es un sistema operativo diseñado para manejar tareas que requieran ser monitoreadas de forma precisa y eficiente. Usualmente estas tareas son críticas en el tiempo, lo que lo diferencia de un sistema operativo de propósito general, el cual se especializa en ejecutar varias tareas al mismo tiempo, mientras que el RTOS se concentra en ejecutar las tareas en tiempo real.
 
 El primer RTOS fue un programa desarrollado en la Universidad de Cambridge en los años 60. Este sistema permitía que varios procesos se llevaran a cabo bajo restricciones de tiempo precisas. Desde entonces, numerosos avances en la industria han hecho crecer la demanda por sistemas operativos en tiempo real, siendo utilizados en aplicaciones espaciales, médicas, militares y entre otras.
 
@@ -427,7 +427,7 @@ Entre las características principales de un RTOS se encuentran:
 \begin{itemize}
     \item Planificador (Scheduler): Administra el tiempo de CPU de cada tarea y determina qué tarea debe ejecutar en qué momento. Es el encargo de que el sistema sea determinístico.
     \item Despachador (Dispatcher): Provee o cede el control del CPU a una tarea. También se encarga de guardar el contexto de la tarea que se ejecuta para seguir su ejecución la próxima vez que esta se utilice.
-    \item Multiprocesamiento simétrico: El RTOS es el sistema operativo ideal para una arquitectura de multiprocesamiento simétrico (SMP por sus siglas en inglés), en la cual cada núcleo de un procesador tiene su propio sistema operativo y tiene la capacidad de acceder a la lista de tareas disponibles. Todos los núcleos deben tener la misma arquitectura, lo que lo diferencia del multiprocesamiento asimétrico.
+    \item Multi-procesamiento simétrico: El RTOS es el sistema operativo ideal para una arquitectura de multi-procesamiento simétrico (SMP por sus siglas en inglés), en la cual cada núcleo de un procesador tiene su propio sistema operativo y tiene la capacidad de acceder a la lista de tareas disponibles. Todos los núcleos deben tener la misma arquitectura, lo que lo diferencia del multi-procesamiento asimétrico.
 \end{itemize}
 
 \subsubsection{FreeRTOS} FreeRTOS es una clase de RTOS diseñado para ser ejecutado en microcontroladores. A pesar de ser un kernel muy liviano, su uso se ha extendido más allá de los sistemas embebidos. Es distribuido de forma libre bajo la licencia MIT (\textit{Massachusetts Institute of Technology}) de software libre.
@@ -494,7 +494,7 @@ En el campo de la monitorización de salud estructural (SHM), existen varios tip
                 \label{fig:termopar}
             \end{figure}
             \item Termistores: Utilizan materiales semiconductores cuya resistencia eléctrica cambia con la temperatura. 
-            \item Microelectromecánicos (MEMS): Suelen utilizar el efecto termoeléctrico o la variación de las propiedades eléctricas de los materiales con la temperatura para medir y cuantificar los cambios térmicos.
+            \item Micro-electromecánicos (MEMS): Suelen utilizar el efecto termoeléctrico o la variación de las propiedades eléctricas de los materiales con la temperatura para medir y cuantificar los cambios térmicos.
             \begin{figure}[H]
                 \centering
                 \includegraphics[width = 0.7\textwidth]{imagenes/cap1_marcoteo/TempMEMS.png}
@@ -519,7 +519,7 @@ En el campo de la monitorización de salud estructural (SHM), existen varios tip
                 \caption{Esquema general de un sensor de humedad resistivo \citep{dunn2005introduction}.}
                 \label{fig:hig-res}
             \end{figure}
-            \item Microelectromecánicos (MEMS): suelen utilizar una capa de material sensible a la humedad, como un polímero higroscópico, que experimenta cambios en sus propiedades físicas, eléctricas o capacitivas en respuesta a la humedad del ambiente. 
+            \item Micro-electromecánicos (MEMS): suelen utilizar una capa de material sensible a la humedad, como un polímero higroscópico, que experimenta cambios en sus propiedades físicas, eléctricas o capacitivas en respuesta a la humedad del ambiente. 
             \begin{figure}[H]
                 \centering
                 \includegraphics[width = 0.7\textwidth]{imagenes/cap1_marcoteo/HigrometroMEMS.png}
@@ -539,7 +539,7 @@ En el campo de la monitorización de salud estructural (SHM), existen varios tip
                 \label{fig:acc-pie}
             \end{figure}
             \item Capacitancia Diferencial: utilizan un conjunto de placas móviles y fijas separadas por una pequeña distancia. La aceleración causa un cambio en la distancia entre las placas, lo que a su vez modifica la capacitancia del dispositivo. Este cambio en la capacitancia es proporcional a la aceleración.
-            \item Microelectromecánicos (MEMS): Se basan en el desplazamiento de una masa suspendida mediante resortes micromecánicos. Son pequeños, económicos y se utilizan ampliamente en aplicaciones de monitoreo estructural debido a su tamaño compacto y bajo consumo de energía.
+            \item Micro-electromecánicos (MEMS): Se basan en el desplazamiento de una masa suspendida mediante resortes micro-mecánicos. Son pequeños, económicos y se utilizan ampliamente en aplicaciones de monitoreo estructural debido a su tamaño compacto y bajo consumo de energía.
             \begin{figure}[H]
                 \centering
                 \begin{minipage}{0.45\textwidth}
@@ -552,13 +552,13 @@ En el campo de la monitorización de salud estructural (SHM), existen varios tip
                 \begin{minipage}{0.45\textwidth}
                     \centering
                     \includegraphics[width=1\textwidth]{imagenes/cap1_marcoteo/AccelerometerMEMS2.png}
-                    \caption{Acelerómetro microelectromecánico \citep{dunn2005introduction}.}
+                    \caption{Acelerómetro micro-electromecánico \citep{dunn2005introduction}.}
                     \label{fig:acc-mems2}
                 \end{minipage}
             \end{figure}
 
 
-            \item Balance de fuerzas: Este tipo de acelerómetro consiste en un detector de posición, un amplificador y un sistema electromecánico de posicionamiento. El sistema convierte una fuerza mecánica en una corriente proporcional que se convierte en una fuerza en dirección contraria para contrarestar el movimiento de la masa suspendida. 
+            \item Balance de fuerzas: Este tipo de acelerómetro consiste en un detector de posición, un amplificador y un sistema electromecánico de posicionamiento. El sistema convierte una fuerza mecánica en una corriente proporcional que se convierte en una fuerza en dirección contraria para contrarrestar el movimiento de la masa suspendida. 
             
             El detector de posición registra la posición de una masa acoplada al generador de fuerza. Un cambio inducido externamente en la posición de la masa resulta en una combinación de la salida del detector de posición y del amplificador de tal forma que el generador de fuerza o motor de torque lleve la masa de vuelta a su posición original. La salida del sensor es una medida de la corriente a través del generador de fuerza o motor, siendo esta corriente proporcional a la fuerza de restauración que es igual a la fuerza de entrada a través de la masa calibrada.
 
@@ -701,7 +701,7 @@ El monitoreo se refiere a la observación continua de un proceso, medición o me
 
 \subsection{Características y conceptos básicos}
 
-Un sistema de comunicaciones inalámbrico es un sistema de transmisión de información que utiliza ondas electromagnéticas para transmitir datos sin la necesidad de cables físicos. En lugar de utilizar conexiones alámbricas, se emplean tecnologías de radio, microondas, infrarrojos u otras frecuencias electromagnéticas para la transmisión de datos de manera inalámbrica. Los elementos principales de un sistema de comunicaciones se describen a continuación:
+Un sistema de comunicaciones inalámbrico es un sistema de transmisión de información que utiliza ondas electromagnéticas para transmitir datos sin la necesidad de cables físicos. En lugar de utilizar conexiones cableadas, se emplean tecnologías de radio, microondas, infrarrojos u otras frecuencias electromagnéticas para la transmisión de datos de manera inalámbrica. Los elementos principales de un sistema de comunicaciones se describen a continuación:
 
 \begin{itemize}
     \item Transmisor: Se refiere al dispositivo o sistema que se encarga de convertir una señal o información en una forma adecuada para su transmisión a través de un medio de comunicación. El transmisor realiza procesos de modulación y amplificación de la señal para adaptarla a las características del canal de transmisión del sistema.
@@ -719,7 +719,7 @@ Un sistema de comunicaciones inalámbrico es un sistema de transmisión de infor
 \subsection{Protocolos de comunicación para distancias cortas}
 
 \begin{itemize}
-    \item WiFi (\textit{Wireless Fidelity}): Es el protocolo de comunicación inalámbrica más popular. Consiste en una tecnología inalámbrica que hace uso del estandar 802.11 del IEEE a través de frecuencias como 2.4 GHz y 5 GHz. Suele tener un rango entre 20 y 40 metros y se caracteriza por velocidades de transmisión muy altas, de hasta 600 Mbps.
+    \item WiFi (\textit{Wireless Fidelity}): Es el protocolo de comunicación inalámbrica más popular. Consiste en una tecnología inalámbrica que hace uso del estándar 802.11 del IEEE a través de frecuencias como 2.4 GHz y 5 GHz. Suele tener un rango entre 20 y 40 metros y se caracteriza por velocidades de transmisión muy altas, de hasta 600 Mbps.
     
     \item Bluetooth: Uno de los medios de comunicación más utilizados en la actualidad. Bluetooth es una tecnología utilizada para el intercambio de datos a distancias cortas (con un rango entre 50 y 100 metros) que hace uso de frecuencias entre 2.4 a 2.485 GHz. Tiene una velocidad máxima de 1 Mbps y es ampliamente utilizado para transferencia de datos entre dispositivos móviles.
     
@@ -761,7 +761,7 @@ Esta tecnología fue desarrollada en Francia en el año 2012 por la empresa fran
 
 El récord mundial para una transmisión LoRa es de 832 km, logrado por Thomas Telkamp en la banda EU868 utilizando 25 mW / 14 dBm \citep{montagny2021lora}.
 
-Suelen confundirse los términos LoRa y LoRaWAN (Long Range Wide Area Network). LoRa se refiere al tipo de modulación mientras que LoraWAN es una extensión del protocolo LoRa que da la capacidad de conectar los dispositivos a un servidor para servir de interfaz con el usuario final. Puede definirse LoRaWAN como una arquitecturade red que consta de dispositivos finales, gateways y servidores.
+Suelen confundirse los términos LoRa y LoRaWAN (Long Range Wide Area Network). LoRa se refiere al tipo de modulación mientras que LoraWAN es una extensión del protocolo LoRa que da la capacidad de conectar los dispositivos a un servidor para servir de interfaz con el usuario final. Puede definirse LoRaWAN como una arquitectura de red que consta de dispositivos finales, gateways y servidores.
 
 \begin{itemize}
     \item Funcionamiento: LoRa utiliza una técnica de modulación de espectro ensanchado llamada modulación de espectro ensanchado de baja potencia (CSS, por sus siglas en inglés). Esta técnica permite que las señales de radio se propaguen a distancias más largas y atraviesen obstáculos, lo que proporciona una mayor cobertura en comparación con otras tecnologías inalámbricas.
@@ -771,7 +771,7 @@ Suelen confundirse los términos LoRa y LoRaWAN (Long Range Wide Area Network). 
     \begin{figure}[H]
         \centering
         \includegraphics[width = 0.7\textwidth]{imagenes/cap1_marcoteo/ChripSignal.png}
-        \caption{Señal chirp utilizada para la tranmisión CSS \citep{aloufi2020hybrid}.}
+        \caption{Señal chirp utilizada para la transmisión CSS \citep{aloufi2020hybrid}.}
         \label{fig:chirp}
     \end{figure}
 
@@ -834,7 +834,7 @@ Suelen confundirse los términos LoRa y LoRaWAN (Long Range Wide Area Network). 
     \item Tasa de codificación (CR): En LoRa, se utiliza la codificación de corrección de errores de tipo ``\textit{forward error correction}'' (FEC), que permite detectar y corregir errores en la recepción de los datos. El coding rate especifica la cantidad de bits redundantes que se agregan a los datos para mejorar la confiabilidad de la comunicación. En el caso de un $CR = 4 / 8$, 8 bits son transmitidos mientras que solo 4 bits contienen información útil.
     
     
-    \item Consumo de energía: El protocolo se caracteriza por tener un bajo consumo de energía, permitiendo ser empleado en dispositivos a baterías para envío de datos periódicos. Esto se traduce en velocidades bajas de tranmisión y cargas útiles (\textit{payloads}) menores a los encontrados en otras tecnologías, sin embargo, la relación entre las distancias largas a cubrir y los algoritmos de detección permiten que para ciertas aplicaciones este protocolo sea el ideal, razón por la cual se ha convertido en uno de los más utilizados en años recientes.
+    \item Consumo de energía: El protocolo se caracteriza por tener un bajo consumo de energía, permitiendo ser empleado en dispositivos a baterías para envío de datos periódicos. Esto se traduce en velocidades bajas de transmisión y cargas útiles (\textit{payloads}) menores a los encontrados en otras tecnologías, sin embargo, la relación entre las distancias largas a cubrir y los algoritmos de detección permiten que para ciertas aplicaciones este protocolo sea el ideal, razón por la cual se ha convertido en uno de los más utilizados en años recientes.
 \end{itemize}
 
 \section{Procesamiento digital de señales:}
@@ -845,18 +845,16 @@ En gran cantidad de aplicaciones, los procesadores analógicos están siendo ree
 
 En el contexto de SHM, el DSP es necesario una vez los datos fueron adquiridos en campo, siendo esta herramienta la que permite realizar un estudio exhaustivo de las señales adquiridas por los sensores en el dominio de la frecuencia, siendo este estudio uno de los más importantes y utilizados en esta área.
 
-\subsection{Estudio en el dominio de la frecuencia} El estudio de señales en el dominio de la frecuencia se remonta al siglo XIX y está estrechamente relacionado con los trabajos del matemático francés Jean-Baptiste Joseph Fourier. Desde entonces, el impacto que ha tenido en la ingeniería y las ciencias es notable. En nuestro día a día, muchos de los sistemas de uso diaro hacen uso, de alguna forma u otra, del concepto inicial planteado por Fourier. 
+\subsection{Estudio en el dominio de la frecuencia} El estudio de señales en el dominio de la frecuencia se remonta al siglo XIX y está estrechamente relacionado con los trabajos del matemático francés Jean-Baptiste Joseph Fourier. Desde entonces, el impacto que ha tenido en la ingeniería y las ciencias es notable. En nuestro día a día, muchos de los sistemas de uso diario hacen uso, de alguna forma u otra, del concepto inicial planteado por Fourier. 
 
 En el SHM, el análisis de frecuencia también desempeña un papel importante. En el monitoreo de salud estructural se utilizan técnicas de análisis de frecuencia, como la transformada de Fourier, para identificar patrones y características de frecuencia en las señales registradas por los sensores. Esto permite detectar cambios en las propiedades dinámicas de la estructura, como frecuencias naturales, modos de vibración, y cambios en la rigidez o la masa.
 
 Como se planteó anteriormente, al estudiar el dominio de la frecuencia en el SHM, se pueden identificar patrones anómalos, compararlos con datos de referencia y tomar medidas preventivas o correctivas para garantizar la integridad y la seguridad de la estructura.
 
-Los análisis de vibración suelen analizarse utilizando la Transformada Rápida de Fourier (FFT por sus siglas en inglés), un algoritmo computacional que ha permitido hacer uso de la Transformada de Fourier en todo tipo de aplicaciones. Para entender la FFT, es necesario definir el desarrollo matemático de la Transformada de Fourier:
-
-% When we are dealing with random signal, normally we will use Power Spectrum Density (PSD). For these types of post processing, we may want to properly set frequency resolution, windowing type, averaging, etc to be able to obtain meaningful result. For even deeper analysis, we can go for Frequency Response Function (FRF/Transmissibility) or even Waterfall (Order Tracking) analysis. By doing this, we may be able to see the dynamic characteristic of our structure (resonance, damping, Q factor, etc). For short duration transient shock pulse, sometimes we want to use Shock Response Spectrum (SRS) to check the frequency content. For fatigue analysis, especially for random signal, we can perform rainflow counting analysis. Combining this with S-N fatigue curve, we may be able to calculate the fatigue damage.
+Los análisis de vibración suelen analizarse utilizando la Transformada Rápida de Fourier (FFT por sus siglas en inglés), un algoritmo computacional que ha permitido hacer uso de la Transformada de Fourier en todo tipo de aplicaciones. Para entender la FFT, es necesario definir el desarrollo matemático de la Transformada de Fourier.
 
 \subsection{Transformada de Fourier}
-Es una herramienta matemática utilizada para descomponer una función en sus componentes de frecuencia. Permite analizar una señal en el dominio de la frecuencia y determinar las diferentes frecuencias que la componen. Se ha convertido en una de las principales herramientas para resolver muchos desfíos de la comunidad científica, siendo su aplicación más conocida en el análisis de sistemas lineales invariantes en el tiempo. Se define matemáticamente como sigue:
+Es una herramienta matemática utilizada para descomponer una función en sus componentes de frecuencia. Permite analizar una señal en el dominio de la frecuencia y determinar las diferentes frecuencias que la componen. Se ha convertido en una de las principales herramientas para resolver muchos desafíos de la comunidad científica, siendo su aplicación más conocida en el análisis de sistemas lineales invariantes en el tiempo. Se define matemáticamente como sigue:
 
 \begin{equation}
     F(k) = \int_{-\infty}^{\infty} f(x) e^{-2\pi i k x} dx
@@ -891,7 +889,7 @@ Donde:
     \item X[k] = Muestra ``k'' de la transformada discreta de Fourier (DFT).
     \item x[n] = Muestra ``n'' de la señal de entrada.
     \item N = Cantidad de muestras.
-    \item j = Unidad imaginaria
+    \item j = Unidad imaginaria.
     \item $e$ = base del logaritmo natural.
 \end{itemize}
 

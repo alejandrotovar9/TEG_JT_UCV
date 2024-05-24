@@ -1,22 +1,29 @@
 
-En el siguiente capítulo se presentan las pruebas y los resultados obtenidos a partir de la metodología descrita en el capítulo anterior. Se presentan las pruebas preliminares de comunicaciones para determinar las características óptimas del canal, las pruebas para la estimación de la inclinación que permitieron escoger el método de estimación apropiado y finalmente las pruebas de funcionamiento del prototipo.
+En el siguiente capítulo se presentan las pruebas y sus resultados obtenidos aplicando la metodología descrita en el capítulo 3. Se presentan las pruebas de comunicaciones inalámbricas para determinar las características del canal, las pruebas para la estimación de la inclinación y finalmente las pruebas de funcionamiento del prototipo.
 
 \section{Pruebas de comunicaciones}
 
+Con el hardware seleccionado en la sección \ref{sec:componentes}, se realizaron una serie de pruebas de los módulos de comunicación inalámbrica para alcanzar mayor velocidad de transmisión y la menor pérdida de información.
 
-
-Una vez escogido el hardware propuesto en la sección \ref{sec:componentes}, se llevaron a cabo una serie de pruebas  para comprobar el funcionamiento de los módulos de comunicaciones y para evaluar las caracacterísticas más adecuadas para el canal de comunicaciones. 
-
-Como se definió en el apartado \ref{sec:protocololora}, el protocolo LoRa implementado en el módulo Ra-02 de Ai-Thinker requiere fijar el valor de los siguientes parámetros:
+El protocolo LoRa implementado en el módulo Ra-02 de Ai-Thinker, que fue descrito en el apartado \ref{sec:protocololora}, requiere fijar el valor de los siguientes parámetros de comunicaciones:
 
 \begin{itemize}
     \item Factor de propagación.
     \item Ancho de banda.
-    \item Potencia.
-    \item Tasa de codificación.
+    \item Período de envío de paquetes.
 \end{itemize}
 
-La prueba consistió en el envío de un paquete de bytes a una distancia de aproximadamente 115 metros, sin línea de vista y con obstáculos de acero y concreto, como se observa en el mapa de la figura \ref{fig:mapalora}.
+En primer lugar se escogieron los parámetros iniciales del canal. Se fijaron los siguientes:
+
+\begin{itemize}
+    \item Frecuencia de operación: 433 MHz.
+    \item Tasa de codificación: 4/8.
+    \item Potencia: 10 dBm.
+    \item Longitud del preámbulo: 8 bytes.
+    \item Tamaño de la carga útil (\textit{payload}): 128 bytes.
+\end{itemize}
+
+La prueba consistió en el envío de un paquete de bytes a una distancia de aproximadamente 115 metros, con obstáculos de acero y concreto (sin línea de vista directa), como se puede observar en el mapa de la figura \ref{fig:mapalora}.
 
 \begin{figure}[H]
     \centering
@@ -25,19 +32,11 @@ La prueba consistió en el envío de un paquete de bytes a una distancia de apro
     \label{fig:mapalora}
 \end{figure}
 
-Se modificaron los parámetros del canal y se midió la tasa de paquetes con errores o paquetes corruptos en el receptor. Se realizaron pruebas con los siguientes parámetros fijos:
+Las pruebas se realizaron haciendo uso del módulo Ra-02 de Ai-Thinker, el cual se conectó a un microcontrolador ESP32, ambos escogido en el capítulo 3. En el microcontrolador se implementaron rutinas de envío y recepción de datos mediante rutinas de interrupción (ISR, por sus siglas en inglés).
 
-\begin{itemize}
-    \item Frecuencia de operación: 433 MHz.
-    \item Tasa de codificación:
-    \item Potencia: 10 dBm.
-    \item Longitud del preámbulo: 8 bytes.
-    \item Tamaño de la carga útil (payload): 128 bytes.
-\end{itemize}
+% Los parámetros que se fijaron inicialmente se confirmaron tras pruebas preliminares en las cuales se observó que para \textit{payloads} mayores a 128 bytes el porcentaje de paquetes cuyo CRC era erróneo (data corrupta) aumentaba considerablemente, siendo 128 bytes un valor que disminuía esta proporción. 
 
-Las pruebas se realizaron haciendo uso del módulo Ra-02 de Ai-Thinker, el cual se conectó a un microcontrolador ESP32. En el microcontrolador se implementaron rutinas de envío y recepción de datos medianto rutinas de interrupción (ISR por sus siglas en inglés).
-
-Estos parámetros son recomendados por el fabricante del módulo y se mantuvieron constantes durante las pruebas. Estos se confirmaron tras pruebas preliminares en las cuales se observó que para \textit{payloads} mayores a 128 bytes el porcentaje de paquetes cuyo CRC era erróneo (data corrupta) aumentaba considerablemente, siendo 128 bytes un valor que disminuía esta proporción. Los parámetros que se modificaron fueron el factor de propagación, el ancho de banda y el período de envío entre paquetes. Los resultados de las pruebas se presentan en la tabla \ref{tab:resultadoslora}.
+Los parámetros que se modificaron fueron el factor de propagación, el ancho de banda y el período de envío entre paquetes. Los resultados de las pruebas se presentan en la tabla \ref{tab:resultadoslora}.
 
 % Please add the following required packages to your document preamble:
 % \usepackage{graphicx}
@@ -50,13 +49,13 @@ Estos parámetros son recomendados por el fabricante del módulo y se mantuviero
     \hline
     \textbf{Configuración} & \textbf{F. de Propagación} & \textbf{Ancho de banda} & \textbf{Período} & \textbf{Tasa de paquetes perdidos} \\ \hline
     1 & 9 & 125 kHz & 500 ms & 105/500 \\ \hline
-    2 & \textbf{7} & 250 kHz & 150 ms & 1/500 \\ \hline
+    2 & \textbf{7} & 250 kHz & 150 ms & 2/500 \\ \hline
     3 & \textbf{8} & 125 kHz & 150 ms & 300/500 \\ \hline
     4 & \textbf{8} & 250 kHz & 500 ms & 2/500 \\ \hline
     5 & \textbf{8} & 250 kHz & 200 ms & Error de CRC \\ \hline
     6 & \textbf{7} & 250 kHz & 250 ms & 2/500 \\ \hline
     7 & \textbf{7} & 250 kHz & 200 ms & 2/500 \\ \hline
-    8 & \textbf{7} & 250 kHz & 150 ms & 2/500 \\ \hline
+    8 & \textbf{7} & 250 kHz & 150 ms & 1/500 \\ \hline
     9 & \textbf{7} & 250 kHz & 100 ms & Error de CRC \\ \hline
     \end{tabular}%
     }
@@ -74,56 +73,56 @@ Para escoger el método de estimación de ángulos, se compararon los siguientes
     \item Filtro de Madgwick.
 \end{itemize}
 
- Para observar el comportamiento de cada método, se observaron los resultados en un graficador de datos seriales disponible de forma libre, llamado \textit{TelePlot}, creado por Alexander Brehmer. Este funciona como extensión a Visual Studio Code y permite graficar los datos provenientes del puerto serial escogido a una velocidad de transmisión fija. Se realizaron pruebas con cada método y se compararon los resultados obtenidos. 
+ Para evaluar el desempeño de cada método, se observaron los resultados en un graficador de datos seriales disponible de forma libre, creado por Alexander Brehmer, llamado \textit{TelePlot}, el cual puede observarse en la figura \ref{fig:teleplot}. Este funciona como una extensión de Visual Studio Code y permite graficar los datos provenientes del puerto serial a una velocidad de transmisión fija. Se realizaron pruebas con cada método y se compararon gráficamente los resultados obtenidos. 
 
  \begin{figure}[H]
     \centering
-    \includegraphics[width = 0.8\textwidth]{imagenes/cap3_resultados/Pruebas ACL/Inclinacion/Comparacion entre Metodo1 (ACL) y Metodo 2 (Kalman) ante vibraciones.png}
+    \includegraphics[width = \textwidth]{imagenes/cap3_resultados/Pruebas ACL/Inclinacion/Comparacion entre Metodo1 (ACL) y Metodo 2 (Kalman) ante vibraciones.png}
     \caption{Entorno TelePlot.}
     \label{fig:teleplot}
 \end{figure}
 
-Se realizaron pruebas ante vibración ambiental, ante vibraciones forzadas como golpes y ante movimientos sostenidos para ver el cambio en el ángulo ejecutando los 3 algoritmos al mismo tiempo y haciendo uso del acelerómetro de 9 grados de libertad MPU9250 de Invensense. 
+Se realizaron pruebas ante vibración ambiental, vibraciones forzadas como golpes y finalmente movimientos sostenidos para poder observar el cambio en el ángulo, todas estas mientras se ejecutaban los 3 algoritmos al mismo tiempo. Las distintas pruebas se realizaron haciendo uso del acelerómetro de 9 grados de libertad MPU9250 de Invensense escogido previamente en el capítulo 3. 
 
 Los resultados gráficos de las pruebas ante vibración ambiental se presentan en la figura \ref{fig:pruebasinclinacion}.
 
  \begin{figure}[H]
     \centering
-    \includegraphics[width = 0.8\textwidth]{imagenes/cap3_resultados/Pruebas ACL/Inclinacion/PruebaInclinacion.png}
+    \includegraphics[width = \textwidth]{imagenes/cap3_resultados/Pruebas ACL/Inclinacion/PruebaInclinacion.png}
     \caption{Comparación entre métodos de estimación de inclinación en vibración ambiental.}
     \label{fig:pruebasinclinacion}
 \end{figure}
 
-Al golpear y soplar cerca del sensor, se obtuvieron los siguientes resultados:
+Al golpear y soplar cerca del sensor, se obtuvieron los resultados que pueden observarse en la figura \ref{fig:pruebasinclinacion2}:
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width = 0.9\textwidth]{imagenes/cap3_resultados/Pruebas ACL/Inclinacion/Comparacion M1 M2 M3 (Maggwick) ante vibraciones.png}
+    \includegraphics[width = \textwidth]{imagenes/cap3_resultados/Pruebas ACL/Inclinacion/Comparacion M1 M2 M3 (Maggwick) ante vibraciones.png}
     \caption{Comparación entre métodos de estimación de inclinación ante vibraciones.}
     \label{fig:pruebasinclinacion2}
 \end{figure}
 
 
-Por último, se observó el desempeño de los algoritmos ante movimientos sostenidos que cambiaran el ángulo en el eje de interés:
+Por último, se observó el desempeño de los algoritmos ante movimientos sostenidos que cambiaran el ángulo en el eje de interés. Los resultados obtenidos pueden observarse en la figura \ref{fig:pruebasinclinacion3}:
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width = 0.8\textwidth]{imagenes/cap3_resultados/Pruebas ACL/Inclinacion/Comparacion M1 M2 M3 (Maggwick) ante movimiento aleatorios.png}
+    \includegraphics[width = \textwidth]{imagenes/cap3_resultados/Pruebas ACL/Inclinacion/Comparacion M1 M2 M3 (Maggwick) ante movimiento aleatorios.png}
     \caption{Comparación entre métodos de estimación de inclinación ante movimientos sostenidos.}
     \label{fig:pruebasinclinacion3}
 \end{figure}
 
-Se observa claramente en las figuras \ref{fig:pruebasinclinacion}, \ref{fig:pruebasinclinacion2} y \ref{fig:pruebasinclinacion3} que el filtro de Madgwick es el que presenta el mejor desempeño ante vibraciones, golpes y movimientos sostenidos, ya que suaviza las variaciones bruscas en el ángulo. De igual forma, ante vibración ambiental se observa que el filtro de Madgwick es el que presenta un comportamiento más estable, viéndose incluso la resolución en términos de LSB (\textit{Least Significant Bit}) del acelerómetro.
+Se observa claramente en las figuras \ref{fig:pruebasinclinacion}, \ref{fig:pruebasinclinacion2} y \ref{fig:pruebasinclinacion3} que el filtro de Madgwick es el que presenta el mejor desempeño ante vibraciones, golpes y movimientos sostenidos, ya que suaviza las variaciones bruscas. De igual forma, ante vibración ambiental se observa que el filtro de Madgwick es el que presenta un comportamiento más estable y con menor ruido, viéndose incluso la resolución en términos de LSB (\textit{Least Significant Bit}) del acelerómetro.
 
-Por lo tanto, se escogió el filtro de Madgwick para la estimación de inclinación en el prototipo.
+Con base en estos resultados, se escogió el filtro de Madgwick para la estimación de inclinación en el sensor inteligente.
 
 \section{Pruebas de funcionamiento del prototipo}
 
 Para probar el funcionamiento del prototipo y comparar los resultados obtenidos con un equipo comercial, se llevó a cabo un estudio de vibración sobre una estructura de acero ubicada en el Instituto de Materiales y Modelos Estructurales (IMME) de la Universidad Central de Venezuela. 
 
-La estructura es de tipo aporticada, con una altura de 2,20 metros y una longitud de 2 metros. Cuenta con 4 columnas de acero y distintas vigas con perfil "C" o de canal. El techo de la estructura se encuentra en voladizo, es decir, no está soportado por ninguna columna. La estructura se encuentra en el edificio norte del IMME y se suele utilizar para hacer ensayos de permeabilidad del concreto. Se escogió esta estructura debido a la facilidad para la instrumentación de la misma para realizar las pruebas, siendo esta de poca altura y estando ubicada en un espacio abierto y de fácil acceso por el personal del IMME.
+La estructura es de tipo aporticada, con una altura de 2,20 metros y una longitud de 2 metros. Cuenta con 4 columnas de acero y distintas vigas con perfil "C" o de canal. El techo de la estructura se encuentra en voladizo, es decir, no está soportado por ninguna columna en uno de sus extremos. La estructura se encuentra en el edificio norte del IMME y se suele utilizar para hacer ensayos de permeabilidad del concreto. Se escogió esta estructura debido a la facilidad para la instrumentación de la misma para realizar las pruebas, siendo esta de poca altura y estando ubicada en un espacio abierto y de fácil acceso por el personal del IMME.
 
-El equipo de medición utilizado para la comparación está basado en la tarjeta de adquisición de datos de \textit{National Instruments} PCI-6221, cuyas características se describen en la tabla \ref{tab:specs6221}, y que puede observarse en la figura  en conjunto con 
+El equipo de medición utilizado para ser usado como referencia está basado en la tarjeta de adquisición de datos de \textit{National Instruments} PCI-6221, cuyas características se describen en la tabla \ref{tab:specs6221}, y que puede observarse en la figura  \ref{fig:DAQ6221}. Para la conexión de los sensores se utilizó la tarjeta de conexiones SCB-68 de National Instruments, que se observa en la figura \ref{fig:SCB68}.
 
 %ESPECIFICACIONES DEL DAQ6221
 
@@ -186,10 +185,10 @@ Los sensores utilizados para el ensayo fueron acelerómetros de balance de fuerz
     Rango de escala completa & $\pm 1.0 g$ (.1, .25, .5 y 2 g opcionales) \\ \hline
     Frecuencia Natural & 50 Hz \\ \hline
     Amortiguamiento & 70\% \\ \hline
-    Salida & $\pm 2.5 V / 1 g$ \\ \hline
+    Salida & $\pm 2.5 V / 0.5 g$ \\ \hline
     Linealidad & Menos de 1\% \\ \hline
     Ruido (entre 0 - 50 Hz) & $\pm 2.5 \mu V$ \\ \hline
-    Rango dinámico & 130dB de 0.01 a 50Hz \\ \hline
+    Rango dinámico & 130dB de 0.01 a 50 Hz \\ \hline
     Alimentación & $\pm 12 Vdc$ (2.5 mA por eje) \\ \hline
     \end{tabular}%
     }
@@ -199,7 +198,29 @@ Este equipo es el que se utiliza comúnmente en el IMME para realizar ensayos de
 
 El programa para la adquisición de los datos fue diseñado en LabVIEW 8.20 (Versión 2006), el cual es un software de programación gráfica desarrollado por National Instruments. Este programa se encarga de adquirir los datos de los sensores, procesarlos y graficarlos en tiempo real.
 
-Para fijar los sensores se utilizó yeso, como es común en los ensayos de vibración para acoplar los sensores a la estructura.
+Por su parte, el sensor inteligente contaba con las características que pueden observarse en la tabla \ref{tab:caracSmartSensor}:
+
+% Please add the following required packages to your document preamble:
+% \usepackage{graphicx}
+\begin{table}[H]
+    \centering
+    \caption{Características de instrumentación del sensor inteligente.}
+    \label{tab:caracSmartSensor}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|c|c|}
+    \hline
+    \textbf{Parámetro} & \textbf{Valor} \\ \hline
+    Frecuencia de muestreo (aceleración) & 200 Hz \\ \hline
+    Frecuencia de muestreo (temperatura, humedad e inclinación) & 5 Hz \\ \hline
+    Rango de aceleración (MPU6050) & $\pm 2 g$ \\ \hline
+    Rango de aceleración (MPU9250) & $\pm 2 g$ \\ \hline
+    Rango de giróscopo (MPU9250) & $\pm 250 ^\circ / s$ \\ \hline
+    Rango de magnetómetro (MPU9250) & $\pm 4800 \mu T$ \\ \hline
+    \end{tabular}%
+    }
+    \end{table}
+
+Para fijar los sensores a la estructura se utilizó yeso, como es común en los ensayos de vibración para acoplar los sensores a la estructura.
 
 Los ensayos se dividieron en 3 partes:
 \begin{itemize}
@@ -208,7 +229,7 @@ Los ensayos se dividieron en 3 partes:
     \item Vibración libre por condición inicial.
 \end{itemize}
 
-La configuración utilizada se puede observar en las figuras \ref{fig:configuracionensayofrontal} y \ref{fig:configuracionensayoplanta} .
+La configuración utilizada se puede observar en las figuras \ref{fig:configuracionensayofrontal} y \ref{fig:configuracionensayoplanta}.
 
 \begin{figure}[H]
     \centering
@@ -225,7 +246,7 @@ La configuración utilizada se puede observar en las figuras \ref{fig:configurac
 \end{figure}
 
 
-Para comparar los resultados obtenidos con el prototipo y con el equipo comercial, se realizaron las pruebas en paralelo, es decir, se colocaron los sensores del prototipo y del equipo comercial en la estructura y se realizaron las pruebas al mismo tiempo. La instrumentación puede verse en las figuras \ref{fig:inst1} y \ref{fig:inst2}. Los resultados obtenidos se compararon en términos de la respuesta en frecuencia y la respuesta en el tiempo.
+Para comparar los resultados obtenidos con el prototipo y con el equipo comercial, se realizaron las pruebas en paralelo, es decir, se colocaron los sensores del prototipo y del equipo comercial en la estructura y se ejecutaron las pruebas al mismo tiempo. La instrumentación puede verse en las figuras \ref{fig:inst1} y \ref{fig:inst2}. Los resultados obtenidos se compararon en términos de la respuesta en frecuencia y la respuesta en el tiempo.
 
 
 \begin{figure}[H]
@@ -237,7 +258,7 @@ Para comparar los resultados obtenidos con el prototipo y con el equipo comercia
     \label{fig:inst}
 \end{figure}
 
-Durante el ensayo, el sensor inteligente estaba siendo controlado y monitoreado desde la estación base ubicada a pocos metros de la estructura. En esta estación base se encontraba el computador que , a través de una interfaz gráfica, permitía visualizar los datos en y guardarlos en un archivo de texto para su posterior análisis. El diseño de la interfaz gráfica de usuario puede observarse en las figuras \ref{fig:interfaz1} y \ref{fig:interfaz2}. La programación y características principales de esta interfaz fueron descritas en la sección \ref{subsec:softwaredesc}.
+Durante el ensayo, el sensor inteligente estaba siendo controlado y monitoreado desde la estación base ubicada a pocos metros de la estructura. En esta estación base se encontraba el computador que, a través de una interfaz gráfica, permitía visualizar los datos obtenidos y guardarlos en un archivo de texto para su posterior análisis. El diseño de la interfaz gráfica de usuario puede observarse en las figuras \ref{fig:interfaz1} y \ref{fig:interfaz2}. La programación y características principales de esta interfaz fueron descritas en la sección \ref{subsec:softwaredesc}.
 
 \begin{figure}[H]
     \centering
@@ -253,9 +274,9 @@ Durante el ensayo, el sensor inteligente estaba siendo controlado y monitoreado 
     \label{fig:interfaz2}
 \end{figure}
 
-Para el procesamiento de los datos obtenidos haciendo uso de la tarjeta de adquisición de datos PCI-6221 se implementó un código en MATLAB, donde, de forma similar a la interfaz de la figura \ref{fig:interfaz1}, se grafican los datos en tiempo real y el espectro en frecuencia correspondiente.
+Para el procesamiento de los datos obtenidos haciendo uso de la tarjeta de adquisición de datos PCI-6221 se implementó un código en MATLAB, donde, de forma similar a la interfaz de la figura \ref{fig:interfaz1}, se graficaron los datos obtenidos y el espectro en frecuencia correspondiente.
 
-Los datos se importaron directamente del archivo \textit{.lvm} generado por LabView y fueron preprocesados con la interfaz de MATLAB para importar datos de archivos externos, como se puede observar en la figura \ref{fig:datosmatlab}.
+Los datos se importaron directamente del archivo \textit{.lvm} generado en el entorno LabView y fueron pre-procesados con la interfaz de MATLAB para importar datos de archivos externos, como se puede observar en la figura \ref{fig:datosmatlab}.
 
 \begin{figure}[H]
     \centering
@@ -263,6 +284,8 @@ Los datos se importaron directamente del archivo \textit{.lvm} generado por LabV
     \caption{Ventana de la interfaz gráfica de MATLAB para importar los datos obtenidos mediante LabVIEW.}
     \label{fig:datosmatlab}
 \end{figure}
+
+Una vez se procesaron los registros obtenidos por cada equipo de medición, se compararon las gráficas obtenidas en tiempo y en el dominio de la frecuencia, observando principalmente los picos en frecuencia obtenidos mediante el método de \textit{peak picking}.
 
 Las características de instrumentación para ambos sistemas fueron las mostradas en la tabla \ref{tab:comparacionsist}:
 % Please add the following required packages to your document preamble:
@@ -319,7 +342,9 @@ El registro obtenido para este mismo impacto haciendo uso del sensor inteligente
     \label{fig:ventana2}
 \end{figure}
 
-Al comparar los espectros en frecuencia obtenidos en las figuras \ref{fig:DAQham2} y \ref{fig:impactoGUI} se observa que las frecuencias de vibración obtenidas se corresponden entre ambos sistemas de medición, siendo el error entre ambos picos en frecuencia de 0.1 Hz.
+Al observar las figuras \ref{fig:impactoGUI} y \ref{fig:DAQham1}, se observan gráficas de aceleración en tiempo muy similares. Sin embargo, los valores de aceleración medidos por el sensor inteligente en el momento del impacto son mayores a los medidos por la tarjeta PCI-6221, lo cual puede deberse a la sensibilidad de los sensores utilizados en el sensor inteligente.
+
+Al comparar los espectros en frecuencia obtenidos en las figuras \ref{fig:DAQham2} y \ref{fig:impactoGUI} se observa que las frecuencias de vibración obtenidas se corresponden entre ambos sistemas de medición, siendo el error entre ambos picos en frecuencia de 0.1 Hz para el pico de mayor amplitud en el eje ``Z'', correspondiendo este eje a la dirección Este-Oeste del sistema, también llamada ``dirección corta'' por las características geométricas de esta estructura en particular.
 
 Por otro lado, se impactó el sistema sin los lastres en la dirección Norte-Sur, obteniéndose la respuesta observada en la figura \ref{fig:DAQHammerNS} según el sistema basado en la tarjeta PCI-6221:
 
@@ -341,7 +366,7 @@ Por su parte, el sensor inteligente obtuvo la respuesta del sistema observada en
     \label{fig:impactoGUI_NS}
 \end{figure}
 
-En primer lugar, se observa la gran similitud entre ambas respuestas, siendo la frecuencia de vibración en la dirección larga de 4.6 Hz en ambos sistemas, con un error de 0.08Hz en este caso. Además, se comprueba que el peso influye en la respuesta en frecuencia, al observarse que la frecuencia de vibración en la dirección larga (que en este caso corresponde al eje y por la configuración de los acelerómetros), disminuye al agregarse los lastres, siendo de 4.6 Hz inicialmente, y cambiando a 3.9 Hz luego de agregar los lastres.
+En primer lugar, se observa la gran similitud entre ambas respuestas, siendo la frecuencia de vibración en la dirección larga de 4.6 Hz en ambos sistemas, con un error de 0.08 Hz en este caso. Además, se comprueba que el peso influye en la respuesta en frecuencia, al observarse que la frecuencia de vibración en la dirección larga (que en este caso corresponde al eje y por la configuración de los acelerómetros), disminuye al agregarse los lastres, siendo de 4.6 Hz inicialmente, y cambiando a 3.9 Hz luego de agregar los lastres.
 
 \subsection{Vibración libre por condición inicial}
 
@@ -369,7 +394,7 @@ Por su parte, la respuesta obtenida por el sensor inteligente durante este ensay
     \label{fig:libreGUI_SL}
 \end{figure}
 
-Al comparar los resultados obtenidos en el espectro en frecuencia usando ambos sistemas, como se ve en las figuras \ref{fig:libreGUI_SL} y \ref{fig:DAQlibreSL}, se observa la similitud entre el espectro en frecuencia del sistema basado en el sensor inteligente diseñado y el sistema comercial disponible en el IMME. En este caso, la diferencia entre la frecuencia natural del sistema en la dirección Norte-Sur obtenida por el sensor inteligente en comparación a la obtenida por la tarjeta PCI-6221 es de 0.09Hz, observándose además que el sensor inteligente mostró un comportamiento estable mientras que el sistema basado en la tarjeta de adquisición presenta problemas de deriva y picos indeseados que agregan componentes frecuenciales ajenas al sistema estructural, demostrándose así la confiabilidad del sensor inteligente.
+Al comparar los resultados obtenidos en el espectro en frecuencia usando ambos sistemas, como se observa en las figuras \ref{fig:libreGUI_SL} y \ref{fig:DAQlibreSL}, se puede notar la similitud entre el espectro en frecuencia del sistema basado en el sensor inteligente diseñado y el sistema comercial disponible en el IMME. En este caso, la diferencia entre la frecuencia natural del sistema en la dirección Norte-Sur obtenida por el sensor inteligente en comparación a la obtenida por la tarjeta PCI-6221 es de 0.09 Hz, observándose además que el sensor inteligente mostró un comportamiento estable mientras que el sistema basado en la tarjeta de adquisición presenta problemas de deriva y picos indeseados que agregan componentes frecuenciales ajenas al sistema estructural, demostrándose así la confiabilidad del sensor inteligente en campo.
 
 
 De igual forma, se ejecutó la misma prueba luego de añadir los lastres, obteniéndose los resultados mostrados en la figura \ref{fig:DAQlibreCL}:
@@ -383,7 +408,7 @@ De igual forma, se ejecutó la misma prueba luego de añadir los lastres, obteni
 \end{figure}
 
 
-Mientras que en la figura \ref{fig:libreGUI_CL} se observan los resultados arrojados por el sensor inteligente:
+Mientras que en la figura \ref{fig:libreGUI_CL} se pueden observar los resultados arrojados por el sensor inteligente:
 
 \begin{figure}[H]
     \centering
@@ -399,7 +424,7 @@ Al observar los resultados obtenidos en las figuras \ref{fig:libreGUI_CL} y \ref
 
 Este ensayo consistió en tomar registros de datos sin perturbar la estructura. Es decir, siendo esta excitada únicamente por factores naturales como el viento o el paso de personas.
 
-En primer lugar, se observa en las figuras \ref{fig:DAQamb1} y \ref{fig:DAQamb2} la respuesta en tiempo y el espectro en frecuencia del sistema ante vibración ambiental.
+En primer lugar, se puede observar en las figuras \ref{fig:DAQamb1} y \ref{fig:DAQamb2} la respuesta en tiempo y el espectro en frecuencia del sistema ante vibración ambiental. En la figura \ref{fig:DAQamb1} se observa la respuesta en tiempo del sistema ante vibración ambiental, es importante notar el nivel de los valores de aceleración medidos por los acelerómetros FBA11, encontrándose estos alrededor de $\pm 0.006 \frac{m}{s^2}$, esto es equivalente a aproximadamente $\pm 0.0006 g$.
 
 \begin{figure}[H]
     \centering
@@ -421,24 +446,43 @@ En la figura \ref{fig:ambientalGUI} se observa la interfaz gráfica diseñada pa
 
 Si bien los resultados obtenidos por vibración ambiental pueden verse por registro directamente en la interfaz, como se observa en la figura \ref{fig:ambientalGUI}, es conveniente concatenar varios archivos debido a la longitud de cada registro. Mientras mayor es el tamaño del registro, mayor resolución tendrá el espectro al tener más datos. Es decir, el $\Delta f$ mejora al aumentar la longitud de los registros.
 
-Al concatenar registros es necesario aventanar cada registro, usando alguna función de aventanamiento como las definidas en la sección \ref{sec:aventanamiento}, para que evitar que se introduzcan al espectro cambios bruscos producto de la concatenación de archivos. En la figura \ref{fig:concatenados3} se observa el resultado de concatenar 3 registros de vibración ambiental que fueron tomados de forma sucesiva mientras se tomó el registro con la tarjeta PCI-6221 registrado en la figura \ref{fig:DAQamb1}. Para esto, se implementó un código en Python capaz de concatenar 3 archivos, generando un registro continuo utilizando la ventana de Hanning.
+Al concatenar registros es necesario aventanar cada registro, usando alguna función de aventanamiento como las definidas en la sección \ref{sec:aventanamiento}, para evitar que se introduzcan al espectro cambios bruscos producto de la concatenación de archivos. En la figura \ref{fig:concatenados5} se observa el resultado de concatenar 5 registros de vibración ambiental que fueron tomados de forma sucesiva mientras se tomó el registro con la tarjeta PCI-6221 registrado en la figura \ref{fig:DAQamb1}. Para esto, se implementó un código en Python capaz de concatenar 5 archivos, generando un registro continuo utilizando la ventana de Hanning. El resultado de concatenar 5 archivos, de 1024 datos cada uno, se puede ver en la figura \ref{fig:concatenados5}.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width = \textwidth]{imagenes/cap3_resultados/Ensayos/AmplitudVibAmb2CONCATENADASMARTSENSOR.jpg}
+    \includegraphics[width = \textwidth]{imagenes/cap3_resultados/Ensayos/AmplitudVibAmb5CONCATENADASMARTSENSOR.jpg}
     \caption{Forma del registro concatenado tras aventanamiento de Hanning utilizando Python.}
-    \label{fig:concatenados3}
+    \label{fig:concatenados5}
 \end{figure}
+
+De esta figura \ref{fig:concatenados5} se debe recalcar el nivel de vibración medido por el sensor en vibración ambiental, estando este entre $\pm 0.15 \frac{m}{s^2}$, esto es equivalente a aproximadamente $\pm 0.01 g$. De aquí se observa que el nivel de ruido del MPU6250 es considerablemente mayor al nivel de ruido de los acelerómetros FBA11, siendo esta característica clave a la hora de escoger un sensor para este tipo de aplicaciones. En este caso, el uso de los sensores FBA11 se usó como referencia para determinar la calidad de los registros obtenidos por el sensor inteligente como sistema.
 
 Una vez concatenados, se procedió a ejecutar la FFT sobre los datos, obteniéndose el espectro de la figura \ref{fig:espectroconc}:
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width = \textwidth]{imagenes/cap3_resultados/Ensayos/VibAmb2EspectroCONC.jpg}
+    \includegraphics[width = \textwidth]{imagenes/cap3_resultados/Ensayos/VibAmb5EspectroCONC.jpg}
     \caption{Forma del espectro del registro concatenado.}
     \label{fig:espectroconc}
 \end{figure}
 
+El espectro de la figura \ref{fig:espectroconc} muestra que el nivel de ruido del Eje Z no permite visualizar con claridad el resto de las componentes frecuenciales. Este nivel de ruido elevado en el Eje Z se debe a que el sensor, por como se encontraba conectado a la placa de prototipos, estaba sujeto a vibraciones pequeñas en la dirección Z. Con el fin de visualizar el espectro en los ejes ``X'' y ``Y'', se graficaron estos espectros por separado, obteniéndose los resultados mostrados en las figuras \ref{fig:espectroconcX} y \ref{fig:espectroconcY}:
 
 
-Al comparar las figuras \ref{fig:espectroconc} y \ref{fig:DAQamb2} se observa que el espectro obtenido mediante el sensor inteligente no contiene los picos observados en el espectro obtenido por la tarjeta PCI-6221. Esto puede deberse al pobre acoplamiento entre el sensor inteligente y la estructura al estar este sobre una placa de prototipos, la cual a su vez se unió al sistema con yeso, evidenciándose en amplitudes bajas. Si bien el registro de la figura \ref{fig:ambientalGUI} muestra el comportamiento esperado por un registro de vibración ambiental en tiempo, para que el sensor sea capaz de captar los leves movimientos de la estructura en vibración ambiental, este debe estar acoplado al sistema, como es el caso de los acelerómetros Kinemetrics. A pesar de obtener estas discrepancias entre ambos espectros, el bajo nivel de ruido presentado por el sensor inteligente en vibraciones ambientales y la facilidad para concatenar registros debido al formato del mismo lo proyecta como un buen candidato para tomar registros de vibraciones ambientales siempre y cuando este se encuentre firmemente acoplado al sistema en estudio.
+\begin{figure}[H]
+    \centering
+    \subfloat[Espectro en frecuencia del sistema ante vibración ambiental en el eje ``X'']{\includegraphics[width = \textwidth]{imagenes/cap3_resultados/Ensayos/VibAmb5EspectroCONC_SOLOX.jpg}\label{fig:espectroconcX}}
+    \hfill
+    \subfloat[Espectro en frecuencia del sistema ante vibración ambiental en el eje ``Y'']{\includegraphics[width = \textwidth]{imagenes/cap3_resultados/Ensayos/VibAmb5EspectroCONC_SOLOY.jpg}\label{fig:espectroconcY}}
+    \caption{Respuesta del sistema ante vibración ambiental en los ejes ``X'' y ``Y''}
+    \label{fig:espectrosxy}
+\end{figure}
+
+
+Al comparar las figuras \ref{fig:espectroconcY} y \ref{fig:DAQamb2} se observa que el espectro obtenido mediante el sensor inteligente contiene el pico en frecuencia correspondiente a la frecuencia natural de vibración en la dirección corta (Norte-Sur) de la estructura y este se corresponde al obtenido por la tarjeta PCI-6221. Sin embargo, el resto de la información en el espectro se encuentra en un nivel de ruido elevado, lo que dificulta la visualización de otras componentes frecuenciales, que sí son visibles en el espectro de la figura \ref{fig:DAQamb2}, obtenida por la tarjeta PCI-6221.
+
+AL observar los resultados de la figura \ref{{fig:espectroconcX}}, se observa un pico de alta frecuencia en el eje ``X'' correspondiente a 89.91 Hz. Esta frecuencia de vibración se encuentra en todos los registros tomados por el sensor inteligente, incluso los que se realizaron en pruebas preliminares de funcionamiento. Cabe la posibilidad de que esta frecuencia se deba a la posición en la que se encuentra el acelerómetro sobre el prototipo, estando esta simplemente apoyada sobre la base. 
+
+En principio, el desempeño de los sensores MPU6250 en vibraciones ambientales es aceptable, ya que es capaz de captar las vibraciones de la estructura en estudio. Sin embargo, el nivel de ruido en el eje ``Z'' es considerablemente mayor al nivel de ruido de los acelerómetros FBA11, lo que dificulta la visualización de otras componentes frecuenciales en el espectro. A pesar de esta limitación, el ruido presente en el espectro corresponde a ruido blanco, estando esta limitación asociada al acelerómetro, su fabricación y componentes internos, y no al sensor inteligente en sí.
+
+ Si bien el registro de la figura \ref{fig:ambientalGUI} muestra el comportamiento esperado por un registro de vibración ambiental en tiempo, para que el sensor sea capaz de captar los leves movimientos de la estructura en vibración ambiental, este debe estar bien acoplado al sistema y presentar bajos niveles de ruido, como es el caso de los acelerómetros FBA-11 de referencia. A pesar de estas discrepancias entre ambos espectros, el tipo de ruido presentado por el sensor en vibraciones ambientales y la facilidad para concatenar registros debido al formato del mismo, permitiendo aplicar técnicas de procesamiento de datos fuera de línea a los registros, lo proyectan como un buen candidato para tomar registros de vibraciones ambientales siempre y cuando este se encuentre firmemente acoplado al sistema en estudio y se escojan sensores con densidades espectrales de ruido aceptables.

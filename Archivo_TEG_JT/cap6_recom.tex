@@ -4,36 +4,46 @@
     \item Implementar múltiples sensores inteligentes y hacer uso de la fecha y hora exacta de registro para sincronizar los datos provenientes de los múltiples esclavos. 
     
     
-    \item Para comprobar que cambios en la rigidez del sistema se corresponden con cambios en la respuesta dinámica del mismo, y que estos cambios son detectados por el sensor inteligente, es conveniente realizar una prueba sobre un modelo a escala de una estructura, previamente caracterizada tomando en cuenta su modelo estático y los materiales que la componen, para ejecutar sobre esta ensayos de vibración a medida que se introduce daño en los elementos estructurales, pudiendo así caracterizar cómo este daño influye en la respuesta dinámica del sistema y permitiendo llevar un registro de estos cambios en el tiempo.
+    \item Para comprobar que los cambios introducidos en un sistema estructural controlado se corresponden con cambios en la respuesta dinámica del mismo, y que estos cambios son detectados por el sensor inteligente, es conveniente realizar una prueba sobre un modelo a escala de una estructura en un entorno controlado, previamente caracterizada tomando en cuenta su modelo estático y los materiales que la constituyen. Sobre esta estructura se pueden ejecutar ensayos de vibración a medida que se introducen cambios en los elementos estructurales, pudiendo así caracterizar cómo este cambio influye en la respuesta dinámica del sistema y permitiendo llevar un registro de estos cambios en el tiempo.
     
     
-    \item Se sugiere ejecutar ensayos periódicos sobre una estructura a escala en donde se puedan controlar las condiciones de temperatura y humedad relativa, además del daño inducido en el sistema. Este estudio permitiría caracterizar los cambios en la respuesta dinámica producto de las variables ambientales respecto a los que son consecuencia de cambios en la rigidez del sistema, siendo estos últimos los de mayor interés.
+    \item Se sugiere ejecutar ensayos periódicos sobre una estructura a escala en donde se puedan controlar las condiciones de temperatura y humedad relativa, además del cambio inducido en el sistema. Este estudio permitiría caracterizar los cambios en la respuesta dinámica producto de las variables ambientales respecto a los que son consecuencia de cambios en la rigidez del sistema, siendo estos últimos los de mayor interés.
+    
+    
+    \item Si bien en este trabajo de investigación se consideraron las variables de interés principales para el monitoreo de salud estructural, se recomienda evaluar la posibilidad de incorporar sensores de variables químicas y electroquímicas que pueden atentar en contra de la integridad de la estructura, como sensores de pH, potencial de corrosión, agentes gaseosos, entre otros. Por la escalabilidad del sistema, se pueden incorporar estos sensores en los sensores inteligentes, permitiendo tener un monitoreo más completo de la estructura.
+    
+    \item Hacer uso del Digital Motion Processing Unit de los módulos MPU9250 y MPU6050 para ver cómo se comparan respecto a los resultados obtenidos en cuanto a fusión de sensores se refiere.
  
- \item Implementar una solución distinta en estación base o buscar otra alternativa a MQTT, como por ejemplo HTTP. El cuello de botella en el envío de 2048 datos es en la estación base, ya que los datos sí se envían con éxito usando LoRa. El problema ocurre al intentar subir los datos usando MQTT al servidor-computador. El buffer del cliente MQTT utilizado por la librería \textit{PubSubClient} es limitado, y la misma no está diseñada para manejar desbordamiento del buffer, por lo que los datos son truncados de forma inesperada. Se debe implementar un manejo de excepción para este caso. 
+    \item Si bien el sensor MPU6250 permitió comprobar el correcto funcionamiento del diseño planteado, se recomienda hacer uso de un sensor cuyo nivel de ruido permita obtener registros de vibración ambiental de mejor calidad. Algunos acelerómetros de tecnología similar que presentan mejor comportamiento en bajas amplitudes y a baja frecuencia son el MMA8451 del fabricante NXP, el LSM6DSOX de STMicroelectronics y el ADXL355 de Analog Devices. Todos estos cuentan con un comportamiento en ruido menor a $120 \frac{\mu g}{\sqrt{Hz}}$ en el rango de frecuencia de interés.
+    
+    %126 microg/Hz
+    %70 mircog/Hz ST
+   %25 microg/Hz AD
+    
  
- \item Implementar la subida de paquetes MQTT uno a uno y luego reconstruir usando NodeRED para generar los arreglos individuales de aceleración.
+ \item Se sugiere implementar una solución alternativa en estación base a la tecnología MQTT, como por ejemplo HTTP. Las dificultades encontradas que limitaron el tamaño del registro surgen al intentar subir los datos usando MQTT al servidor-computador. El buffer del cliente MQTT utilizado por la librería \textit{PubSubClient} es limitado, y la misma no está diseñada para manejar desbordamiento del buffer, por lo que los datos son truncados de forma inesperada. Se sugiere implementar un manejo de excepción para este caso. 
  
- \item El modulo LoRa tiene pocas pérdidas de datos pero su velocidad no es la mejor, sin embargo el rango permite ubicar la estación base en un lugar seguro alejado de la estructura. Intentar utilizar otra red diferente de LoRa y enviar datos mientras se están adquiriendo. Las velocidades de Lora no son las mejores para esta topología, la red de 2.4 GHz que utilizan módulos como el nRF24L01 disminuye el rango pero permite alcanzar velocidades de transmisión mucho más alta. Si no se debe esperar a que se tome todo el registro para empezar a enviar, se evita tener que guardar el registro completo de forma temporal.
+%  \item Implementar la subida de paquetes MQTT uno a uno y luego reconstruir usando NodeRED para generar los arreglos individuales de aceleración.
  
- \item Hacer pórtatil el dispositivo para que pueda ser alimentado por baterías, posiblemente implementando alguna función de deepsleep del microcontrolador.
+ \item El módulo LoRa tiene pocas pérdidas de datos, pero su velocidad no es la mejor, sin embargo el rango permite ubicar la estación base en un lugar seguro alejado de la estructura. Intentar utilizar otra red diferente de LoRa y enviar datos mientras se están adquiriendo. Las velocidades de Lora no son las mejores para esta topología, la red de 2.4 GHz que utilizan módulos como el nRF24L01 disminuye el rango, más sin embargo, permite alcanzar velocidades de transmisión mucho más alta. Si no se debe esperar a que se tome todo el registro para empezar a enviar, se evita tener que guardar el registro completo de forma temporal. Esto sería conveniente para aplicaciones en donde se requiera una respuesta en tiempo real como ensayos de vibración en campo.
  
- \item Integrar nuevos comandos en estación base como la posibilidad de calibrar a distancia, obtener solo algunos datos y no todo el registro, modificar frecuencia de muestreo y numero de datos a tomar.
+ \item Hacer portátil el dispositivo al evaluar las necesidades de energía del sistema para ser alimentado por baterías, posiblemente implementando alguna función de deep-sleep del microcontrolador.
  
- \item Incorporar al sistema los puertos analógicos del ESP32. Si bien los ADC del ESP32 son conocidos por sus problemas de estabilidad y ruido, pueden ser útiles en algunas aplicaciones. 
+ \item Integrar nuevos comandos en estación base como la posibilidad de calibrar a distancia, obtener solo algunos datos y no todo el registro, modificar frecuencia de muestreo y número de datos a tomar.
+ 
+ \item Incorporar al sistema los puertos analógicos del ESP32. Permitiendo incluir sensores de temperatura, humedad, presión, entre otros, cuya interfaz sea analógica.
  
  \item Puesto que no se necesita de WiFi en el sensor inteligente, se puede prescindir de las capacidades de conectividad del microcontrolador, escogiendo uno que tenga menos posibilidades de conectividad, pero que cuente con otras fortalezas, como por ejemplo el Teensy 4.0. Teniendo 1024kb de RAM, a diferencia de los 520kb del ESP32.
  
- \item El módulo RYLR896 de REYAX TECHNOLOGY ofrece funcionalidad de control por comandos AT y serial, evita el uso de librería RadioLib para controlar el modulo LoRa lo cual ahorraría espacio en memoria y facilita el código. Esto lo hace compatible con distintos microcontroladores sin soporte a esa librería.
- 
- \item Hacer uso del Digital Motion Processing Unit de los módulos MPU9250 y MPU6050 para ver cómo se comparan respecto a los resultados obtenidos en cuanto a fusión de sensores se refiere.
+ \item El módulo de comunicaciones LoRa RYLR896 de REYAX TECHNOLOGY ofrece funcionalidad de control por comandos AT y serial, evitando así el uso de librerías como RadioLib para controlar el módulo. Esto ahorraría espacio en memoria y facilita el código a implementar, además de hacerlo compatible con distintos microcontroladores sin soporte a esa librería.
  
  \item  Evaluar la posibilidad de utilizar variantes del ESP32 (como el ESP32-S3) más potentes que permitirían aumentar las capacidades de cómputo y almacenamiento sin la necesidad de cambiar el código, manteniendo el firmware actual en funcionamiento.
  
- \item Implementar uso de memoria SD en sensor inteligente. Por la dimensión temporal del sistema (no en tiempo real) el guardado en SD usando SPI no representaría retrasos en la adquisición de los datos, pues el guardado en SD se llevaría a cabo luego de la toma de datos.
+ \item Implementar uso de memoria SD en sensor inteligente. Por la dimensión temporal del sistema actual (no en tiempo real) el guardado en SD usando SPI no representaría retrasos en la adquisición de los datos, pues se llevaría a cabo luego de la toma de datos.
  
  \item Evaluar la posibilidad de usar la transformada de ondículas o Wavelet en vez de la FFT para darle una dimensión temporal a los registros.
  
- \item Expandir la memoria SRAM del ESP32 haciendo uso de módulos comerciales como el W25Q128 de 16MB, que permitiría almacenar registros más largos, mejorando la resolución de los mismos y permitiendo llevar a cabo ensayos con constantes de tiempo mayores.
+ \item Expandir la memoria SRAM del ESP32 haciendo uso de módulos comerciales como el W25Q128 de 16 MB. Esto permitiría almacenar registros más largos, mejorando la resolución de los mismos y permitiendo llevar a cabo ensayos con constantes de tiempo mayores.
  
- \item Iterar en la sincronización del RTC comparando la hora actual y la hora del sensor inteligente luego de la sincronización inicial hasta disminuir el error. Paralelo a esto se puede utilizar un módulo GPS y comparar con hora de NTP para que sea más preciso.
+ \item Para mejorar la precisión en la hora de toma de datos, se recomienda implementar rutinas de iteración en la sincronización del RTC comparando la hora actual y la hora del sensor inteligente luego de la sincronización inicial hasta disminuir el error. Paralelo a esto se puede utilizar un módulo GPS en la estación base y comparar con hora de NTP adquirida.
 \end{itemize}
